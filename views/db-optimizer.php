@@ -29,7 +29,7 @@ else
 				<option value="3"><?php _e("Optimize", cleanup_optimizer); ?></option>
 				<option value="4"><?php _e("Repair", cleanup_optimizer); ?></option>
 			</select>
-			<input type="button" id="ux_btn_action" onclick="bulk_delete();" name="ux_btn_action" class="button-primary" value="<?php _e("Apply", cleanup_optimizer); ?>" />
+			<input type="button" id="ux_btn_action" onclick="bulk_delete();" name="ux_btn_action" class="button-primary apply_btn_align" value="<?php _e("Apply", cleanup_optimizer); ?>" />
 			<p>
 			<table class="widefat" style="width:1000px;">
 				<thead>
@@ -62,13 +62,15 @@ else
 							(
 								"SELECT COUNT(*) FROM $row->Name"
 							);
-							if($count_rows > 0)
+							if($count_rows == 0)
 							{
-								$show_rows="visible";
+								$show_rows="disabled";
+								$tbn_class="button";
 							}
 							else
 							{
-								$show_rows="hidden";
+								$show_rows="";
+								$tbn_class="button-primary";
 							}
 							echo "<tr". $alternate .">
 									<td class=\"column-name\"><input type=\"checkbox\" id=\"ux_chk_cleanup\" name=\"ux_chk_cleanup_arr[]\" value=\"$row->Name\"></td>
@@ -76,7 +78,7 @@ else
 									<td class=\"column-name\"  style=\"padding-left:4%\" >".$count_rows."</td>
 									<td class=\"column-name\">". $table_size ." KB"."</td>
 									<td class=\"column-name\"><input type=\"button\" value=\"Preview\" class=\"button-primary\" style=\"font-size:12px;\" onclick=\"table_preview('$row->Name');\" /></td>
-									<td class=\"column-name\"><input type=\"button\" value=\"Clean\" class=\"button-primary\" style=\"font-size:12px; visibility:  $show_rows ;\" onclick=\"truncate_table('$row->Name');\" /></td>
+									<td class=\"column-name\"><input type=\"button\" value=\"Clean\" class=\"$tbn_class\" style=\"font-size:12px;\"  onclick=\"truncate_table('$row->Name');\" $show_rows /></td>
 									<td class=\"column-name\"><input type=\"button\" value=\"Delete\" class=\"button-primary\" style=\"font-size:12px;\" onclick=\"delete_table('$row->Name');\" /></td>
 									<td class=\"column-name\"><input type=\"button\" value=\"Optimize\" class=\"button-primary\" style=\"font-size:12px;\" onclick=\"optimize_table('$row->Name');\" /></td>
 									<td class=\"column-name\"><input type=\"button\" value=\"Repair\" class=\"button-primary\" style=\"font-size:12px;\" onclick=\"repair_table('$row->Name');\" /></td>
@@ -120,7 +122,7 @@ jQuery(document).ready(function()
 		jQuery("#setting_controls_postback").css("left",proposedLeft + "px");
 	});
 });
-function visible_Popup()
+function show_Popup()
 {
 	jQuery(".black_overlay").css("display","block");
 	jQuery(".white_content").css("display","block");
@@ -170,26 +172,26 @@ function bulk_delete()
 	switch(parseInt(bulk_type))
 	{
 		case 1:
-			typeMessage="<?php _e("Cleaned",cleanup_optimizer); ?>";
+			typeMessage="<?php _e("Cleaned Successfully!",cleanup_optimizer); ?>";
 			break;
 		case 2:
-			typeMessage="<?php _e("Deleted",cleanup_optimizer); ?>";
+			typeMessage="<?php _e("Deleted Successfully!",cleanup_optimizer); ?>";
 			break;
 		case 3:
-			typeMessage="<?php _e("Optimized",cleanup_optimizer); ?>";
+			typeMessage="<?php _e("Optimized Successfully!",cleanup_optimizer); ?>";
 			break;
 		case 4:
-			typeMessage="<?php _e("Repaired",cleanup_optimizer); ?>";
+			typeMessage="<?php _e("Repaired Successfully!",cleanup_optimizer); ?>";
 			break;
 	}
 	if(jQuery("#ux_ddl_bulk_action").val() != 0)
 	{
-		var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Perform this Action ?", cleanup_optimizer ); ?>");
+		var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Perform this Action?", cleanup_optimizer ); ?>");
 		if(confirm_delete == true)
 		{
 			jQuery.post(ajaxurl, jQuery("#ux_frm_optimizer").serialize()+"&param=bulk_selected_action&action=cleanup_library", function(data)
 			{
-				alert(typeMessage+" Successfully!");
+				alert(typeMessage);
 				window.location.href = "admin.php?page=db_optimizer";
 			});
 		}
@@ -201,7 +203,7 @@ function bulk_delete()
 }
 function truncate_table(table_name)
 {
-	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Clear this Table ?", cleanup_optimizer ); ?>");
+	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Clean?", cleanup_optimizer ); ?>");
 	if(confirm_delete == true)
 	{
 		jQuery.post(ajaxurl, "table_name="+table_name+"&param=truncate_table&action=cleanup_library", function(data)
@@ -213,7 +215,7 @@ function truncate_table(table_name)
 function delete_table(table_name)
 {
 
-	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Delete this Table ?", cleanup_optimizer ); ?>");
+	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Delete?", cleanup_optimizer ); ?>");
 	if(confirm_delete == true)
 	{
 		jQuery.post(ajaxurl, "table_name="+table_name+"&param=delete_table&action=cleanup_library", function(data)
@@ -231,7 +233,7 @@ function preview_table(table_name)
 }
 function optimize_table(table_name)
 {
-	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Optimize this Table ?", cleanup_optimizer ); ?>");
+	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Optimize?", cleanup_optimizer ); ?>");
 	if(confirm_delete == true)
 	{
 		jQuery.post(ajaxurl, "table_name="+table_name+"&param=optimize_table&action=cleanup_library", function(data)
@@ -242,7 +244,7 @@ function optimize_table(table_name)
 }
 function repair_table(table_name)
 {
-	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Repair this Table ?", cleanup_optimizer ); ?>");
+	var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Repair?", cleanup_optimizer ); ?>");
 	if(confirm_delete == true)
 	{
 		jQuery.post(ajaxurl, "table_name="+table_name+"&param=repair_table&action=cleanup_library", function(data)

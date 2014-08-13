@@ -4,10 +4,9 @@ Plugin Name: Wp Cleanup Optimizer
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 1.0
+Version: 1.1
 Author URI: http://tech-banker.com
 */
-
 /////////////////////////////////////  Define  Wp Cleanup Optimizer  Constants  ////////////////////////////////////////
 
 if (!defined("CLEANUP_BK_PLUGIN_DIR")) define("CLEANUP_BK_PLUGIN_DIR",  plugin_dir_path( __FILE__ ));
@@ -25,7 +24,7 @@ function admin_panel_js_calls()
 
 function admin_panel_css_calls()
 {
-	wp_enqueue_style("wpcpb-stylesheet.css", plugins_url("/assets/css/wpcpb-stylesheet.css",__FILE__));
+	wp_enqueue_style("wpcpb-stylesheet.css", plugins_url("/assets/css/wp-stylesheet.css",__FILE__));
 }
 /////////////////////////////////////  Include Menus on Dashboard ////////////////////////////////////////
 function create_global_menus_for_cleanup_bank()
@@ -40,7 +39,6 @@ if (isset($_REQUEST["action"]))
 	switch ($_REQUEST["action"]) 
 	{
 		case "cleanup_library":
-			echo "hi";
 			add_action("admin_init", "cleanup_library");
 			function cleanup_library()
 			{	
@@ -54,8 +52,16 @@ if (isset($_REQUEST["action"]))
 			break;
 	}
 }
-///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////
+function plugin_load_textdomain_optimizer()
+{
+	if(function_exists( "load_plugin_textdomain" ))
+	{
+		load_plugin_textdomain(cleanup_optimizer, false, CLEANUP_BK_PLUGIN_DIRNAME ."/languages");
+	}
+}
 
+///////////////////////////////////  Call Hooks   /////////////////////////////////////////////////////
+add_action("plugins_loaded", "plugin_load_textdomain_optimizer");
 add_action("admin_init", "admin_panel_css_calls");
 add_action("admin_init", "admin_panel_js_calls");
 add_action("admin_menu", "create_global_menus_for_cleanup_bank");

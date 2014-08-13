@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-08-12 10:44+0530\n"
+"PO-Revision-Date: 2014-08-13 09:13+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sl_SI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: views/db-optimizer.php:26 views/wp-optimizer.php:117
+msgid "Bulk Action"
+msgstr "razsutem stanju akcijski"
+
+#: views/db-optimizer.php:27 views/wp-optimizer.php:118
+#: views/wp-optimizer.php:142 views/wp-optimizer.php:156
+#: views/wp-optimizer.php:170 views/wp-optimizer.php:184
+#: views/wp-optimizer.php:198 views/wp-optimizer.php:212
+#: views/wp-optimizer.php:226 views/wp-optimizer.php:240
+#: views/wp-optimizer.php:254 views/wp-optimizer.php:268
+msgid "Clean"
+msgstr "čisto"
+
+#: views/db-optimizer.php:28
+msgid "Delete"
+msgstr "Zbriši"
+
+#: views/db-optimizer.php:29
+msgid "Optimize"
+msgstr "optimizirati"
+
+#: views/db-optimizer.php:30
+msgid "Repair"
+msgstr "popravilu"
+
+#: views/db-optimizer.php:32 views/wp-optimizer.php:120
+msgid "Apply"
+msgstr "Nanesite"
+
+#: views/db-optimizer.php:38
+msgid "Table"
+msgstr "Preglednica"
+
+#: views/db-optimizer.php:39
+msgid "Total Rows"
+msgstr "Skupaj  Vrstice"
+
+#: views/db-optimizer.php:40
+msgid "Size"
+msgstr "Velikost"
+
+#: views/db-optimizer.php:41 views/wp-optimizer.php:127
+msgid "Action"
+msgstr "ukrepanje"
+
+#: views/db-optimizer.php:90
+msgid "Total"
+msgstr "Skupaj"
+
+#: views/db-optimizer.php:173
+msgid "Cleaned Successfully!"
+msgstr "Očistiti Uspešno!"
+
+#: views/db-optimizer.php:176
+msgid "Deleted Successfully!"
+msgstr "izbrisan   uspešno!"
+
+#: views/db-optimizer.php:179
+msgid "Optimized Successfully!"
+msgstr "Optimizirane Je uspešno!"
+
+#: views/db-optimizer.php:182
+msgid "Repaired Successfully!"
+msgstr "Popraviti  uspešno!"
+
+#: views/db-optimizer.php:187
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "Ali ste prepričani, da želite izvesti to dejanje?"
+
+#: views/db-optimizer.php:199 views/wp-optimizer.php:307
+msgid "Please Choose Action First."
+msgstr "Prosimo izberite ukrepanje najprej."
+
+#: views/db-optimizer.php:204 views/wp-optimizer.php:281
+#: views/wp-optimizer.php:296
+msgid "Are you sure, you want to Clean?"
+msgstr "Ali ste prepričani, da želite čist?"
+
+#: views/db-optimizer.php:216
+msgid "Are you sure, you want to Delete?"
+msgstr ""
+
+#: views/db-optimizer.php:234
+msgid "Are you sure, you want to Optimize?"
+msgstr "li ste prepričani, da želite optimizirati?"
+
+#: views/db-optimizer.php:245
+msgid "Are you sure, you want to Repair?"
+msgstr "Ali ste prepričani, da želite  popraviti?"
+
+#: views/wp-optimizer.php:125
+msgid "Type of Data"
+msgstr "Vrsta podatkov"
+
+#: views/wp-optimizer.php:126
+msgid "Count"
+msgstr "Preštejte"

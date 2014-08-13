@@ -1,10 +1,10 @@
 === WP Clean Up Optimizer ===
 Contributors: contact-banker
-Tags: admin,ajax,auto draft, clean, cleaner, cleanup, commentmeta, comments, database, delete revision, draft, moderated, mysql, optimize, optimize database, orphan, phpMyAdmin, post revisions, postmeta, posts, relationships, Revision, spam, transient feed, trash, wp clean up, wp cleaner, wp cleanup
+Tags: admin,ajax,pluginwp clean up,wp cleanup,clean,cleaner,cleanup,database,mysql,comments,posts,post revisions,delete revision,wp cleaner,optimize,optimize database,revision
 License: GPLv2
 Requires at least: 2.7
 Tested up to: 3.9.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 WP Clean Up Optimizer can help us to clean up the wordpress database by removing unwanted stuff.
 
@@ -13,6 +13,48 @@ WP Clean Up Optimizer can help us to clean up the wordpress database by removing
 WP Clean Up Optimizer  can help us to clean up the wordpress database by removing "revision", "draft", "auto draft","moderated comments","spam comments","trash comments","orphan postmeta","orphan commentmeta","orphan relationships","dashboard transient feed" and other data.
 
 It allows you to optimize your WordPress database without phpMyAdmin.
+
+
+### WP Clean Up Optimizer is now available in the following Languages
+
+* Albanian (sq_AL)
+* Arabic (ar)
+* Belarusian(be_BY)
+* Brazilian Portuguese (pt_BR)
+* Bulgarian (bg_BG)
+* Chinese (zh_CN)
+* Czech (cs_CZ)
+* Danish (da_DK)
+* Dutch (nl_NL)
+* English (en_GB)
+* Estonian (et)
+* Finnish (fi_FI)
+* French (fr_FR)
+* German (de_DE)
+* Hebrew (he_IL)
+* Hungarian (hu_HU)
+* Korean (ko_KR)
+* Malay Malaysia (ms_MY)
+* Indonesian (id_ID)
+* Italian (it_IT)
+* Japanese (ja)
+* Korean (hu_HU)
+* Polish (pl_PL)
+* Portuguese (pt_PT)
+* Romanian (ro_RO)
+* Russian (ru_RU)
+* Serbian (sr_RS)
+* Slovenian (sl_SI)
+* Slovak (sk_SK)
+* Spanish (es_ES)
+* Swedish (sv_SE)
+* Turkish (tr)
+* Thai (th)
+* Ukrainian (uk)
+
+= Technical support =
+
+* Please email all your queries/issues at support@tech-banker.com or use
 
 == Installation ==
 
@@ -38,6 +80,10 @@ After downloading the ZIP file,
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Changelog ==
+= 1.1 =
+
+* Languages Added
 
 = 1.0 =
-Initial Release
+
+* Initial Release

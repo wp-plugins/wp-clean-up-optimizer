@@ -10,17 +10,17 @@ $role = $current_user->role[0];
 switch($role)
 {
 	case "administrator":
-		add_menu_page("WP Cleanup Opt", __("WP Cleanup Optimizer", cleanup_optimizer), "read", "wp_optimizer", "",plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
-		add_submenu_page("wp_optimizer", "WP Optimizer", __("WP Optimizer", cleanup_optimizer), "read", "wp_optimizer",  "wp_optimizer");
-		add_submenu_page("wp_optimizer", "Database Optimizer", __("Database Optimizer", cleanup_optimizer), "read", "db_optimizer",  "db_optimizer");
+		add_menu_page("WP Cleanup Optimizer", "WP Cleanup Optimizer", "read", "wp_optimizer", "",plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
+		add_submenu_page("wp_optimizer", "WP Optimizer","WP Optimizer", "read", "wp_optimizer",  "wp_optimizer");
+		add_submenu_page("wp_optimizer", "Database Optimizer", "Database Optimizer", "read", "db_optimizer",  "db_optimizer");
 		break;
 	case "editor":
-		add_menu_page("WP Cleanup Bank", __("WP Cleanup Bank", cleanup_optimizer), "read", "cleanup_optimizer", "", plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
-		add_submenu_page("cleanup_optimizer", "Dashboard", __("Dashboard", cleanup_optimizer), "read", "cleanup_optimizer",  "cleanup_optimizer");
+		add_menu_page("WP Cleanup Optimizer", "WP Cleanup Optimizer", "read", "cleanup_optimizer", "", plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
+		add_submenu_page("cleanup_optimizer", "Database Optimizer", "Database Optimizer", "read", "cleanup_optimizer",  "cleanup_optimizer");
 		break;
 	case "author":
-		add_menu_page("WP Cleanup Bank", __("WP Cleanup Bank", cleanup_optimizer), "read", "cleanup_optimizer", "", plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
-		add_submenu_page("cleanup_optimizer", "Dashboard", __("Dashboard", cleanup_optimizer), "read", "cleanup_optimizer",  "cleanup_optimizer");
+		add_menu_page("WP Cleanup Optimizer", "WP Cleanup Optimizer", "read", "cleanup_optimizer", "", plugins_url("/assets/images/icon.png" , dirname(__FILE__)));
+		add_submenu_page("cleanup_optimizer", "Database Optimizer", "Database Optimizer", "read", "cleanup_optimizer",  "cleanup_optimizer");
 		break;
 }
 

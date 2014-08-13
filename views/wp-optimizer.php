@@ -117,7 +117,7 @@ else
 				<option value="0"><?php _e("Bulk Action", cleanup_optimizer); ?></option>
 				<option value="1"><?php _e("Clean", cleanup_optimizer); ?></option>
 			</select>
-			<input type="button" id="ux_btn_action" onclick="bulk_delete();" name="ux_btn_action" class="button-primary" value="<?php _e("Apply", cleanup_optimizer); ?>" />
+			<input type="button" id="ux_btn_action" onclick="bulk_delete();" name="ux_btn_action" class="button-primary apply_btn_align"  value="<?php _e("Apply", cleanup_optimizer); ?>" />
 			<table class="widefat" style="width:1000px;">
 				<thead>
 					<tr>
@@ -133,13 +133,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_1" name="ux_chk_cleanup[]" style="margin:0px" value="autodraft"/>
 						</td>
 						<td class="column-name">
-							<?php _e("Auto Draft",cleanup_optimizer); ?>
+							Auto Draft 
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("autodraft"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('autodraft');" class="<?php echo wp_clean_up_count("autodraft") > 0  ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("autodraft") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('autodraft');" class="<?php echo wp_clean_up_count("autodraft") > 0  ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("autodraft") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr>
@@ -147,13 +147,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_2" name="ux_chk_cleanup[]" value="feed" style="margin:0px"  />
 						</td>
 						<td class="column-name">
-							<?php _e("Dashboard Transient Feed",cleanup_optimizer); ?>
+							Dashboard Transient Feed
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("feed"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('feed');" class="<?php echo wp_clean_up_count("feed") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("feed") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('feed');" class="<?php echo wp_clean_up_count("feed") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("feed") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr class="alternate">
@@ -161,13 +161,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_3" name="ux_chk_cleanup[]" style="margin:0px"  value="draft"/>
 						</td>
 						<td class="column-name">
-							<?php _e("Draft",cleanup_optimizer); ?>
+							Draft
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("draft"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('draft');" class="<?php echo wp_clean_up_count("draft") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("draft") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('draft');" class="<?php echo wp_clean_up_count("draft") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("draft") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr>
@@ -175,13 +175,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_cleanup[]" style="margin:0px"  value="moderated"/>
 						</td>
 						<td class="column-name">
-							<?php _e("Moderated Comments",cleanup_optimizer); ?>
+							Moderated Comments
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("moderated"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('moderated');" class="<?php echo wp_clean_up_count("moderated") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("moderated") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('moderated');" class="<?php echo wp_clean_up_count("moderated") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("moderated") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr class="alternate">
@@ -189,13 +189,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_cleanup[]" style="margin:0px"  value="commentmeta"/>
 						</td>
 						<td class="column-name">
-							<?php _e("Orphan Comments Meta",cleanup_optimizer); ?>
+							Orphan Comments Meta
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("commentmeta"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('commentmeta');" class="<?php echo wp_clean_up_count("commentmeta") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("commentmeta") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('commentmeta');" class="<?php echo wp_clean_up_count("commentmeta") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("commentmeta") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr>
@@ -203,13 +203,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_cleanup[]" style="margin:0px" value="postmeta"/>
 						</td>
 						<td class="column-name">
-							<?php _e("Orphan Posts Meta",cleanup_optimizer); ?>
+							Orphan Posts Meta
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("postmeta"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('postmeta');" class="<?php echo wp_clean_up_count("postmeta") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("postmeta") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('postmeta');" class="<?php echo wp_clean_up_count("postmeta") > 0 ? "button-primary" : "button"; ?>"  <?php echo wp_clean_up_count("postmeta") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr class="alternate">
@@ -217,13 +217,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_cleanup[]" style="margin:0px"  value="relationships"/>
 						</td>
 						<td class="column-name">
-							<?php _e("Orphan Relationships",cleanup_optimizer); ?>
+							Orphan Relationships
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("relationships"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('relationships');" class="<?php echo wp_clean_up_count("relationships") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("relationships") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('relationships');" class="<?php echo wp_clean_up_count("relationships") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("relationships") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr>
@@ -231,13 +231,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_cleanup[]" style="margin:0px"  value="revision"/>
 						</td>
 						<td class="column-name">
-							<?php _e("Revision",cleanup_optimizer); ?>
+							Revision
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("revision"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('revision');" class="<?php echo wp_clean_up_count("revision") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("revision") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('revision');" class="<?php echo wp_clean_up_count("revision") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("revision") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr class="alternate">
@@ -245,13 +245,13 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_cleanup[]" style="margin:0px"  value="spam"/>
 						</td>
 						<td class="column-name">
-							<?php _e('Spam Comments',cleanup_optimizer); ?>
+							Spam Comments
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("spam"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('spam');" class="<?php echo wp_clean_up_count("spam") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("spam") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('spam');" class="<?php echo wp_clean_up_count("spam") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("spam") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 					<tr>
@@ -259,18 +259,18 @@ else
 							<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_cleanup[]" style="margin:0px"  value="trash"/>
 						</td>
 						<td class="column-name">
-							<?php _e('Trash Comments',cleanup_optimizer); ?>
+							Trash Comments
 						</td>
 						<td class="column-name">
 							<?php echo wp_clean_up_count("trash"); ?>
 						</td>
 						<td class="column-name">
-							<input type="button" onclick="cleanup_function('trash');" class="<?php echo wp_clean_up_count("trash") > 0 ? "button-primary" : "button"; ?>" style="visibility:<?php echo wp_clean_up_count("trash") > 0 ? 'visible' : 'hidden' ?>;" value="<?php _e("Clean",cleanup_optimizer); ?>" />
+							<input type="button" onclick="cleanup_function('trash');" class="<?php echo wp_clean_up_count("trash") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_count("trash") == 0 ? "disabled" : "" ?> value="<?php _e("Clean",cleanup_optimizer); ?>" />
 						</td>
 					</tr>
 				</tbody>
 			</table>
-		</p>
+			</p>
 		</div>
 	</form>
 	
@@ -278,47 +278,12 @@ else
 	
 	function cleanup_function(typeClean)
 	{
-		var typeMessage = "";
-		switch(typeClean)
-		{
-			case "autodraft" :
-				typeMessage = "<?php _e("Auto Draft",cleanup_optimizer); ?>"; 
-				break; 
-			case "draft" :
-				typeMessage = "<?php _e("Draft",cleanup_optimizer); ?>"; 
-				break; 
-			case "feed" :
-				typeMessage = "<?php _e("Dashboard Transient Feed",cleanup_optimizer); ?>"; 
-				break;
-			case "moderated" :
-				typeMessage = "<?php _e("Moderated Comments",cleanup_optimizer); ?>"; 
-				break;
-			case "commentmeta" :
-				typeMessage =  "<?php _e("Orphan Comments Meta",cleanup_optimizer); ?>"; 
-				break;
-			case "postmeta" :
-				typeMessage =  "<?php _e("Orphan Posts Meta",cleanup_optimizer); ?>"; 
-				break;
-			case "relationships" :
-				typeMessage =  "<?php _e("Orphan Relationships",cleanup_optimizer); ?>"; 
-				break;
-			case "revision" :
-				typeMessage =  "<?php _e("Revision",cleanup_optimizer); ?>"; 
-				break;
-			case "spam" :
-				typeMessage =  "<?php _e("Spam Comments",cleanup_optimizer); ?>"; 
-				break;
-			case "trash" :
-				typeMessage =  "<?php _e("Trash Comments",cleanup_optimizer); ?>"; 
-				break;
-		}
-		var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Clean ",cleanup_optimizer ); ?>" + typeMessage + "?");
+		var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Clean?",cleanup_optimizer ); ?>");
 		if(confirm_delete == true)
 		{
-			
 			jQuery.post(ajaxurl, "typeClean="+typeClean+"&param=wp_cleanup&action=cleanup_library", function(data)
 			{
-				alert(typeMessage + " Successfully Cleaned!");
+				alert("Successfully Cleaned!");
 				window.location.reload();
 			});
 		}
@@ -328,7 +293,7 @@ else
 	{
 		if(jQuery("#ux_ddl_bulk_action").val() == 1)
 		{
-			var confirm_selection =  confirm("<?php _e( "Are you sure, you want to Clean Selected Data ?", cleanup_optimizer ); ?>");
+			var confirm_selection =  confirm("<?php _e( "Are you sure, you want to Clean?", cleanup_optimizer ); ?>");
 			if(confirm_selection == true)
 			{
 				jQuery.post(ajaxurl, jQuery("#ux_frm_cleanup").serialize()+"&param=bulk_delete_action&action=cleanup_library", function(data)

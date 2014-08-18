@@ -1,6 +1,6 @@
 === WP Clean Up Optimizer ===
 Contributors: contact-banker
-Tags: admin,ajax,plugin wp clean up,wp cleanup,clean,cleaner,cleanup,database,mysql,comments,posts,post revisions,delete revision,wp cleaner,optimize,optimize database,revision, plugin, wordpress
+Tags: admin,ajax,wp clean up,wp cleanup,clean,cleaner,cleanup,database,mysql,comments,posts,post revisions,delete revision,wp cleaner,optimize,optimize database,revision, plugin, wordpress
 License: GPLv2
 Requires at least: 2.7
 Tested up to: 3.9.1

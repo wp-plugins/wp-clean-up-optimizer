@@ -16,7 +16,7 @@ It allows you to optimize your WordPress database without phpMyAdmin.
 
 ###IMPORTANT: If you think you found a bug in WP Clean Up Optimizer or have any problem or question concerning WP Mail Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).  
 
-***August 18, 2014: We're happy to announce that WP Clean Up Optimizer reached 100+ plugin downloads in only 1 week. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
+***August 21, 2014: We're happy to announce that WP Clean Up Optimizer reached 250+ plugin downloads in only 2 weeks. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
 ### WP Clean Up Optimizer is now available in the following Languages
 
 * Albanian (sq_AL)

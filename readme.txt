@@ -16,7 +16,7 @@ WP Clean Up Optimizer is an extensive WordPress database cleanup and optimizatio
 
 ###IMPORTANT: If you think you found a bug in WP Clean Up Optimizer or have any problem or question concerning WP Mail Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
-***Features : ***
+###Features : ###
 
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments

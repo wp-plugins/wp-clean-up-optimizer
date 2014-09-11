@@ -1,6 +1,6 @@
 === WP Clean Up Optimizer ===
 Contributors: contact-banker
-Tags: admin,ajax,wp clean up,wp cleanup,clean,cleaner,cleanup,database,mysql,comments,posts,post revisions,delete revision,wp cleaner,optimize,optimize database,revision, plugin, wordpress,comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
+Tags: admin, AJAX, automatic, clean, cleaner, cleanup, comments, database, delete revision, meta, mobile, mysql, optimize, optimize database, phpMyAdmin, plugin, post revisions, postmeta, posts, responsive, Revision, revisions, schedule, spam, trash, users, wordpress, wp clean up, wp cleaner, wp cleanup
 License: GPLv2
 Requires at least: 2.7
 Tested up to: 3.9.1
@@ -16,7 +16,7 @@ WP Clean Up Optimizer is an extensive WordPress database cleanup and optimizatio
 
 ###IMPORTANT: If you think you found a bug in WP Clean Up Optimizer or have any problem or question concerning WP Mail Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
-**Features :**
+***Features : ***
 
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments

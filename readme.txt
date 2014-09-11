@@ -1,6 +1,6 @@
 === WP Clean Up Optimizer ===
 Contributors: contact-banker
-Tags: admin,ajax,wp clean up,wp cleanup,clean,cleaner,cleanup,database,mysql,comments,posts,post revisions,delete revision,wp cleaner,optimize,optimize database,revision, plugin, wordpress
+Tags: admin,ajax,wp clean up,wp cleanup,clean,cleaner,cleanup,database,mysql,comments,posts,post revisions,delete revision,wp cleaner,optimize,optimize database,revision, plugin, wordpress,comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 License: GPLv2
 Requires at least: 2.7
 Tested up to: 3.9.1
@@ -12,11 +12,31 @@ WP Clean Up Optimizer can help us to clean up the wordpress database by removing
 
 WP Clean Up Optimizer  can help us to clean up the wordpress database by removing "revision", "draft", "auto draft","moderated comments","spam comments","trash comments","orphan postmeta","orphan commentmeta","orphan relationships","dashboard transient feed" and other data.
 
-It allows you to optimize your WordPress database without phpMyAdmin.
+WP Clean Up Optimizer is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
 
-###IMPORTANT: If you think you found a bug in WP Clean Up Optimizer or have any problem or question concerning WP Mail Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).  
+###IMPORTANT: If you think you found a bug in WP Clean Up Optimizer or have any problem or question concerning WP Mail Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
-***August 21, 2014: We're happy to announce that WP Clean Up Optimizer reached 250+ plugin downloads in only 2 weeks. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
+**Features :**
+
+*   Removal of stale post revisions
+*   Removal of stale unapproved and spam comments
+*   Removal of trashed comments
+*   Removal of akismet metadata from comments
+*   Removal of other stale metadata from comments
+*   Mobile device friendly, now you can optimize your site on the go
+*   Removal of all trackbacks and pingbacks
+*   Cleaning up auto draft posts
+*   Removal of transient options
+*   Clear out the post trash
+*   Automatic cleanup of all the integrated options (also uses retention if enabled)
+*   Ability to keep selected number of weeks data when cleaning up
+*   Option to add or remove link on wp admin bar.
+*   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
+*   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
+*   Enabled for Administrators only.
+
+
+***September 11, 2014: We're happy to announce that WP Clean Up Optimizer reached 700+ plugin downloads in only 1 month. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
 ### WP Clean Up Optimizer is now available in the following Languages
 
 * Albanian (sq_AL)

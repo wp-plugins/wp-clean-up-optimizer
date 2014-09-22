@@ -3,15 +3,15 @@ Contributors: contact-banker
 Tags: admin, AJAX, automatic, clean, cleaner, cleanup, comments, database, delete revision, meta, mobile, mysql, optimize, optimize database, phpMyAdmin, plugin, post revisions, postmeta, posts, responsive, Revision, revisions, schedule, spam, trash, users, wordpress, wp clean up, wp cleaner, wp cleanup,comments, spam, optimize, database, revisions, users, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, mobile
 License: GPLv2
 Requires at least: 2.7
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 1.1
 
 WP Clean Up Optimizer helps you to extensively clean up your WordPress Database and Optimize it without doing manual queries.
 == Description ==
 
-WP Clean Up Optimizer is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
+### WP Clean Up Optimizer is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
 
-###Features : ###
+### WP Clean Up Optimizer Features : ###
 
 *   Removal of stale post revisions
 *   Removal of stale unapproved and spam comments
@@ -33,7 +33,7 @@ WP Clean Up Optimizer is an extensive WordPress database cleanup and optimizatio
 
 **When you use this plugin for the first time make a backup of your database. It is best practice to make a database backup before using this program first time.**
 
-***September 17, 2014: We're happy to announce that WP Clean Up Optimizer reached 700+ plugin downloads in only 1 month. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
+***September 22, 2014: We're happy to announce that WP Clean Up Optimizer reached 1100+ plugin downloads in only 1 month. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
 
 **How this could help you?**
 
@@ -85,7 +85,7 @@ WP Clean Up Optimizer is an extensive WordPress database cleanup and optimizatio
 
 == Installation ==
 
-### Minimum requirements.  
+### WP Clean Up Optimizer Minimum requirements.  
 *   Wordpress 3.0+  
 *   PHP 5.x  
 *   MySQL 5.x  
@@ -107,10 +107,11 @@ After downloading the ZIP file,
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Changelog ==
+
 = 1.1 =
 
-* Languages Added
+* WP Clean Up Optimizer Languages Added
 
 = 1.0 =
 
-* Initial Release
+* WP Clean Up Optimizer Initial Release

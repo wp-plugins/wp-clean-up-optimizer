@@ -4,7 +4,7 @@ Tags: admin, AJAX, automatic, clean, cleaner, cleanup, comments, database, delet
 License: GPLv2
 Requires at least: 2.7
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: 1.2
 
 WP Clean Up Optimizer helps you to extensively clean up your WordPress Database and Optimize it without doing manual queries.
 == Description ==
@@ -33,7 +33,7 @@ WP Clean Up Optimizer helps you to extensively clean up your WordPress Database 
 
 **When you use this plugin for the first time make a backup of your database. It is best practice to make a database backup before using this program first time.**
 
-***September 22, 2014: We're happy to announce that WP Clean Up Optimizer reached 1100+ plugin downloads in only 1 month. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
+*** October 11, 2014: We're happy to announce that WP Clean Up Optimizer reached 1700+ plugin downloads in only 2 months. We frequently receive positive feedback from people using our WP Mail Bank Plugin for WordPress. Thanks so much for your support!***
 
 **How this could help you?**
 
@@ -107,6 +107,10 @@ After downloading the ZIP file,
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Changelog ==
+
+= 1.2 =
+
+* Major Bugs Solved reltated to Database
 
 = 1.1 =
 

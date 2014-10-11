@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-08-12 10:44+0530\n"
+"PO-Revision-Date: 2014-08-12 12:24+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_Hans_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: views/db-optimizer.php:26 views/wp-optimizer.php:117
+msgid "Bulk Action"
+msgstr "散装 动作"
+
+#: views/db-optimizer.php:27 views/wp-optimizer.php:118
+#: views/wp-optimizer.php:142 views/wp-optimizer.php:156
+#: views/wp-optimizer.php:170 views/wp-optimizer.php:184
+#: views/wp-optimizer.php:198 views/wp-optimizer.php:212
+#: views/wp-optimizer.php:226 views/wp-optimizer.php:240
+#: views/wp-optimizer.php:254 views/wp-optimizer.php:268
+msgid "Clean"
+msgstr "干净"
+
+#: views/db-optimizer.php:28
+msgid "Delete"
+msgstr "删除"
+
+#: views/db-optimizer.php:29
+msgid "Optimize"
+msgstr "优化"
+
+#: views/db-optimizer.php:30
+msgid "Repair"
+msgstr "修复"
+
+#: views/db-optimizer.php:32 views/wp-optimizer.php:120
+msgid "Apply"
+msgstr "套用"
+
+#: views/db-optimizer.php:38
+msgid "Table"
+msgstr "表"
+
+#: views/db-optimizer.php:39
+msgid "Total Rows"
+msgstr "总计排"
+
+#: views/db-optimizer.php:40
+msgid "Size"
+msgstr "尺寸"
+
+#: views/db-optimizer.php:41 views/wp-optimizer.php:127
+msgid "Action"
+msgstr "动作"
+
+#: views/db-optimizer.php:90
+msgid "Total"
+msgstr "总"
+
+#: views/db-optimizer.php:173
+msgid "Cleaned Successfully!"
+msgstr "清洗成功地！"
+
+#: views/db-optimizer.php:176
+msgid "Deleted Successfully!"
+msgstr "删除成功！"
+
+#: views/db-optimizer.php:179
+msgid "Optimized Successfully!"
+msgstr "优化成功地！"
+
+#: views/db-optimizer.php:182
+msgid "Repaired Successfully!"
+msgstr "修好成功！"
+
+#: views/db-optimizer.php:187
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "你确定吗， 你想要  执行此  行动？"
+
+#: views/db-optimizer.php:199 views/wp-optimizer.php:307
+msgid "Please Choose Action First."
+msgstr "请  选择 动作  第一。"
+
+#: views/db-optimizer.php:204 views/wp-optimizer.php:281
+#: views/wp-optimizer.php:296
+msgid "Are you sure, you want to Clean?"
+msgstr "你确定，你要清理？"
+
+#: views/db-optimizer.php:216
+msgid "Are you sure, you want to Delete?"
+msgstr "你确定，你要删除吗？"
+
+#: views/db-optimizer.php:234
+msgid "Are you sure, you want to Optimize?"
+msgstr "你确定，你要优化？"
+
+#: views/db-optimizer.php:245
+msgid "Are you sure, you want to Repair?"
+msgstr "你确定，你要修？"
+
+#: views/wp-optimizer.php:125
+msgid "Type of Data"
+msgstr "数据类型"
+
+#: views/wp-optimizer.php:126
+msgid "Count"
+msgstr "算"

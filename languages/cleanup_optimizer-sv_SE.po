@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-08-12 10:44+0530\n"
+"PO-Revision-Date: 2014-08-12 15:22+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: views/db-optimizer.php:26 views/wp-optimizer.php:117
+msgid "Bulk Action"
+msgstr "Massåtgärd"
+
+#: views/db-optimizer.php:27 views/wp-optimizer.php:118
+#: views/wp-optimizer.php:142 views/wp-optimizer.php:156
+#: views/wp-optimizer.php:170 views/wp-optimizer.php:184
+#: views/wp-optimizer.php:198 views/wp-optimizer.php:212
+#: views/wp-optimizer.php:226 views/wp-optimizer.php:240
+#: views/wp-optimizer.php:254 views/wp-optimizer.php:268
+msgid "Clean"
+msgstr "Rengör"
+
+#: views/db-optimizer.php:28
+msgid "Delete"
+msgstr "Radera"
+
+#: views/db-optimizer.php:29
+msgid "Optimize"
+msgstr "Optimera"
+
+#: views/db-optimizer.php:30
+msgid "Repair"
+msgstr "Reparation"
+
+#: views/db-optimizer.php:32 views/wp-optimizer.php:120
+msgid "Apply"
+msgstr "Tillämpa"
+
+#: views/db-optimizer.php:38
+msgid "Table"
+msgstr "tabellen"
+
+#: views/db-optimizer.php:39
+msgid "Total Rows"
+msgstr "Totala Rader"
+
+#: views/db-optimizer.php:40
+msgid "Size"
+msgstr "storlek"
+
+#: views/db-optimizer.php:41 views/wp-optimizer.php:127
+msgid "Action"
+msgstr "åtgärder"
+
+#: views/db-optimizer.php:90
+msgid "Total"
+msgstr "Totala"
+
+#: views/db-optimizer.php:173
+msgid "Cleaned Successfully!"
+msgstr "rengjorda lyckades!"
+
+#: views/db-optimizer.php:176
+msgid "Deleted Successfully!"
+msgstr "utgårFramgångsrikt!"
+
+#: views/db-optimizer.php:179
+msgid "Optimized Successfully!"
+msgstr "OptimeradFramgångsrikt!"
+
+#: views/db-optimizer.php:182
+msgid "Repaired Successfully!"
+msgstr "Reparerade Framgångsrikt!"
+
+#: views/db-optimizer.php:187
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "Är du säker, du vill utföra den här åtgärden?"
+
+#: views/db-optimizer.php:199 views/wp-optimizer.php:307
+msgid "Please Choose Action First."
+msgstr "Vänligen välja  åtgärder Första"
+
+#: views/db-optimizer.php:204 views/wp-optimizer.php:281
+#: views/wp-optimizer.php:296
+msgid "Are you sure, you want to Clean?"
+msgstr "Är du säker, du vill rengöra?"
+
+#: views/db-optimizer.php:216
+msgid "Are you sure, you want to Delete?"
+msgstr "Är du säker, vill du ta bort?"
+
+#: views/db-optimizer.php:234
+msgid "Are you sure, you want to Optimize?"
+msgstr "Är du säker, du vill Optimera?"
+
+#: views/db-optimizer.php:245
+msgid "Are you sure, you want to Repair?"
+msgstr "Är du säker, du vill Reparation?"
+
+#: views/wp-optimizer.php:125
+msgid "Type of Data"
+msgstr "Typ av Uppgifter"
+
+#: views/wp-optimizer.php:126
+msgid "Count"
+msgstr "Räkna"

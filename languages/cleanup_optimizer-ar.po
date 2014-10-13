@@ -1,0 +1,385 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-09-12 16:08+0530\n"
+"PO-Revision-Date: 2014-09-12 17:04+0530\n"
+"Last-Translator: \n"
+"Language-Team: Tech Banker\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp-cleanup-optimizer\\wp-content"
+"\\plugins\\wp-clean-up-optimizer-pro-edition\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-KeywordsList: __;_e;_;gettext;gettext_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/wp-nav-menus.php:6 views/wp-optimizer.php:154
+#: wp-cleanup-optimizer-pro-edition.php:358
+#: wp-cleanup-optimizer-pro-edition.php:390
+#: wp-cleanup-optimizer-pro-edition.php:422
+msgid "WP Data Optimizer"
+msgstr "الفسفور الابيض بيانات محسن الأمثلية "
+
+#: lib/wp-nav-menus.php:10
+msgid "WP Data Optimizer Scheduler"
+msgstr "الفسفور الابيض بيانات للمحسن برنامج جدولة"
+
+#: lib/wp-nav-menus.php:14
+msgid "DB Optimizer"
+msgstr "للمحسن DB"
+
+#: lib/wp-nav-menus.php:18
+msgid "DB Optimizer Scheduler"
+msgstr "DB للمحسن برنامج جدولة"
+
+#: lib/wp-nav-menus.php:22 wp-cleanup-optimizer-pro-edition.php:370
+#: wp-cleanup-optimizer-pro-edition.php:402
+#: wp-cleanup-optimizer-pro-edition.php:434
+msgid "System Status"
+msgstr "حالة النظام"
+
+#: lib/wp-nav-menus.php:26 wp-cleanup-optimizer-pro-edition.php:376
+#: wp-cleanup-optimizer-pro-edition.php:408
+#: wp-cleanup-optimizer-pro-edition.php:440
+msgid "Licensing"
+msgstr "منح التراخيص"
+
+#: views/db-optimizer.php:43
+msgid "Database Optimizer"
+msgstr "قاعدة البيانات محسن الأمثلية "
+
+#: views/db-optimizer.php:47 views/db-scheduler.php:47
+msgid ""
+"Note : Table Names highlighted with red color and an asterisk (*) are "
+"wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
+"delete and clean action because they can destroy your Wordpress "
+"unintentionally."
+msgstr ""
+"ملاحظة: الجدول أسماء أبرزت مع أحمر اللون و النجمة (*) هي وردبرس يحمل في "
+"ثناياه عوامل الجداول. هم المعوقين من قبل لنا لذا يست الى تؤدي حذف و نظيفة "
+"إجراء لأن انهم يمكن تدمير لديك وردبرس عن غير قصد."
+
+#: views/db-optimizer.php:55 views/db-scheduler.php:55
+#: views/wp-optimizer.php:161 views/wp-scheduler.php:140
+msgid "Database Information"
+msgstr "قاعدة البيانات معلومات"
+
+#: views/db-optimizer.php:59 views/db-scheduler.php:59
+#: views/wp-optimizer.php:165 views/wp-scheduler.php:144
+msgid "Database Host "
+msgstr " قاعدة بيانات المضيف"
+
+#: views/db-optimizer.php:65 views/db-scheduler.php:65
+#: views/wp-optimizer.php:171 views/wp-scheduler.php:150
+msgid "Database Name "
+msgstr "قاعدة بيانات الاسم"
+
+#: views/db-optimizer.php:71 views/db-scheduler.php:71
+#: views/wp-optimizer.php:177 views/wp-scheduler.php:156
+msgid "Database User "
+msgstr "قاعدة بيانات العضو"
+
+#: views/db-optimizer.php:77 views/db-scheduler.php:77
+#: views/wp-optimizer.php:183 views/wp-scheduler.php:162
+msgid "Database Type "
+msgstr " قاعدة بيانات  نوع"
+
+#: views/db-optimizer.php:85 views/db-scheduler.php:85
+#: views/wp-optimizer.php:191 views/wp-scheduler.php:170
+msgid "Database Version"
+msgstr "إصدار قاعدة البيانات"
+
+#: views/db-optimizer.php:99 views/db-scheduler.php:99
+#: views/wp-optimizer.php:205 views/wp-scheduler.php:184
+msgid "Manage Trackbacks / Comments"
+msgstr "إدارة تركبكس / تعليقات"
+
+#: views/db-optimizer.php:103 views/db-scheduler.php:103
+#: views/wp-optimizer.php:209 views/wp-scheduler.php:188
+msgid "Trackbacks"
+msgstr "تركبكس"
+
+#: views/db-optimizer.php:109 views/db-optimizer.php:116
+#: views/db-optimizer.php:130 views/db-optimizer.php:137
+#: views/db-scheduler.php:109 views/db-scheduler.php:116
+#: views/db-scheduler.php:130 views/db-scheduler.php:137
+#: views/wp-optimizer.php:215 views/wp-optimizer.php:222
+#: views/wp-optimizer.php:236 views/wp-optimizer.php:243
+#: views/wp-scheduler.php:194 views/wp-scheduler.php:201
+#: views/wp-scheduler.php:215 views/wp-scheduler.php:222
+msgid "Enable"
+msgstr "تمكين"
+
+#: views/db-optimizer.php:110 views/db-optimizer.php:117
+#: views/db-optimizer.php:131 views/db-optimizer.php:138
+#: views/db-scheduler.php:110 views/db-scheduler.php:117
+#: views/db-scheduler.php:131 views/db-scheduler.php:138
+#: views/wp-optimizer.php:216 views/wp-optimizer.php:223
+#: views/wp-optimizer.php:237 views/wp-optimizer.php:244
+#: views/wp-scheduler.php:195 views/wp-scheduler.php:202
+#: views/wp-scheduler.php:216 views/wp-scheduler.php:223
+msgid "Disable"
+msgstr "تعطيل"
+
+#: views/db-optimizer.php:124 views/db-scheduler.php:124
+#: views/wp-optimizer.php:230 views/wp-scheduler.php:209
+msgid "Comments"
+msgstr "تعليقات"
+
+#: views/db-optimizer.php:150 views/wp-optimizer.php:256
+msgid "Bulk Action"
+msgstr "إجراء جملة"
+
+#: views/db-optimizer.php:151 views/db-scheduler.php:233
+#: views/wp-optimizer.php:257 views/wp-optimizer.php:282
+#: views/wp-optimizer.php:296 views/wp-optimizer.php:310
+#: views/wp-optimizer.php:324 views/wp-optimizer.php:338
+#: views/wp-optimizer.php:352 views/wp-optimizer.php:366
+#: views/wp-optimizer.php:380 views/wp-optimizer.php:394
+#: views/wp-optimizer.php:408 views/wp-optimizer.php:422
+#: views/wp-optimizer.php:436 views/wp-optimizer.php:450
+msgid "Clean"
+msgstr "نظيفة"
+
+#: views/db-optimizer.php:152 views/db-scheduler.php:234
+msgid "Delete"
+msgstr "حذف"
+
+#: views/db-optimizer.php:153 views/db-scheduler.php:235
+msgid "Optimize"
+msgstr "تحسين أمثلية"
+
+#: views/db-optimizer.php:154 views/db-scheduler.php:236
+msgid "Repair"
+msgstr "تصليح"
+
+#: views/db-optimizer.php:156 views/wp-optimizer.php:259
+msgid "Apply"
+msgstr "تنطبق"
+
+#: views/db-optimizer.php:162 views/db-scheduler.php:158
+msgid "Table"
+msgstr "الجدول"
+
+#: views/db-optimizer.php:163
+msgid "Rows"
+msgstr "الصفوف"
+
+#: views/db-optimizer.php:164
+msgid "Type"
+msgstr "نوع"
+
+#: views/db-optimizer.php:165
+msgid "Over<br/>Head"
+msgstr "على مدى رئيس"
+
+#: views/db-optimizer.php:166 views/db-scheduler.php:160
+msgid "Size"
+msgstr "حجم"
+
+#: views/db-optimizer.php:167 views/wp-optimizer.php:267
+msgid "Action"
+msgstr "إجراء"
+
+#: views/db-optimizer.php:246 views/db-scheduler.php:212
+msgid "Total"
+msgstr "إجمالي"
+
+#: views/db-optimizer.php:378
+msgid "Cleaned Successfully!"
+msgstr "بنجاح تنظيفها!"
+
+#: views/db-optimizer.php:381
+msgid "Deleted Successfully!"
+msgstr "حذف بنجاح!"
+
+#: views/db-optimizer.php:384
+msgid "Optimized Successfully!"
+msgstr "الأمثل - بنجاح!"
+
+#: views/db-optimizer.php:387
+msgid "Repaired Successfully!"
+msgstr "إصلاحه بنجاح!"
+
+#: views/db-optimizer.php:392
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "هل أنت متأكد من، تريد تنفيذ هذا الإجراءات؟"
+
+#: views/db-optimizer.php:404
+msgid "Please choose Action to proceed!."
+msgstr "الرجاء اختيار الأكشن على المضي قدما!"
+
+#: views/db-optimizer.php:410 views/wp-optimizer.php:502
+#: views/wp-optimizer.php:517
+msgid "Are you sure, you want to Clean?"
+msgstr "هل أنت متأكد، تريد تنظيف؟"
+
+#: views/db-optimizer.php:423
+msgid "Are you sure, you want to Delete?"
+msgstr "هل أنت متأكد، وتريد أن تحذف؟"
+
+#: views/db-optimizer.php:443
+msgid "Are you sure, you want to Optimize?"
+msgstr "هل أنت متأكد، تريد تحسين أمثلية؟"
+
+#: views/db-optimizer.php:455
+msgid "Are you sure, you want to Repair?"
+msgstr "هل أنت متأكد من، تريد-إصلاحها؟"
+
+#: views/db-scheduler.php:43
+msgid "Schedule Database Optimizer"
+msgstr "الجدول الزمني قاعدة البيانات للمحسن"
+
+#: views/db-scheduler.php:152
+msgid "Choose Tables"
+msgstr "اختيار طاولات"
+
+#: views/db-scheduler.php:159
+msgid "Total Rows"
+msgstr "إجمالي الصفوف"
+
+#: views/db-scheduler.php:224 views/wp-scheduler.php:358
+msgid "Configure Scheduler"
+msgstr "تكوين برنامج جدولة"
+
+#: views/db-scheduler.php:230
+msgid "Action "
+msgstr "إجراء"
+
+#: views/db-scheduler.php:241 views/wp-scheduler.php:362
+msgid "Duration "
+msgstr "المدة"
+
+#: views/db-scheduler.php:244 views/wp-scheduler.php:365
+msgid "Daily"
+msgstr "يوميا"
+
+#: views/db-scheduler.php:245 views/wp-scheduler.php:366
+msgid "Weekly"
+msgstr "أسبوعيا"
+
+#: views/db-scheduler.php:246 views/wp-scheduler.php:367
+msgid "Biweekly"
+msgstr "أسبوعيا ثنائية"
+
+#: views/db-scheduler.php:247 views/wp-scheduler.php:368
+msgid "Monthly"
+msgstr "شهريا"
+
+#: views/db-scheduler.php:248 views/wp-scheduler.php:369
+msgid "Quarterly"
+msgstr "الفصلية"
+
+#: views/db-scheduler.php:249 views/wp-scheduler.php:370
+msgid "Half-Yearly"
+msgstr "نصف سنوي"
+
+#: views/db-scheduler.php:250 views/wp-scheduler.php:371
+msgid "Annually"
+msgstr "سنويا"
+
+#: views/db-scheduler.php:268
+msgid "Manage Database Optimizer Schedules"
+msgstr "إدارة قاعدة بيانات للمحسن الجداول الزمنية"
+
+#: views/db-scheduler.php:275
+msgid "Tables"
+msgstr "طاولات"
+
+#: views/db-scheduler.php:276
+msgid "Action Type"
+msgstr "الأكشن النوع "
+
+#: views/db-scheduler.php:277 views/wp-scheduler.php:395
+msgid "Start Date"
+msgstr "البدء تاريخ"
+
+#: views/db-scheduler.php:278 views/wp-scheduler.php:396
+msgid "Next Execution"
+msgstr "القادم إعدام"
+
+#: views/db-scheduler.php:279 views/wp-scheduler.php:397
+msgid "Scheduler Type"
+msgstr "برنامج جدولة النوع"
+
+#: views/db-scheduler.php:461 views/wp-scheduler.php:596
+msgid "Are you sure, you want to save the Scheduler?"
+msgstr "هل أنت متأكد، تريد حفظ المجدول؟"
+
+#: views/db-scheduler.php:472
+msgid "Please choose tables and action to configure Scheduler!"
+msgstr "الرجاء اختيار الجداول و إجراء الى قم بتكوين برنامج جدولة"
+
+#: views/db-scheduler.php:478 views/wp-scheduler.php:614
+msgid "Are you sure, you want to Delete this Scheduler?"
+msgstr "هل أنت متأكد، تريد حذف هذا المجدول؟"
+
+#: views/licensing.php:27
+msgid "Wp Clean Up Optimizer Licensing Module"
+msgstr "Wp  تنظيف للأعلى للمحسن منح التراخيص الوحدة النمطية "
+
+#: views/licensing.php:75
+msgid "Update"
+msgstr "التحديث"
+
+#: views/licensing.php:105
+msgid "Success! Settings have been updated."
+msgstr "النجاح! تم تحديث الإعدادات."
+
+#: views/wp-cleanup-optimizer-system-status.php:30
+msgid "Wp Clean Up Optimizer System Status"
+msgstr "WP تنظيف للأعلى للمحسن النظام الحالة"
+
+#: views/wp-cleanup-optimizer-system-status.php:34
+msgid "Get System Report"
+msgstr "احصل على تقرير النظام"
+
+#: views/wp-cleanup-optimizer-system-status.php:38
+msgid "Close System Report"
+msgstr " الوثيق تقرير النظام"
+
+#: views/wp-cleanup-optimizer-system-status.php:107
+msgid "Default"
+msgstr "الافتراضي"
+
+#: views/wp-optimizer.php:265 views/wp-scheduler.php:243
+#: views/wp-scheduler.php:394
+msgid "Type of Data"
+msgstr "نوع البيانات"
+
+#: views/wp-optimizer.php:266
+msgid "Count"
+msgstr "نعول"
+
+#: views/wp-optimizer.php:528
+msgid "Please choose Action to Proceed!"
+msgstr "الرجاء اختيار الأكشن على المضي قدما!"
+
+#: views/wp-scheduler.php:133
+msgid "Schedule WP Data Optimizer"
+msgstr "الجداول الزمنية - wp بيانات محسن الأمثلية "
+
+#: views/wp-scheduler.php:237
+msgid "Choose Type of Data"
+msgstr "Translation:"
+
+#: views/wp-scheduler.php:387
+msgid "Manage Wp Data Optimizer Schedules"
+msgstr "إدارة - wp بيانات محسن الأمثلية الجداول الزمنية "
+
+#: views/wp-scheduler.php:607
+msgid "Please choose type of Data to Configure Scheduler!"
+msgstr "الرجاء اختيار نوع من بيانات لتكوين برنامج جدولة! "
+
+#: wp-cleanup-optimizer-pro-edition.php:364
+#: wp-cleanup-optimizer-pro-edition.php:396
+#: wp-cleanup-optimizer-pro-edition.php:428
+msgid "Wp DB Optimizer"
+msgstr "الفسفور الابيض للمحسن DB"
+
+#~ msgid "Action : "
+#~ msgstr "الأكشن"

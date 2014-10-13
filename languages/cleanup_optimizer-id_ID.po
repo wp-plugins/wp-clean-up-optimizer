@@ -1,0 +1,403 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-09-12 16:13+0530\n"
+"PO-Revision-Date: 2014-09-12 16:13+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp-cleanup-optimizer\\wp-content"
+"\\plugins\\wp-clean-up-optimizer-pro-edition\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/wp-nav-menus.php:6 views/wp-optimizer.php:154
+#: wp-cleanup-optimizer-pro-edition.php:358
+#: wp-cleanup-optimizer-pro-edition.php:390
+#: wp-cleanup-optimizer-pro-edition.php:422
+#, fuzzy
+msgid "WP Data Optimizer"
+msgstr "Optimalkan"
+
+#: lib/wp-nav-menus.php:10
+#, fuzzy
+msgid "WP Data Optimizer Scheduler"
+msgstr "Optimalkan"
+
+#: lib/wp-nav-menus.php:14
+#, fuzzy
+msgid "DB Optimizer"
+msgstr "Optimalkan"
+
+#: lib/wp-nav-menus.php:18
+#, fuzzy
+msgid "DB Optimizer Scheduler"
+msgstr "Dioptimalkan Berhasil!"
+
+#: lib/wp-nav-menus.php:22 wp-cleanup-optimizer-pro-edition.php:370
+#: wp-cleanup-optimizer-pro-edition.php:402
+#: wp-cleanup-optimizer-pro-edition.php:434
+msgid "System Status"
+msgstr ""
+
+#: lib/wp-nav-menus.php:26 wp-cleanup-optimizer-pro-edition.php:376
+#: wp-cleanup-optimizer-pro-edition.php:408
+#: wp-cleanup-optimizer-pro-edition.php:440
+msgid "Licensing"
+msgstr ""
+
+#: views/db-optimizer.php:43
+#, fuzzy
+msgid "Database Optimizer"
+msgstr "Optimalkan"
+
+#: views/db-optimizer.php:47 views/db-scheduler.php:47
+msgid ""
+"Note : Table Names highlighted with red color and an asterisk (*) are "
+"wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
+"delete and clean action because they can destroy your Wordpress "
+"unintentionally."
+msgstr ""
+
+#: views/db-optimizer.php:55 views/db-scheduler.php:55
+#: views/wp-optimizer.php:161 views/wp-scheduler.php:140
+msgid "Database Information"
+msgstr ""
+
+#: views/db-optimizer.php:59 views/db-scheduler.php:59
+#: views/wp-optimizer.php:165 views/wp-scheduler.php:144
+#, fuzzy
+msgid "Database Host "
+msgstr "Optimalkan"
+
+#: views/db-optimizer.php:65 views/db-scheduler.php:65
+#: views/wp-optimizer.php:171 views/wp-scheduler.php:150
+#, fuzzy
+msgid "Database Name "
+msgstr "Optimalkan"
+
+#: views/db-optimizer.php:71 views/db-scheduler.php:71
+#: views/wp-optimizer.php:177 views/wp-scheduler.php:156
+#, fuzzy
+msgid "Database User "
+msgstr "Optimalkan"
+
+#: views/db-optimizer.php:77 views/db-scheduler.php:77
+#: views/wp-optimizer.php:183 views/wp-scheduler.php:162
+#, fuzzy
+msgid "Database Type "
+msgstr "Optimalkan"
+
+#: views/db-optimizer.php:85 views/db-scheduler.php:85
+#: views/wp-optimizer.php:191 views/wp-scheduler.php:170
+#, fuzzy
+msgid "Database Version"
+msgstr "Optimalkan"
+
+#: views/db-optimizer.php:99 views/db-scheduler.php:99
+#: views/wp-optimizer.php:205 views/wp-scheduler.php:184
+msgid "Manage Trackbacks / Comments"
+msgstr ""
+
+#: views/db-optimizer.php:103 views/db-scheduler.php:103
+#: views/wp-optimizer.php:209 views/wp-scheduler.php:188
+msgid "Trackbacks"
+msgstr ""
+
+#: views/db-optimizer.php:109 views/db-optimizer.php:116
+#: views/db-optimizer.php:130 views/db-optimizer.php:137
+#: views/db-scheduler.php:109 views/db-scheduler.php:116
+#: views/db-scheduler.php:130 views/db-scheduler.php:137
+#: views/wp-optimizer.php:215 views/wp-optimizer.php:222
+#: views/wp-optimizer.php:236 views/wp-optimizer.php:243
+#: views/wp-scheduler.php:194 views/wp-scheduler.php:201
+#: views/wp-scheduler.php:215 views/wp-scheduler.php:222
+#, fuzzy
+msgid "Enable"
+msgstr "meja"
+
+#: views/db-optimizer.php:110 views/db-optimizer.php:117
+#: views/db-optimizer.php:131 views/db-optimizer.php:138
+#: views/db-scheduler.php:110 views/db-scheduler.php:117
+#: views/db-scheduler.php:131 views/db-scheduler.php:138
+#: views/wp-optimizer.php:216 views/wp-optimizer.php:223
+#: views/wp-optimizer.php:237 views/wp-optimizer.php:244
+#: views/wp-scheduler.php:195 views/wp-scheduler.php:202
+#: views/wp-scheduler.php:216 views/wp-scheduler.php:223
+#, fuzzy
+msgid "Disable"
+msgstr "meja"
+
+#: views/db-optimizer.php:124 views/db-scheduler.php:124
+#: views/wp-optimizer.php:230 views/wp-scheduler.php:209
+msgid "Comments"
+msgstr ""
+
+#: views/db-optimizer.php:150 views/wp-optimizer.php:256
+msgid "Bulk Action"
+msgstr "Curah aksi"
+
+#: views/db-optimizer.php:151 views/db-scheduler.php:233
+#: views/wp-optimizer.php:257 views/wp-optimizer.php:282
+#: views/wp-optimizer.php:296 views/wp-optimizer.php:310
+#: views/wp-optimizer.php:324 views/wp-optimizer.php:338
+#: views/wp-optimizer.php:352 views/wp-optimizer.php:366
+#: views/wp-optimizer.php:380 views/wp-optimizer.php:394
+#: views/wp-optimizer.php:408 views/wp-optimizer.php:422
+#: views/wp-optimizer.php:436 views/wp-optimizer.php:450
+msgid "Clean"
+msgstr "Bersihkan"
+
+#: views/db-optimizer.php:152 views/db-scheduler.php:234
+msgid "Delete"
+msgstr "Melenyapkan"
+
+#: views/db-optimizer.php:153 views/db-scheduler.php:235
+msgid "Optimize"
+msgstr "Optimalkan"
+
+#: views/db-optimizer.php:154 views/db-scheduler.php:236
+msgid "Repair"
+msgstr "Perbaikan"
+
+#: views/db-optimizer.php:156 views/wp-optimizer.php:259
+msgid "Apply"
+msgstr "Terapkan"
+
+#: views/db-optimizer.php:162 views/db-scheduler.php:158
+msgid "Table"
+msgstr "meja"
+
+#: views/db-optimizer.php:163
+msgid "Rows"
+msgstr ""
+
+#: views/db-optimizer.php:164
+msgid "Type"
+msgstr ""
+
+#: views/db-optimizer.php:165
+msgid "Over<br/>Head"
+msgstr ""
+
+#: views/db-optimizer.php:166 views/db-scheduler.php:160
+msgid "Size"
+msgstr "ukurannya"
+
+#: views/db-optimizer.php:167 views/wp-optimizer.php:267
+msgid "Action"
+msgstr "Aksi"
+
+#: views/db-optimizer.php:246 views/db-scheduler.php:212
+msgid "Total"
+msgstr "total"
+
+#: views/db-optimizer.php:378
+msgid "Cleaned Successfully!"
+msgstr "Dibersihkan Berhasil!"
+
+#: views/db-optimizer.php:381
+msgid "Deleted Successfully!"
+msgstr "Dihapus Berhasil!"
+
+#: views/db-optimizer.php:384
+msgid "Optimized Successfully!"
+msgstr "Dioptimalkan Berhasil!"
+
+#: views/db-optimizer.php:387
+msgid "Repaired Successfully!"
+msgstr "Diperbaiki Berhasil!"
+
+#: views/db-optimizer.php:392
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "Apakah Anda yakin, Anda ingin melaksanakan Aksi ini?"
+
+#: views/db-optimizer.php:404
+#, fuzzy
+msgid "Please choose Action to proceed!."
+msgstr "Silakan Pilihlah Aksi Pertama."
+
+#: views/db-optimizer.php:410 views/wp-optimizer.php:502
+#: views/wp-optimizer.php:517
+msgid "Are you sure, you want to Clean?"
+msgstr "Apakah Anda yakin, Anda ingin Bersihkan?"
+
+#: views/db-optimizer.php:423
+msgid "Are you sure, you want to Delete?"
+msgstr "Apakah Anda yakin, Anda ingin Hapus?"
+
+#: views/db-optimizer.php:443
+msgid "Are you sure, you want to Optimize?"
+msgstr "Apakah Anda yakin, Anda ingin Optimalkan?"
+
+#: views/db-optimizer.php:455
+msgid "Are you sure, you want to Repair?"
+msgstr "Apakah Anda yakin, Anda ingin Perbaikan?"
+
+#: views/db-scheduler.php:43
+msgid "Schedule Database Optimizer"
+msgstr ""
+
+#: views/db-scheduler.php:152
+msgid "Choose Tables"
+msgstr ""
+
+#: views/db-scheduler.php:159
+msgid "Total Rows"
+msgstr "Keseluruhan Deretan"
+
+#: views/db-scheduler.php:224 views/wp-scheduler.php:358
+msgid "Configure Scheduler"
+msgstr ""
+
+#: views/db-scheduler.php:230
+#, fuzzy
+msgid "Action "
+msgstr "Aksi"
+
+#: views/db-scheduler.php:241 views/wp-scheduler.php:362
+msgid "Duration "
+msgstr ""
+
+#: views/db-scheduler.php:244 views/wp-scheduler.php:365
+msgid "Daily"
+msgstr ""
+
+#: views/db-scheduler.php:245 views/wp-scheduler.php:366
+msgid "Weekly"
+msgstr ""
+
+#: views/db-scheduler.php:246 views/wp-scheduler.php:367
+msgid "Biweekly"
+msgstr ""
+
+#: views/db-scheduler.php:247 views/wp-scheduler.php:368
+msgid "Monthly"
+msgstr ""
+
+#: views/db-scheduler.php:248 views/wp-scheduler.php:369
+msgid "Quarterly"
+msgstr ""
+
+#: views/db-scheduler.php:249 views/wp-scheduler.php:370
+msgid "Half-Yearly"
+msgstr ""
+
+#: views/db-scheduler.php:250 views/wp-scheduler.php:371
+msgid "Annually"
+msgstr ""
+
+#: views/db-scheduler.php:268
+msgid "Manage Database Optimizer Schedules"
+msgstr ""
+
+#: views/db-scheduler.php:275
+#, fuzzy
+msgid "Tables"
+msgstr "meja"
+
+#: views/db-scheduler.php:276
+#, fuzzy
+msgid "Action Type"
+msgstr "Aksi"
+
+#: views/db-scheduler.php:277 views/wp-scheduler.php:395
+msgid "Start Date"
+msgstr ""
+
+#: views/db-scheduler.php:278 views/wp-scheduler.php:396
+msgid "Next Execution"
+msgstr ""
+
+#: views/db-scheduler.php:279 views/wp-scheduler.php:397
+msgid "Scheduler Type"
+msgstr ""
+
+#: views/db-scheduler.php:461 views/wp-scheduler.php:596
+#, fuzzy
+msgid "Are you sure, you want to save the Scheduler?"
+msgstr "Apakah Anda yakin, Anda ingin Hapus?"
+
+#: views/db-scheduler.php:472
+msgid "Please choose tables and action to configure Scheduler!"
+msgstr ""
+
+#: views/db-scheduler.php:478 views/wp-scheduler.php:614
+#, fuzzy
+msgid "Are you sure, you want to Delete this Scheduler?"
+msgstr "Apakah Anda yakin, Anda ingin Hapus?"
+
+#: views/licensing.php:27
+msgid "Wp Clean Up Optimizer Licensing Module"
+msgstr ""
+
+#: views/licensing.php:75
+msgid "Update"
+msgstr ""
+
+#: views/licensing.php:105
+msgid "Success! Settings have been updated."
+msgstr ""
+
+#: views/wp-cleanup-optimizer-system-status.php:30
+msgid "Wp Clean Up Optimizer System Status"
+msgstr ""
+
+#: views/wp-cleanup-optimizer-system-status.php:34
+msgid "Get System Report"
+msgstr ""
+
+#: views/wp-cleanup-optimizer-system-status.php:38
+msgid "Close System Report"
+msgstr ""
+
+#: views/wp-cleanup-optimizer-system-status.php:107
+msgid "Default"
+msgstr ""
+
+#: views/wp-optimizer.php:265 views/wp-scheduler.php:243
+#: views/wp-scheduler.php:394
+msgid "Type of Data"
+msgstr "Jenis dari Data yang"
+
+#: views/wp-optimizer.php:266
+msgid "Count"
+msgstr "hitung"
+
+#: views/wp-optimizer.php:528
+#, fuzzy
+msgid "Please choose Action to Proceed!"
+msgstr "Silakan Pilihlah Aksi Pertama."
+
+#: views/wp-scheduler.php:133
+msgid "Schedule WP Data Optimizer"
+msgstr ""
+
+#: views/wp-scheduler.php:237
+#, fuzzy
+msgid "Choose Type of Data"
+msgstr "Jenis dari Data yang"
+
+#: views/wp-scheduler.php:387
+msgid "Manage Wp Data Optimizer Schedules"
+msgstr ""
+
+#: views/wp-scheduler.php:607
+msgid "Please choose type of Data to Configure Scheduler!"
+msgstr ""
+
+#: wp-cleanup-optimizer-pro-edition.php:364
+#: wp-cleanup-optimizer-pro-edition.php:396
+#: wp-cleanup-optimizer-pro-edition.php:428
+#, fuzzy
+msgid "Wp DB Optimizer"
+msgstr "Optimalkan"
+
+#, fuzzy
+#~ msgid "Action : "
+#~ msgstr "Aksi"

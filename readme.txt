@@ -4,7 +4,7 @@ Tags: admin, AJAX, automatic, clean, cleaner, cleanup, comments, database, delet
 License: GPLv2
 Requires at least: 2.7
 Tested up to: 4.0
-Stable tag: 1.2
+Stable tag: 1.3
 
 WP Clean Up Optimizer helps you to extensively clean up your WordPress Database and Optimize it without doing manual queries.
 == Description ==
@@ -107,6 +107,10 @@ After downloading the ZIP file,
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Changelog ==
+
+= 1.1 =
+
+* WP Clean Up Optimizer Languages Updated
 
 = 1.2 =
 

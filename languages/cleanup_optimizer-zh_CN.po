@@ -1,0 +1,280 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-10-11 16:48+0530\n"
+"PO-Revision-Date: 2014-10-13 09:58+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wp-cleanup-optimizer\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/nav-menus.php:31 lib/top-bar-menu.php:28 lib/top-bar-menu.php:54
+#: lib/top-bar-menu.php:80 views/wp-optimizer.php:153
+msgid "WP Data Optimizer"
+msgstr "WP数据最佳化工具"
+
+#: lib/nav-menus.php:35
+msgid "DB Optimizer"
+msgstr "数据库最佳化工具"
+
+#: lib/top-bar-menu.php:34 lib/top-bar-menu.php:60 lib/top-bar-menu.php:86
+msgid "WP DB Optimizer"
+msgstr "WP数据库最佳化工具"
+
+#: lib/top-bar-menu.php:40 lib/top-bar-menu.php:66 lib/top-bar-menu.php:92
+msgid "System Status"
+msgstr "系统状态"
+
+#: views/db-optimizer.php:24
+msgid "GB"
+msgstr ""
+
+#: views/db-optimizer.php:26
+msgid "MB"
+msgstr ""
+
+#: views/db-optimizer.php:28
+msgid "KB"
+msgstr ""
+
+#: views/db-optimizer.php:30
+msgid "bytes"
+msgstr ""
+
+#: views/db-optimizer.php:47
+msgid "Database Optimizer"
+msgstr "数据库的优化器"
+
+#: views/db-optimizer.php:51
+msgid ""
+"Note : Table Names highlighted with red color and an asterisk (*) are "
+"wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
+"delete and clean action because they can destroy your Wordpress "
+"unintentionally."
+msgstr ""
+"注：表名突出了红色和一个星号（*）的WordPress的内置表。 <BR/>他们被我们禁止，"
+"因此不进行删除和清理行动，因为他们可以无意地摧毁你的WordPress。"
+
+#: views/db-optimizer.php:58 views/wp-optimizer.php:159
+msgid "Database Information"
+msgstr "数据库信息"
+
+#: views/db-optimizer.php:62 views/wp-optimizer.php:163
+msgid "Database Host "
+msgstr "数据库主机"
+
+#: views/db-optimizer.php:68 views/wp-optimizer.php:169
+msgid "Database Name "
+msgstr "数据库名称"
+
+#: views/db-optimizer.php:74 views/wp-optimizer.php:175
+msgid "Database User "
+msgstr "数据库用户"
+
+#: views/db-optimizer.php:80 views/wp-optimizer.php:181
+msgid "Database Type "
+msgstr "数据库类型"
+
+#: views/db-optimizer.php:88 views/wp-optimizer.php:189
+msgid "Database Version"
+msgstr "数据库版本"
+
+#: views/db-optimizer.php:101 views/wp-optimizer.php:202
+msgid "Manage Trackbacks / Comments"
+msgstr "管理搬场/评论"
+
+#: views/db-optimizer.php:105 views/wp-optimizer.php:206
+msgid "Trackbacks"
+msgstr "搬场"
+
+#: views/db-optimizer.php:111 views/db-optimizer.php:118
+#: views/db-optimizer.php:132 views/db-optimizer.php:139
+#: views/wp-optimizer.php:212 views/wp-optimizer.php:219
+#: views/wp-optimizer.php:233 views/wp-optimizer.php:240
+#, fuzzy
+msgid "Enable"
+msgstr "表"
+
+#: views/db-optimizer.php:112 views/db-optimizer.php:119
+#: views/db-optimizer.php:133 views/db-optimizer.php:140
+#: views/wp-optimizer.php:213 views/wp-optimizer.php:220
+#: views/wp-optimizer.php:234 views/wp-optimizer.php:241
+#, fuzzy
+msgid "Disable"
+msgstr "表"
+
+#: views/db-optimizer.php:126 views/wp-optimizer.php:227
+msgid "Comments"
+msgstr "评论"
+
+#: views/db-optimizer.php:153 views/wp-optimizer.php:254
+msgid "Bulk Action"
+msgstr "批量操作"
+
+#: views/db-optimizer.php:154 views/wp-optimizer.php:255
+#: views/wp-optimizer.php:280 views/wp-optimizer.php:294
+#: views/wp-optimizer.php:308 views/wp-optimizer.php:322
+#: views/wp-optimizer.php:336 views/wp-optimizer.php:350
+#: views/wp-optimizer.php:364 views/wp-optimizer.php:378
+#: views/wp-optimizer.php:392 views/wp-optimizer.php:406
+#: views/wp-optimizer.php:420 views/wp-optimizer.php:434
+#: views/wp-optimizer.php:448
+msgid "Clean"
+msgstr "干净"
+
+#: views/db-optimizer.php:155
+msgid "Delete"
+msgstr "删除"
+
+#: views/db-optimizer.php:157 views/wp-optimizer.php:257
+msgid "Apply"
+msgstr "套用"
+
+#: views/db-optimizer.php:163
+msgid "Table"
+msgstr "表"
+
+#: views/db-optimizer.php:164
+msgid "Rows"
+msgstr "行数"
+
+#: views/db-optimizer.php:165
+msgid "Type"
+msgstr "类型"
+
+#: views/db-optimizer.php:166
+msgid "Size"
+msgstr "尺寸"
+
+#: views/db-optimizer.php:167 views/wp-optimizer.php:265
+msgid "Action"
+msgstr "动作"
+
+#: views/db-optimizer.php:238
+msgid "Total"
+msgstr "总"
+
+#: views/db-optimizer.php:363
+msgid "Are you sure, you want to Delete?"
+msgstr "你确定，你要删除吗？"
+
+#: views/db-optimizer.php:387
+msgid "Cleaned Successfully!"
+msgstr "清洗成功地！"
+
+#: views/db-optimizer.php:390
+msgid "Deleted Successfully!"
+msgstr "删除成功！"
+
+#: views/db-optimizer.php:401
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "你确定吗， 你想要  执行此  行动？"
+
+#: views/db-optimizer.php:419
+#, fuzzy
+msgid "Please choose Action or Table to proceed!."
+msgstr "请  选择 动作  第一。"
+
+#: views/db-optimizer.php:425 views/wp-optimizer.php:502
+#: views/wp-optimizer.php:523
+msgid "Are you sure, you want to Clean?"
+msgstr "你确定，你要清理？"
+
+#: views/db-optimizer.php:451
+msgid "Are you sure, you want to Repair?"
+msgstr "你确定，你要修？"
+
+#: views/wp-cleanup-optimizer-system-status.php:29
+msgid "Wp Clean Up Optimizer System Status"
+msgstr "WP清理优化系统状态"
+
+#: views/wp-cleanup-optimizer-system-status.php:33
+msgid "Get System Report"
+msgstr "获取系统报告"
+
+#: views/wp-cleanup-optimizer-system-status.php:37
+msgid "Close System Report"
+msgstr ""
+
+#: views/wp-cleanup-optimizer-system-status.php:43
+msgid "Environment"
+msgstr ""
+
+#: views/wp-cleanup-optimizer-system-status.php:106
+msgid "Default"
+msgstr ""
+
+#: views/wp-optimizer.php:263
+msgid "Type of Data"
+msgstr "数据类型"
+
+#: views/wp-optimizer.php:264
+msgid "Count"
+msgstr "算"
+
+#: views/wp-optimizer.php:540
+#, fuzzy
+msgid "Please choose Action to Proceed!"
+msgstr "请  选择 动作  第一。"
+
+#, fuzzy
+#~ msgid "WP Data Optimizer Scheduler"
+#~ msgstr "优化"
+
+#, fuzzy
+#~ msgid "DB Optimizer Scheduler"
+#~ msgstr "优化成功地！"
+
+#~ msgid "Optimize"
+#~ msgstr "优化"
+
+#~ msgid "Repair"
+#~ msgstr "修复"
+
+#~ msgid "Optimized Successfully!"
+#~ msgstr "优化成功地！"
+
+#~ msgid "Repaired Successfully!"
+#~ msgstr "修好成功！"
+
+#~ msgid "Are you sure, you want to Optimize?"
+#~ msgstr "你确定，你要优化？"
+
+#~ msgid "Total Rows"
+#~ msgstr "总计排"
+
+#, fuzzy
+#~ msgid "Action "
+#~ msgstr "动作"
+
+#, fuzzy
+#~ msgid "Tables"
+#~ msgstr "表"
+
+#, fuzzy
+#~ msgid "Action Type"
+#~ msgstr "动作"
+
+#, fuzzy
+#~ msgid "Are you sure, you want to save the Scheduler?"
+#~ msgstr "你确定，你要删除吗？"
+
+#, fuzzy
+#~ msgid "Are you sure, you want to Delete this Scheduler?"
+#~ msgstr "你确定，你要删除吗？"
+
+#, fuzzy
+#~ msgid "Choose Type of Data"
+#~ msgstr "数据类型"
+
+#, fuzzy
+#~ msgid "Action : "
+#~ msgstr "动作"

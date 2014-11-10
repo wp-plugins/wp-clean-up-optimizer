@@ -1,0 +1,329 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-10-11 16:43+0530\n"
+"PO-Revision-Date: 2014-10-13 09:56+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wp-cleanup-optimizer\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/nav-menus.php:31 lib/top-bar-menu.php:28 lib/top-bar-menu.php:54
+#: lib/top-bar-menu.php:80 views/wp-optimizer.php:153
+msgid "WP Data Optimizer"
+msgstr "WP Datový Optimalizátor"
+
+#: lib/nav-menus.php:35
+msgid "DB Optimizer"
+msgstr "DB Optimizer"
+
+#: lib/top-bar-menu.php:34 lib/top-bar-menu.php:60 lib/top-bar-menu.php:86
+msgid "WP DB Optimizer"
+msgstr "WP DB Optimizer"
+
+#: lib/top-bar-menu.php:40 lib/top-bar-menu.php:66 lib/top-bar-menu.php:92
+msgid "System Status"
+msgstr "Stav Systému"
+
+#: views/db-optimizer.php:24
+msgid "GB"
+msgstr "GB"
+
+#: views/db-optimizer.php:26
+msgid "MB"
+msgstr "MB"
+
+#: views/db-optimizer.php:28
+msgid "KB"
+msgstr "KB"
+
+#: views/db-optimizer.php:30
+msgid "bytes"
+msgstr "bytes"
+
+#: views/db-optimizer.php:47
+msgid "Database Optimizer"
+msgstr "Databázi Optimalizátor"
+
+#: views/db-optimizer.php:51
+msgid ""
+"Note : Table Names highlighted with red color and an asterisk (*) are "
+"wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
+"delete and clean action because they can destroy your Wordpress "
+"unintentionally."
+msgstr ""
+"Poznámka: Tabulka Jména Zvýrazněné s červené barevný a hvězdička (*) jsou "
+"wordpress vestavěný Tabulky. <br/> oni jsou zakázána podle nás tak - ne na "
+"provést smazat a čistotě žalobu protože mohou zničit váš Wordpress neúmyslně."
+
+#: views/db-optimizer.php:58 views/wp-optimizer.php:159
+msgid "Database Information"
+msgstr "databáze Informace"
+
+#: views/db-optimizer.php:62 views/wp-optimizer.php:163
+msgid "Database Host "
+msgstr "Database Host"
+
+#: views/db-optimizer.php:68 views/wp-optimizer.php:169
+msgid "Database Name "
+msgstr "Database Navn"
+
+#: views/db-optimizer.php:74 views/wp-optimizer.php:175
+msgid "Database User "
+msgstr "Database Bruger"
+
+#: views/db-optimizer.php:80 views/wp-optimizer.php:181
+msgid "Database Type "
+msgstr "Database type"
+
+#: views/db-optimizer.php:88 views/wp-optimizer.php:189
+msgid "Database Version"
+msgstr "Database Version"
+
+#: views/db-optimizer.php:101 views/wp-optimizer.php:202
+msgid "Manage Trackbacks / Comments"
+msgstr "Správa Zpětné odkazy / komentáře"
+
+#: views/db-optimizer.php:105 views/wp-optimizer.php:206
+msgid "Trackbacks"
+msgstr "Zpětné odkazy"
+
+#: views/db-optimizer.php:111 views/db-optimizer.php:118
+#: views/db-optimizer.php:132 views/db-optimizer.php:139
+#: views/wp-optimizer.php:212 views/wp-optimizer.php:219
+#: views/wp-optimizer.php:233 views/wp-optimizer.php:240
+msgid "Enable"
+msgstr "Aktiver"
+
+#: views/db-optimizer.php:112 views/db-optimizer.php:119
+#: views/db-optimizer.php:133 views/db-optimizer.php:140
+#: views/wp-optimizer.php:213 views/wp-optimizer.php:220
+#: views/wp-optimizer.php:234 views/wp-optimizer.php:241
+msgid "Disable"
+msgstr "Deaktiver"
+
+#: views/db-optimizer.php:126 views/wp-optimizer.php:227
+msgid "Comments"
+msgstr "Komentáře"
+
+#: views/db-optimizer.php:153 views/wp-optimizer.php:254
+msgid "Bulk Action"
+msgstr "Sypná Akční"
+
+#: views/db-optimizer.php:154 views/wp-optimizer.php:255
+#: views/wp-optimizer.php:280 views/wp-optimizer.php:294
+#: views/wp-optimizer.php:308 views/wp-optimizer.php:322
+#: views/wp-optimizer.php:336 views/wp-optimizer.php:350
+#: views/wp-optimizer.php:364 views/wp-optimizer.php:378
+#: views/wp-optimizer.php:392 views/wp-optimizer.php:406
+#: views/wp-optimizer.php:420 views/wp-optimizer.php:434
+#: views/wp-optimizer.php:448
+msgid "Clean"
+msgstr "Vyčistěte"
+
+#: views/db-optimizer.php:155
+msgid "Delete"
+msgstr "vymazat"
+
+#: views/db-optimizer.php:157 views/wp-optimizer.php:257
+msgid "Apply"
+msgstr "Aplikujte"
+
+#: views/db-optimizer.php:163
+msgid "Table"
+msgstr "Tabulka"
+
+#: views/db-optimizer.php:164
+msgid "Rows"
+msgstr "řádky"
+
+#: views/db-optimizer.php:165
+msgid "Type"
+msgstr "Type"
+
+#: views/db-optimizer.php:166
+msgid "Size"
+msgstr "Velikost"
+
+#: views/db-optimizer.php:167 views/wp-optimizer.php:265
+msgid "Action"
+msgstr "Akční"
+
+#: views/db-optimizer.php:238
+msgid "Total"
+msgstr "Celkem"
+
+#: views/db-optimizer.php:363
+msgid "Are you sure, you want to Delete?"
+msgstr "Jste si jisti, že chcete vymazat?"
+
+#: views/db-optimizer.php:387
+msgid "Cleaned Successfully!"
+msgstr "Čištěny úspěšně!"
+
+#: views/db-optimizer.php:390
+msgid "Deleted Successfully!"
+msgstr "Úspěšně Smazána!"
+
+#: views/db-optimizer.php:401
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "Jste si jisti, že chcete provést tuto akci?"
+
+#: views/db-optimizer.php:419
+msgid "Please choose Action or Table to proceed!."
+msgstr "Vælg venligst aktion eller tabel for at fortsætte!."
+
+#: views/db-optimizer.php:425 views/wp-optimizer.php:502
+#: views/wp-optimizer.php:523
+msgid "Are you sure, you want to Clean?"
+msgstr "Jste si jisti, že chcete Vyčistěte?"
+
+#: views/db-optimizer.php:451
+msgid "Are you sure, you want to Repair?"
+msgstr "Jste si jisti, že chcete opravna?"
+
+#: views/wp-cleanup-optimizer-system-status.php:29
+msgid "Wp Clean Up Optimizer System Status"
+msgstr "Wp Clean Up System Optimizer status"
+
+#: views/wp-cleanup-optimizer-system-status.php:33
+msgid "Get System Report"
+msgstr "Get system report"
+
+#: views/wp-cleanup-optimizer-system-status.php:37
+msgid "Close System Report"
+msgstr "Close Systémová zpráva"
+
+#: views/wp-cleanup-optimizer-system-status.php:43
+msgid "Environment"
+msgstr "Životní prostředí"
+
+#: views/wp-cleanup-optimizer-system-status.php:106
+msgid "Default"
+msgstr "Default"
+
+#: views/wp-optimizer.php:263
+msgid "Type of Data"
+msgstr "Typ z Dat"
+
+#: views/wp-optimizer.php:264
+msgid "Count"
+msgstr "hrabě"
+
+#: views/wp-optimizer.php:540
+msgid "Please choose Action to Proceed!"
+msgstr "Prosím, vybrat Žaloba postupovat!"
+
+#, fuzzy
+#~ msgid "WP Data Optimizer Scheduler"
+#~ msgstr "Spravovat Wp Datový Optimalizátor rozvrhů"
+
+#, fuzzy
+#~ msgid "DB Optimizer Scheduler"
+#~ msgstr "Spravovat Wp Datový Optimalizátor rozvrhů"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimalizujte"
+
+#~ msgid "Repair"
+#~ msgstr "Opravna"
+
+#~ msgid "Optimized Successfully!"
+#~ msgstr "Optimalizované úspěšně!"
+
+#~ msgid "Repaired Successfully!"
+#~ msgstr "Opravené úspěšně!"
+
+#~ msgid "Are you sure, you want to Optimize?"
+#~ msgstr "Jste si jisti, že chcete Optimalizujte?"
+
+#~ msgid "Schedule Database Optimizer"
+#~ msgstr "Harmonogram Databázi Optimalizátor"
+
+#~ msgid "Choose Tables"
+#~ msgstr "Vybrat Stoly"
+
+#~ msgid "Total Rows"
+#~ msgstr "Celkem Řádky"
+
+#~ msgid "Configure Scheduler"
+#~ msgstr "Konfigurace plánovače"
+
+#, fuzzy
+#~ msgid "Action "
+#~ msgstr "Akční"
+
+#, fuzzy
+#~ msgid "Duration "
+#~ msgstr "Doba trvání"
+
+#~ msgid "Daily"
+#~ msgstr "Denní"
+
+#~ msgid "Weekly"
+#~ msgstr "Týdenní"
+
+#~ msgid "Biweekly"
+#~ msgstr "jednou za dva týdny"
+
+#~ msgid "Monthly"
+#~ msgstr "Měsíčně"
+
+#~ msgid "Quarterly"
+#~ msgstr "Čtvrtletní"
+
+#~ msgid "Half-Yearly"
+#~ msgstr "Půlročních"
+
+#~ msgid "Annually"
+#~ msgstr "každoročně"
+
+#~ msgid "Manage Database Optimizer Schedules"
+#~ msgstr "Spravovat Optimalizátor databázi řády"
+
+#~ msgid "Tables"
+#~ msgstr "Stoly"
+
+#~ msgid "Action Type"
+#~ msgstr "Akce Typu"
+
+#~ msgid "Start Date"
+#~ msgstr "Počáteční datum"
+
+#~ msgid "Next Execution"
+#~ msgstr "příští Poprava "
+
+#~ msgid "Scheduler Type"
+#~ msgstr "Plánovač Typ"
+
+#~ msgid "Are you sure, you want to save the Scheduler?"
+#~ msgstr "Jste si jisti, že chcete uložit služby Plánovač?"
+
+#~ msgid "Please choose tables and action to configure Scheduler!"
+#~ msgstr "Prosím, vyberte tabulky a žalobu ke konfiguraci Plánovač!"
+
+#~ msgid "Are you sure, you want to Delete this Scheduler?"
+#~ msgstr "Jste si jisti, že chcete odstranit tento služby Plánovač?"
+
+#~ msgid "Schedule WP Data Optimizer"
+#~ msgstr "Harmonogram wp Datový ptimalizátor "
+
+#~ msgid "Choose Type of Data"
+#~ msgstr "Zvolte typ dat,"
+
+#~ msgid "Manage Wp Data Optimizer Schedules"
+#~ msgstr "Spravovat Wp Datový Optimalizátor rozvrhů"
+
+#~ msgid "Please choose type of Data to Configure Scheduler!"
+#~ msgstr "Prosím, vyberte typ Datový nakonfigurovat služby Plánovač!"
+
+#~ msgid "Action : "
+#~ msgstr "Žaloba"

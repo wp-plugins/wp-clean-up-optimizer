@@ -1,0 +1,334 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-10-11 16:45+0530\n"
+"PO-Revision-Date: 2014-10-13 09:57+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wp-cleanup-optimizer\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/nav-menus.php:31 lib/top-bar-menu.php:28 lib/top-bar-menu.php:54
+#: lib/top-bar-menu.php:80 views/wp-optimizer.php:153
+msgid "WP Data Optimizer"
+msgstr "WP Données Optimiseur"
+
+#: lib/nav-menus.php:35
+msgid "DB Optimizer"
+msgstr "DB Optimiseur"
+
+#: lib/top-bar-menu.php:34 lib/top-bar-menu.php:60 lib/top-bar-menu.php:86
+msgid "WP DB Optimizer"
+msgstr "WP DB Optimiseur"
+
+#: lib/top-bar-menu.php:40 lib/top-bar-menu.php:66 lib/top-bar-menu.php:92
+msgid "System Status"
+msgstr "l'état du système"
+
+#: views/db-optimizer.php:24
+msgid "GB"
+msgstr "GB"
+
+#: views/db-optimizer.php:26
+msgid "MB"
+msgstr "MB"
+
+#: views/db-optimizer.php:28
+msgid "KB"
+msgstr "KB"
+
+#: views/db-optimizer.php:30
+msgid "bytes"
+msgstr "bytes"
+
+#: views/db-optimizer.php:47
+msgid "Database Optimizer"
+msgstr "Base de données des Optimiseur"
+
+#: views/db-optimizer.php:51
+msgid ""
+"Note : Table Names highlighted with red color and an asterisk (*) are "
+"wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
+"delete and clean action because they can destroy your Wordpress "
+"unintentionally."
+msgstr ""
+"Remarque: les noms de table mis en évidence par la couleur rouge et un "
+"astérisque (*) sont des tables wordpress de builtin. <br/> Ils sont "
+"désactivées par nous afin de ne pas effectuer supprimer et d'action propre, "
+"car ils peuvent détruire votre Wordpress involontairement."
+
+#: views/db-optimizer.php:58 views/wp-optimizer.php:159
+msgid "Database Information"
+msgstr "Base de données - information "
+
+#: views/db-optimizer.php:62 views/wp-optimizer.php:163
+msgid "Database Host "
+msgstr "base de données - hôte"
+
+#: views/db-optimizer.php:68 views/wp-optimizer.php:169
+msgid "Database Name "
+msgstr "base de données Nom"
+
+#: views/db-optimizer.php:74 views/wp-optimizer.php:175
+msgid "Database User "
+msgstr "Base de données des utilisateur"
+
+#: views/db-optimizer.php:80 views/wp-optimizer.php:181
+msgid "Database Type "
+msgstr "Base de données des Type de"
+
+#: views/db-optimizer.php:88 views/wp-optimizer.php:189
+msgid "Database Version"
+msgstr "Base de données la version"
+
+#: views/db-optimizer.php:101 views/wp-optimizer.php:202
+msgid "Manage Trackbacks / Comments"
+msgstr "Gérer rétroliens / Commentaires"
+
+#: views/db-optimizer.php:105 views/wp-optimizer.php:206
+msgid "Trackbacks"
+msgstr "rétroliens"
+
+#: views/db-optimizer.php:111 views/db-optimizer.php:118
+#: views/db-optimizer.php:132 views/db-optimizer.php:139
+#: views/wp-optimizer.php:212 views/wp-optimizer.php:219
+#: views/wp-optimizer.php:233 views/wp-optimizer.php:240
+msgid "Enable"
+msgstr "permettre à"
+
+#: views/db-optimizer.php:112 views/db-optimizer.php:119
+#: views/db-optimizer.php:133 views/db-optimizer.php:140
+#: views/wp-optimizer.php:213 views/wp-optimizer.php:220
+#: views/wp-optimizer.php:234 views/wp-optimizer.php:241
+msgid "Disable"
+msgstr "Désactivez"
+
+#: views/db-optimizer.php:126 views/wp-optimizer.php:227
+msgid "Comments"
+msgstr "les Commentaires"
+
+#: views/db-optimizer.php:153 views/wp-optimizer.php:254
+msgid "Bulk Action"
+msgstr "vrac d'action"
+
+#: views/db-optimizer.php:154 views/wp-optimizer.php:255
+#: views/wp-optimizer.php:280 views/wp-optimizer.php:294
+#: views/wp-optimizer.php:308 views/wp-optimizer.php:322
+#: views/wp-optimizer.php:336 views/wp-optimizer.php:350
+#: views/wp-optimizer.php:364 views/wp-optimizer.php:378
+#: views/wp-optimizer.php:392 views/wp-optimizer.php:406
+#: views/wp-optimizer.php:420 views/wp-optimizer.php:434
+#: views/wp-optimizer.php:448
+msgid "Clean"
+msgstr "Nettoyez"
+
+#: views/db-optimizer.php:155
+msgid "Delete"
+msgstr "Supprimez"
+
+#: views/db-optimizer.php:157 views/wp-optimizer.php:257
+msgid "Apply"
+msgstr "Appliquez"
+
+#: views/db-optimizer.php:163
+msgid "Table"
+msgstr "Tableau"
+
+#: views/db-optimizer.php:164
+msgid "Rows"
+msgstr "Rangées"
+
+#: views/db-optimizer.php:165
+msgid "Type"
+msgstr "de type"
+
+#: views/db-optimizer.php:166
+msgid "Size"
+msgstr "Taille"
+
+#: views/db-optimizer.php:167 views/wp-optimizer.php:265
+msgid "Action"
+msgstr "d'action"
+
+#: views/db-optimizer.php:238
+msgid "Total"
+msgstr "totaux"
+
+#: views/db-optimizer.php:363
+msgid "Are you sure, you want to Delete?"
+msgstr "Etes-vous sûr que vous voulez supprimer?"
+
+#: views/db-optimizer.php:387
+msgid "Cleaned Successfully!"
+msgstr "Avec Succès Nettoyés!"
+
+#: views/db-optimizer.php:390
+msgid "Deleted Successfully!"
+msgstr "Supprimé Avec succès!"
+
+#: views/db-optimizer.php:401
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "Êtes-vous sûr de vouloir effectuer cette d'action?"
+
+#: views/db-optimizer.php:419
+msgid "Please choose Action or Table to proceed!."
+msgstr "S'il vous plaît choisissez Action - ou Tableau - à - de procéder !."
+
+#: views/db-optimizer.php:425 views/wp-optimizer.php:502
+#: views/wp-optimizer.php:523
+msgid "Are you sure, you want to Clean?"
+msgstr "Etes-vous sûr que vous voulez nettoyer?"
+
+#: views/db-optimizer.php:451
+msgid "Are you sure, you want to Repair?"
+msgstr "Etes-vous sûr que vous voulez pour réparer?"
+
+#: views/wp-cleanup-optimizer-system-status.php:29
+msgid "Wp Clean Up Optimizer System Status"
+msgstr "Wp Clean Up - Optimizer l'état du système"
+
+#: views/wp-cleanup-optimizer-system-status.php:33
+msgid "Get System Report"
+msgstr "Obtenez un rapport système"
+
+#: views/wp-cleanup-optimizer-system-status.php:37
+msgid "Close System Report"
+msgstr "Fermer système Signaler un "
+
+#: views/wp-cleanup-optimizer-system-status.php:43
+msgid "Environment"
+msgstr "environnement"
+
+#: views/wp-cleanup-optimizer-system-status.php:106
+msgid "Default"
+msgstr "Valeur par défaut"
+
+#: views/wp-optimizer.php:263
+msgid "Type of Data"
+msgstr "Type des Données"
+
+#: views/wp-optimizer.php:264
+msgid "Count"
+msgstr "Comptez"
+
+#: views/wp-optimizer.php:540
+msgid "Please choose Action to Proceed!"
+msgstr "S'il vous plaît choisir action suive son cours!"
+
+#, fuzzy
+#~ msgid "WP Data Optimizer Scheduler"
+#~ msgstr "Gérer wp -Données Optimiseur annexes"
+
+#, fuzzy
+#~ msgid "DB Optimizer Scheduler"
+#~ msgstr "Gérer wp -Données Optimiseur annexes"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimisez"
+
+#~ msgid "Repair"
+#~ msgstr "Réparation"
+
+#~ msgid "Optimized Successfully!"
+#~ msgstr "Optimisé Avec succès!"
+
+#~ msgid "Repaired Successfully!"
+#~ msgstr "Réparé Avec Succès!"
+
+#~ msgid "Are you sure, you want to Optimize?"
+#~ msgstr "Etes-vous sûr que vous voulez pour optimiser?"
+
+#~ msgid "Schedule Database Optimizer"
+#~ msgstr "Annexe Base de données des Optimiseur"
+
+#~ msgid "Choose Tables"
+#~ msgstr "Choisissez Les tables"
+
+#~ msgid "Total Rows"
+#~ msgstr "totaux rangées"
+
+#~ msgid "Configure Scheduler"
+#~ msgstr "Configurer les le Planificateur"
+
+#, fuzzy
+#~ msgid "Action "
+#~ msgstr "d'action"
+
+#, fuzzy
+#~ msgid "Duration "
+#~ msgstr "Durée"
+
+#~ msgid "Daily"
+#~ msgstr "Quotidiennement"
+
+#~ msgid "Weekly"
+#~ msgstr "Hebdomadaire"
+
+#~ msgid "Biweekly"
+#~ msgstr "Bihebdomadaire"
+
+#~ msgid "Monthly"
+#~ msgstr "Mensuelle"
+
+#~ msgid "Quarterly"
+#~ msgstr "Trimestrielle"
+
+#~ msgid "Half-Yearly"
+#~ msgstr "Tous les six mois"
+
+#~ msgid "Annually"
+#~ msgstr "Annuellement"
+
+#~ msgid "Manage Database Optimizer Schedules"
+#~ msgstr "Gérer Base de données des de l'optimiseur annexes"
+
+#~ msgid "Tables"
+#~ msgstr "Les tables"
+
+#~ msgid "Action Type"
+#~ msgstr "d'action le type"
+
+#~ msgid "Start Date"
+#~ msgstr "Date De début"
+
+#~ msgid "Next Execution"
+#~ msgstr "Exécution Suivant"
+
+#~ msgid "Scheduler Type"
+#~ msgstr "le Planificateur Type d"
+
+#~ msgid "Are you sure, you want to save the Scheduler?"
+#~ msgstr "Etes-vous sûr que vous voulez enregistrer l'ordonnanceur?"
+
+#~ msgid "Please choose tables and action to configure Scheduler!"
+#~ msgstr ""
+#~ "S'il vous plaît choisir tables et des actions pour configurer le "
+#~ "Planificateur!"
+
+#~ msgid "Are you sure, you want to Delete this Scheduler?"
+#~ msgstr "Êtes-vous sûr de vouloir supprimer cette le Planificateur?"
+
+#~ msgid "Schedule WP Data Optimizer"
+#~ msgstr "Prendre rendez - wp Données Optimiseur"
+
+#~ msgid "Choose Type of Data"
+#~ msgstr "Choisissez le type de données"
+
+#~ msgid "Manage Wp Data Optimizer Schedules"
+#~ msgstr "Gérer wp -Données Optimiseur annexes"
+
+#~ msgid "Please choose type of Data to Configure Scheduler!"
+#~ msgstr ""
+#~ "S'il vous plaît choisir le type de données à Configurer les le "
+#~ "Planificateur!"
+
+#~ msgid "Action : "
+#~ msgstr "l'action"

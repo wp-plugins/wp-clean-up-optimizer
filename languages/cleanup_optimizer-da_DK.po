@@ -1,0 +1,329 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cleanup Optimizer\n"
+"POT-Creation-Date: 2014-10-11 16:43+0530\n"
+"PO-Revision-Date: 2014-10-13 09:56+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wp-cleanup-optimizer\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/nav-menus.php:31 lib/top-bar-menu.php:28 lib/top-bar-menu.php:54
+#: lib/top-bar-menu.php:80 views/wp-optimizer.php:153
+msgid "WP Data Optimizer"
+msgstr "WP af data Optimizer"
+
+#: lib/nav-menus.php:35
+msgid "DB Optimizer"
+msgstr "DB Optimizer"
+
+#: lib/top-bar-menu.php:34 lib/top-bar-menu.php:60 lib/top-bar-menu.php:86
+msgid "WP DB Optimizer"
+msgstr "WP DB Optimizer"
+
+#: lib/top-bar-menu.php:40 lib/top-bar-menu.php:66 lib/top-bar-menu.php:92
+msgid "System Status"
+msgstr "Systemstatus"
+
+#: views/db-optimizer.php:24
+msgid "GB"
+msgstr "GB"
+
+#: views/db-optimizer.php:26
+msgid "MB"
+msgstr "MB"
+
+#: views/db-optimizer.php:28
+msgid "KB"
+msgstr "KB"
+
+#: views/db-optimizer.php:30
+msgid "bytes"
+msgstr "bytes"
+
+#: views/db-optimizer.php:47
+msgid "Database Optimizer"
+msgstr "Database optimizer"
+
+#: views/db-optimizer.php:51
+msgid ""
+"Note : Table Names highlighted with red color and an asterisk (*) are "
+"wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
+"delete and clean action because they can destroy your Wordpress "
+"unintentionally."
+msgstr ""
+"Bemærk: tabelnavne fremhævet med rød Farve og en stjerne (*), er wordpress "
+"indbyggede tabeller. <br/> De er deaktiveret af os så ikke at udfør slette "
+"og rene handling, fordi de kan ødelægge din Wordpress utilsigtet."
+
+#: views/db-optimizer.php:58 views/wp-optimizer.php:159
+msgid "Database Information"
+msgstr "Database Information"
+
+#: views/db-optimizer.php:62 views/wp-optimizer.php:163
+msgid "Database Host "
+msgstr "Database Host"
+
+#: views/db-optimizer.php:68 views/wp-optimizer.php:169
+msgid "Database Name "
+msgstr "Database Navn"
+
+#: views/db-optimizer.php:74 views/wp-optimizer.php:175
+msgid "Database User "
+msgstr "Database Bruger"
+
+#: views/db-optimizer.php:80 views/wp-optimizer.php:181
+msgid "Database Type "
+msgstr "Database type"
+
+#: views/db-optimizer.php:88 views/wp-optimizer.php:189
+msgid "Database Version"
+msgstr "Database Version"
+
+#: views/db-optimizer.php:101 views/wp-optimizer.php:202
+msgid "Manage Trackbacks / Comments"
+msgstr "Administrer Trackbacks / Kommentarer"
+
+#: views/db-optimizer.php:105 views/wp-optimizer.php:206
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: views/db-optimizer.php:111 views/db-optimizer.php:118
+#: views/db-optimizer.php:132 views/db-optimizer.php:139
+#: views/wp-optimizer.php:212 views/wp-optimizer.php:219
+#: views/wp-optimizer.php:233 views/wp-optimizer.php:240
+msgid "Enable"
+msgstr "Aktiver"
+
+#: views/db-optimizer.php:112 views/db-optimizer.php:119
+#: views/db-optimizer.php:133 views/db-optimizer.php:140
+#: views/wp-optimizer.php:213 views/wp-optimizer.php:220
+#: views/wp-optimizer.php:234 views/wp-optimizer.php:241
+msgid "Disable"
+msgstr "Disable"
+
+#: views/db-optimizer.php:126 views/wp-optimizer.php:227
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: views/db-optimizer.php:153 views/wp-optimizer.php:254
+msgid "Bulk Action"
+msgstr "Løs vægt-aktion"
+
+#: views/db-optimizer.php:154 views/wp-optimizer.php:255
+#: views/wp-optimizer.php:280 views/wp-optimizer.php:294
+#: views/wp-optimizer.php:308 views/wp-optimizer.php:322
+#: views/wp-optimizer.php:336 views/wp-optimizer.php:350
+#: views/wp-optimizer.php:364 views/wp-optimizer.php:378
+#: views/wp-optimizer.php:392 views/wp-optimizer.php:406
+#: views/wp-optimizer.php:420 views/wp-optimizer.php:434
+#: views/wp-optimizer.php:448
+msgid "Clean"
+msgstr "Rens"
+
+#: views/db-optimizer.php:155
+msgid "Delete"
+msgstr "Slet"
+
+#: views/db-optimizer.php:157 views/wp-optimizer.php:257
+msgid "Apply"
+msgstr "Påfør"
+
+#: views/db-optimizer.php:163
+msgid "Table"
+msgstr "Bord"
+
+#: views/db-optimizer.php:164
+msgid "Rows"
+msgstr "Rækker"
+
+#: views/db-optimizer.php:165
+msgid "Type"
+msgstr "Type"
+
+#: views/db-optimizer.php:166
+msgid "Size"
+msgstr "Størrelse"
+
+#: views/db-optimizer.php:167 views/wp-optimizer.php:265
+msgid "Action"
+msgstr "Aktion"
+
+#: views/db-optimizer.php:238
+msgid "Total"
+msgstr "I alt"
+
+#: views/db-optimizer.php:363
+msgid "Are you sure, you want to Delete?"
+msgstr "Er du sikker på, du vil slette?"
+
+#: views/db-optimizer.php:387
+msgid "Cleaned Successfully!"
+msgstr "Rengøres Succesfuld!"
+
+#: views/db-optimizer.php:390
+msgid "Deleted Successfully!"
+msgstr "Slettede Succesfuld!"
+
+#: views/db-optimizer.php:401
+msgid "Are you sure, you want to Perform this Action?"
+msgstr "Er du sikker på, du ønsker at udføre denne handling?"
+
+#: views/db-optimizer.php:419
+msgid "Please choose Action or Table to proceed!."
+msgstr "Vælg venligst aktion eller tabel for at fortsætte!."
+
+#: views/db-optimizer.php:425 views/wp-optimizer.php:502
+#: views/wp-optimizer.php:523
+msgid "Are you sure, you want to Clean?"
+msgstr "Er du sikker på, du vil rengøre?"
+
+#: views/db-optimizer.php:451
+msgid "Are you sure, you want to Repair?"
+msgstr "Er du sikker på, du ønsker at reparere?"
+
+#: views/wp-cleanup-optimizer-system-status.php:29
+msgid "Wp Clean Up Optimizer System Status"
+msgstr "Wp Clean Up Optimizer System Status"
+
+#: views/wp-cleanup-optimizer-system-status.php:33
+msgid "Get System Report"
+msgstr "Få System Rapport"
+
+#: views/wp-cleanup-optimizer-system-status.php:37
+msgid "Close System Report"
+msgstr "Luk System Rapport"
+
+#: views/wp-cleanup-optimizer-system-status.php:43
+msgid "Environment"
+msgstr "miljø"
+
+#: views/wp-cleanup-optimizer-system-status.php:106
+msgid "Default"
+msgstr "Default"
+
+#: views/wp-optimizer.php:263
+msgid "Type of Data"
+msgstr "Typen af Dataene"
+
+#: views/wp-optimizer.php:264
+msgid "Count"
+msgstr "Tæl"
+
+#: views/wp-optimizer.php:540
+msgid "Please choose Action to Proceed!"
+msgstr "venligst Vælg venligst handling til Fortsæt!"
+
+#, fuzzy
+#~ msgid "WP Data Optimizer Scheduler"
+#~ msgstr "Administrer Wp af data optime- Tidsplaner"
+
+#, fuzzy
+#~ msgid "DB Optimizer Scheduler"
+#~ msgstr "Administrer Wp af data optime- Tidsplaner"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimer"
+
+#~ msgid "Repair"
+#~ msgstr "Reparation"
+
+#~ msgid "Optimized Successfully!"
+#~ msgstr "Optimerede Succesfuld!"
+
+#~ msgid "Repaired Successfully!"
+#~ msgstr "Reparerede Succesfuld!"
+
+#~ msgid "Are you sure, you want to Optimize?"
+#~ msgstr "Er du sikker på, du vil optimere?"
+
+#~ msgid "Schedule Database Optimizer"
+#~ msgstr "Skema Databasen Optimere"
+
+#~ msgid "Choose Tables"
+#~ msgstr "Vælg Tabeller"
+
+#~ msgid "Total Rows"
+#~ msgstr "Samlet Rækker"
+
+#~ msgid "Configure Scheduler"
+#~ msgstr "Konfigurer Skemalægger"
+
+#, fuzzy
+#~ msgid "Action "
+#~ msgstr "Aktion"
+
+#, fuzzy
+#~ msgid "Duration "
+#~ msgstr "Varigheden"
+
+#~ msgid "Daily"
+#~ msgstr "Daglig"
+
+#~ msgid "Weekly"
+#~ msgstr "Ugentlig"
+
+#~ msgid "Biweekly"
+#~ msgstr "To gange ugentligt"
+
+#~ msgid "Monthly"
+#~ msgstr "Månedlig"
+
+#~ msgid "Quarterly"
+#~ msgstr "Kvartalsvise"
+
+#~ msgid "Half-Yearly"
+#~ msgstr "Halvårligt"
+
+#~ msgid "Annually"
+#~ msgstr "Årlig"
+
+#~ msgid "Manage Database Optimizer Schedules"
+#~ msgstr "Administrer databasen Optimizer Tidsplaner"
+
+#~ msgid "Tables"
+#~ msgstr "Borde"
+
+#~ msgid "Action Type"
+#~ msgstr "Handling Typen"
+
+#~ msgid "Start Date"
+#~ msgstr "på Start Dato"
+
+#~ msgid "Next Execution"
+#~ msgstr "Næste Efterkommelse"
+
+#~ msgid "Scheduler Type"
+#~ msgstr "Skemalægger Typen"
+
+#~ msgid "Are you sure, you want to save the Scheduler?"
+#~ msgstr "Er du sikker på, du vil gemme skemalægger?"
+
+#~ msgid "Please choose tables and action to configure Scheduler!"
+#~ msgstr "Vælg venligst tabeller og handling til at konfigurere Skemalægger!"
+
+#~ msgid "Are you sure, you want to Delete this Scheduler?"
+#~ msgstr "Er du sikker på, du vil slette denne skemalægger?"
+
+#~ msgid "Schedule WP Data Optimizer"
+#~ msgstr "Skema WP af data optimer"
+
+#~ msgid "Choose Type of Data"
+#~ msgstr "Vælg Typen af Dataene"
+
+#~ msgid "Manage Wp Data Optimizer Schedules"
+#~ msgstr "Administrer Wp af data optime- Tidsplaner"
+
+#~ msgid "Please choose type of Data to Configure Scheduler!"
+#~ msgstr "Vælg venligst type af af data til at konfigurere skemalægger!"
+
+#~ msgid "Action : "
+#~ msgstr "Handling"

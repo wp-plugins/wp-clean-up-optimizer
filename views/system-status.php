@@ -18,7 +18,6 @@ if (!current_user_can($user_role_permission))
 }
 else
 {
-	global $wp_version;
 	?>
 	<form id="frm_system_status" class="layout-form" method="post" style="width:1000px";>
 		<div class="fluid-layout">
@@ -30,11 +29,11 @@ else
 						</h4>
 					</div>
 					<div class="widget-layout-body">
-						<a class="btn btn-info system-report" href="#"><?php _e("Get System Report", cleanup_optimizer); ?></a>
+						<a class="button-primary system-report" href="#"><?php _e("Get System Report", cleanup_optimizer); ?></a>
 						<div id="wpcpo-system-report" class="layout-system-report" style="display: none;">
 							<textarea class="layout-span12" readonly="readonly" rows="12"></textarea>
 						</div>
-						<a class="btn btn-info close-report" href="#" style="display:none;"><?php _e("Close System Report", cleanup_optimizer); ?></a>
+						<a class="button-primary close-report" href="#" style="display:none;"><?php _e("Close System Report", cleanup_optimizer); ?></a>
 						<div class="separator-doubled"></div>
 						<div class="fluid-layout">
 							<div class="layout-span6 responsive">
@@ -46,7 +45,7 @@ else
 										<div class="fluid-layout">
 											<div class="layout-span12 responsive">
 												<div class="layout-control-group">
-													<label class="layout-control-label">Home URL :</label>
+													<label class="layout-control-label"><?php _e("Home URL", cleanup_optimizer); ?> :</label>
 													<div class="layout-controls wpcpo-label-system-status">
 														<span><?php echo home_url(); ?></span>
 													</div>
@@ -54,60 +53,59 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">Site URL :</label>
+											<label class="layout-control-label"><?php _e("Site URL", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo site_url(); ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">WP Version :</label>
+											<label class="layout-control-label"><?php _e("WP Version", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php bloginfo("version"); ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">WP Multisite Enabled :</label>
+											<label class="layout-control-label"><?php _e("WP Multisite Enabled", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php if (is_multisite()) echo "Yes"; else echo "No"; ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">Web Server Info :</label>
+											<label class="layout-control-label"><?php _e("Web Server Info", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo esc_html($_SERVER["SERVER_SOFTWARE"]); ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Version :</label>
+											<label class="layout-control-label"><?php _e("PHP Version", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php if (function_exists("phpversion")) echo esc_html(phpversion()); ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">MySQL Version :</label>
+											<label class="layout-control-label"><?php _e("MySQL Version", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 												<?php 
-													global $wpdb;
 													echo $wpdb->db_version();
 												?>
 												</span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">WP Debug Mode :</label>
+											<label class="layout-control-label"><?php _e("WP Debug Mode", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php if (defined("WP_DEBUG") && WP_DEBUG) echo "Yes"; else echo "No"; ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">WP Language :</label>
+											<label class="layout-control-label"><?php _e("WP Language", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php if (defined("WPLANG") && WPLANG) echo WPLANG; else _e("Default"); ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Post Max Size :</label>
+											<label class="layout-control-label"><?php _e("PHP Post Max Size", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 												<?php 
@@ -117,7 +115,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">WP Max Upload Size :</label>
+											<label class="layout-control-label"><?php _e("WP Max Upload Size", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo size_format(wp_max_upload_size()); ?></span>
 											</div>
@@ -133,7 +131,7 @@ else
 									$response = wp_remote_post( "https://www.paypal.com/cgi-bin/webscr", $params );
 									?>
 										<div class="layout-control-group">
-											<label class="layout-control-label">WP Remote Post :</label>
+											<label class="layout-control-label"><?php _e("WP Remote Post", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php if ( ! is_wp_error( $response ))
@@ -150,26 +148,26 @@ else
 										</div>
 									<?php if (function_exists("ini_get")) : ?>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Max Script Execute Time :</label>
+											<label class="layout-control-label"><?php _e("PHP Max Script Execute Time", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo ini_get("max_execution_time"); ?>s</span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Max Input Vars :</label>
+											<label class="layout-control-label"><?php _e("PHP Max Input Vars", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo ini_get("max_input_vars"); ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">SUHOSIN Installed" :</label>
+											<label class="layout-control-label"><?php _e("SUHOSIN Installed", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo extension_loaded("suhosin") ? "Yes" : "No" ?></span>
 											</div>
 										</div>
 									<?php endif; ?>
 										<div class="layout-control-group">
-											<label class="layout-control-label">Default Timezone :</label>
+											<label class="layout-control-label"><?php _e("Default Timezone", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php
@@ -184,7 +182,6 @@ else
 											</div>
 										</div>
 									<?php
-									global $wpdb, $gb;
 									// Get MYSQL Version
 									$sql_version = $wpdb->get_var("SELECT VERSION() AS version");
 									// GET SQL Mode
@@ -223,7 +220,7 @@ else
 									else $xml = "No";
 									?>
 										<div class="layout-control-group">
-											<label class="layout-control-label">Operating System :</label>
+											<label class="layout-control-label"><?php _e("Operating System", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo PHP_OS; ?>&nbsp;(<?php echo(PHP_INT_SIZE * 8) ?>&nbsp;Bit)
@@ -231,7 +228,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">Memory usage :</label>
+											<label class="layout-control-label"><?php _e("Memory usage", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $memory_usage; ?>
@@ -239,7 +236,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">SQL Mode :</label>
+											<label class="layout-control-label"><?php _e("SQL Mode", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $sqlmode; ?>
@@ -247,7 +244,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Safe Mode :</label>
+											<label class="layout-control-label"><?php _e("PHP Safe Mode", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo PHP_VERSION; ?>
@@ -255,7 +252,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Allow URL fopen :</label>
+											<label class="layout-control-label"><?php _e("PHP Allow URL fopen", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $allowurlfopen; ?>
@@ -263,7 +260,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Memory Limit :</label>
+											<label class="layout-control-label"><?php _e("PHP Memory Limit", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $memory_limit; ?>
@@ -271,7 +268,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Max Post Size :</label>
+											<label class="layout-control-label"><?php _e("PHP Max Post Size", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $post_maximum; ?>
@@ -279,7 +276,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PCRE Backtracking Limit :</label>
+											<label class="layout-control-label"><?php _e("PCRE Backtracking Limit", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $backtrack_lmt; ?>
@@ -287,7 +284,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP Exif support :</label>
+											<label class="layout-control-label"><?php _e("PHP Exif support", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $exif; ?>
@@ -295,7 +292,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP IPTC support :</label>
+											<label class="layout-control-label"><?php _e("PHP IPTC support", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $iptc; ?>
@@ -303,7 +300,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">PHP XML support :</label>
+											<label class="layout-control-label"><?php _e("PHP XML support", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php echo $xml; ?>
@@ -316,11 +313,11 @@ else
 							<div class="layout-span6 responsive">
 								<div class="widget-layout">
 									<div class="widget-layout-title">
-										<h4>Plugins</h4>
+										<h4><?php _e("Plugins", cleanup_optimizer); ?></h4>
 									</div>
 									<div class="widget-layout-body">
 										<div class="layout-control-group">
-											<label class="layout-control-label">Installed Plugins :</label>
+											<label class="layout-control-label"><?php _e("Installed Plugins", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span>
 													<?php
@@ -381,17 +378,17 @@ else
 								?>
 								<div class="widget-layout">
 									<div class="widget-layout-title">
-										<h4>Themes</h4>
+										<h4><?php _e("Themes", cleanup_optimizer); ?></h4>
 									</div>
 									<div class="widget-layout-body">
 										<div class="layout-control-group">
-											<label class="layout-control-label">Theme Name :</label>
+											<label class="layout-control-label"><?php _e("Theme Name", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo $active_theme->Name; ?></span>
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">Theme Version :</label>
+											<label class="layout-control-label"><?php _e("Theme Version", cleanup_optimizer); ?> :</label>
 												<div class="layout-controls wpcpo-label-system-status">
 												<span><?php
 													echo $active_theme->Version;
@@ -401,7 +398,7 @@ else
 											</div>
 										</div>
 										<div class="layout-control-group">
-											<label class="layout-control-label">Author URL :</label>
+											<label class="layout-control-label"><?php _e("Author URL", cleanup_optimizer); ?> :</label>
 											<div class="layout-controls wpcpo-label-system-status">
 												<span><?php echo $active_theme->{"Author URI"}; ?></span>
 											</div>

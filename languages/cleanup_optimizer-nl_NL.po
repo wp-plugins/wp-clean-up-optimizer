@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Cleanup Optimizer\n"
-"POT-Creation-Date: 2014-10-11 16:46+0530\n"
-"PO-Revision-Date: 2014-10-13 09:57+0530\n"
+"Project-Id-Version: WP Clean Up Optimizer\n"
+"POT-Creation-Date: 2014-11-09 00:49-0800\n"
+"PO-Revision-Date: 2014-11-09 00:49-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -10,269 +10,2448 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-Basepath: C:\\wamp\\www\\wp-cleanup-optimizer\\wp-content\\plugins"
-"\\wp-clean-up-optimizer\\\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\plugin-test\\wp-content\\plugins\\wp-"
+"clean-up-optimizer-pro-edition\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-KeywordsList: .;__;_e;gettext\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: lib/nav-menus.php:31 lib/top-bar-menu.php:28 lib/top-bar-menu.php:54
-#: lib/top-bar-menu.php:80 views/wp-optimizer.php:153
-msgid "WP Data Optimizer"
-msgstr "WP Gegevens optimalisatie"
+#: lib/header.php:38
+msgid "Get Started"
+msgstr ""
 
-#: lib/nav-menus.php:35
-msgid "DB Optimizer"
-msgstr "DB optimalisatie"
+#: lib/header.php:41
+msgid "Watch Clean Up Video!"
+msgstr ""
 
-#: lib/top-bar-menu.php:34 lib/top-bar-menu.php:60 lib/top-bar-menu.php:86
-msgid "WP DB Optimizer"
-msgstr "WP Gegevens optimalisatie"
+#: lib/header.php:45
+msgid "read documentation here"
+msgstr ""
 
-#: lib/top-bar-menu.php:40 lib/top-bar-menu.php:66 lib/top-bar-menu.php:92
+#: lib/header.php:50
+msgid "Go Premium"
+msgstr ""
+
+#: lib/header.php:54
+msgid "Features"
+msgstr ""
+
+#: lib/header.php:59
+msgid "Online Demos"
+msgstr ""
+
+#: lib/header.php:64
+msgid "Why Go for Premium ?"
+msgstr ""
+
+#: lib/header.php:71
+msgid "Knowledge Base"
+msgstr ""
+
+#: lib/header.php:76
+msgid "Support Forum"
+msgstr ""
+
+#: lib/header.php:81
+msgid "FAQ's"
+msgstr ""
+
+#: lib/header.php:86
+msgid "Detailed Features"
+msgstr ""
+
+#: lib/header.php:92
+msgid "More Actions"
+msgstr ""
+
+#: lib/header.php:96
+msgid "Premium Pricing Plans"
+msgstr ""
+
+#: lib/header.php:101 lib/header.php:131 lib/menus.php:15 lib/menus.php:27
+#: lib/menus.php:39 lib/menus.php:51 lib/menus.php:63 lib/top-bar-menu.php:70
+#: lib/top-bar-menu.php:132 lib/top-bar-menu.php:194 lib/top-bar-menu.php:256
+#: lib/top-bar-menu.php:318 views/recommended-plugins.php:88
+msgid "Recommendations"
+msgstr ""
+
+#: lib/header.php:106 lib/header.php:134 lib/menus.php:16 lib/menus.php:28
+#: lib/menus.php:40 lib/menus.php:52 lib/menus.php:64 lib/top-bar-menu.php:76
+#: lib/top-bar-menu.php:138 lib/top-bar-menu.php:200 lib/top-bar-menu.php:262
+#: lib/top-bar-menu.php:324 views/other-services.php:31
+msgid "Our Other Services"
+msgstr ""
+
+#: lib/header.php:116 lib/menus.php:9 lib/menus.php:21 lib/menus.php:33
+#: lib/menus.php:45 lib/menus.php:57 lib/top-bar-menu.php:34
+#: lib/top-bar-menu.php:96 lib/top-bar-menu.php:158 lib/top-bar-menu.php:220
+#: lib/top-bar-menu.php:282
+msgid "Dashboard"
+msgstr ""
+
+#: lib/header.php:119 lib/menus.php:10 lib/menus.php:22 lib/menus.php:34
+#: lib/menus.php:46 lib/menus.php:58 lib/top-bar-menu.php:40
+#: lib/top-bar-menu.php:102 lib/top-bar-menu.php:164 lib/top-bar-menu.php:226
+#: lib/top-bar-menu.php:288 views/login-logs.php:44
+#: views/premium-edition.php:370 views/premium-edition.php:376
+#: views/premium-edition.php:934 views/premium-edition.php:1418
+#: views/premium-edition.php:1902 views/premium-edition.php:2386
+#: views/premium-edition.php:2870
+msgid "Login Logs"
+msgstr ""
+
+#: lib/header.php:122 lib/menus.php:11 lib/menus.php:23 lib/menus.php:35
+#: lib/menus.php:47 lib/menus.php:59 lib/top-bar-menu.php:46
+#: lib/top-bar-menu.php:108 lib/top-bar-menu.php:170 lib/top-bar-menu.php:232
+#: lib/top-bar-menu.php:294 views/cron-job.php:82
+msgid "Cron Jobs"
+msgstr ""
+
+#: lib/header.php:125 lib/menus.php:12 lib/menus.php:24 lib/menus.php:36
+#: lib/menus.php:48 lib/menus.php:60 lib/top-bar-menu.php:52
+#: lib/top-bar-menu.php:114 lib/top-bar-menu.php:176 lib/top-bar-menu.php:238
+#: lib/top-bar-menu.php:300 views/general-settings.php:48
+msgid "General Settings"
+msgstr ""
+
+#: lib/header.php:128 lib/menus.php:14 lib/menus.php:26 lib/menus.php:38
+#: lib/menus.php:50 lib/menus.php:62 lib/top-bar-menu.php:64
+#: lib/top-bar-menu.php:126 lib/top-bar-menu.php:188 lib/top-bar-menu.php:250
+#: lib/top-bar-menu.php:312 views/premium-edition.php:32
+#: views/recommended-plugins.php:198 views/recommended-plugins.php:208
+#: views/recommended-plugins.php:218 views/recommended-plugins.php:228
+msgid "Premium Editions"
+msgstr ""
+
+#: lib/install-script.php:166 views/general-settings.php:422
+msgid "Your IP has been blocked!"
+msgstr ""
+
+#: lib/install-script.php:167 views/general-settings.php:423
+msgid "Maximum Login attempts left [maxAttempts]"
+msgstr ""
+
+#: lib/install-script.php:168
+msgid ""
+"You have Exceeded Maximum Login Attempts.\n"
+" So, your IP has been blocked for today. \n"
+" Kindly, try again after 24 Hours."
+msgstr ""
+
+#: lib/menus.php:13 lib/menus.php:25 lib/menus.php:37 lib/menus.php:49
+#: lib/menus.php:61 lib/top-bar-menu.php:58 lib/top-bar-menu.php:120
+#: lib/top-bar-menu.php:182 lib/top-bar-menu.php:244 lib/top-bar-menu.php:306
 msgid "System Status"
-msgstr "Stelsel statuut"
-
-#: views/db-optimizer.php:24
-msgid "GB"
 msgstr ""
 
-#: views/db-optimizer.php:26
-msgid "MB"
+#: lib/menus.php:17 lib/menus.php:29 lib/menus.php:41 lib/menus.php:53
+#: lib/menus.php:65 lib/top-bar-menu.php:82 lib/top-bar-menu.php:144
+#: lib/top-bar-menu.php:206 lib/top-bar-menu.php:268 lib/top-bar-menu.php:330
+msgid "Licensing"
 msgstr ""
 
-#: views/db-optimizer.php:28
-msgid "KB"
+#: views/cron-job.php:73 views/dashboard.php:205 views/general-settings.php:39
+#: views/licensing.php:35 views/login-logs.php:36
+msgid "Success!"
 msgstr ""
 
-#: views/db-optimizer.php:30
-msgid "bytes"
+#: views/cron-job.php:89
+msgid "Custom"
 msgstr ""
 
-#: views/db-optimizer.php:47
-msgid "Database Optimizer"
-msgstr "databank optimalisatie"
+#: views/cron-job.php:90
+msgid "Core"
+msgstr ""
 
-#: views/db-optimizer.php:51
+#: views/cron-job.php:96
+msgid "Custom Events"
+msgstr ""
+
+#: views/cron-job.php:103 views/dashboard.php:331 views/dashboard.php:674
+#: views/dashboard.php:869
+msgid "Bulk Action"
+msgstr ""
+
+#: views/cron-job.php:104 views/cron-job.php:138 views/dashboard.php:841
+#: views/dashboard.php:871 views/dashboard.php:978 views/dashboard.php:1040
+#: views/dashboard.php:1236 views/dashboard.php:1306
+msgid "Delete"
+msgstr ""
+
+#: views/cron-job.php:106 views/dashboard.php:334 views/dashboard.php:875
+#: views/dashboard.php:935 views/dashboard.php:984
+msgid "Apply"
+msgstr ""
+
+#: views/cron-job.php:113 views/cron-job.php:235
+msgid "Name of the Hook"
+msgstr ""
+
+#: views/cron-job.php:114 views/cron-job.php:236
+msgid "Interval Hook"
+msgstr ""
+
+#: views/cron-job.php:115 views/cron-job.php:237
+msgid "Args"
+msgstr ""
+
+#: views/cron-job.php:116 views/cron-job.php:238 views/dashboard.php:794
+#: views/dashboard.php:1258
+msgid "Next Execution"
+msgstr ""
+
+#: views/cron-job.php:226
+msgid "Core Events"
+msgstr ""
+
+#: views/cron-job.php:374 views/cron-job.php:390 views/dashboard.php:1491
+#: views/dashboard.php:1765
+msgid "Show entries"
+msgstr ""
+
+#: views/cron-job.php:415 views/dashboard.php:1560 views/dashboard.php:1833
+msgid "Scheduler has been Deleted!"
+msgstr ""
+
+#: views/cron-job.php:431
+msgid "Are you sure, you want to Perform this action?"
+msgstr ""
+
+#: views/cron-job.php:447
+msgid "Schedulers has been Deleted!"
+msgstr ""
+
+#: views/cron-job.php:455 views/dashboard.php:1391 views/dashboard.php:1536
+#: views/dashboard.php:1729 views/dashboard.php:1809
+#: views/general-settings.php:275 views/general-settings.php:280
+#: views/general-settings.php:285 views/general-settings.php:290
+#: views/general-settings.php:311 views/general-settings.php:316
+#: views/licensing.php:43
+msgid "Error!"
+msgstr ""
+
+#: views/cron-job.php:455
+msgid "Please choose Action and Scheduler to Proceed!"
+msgstr ""
+
+#: views/dashboard.php:214
+msgid "WP Clean Up Optimizer"
+msgstr ""
+
+#: views/dashboard.php:220
+msgid "Database Information"
+msgstr ""
+
+#: views/dashboard.php:224
+msgid "Database Host "
+msgstr ""
+
+#: views/dashboard.php:230
+msgid "Database Name "
+msgstr ""
+
+#: views/dashboard.php:236
+msgid "Database User "
+msgstr ""
+
+#: views/dashboard.php:242
+msgid "Database Type "
+msgstr ""
+
+#: views/dashboard.php:250
+msgid "Database Version"
+msgstr ""
+
+#: views/dashboard.php:263
+msgid "Manage Trackbacks / Comments"
+msgstr ""
+
+#: views/dashboard.php:267
+msgid "Trackbacks"
+msgstr ""
+
+#: views/dashboard.php:273 views/dashboard.php:280 views/dashboard.php:294
+#: views/dashboard.php:301 views/general-settings.php:108
+#: views/general-settings.php:115 views/general-settings.php:226
+#: views/general-settings.php:233
+msgid "Enable"
+msgstr ""
+
+#: views/dashboard.php:274 views/dashboard.php:281 views/dashboard.php:295
+#: views/dashboard.php:302 views/general-settings.php:109
+#: views/general-settings.php:116 views/general-settings.php:227
+#: views/general-settings.php:234
+msgid "Disable"
+msgstr ""
+
+#: views/dashboard.php:288
+msgid "Comments"
+msgstr ""
+
+#: views/dashboard.php:315 views/dashboard.php:324
+msgid "Data Optimizer"
+msgstr ""
+
+#: views/dashboard.php:316 views/dashboard.php:538
+msgid "Data Optimizer Scheduler"
+msgstr ""
+
+#: views/dashboard.php:317 views/dashboard.php:857
+msgid "DB Optimizer"
+msgstr ""
+
+#: views/dashboard.php:318 views/dashboard.php:1020
+msgid "DB Optimizer Scheduler"
+msgstr ""
+
+#: views/dashboard.php:332 views/dashboard.php:357 views/dashboard.php:371
+#: views/dashboard.php:385 views/dashboard.php:399 views/dashboard.php:413
+#: views/dashboard.php:427 views/dashboard.php:441 views/dashboard.php:455
+#: views/dashboard.php:469 views/dashboard.php:483 views/dashboard.php:497
+#: views/dashboard.php:511 views/dashboard.php:525 views/dashboard.php:675
+#: views/dashboard.php:870 views/dashboard.php:977 views/dashboard.php:1039
+#: views/dashboard.php:1233
+msgid "Empty"
+msgstr ""
+
+#: views/dashboard.php:340 views/dashboard.php:552 views/dashboard.php:711
+msgid "Type of Data"
+msgstr ""
+
+#: views/dashboard.php:341
+msgid "Count"
+msgstr ""
+
+#: views/dashboard.php:342 views/dashboard.php:885 views/login-logs.php:115
+msgid "Action"
+msgstr ""
+
+#: views/dashboard.php:351 views/dashboard.php:561
+msgid "Auto Draft"
+msgstr ""
+
+#: views/dashboard.php:365 views/dashboard.php:569
+msgid "Dashboard Transient Feed"
+msgstr ""
+
+#: views/dashboard.php:379 views/dashboard.php:577
+msgid "Draft"
+msgstr ""
+
+#: views/dashboard.php:393 views/dashboard.php:585
+msgid "Moderated Comments"
+msgstr ""
+
+#: views/dashboard.php:407 views/dashboard.php:593
+msgid "Orphan Comments Meta"
+msgstr ""
+
+#: views/dashboard.php:421 views/dashboard.php:601
+msgid "Orphan Posts Meta"
+msgstr ""
+
+#: views/dashboard.php:435 views/dashboard.php:609
+msgid "Orphan Relationships"
+msgstr ""
+
+#: views/dashboard.php:449 views/dashboard.php:617
+msgid "Revision"
+msgstr ""
+
+#: views/dashboard.php:463 views/dashboard.php:625
+#: views/premium-edition.php:303 views/premium-edition.php:309
+#: views/premium-edition.php:886 views/premium-edition.php:1370
+#: views/premium-edition.php:1854 views/premium-edition.php:2338
+#: views/premium-edition.php:2822
+msgid "Remove Pingbacks"
+msgstr ""
+
+#: views/dashboard.php:477 views/dashboard.php:633
+#: views/premium-edition.php:320 views/premium-edition.php:326
+#: views/premium-edition.php:898 views/premium-edition.php:1382
+#: views/premium-edition.php:1866 views/premium-edition.php:2350
+#: views/premium-edition.php:2834
+msgid "Remove Transient Options"
+msgstr ""
+
+#: views/dashboard.php:491 views/dashboard.php:641
+#: views/premium-edition.php:337 views/premium-edition.php:343
+#: views/premium-edition.php:910 views/premium-edition.php:1394
+#: views/premium-edition.php:1878 views/premium-edition.php:2362
+#: views/premium-edition.php:2846
+msgid "Remove Trackbacks"
+msgstr ""
+
+#: views/dashboard.php:505 views/dashboard.php:649
+msgid "Spam Comments"
+msgstr ""
+
+#: views/dashboard.php:519 views/dashboard.php:657
+msgid "Trash Comments"
+msgstr ""
+
+#: views/dashboard.php:546
+msgid "Choose Type of Data"
+msgstr ""
+
+#: views/dashboard.php:667 views/dashboard.php:1032
+msgid "Configure Scheduler"
+msgstr ""
+
+#: views/dashboard.php:671 views/dashboard.php:1036
+msgid "Action "
+msgstr ""
+
+#: views/dashboard.php:680 views/dashboard.php:1047
+msgid "Duration "
+msgstr ""
+
+#: views/dashboard.php:683 views/dashboard.php:1050
+msgid "Daily"
+msgstr ""
+
+#: views/dashboard.php:684 views/dashboard.php:813 views/dashboard.php:1051
+#: views/dashboard.php:1277
+msgid "Weekly"
+msgstr ""
+
+#: views/dashboard.php:685 views/dashboard.php:817 views/dashboard.php:1052
+#: views/dashboard.php:1281
+msgid "Biweekly"
+msgstr ""
+
+#: views/dashboard.php:686 views/dashboard.php:821 views/dashboard.php:1053
+#: views/dashboard.php:1285
+msgid "Monthly"
+msgstr ""
+
+#: views/dashboard.php:687 views/dashboard.php:825 views/dashboard.php:1054
+#: views/dashboard.php:1289
+msgid "Quarterly"
+msgstr ""
+
+#: views/dashboard.php:688 views/dashboard.php:829 views/dashboard.php:1055
+#: views/dashboard.php:1293
+msgid "Half-Yearly"
+msgstr ""
+
+#: views/dashboard.php:689 views/dashboard.php:833 views/dashboard.php:1056
+#: views/dashboard.php:1297
+msgid "Annually"
+msgstr ""
+
+#: views/dashboard.php:691 views/dashboard.php:1058
+msgid "Save Scheduler"
+msgstr ""
+
+#: views/dashboard.php:704
+msgid "Manage Wp Data Optimizer Schedules"
+msgstr ""
+
+#: views/dashboard.php:712 views/dashboard.php:1201
+msgid "Overview"
+msgstr ""
+
+#: views/dashboard.php:732
+msgid "Auto Draft<br>"
+msgstr ""
+
+#: views/dashboard.php:735
+msgid "Dashboard Transient Feed<br>"
+msgstr ""
+
+#: views/dashboard.php:738
+msgid "Draft<br>"
+msgstr ""
+
+#: views/dashboard.php:741
+msgid "Moderated Comments<br>"
+msgstr ""
+
+#: views/dashboard.php:744
+msgid "Orphan Comments Meta<br>"
+msgstr ""
+
+#: views/dashboard.php:747
+msgid "Orphan Posts Meta<br>"
+msgstr ""
+
+#: views/dashboard.php:750
+msgid "Orphan Relationships<br>"
+msgstr ""
+
+#: views/dashboard.php:753
+msgid "Revision<br>"
+msgstr ""
+
+#: views/dashboard.php:756
+msgid "Remove Pingbacks<br>"
+msgstr ""
+
+#: views/dashboard.php:759
+msgid "Remove Transient Options<br>"
+msgstr ""
+
+#: views/dashboard.php:762
+msgid "Remove Trackbacks<br>"
+msgstr ""
+
+#: views/dashboard.php:765
+msgid "Spam Comments<br>"
+msgstr ""
+
+#: views/dashboard.php:768
+msgid "Trash Comments<br>"
+msgstr ""
+
+#: views/dashboard.php:778 views/dashboard.php:1228
+msgid "Action Type"
+msgstr ""
+
+#: views/dashboard.php:786 views/dashboard.php:1250
+msgid "Start Date"
+msgstr ""
+
+#: views/dashboard.php:803
+msgid "Scheduler Type"
+msgstr ""
+
+#: views/dashboard.php:861 views/dashboard.php:1024
 msgid ""
 "Note : Table Names highlighted with red color and an asterisk (*) are "
 "wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
 "delete and clean action because they can destroy your Wordpress "
 "unintentionally."
 msgstr ""
-"Opmerking: Tabel Namen gemarkeerd met rode kleur en een asterisk (*) zijn "
-"wordpress ingebouwde tabellen. <br/> Ze zijn uitgeschakeld door ons dus niet "
-"om te presteren te verwijderen en schoon actie omdat ze  onbedoeld kan  "
-"vernietigen uw  Wordpress."
 
-#: views/db-optimizer.php:58 views/wp-optimizer.php:159
-msgid "Database Information"
-msgstr "databank Informatie"
+#: views/dashboard.php:872 views/dashboard.php:930 views/dashboard.php:979
+#: views/dashboard.php:1041 views/dashboard.php:1239
+msgid "Optimize"
+msgstr ""
 
-#: views/db-optimizer.php:62 views/wp-optimizer.php:163
-msgid "Database Host "
-msgstr "databank gastheer"
+#: views/dashboard.php:873 views/dashboard.php:931 views/dashboard.php:980
+#: views/dashboard.php:1042 views/dashboard.php:1242
+msgid "Repair"
+msgstr ""
 
-#: views/db-optimizer.php:68 views/wp-optimizer.php:169
-msgid "Database Name "
-msgstr "databank Naam"
-
-#: views/db-optimizer.php:74 views/wp-optimizer.php:175
-msgid "Database User "
-msgstr "databank gebruiker"
-
-#: views/db-optimizer.php:80 views/wp-optimizer.php:181
-msgid "Database Type "
-msgstr "databank soort"
-
-#: views/db-optimizer.php:88 views/wp-optimizer.php:189
-msgid "Database Version"
-msgstr "databank versie"
-
-#: views/db-optimizer.php:101 views/wp-optimizer.php:202
-msgid "Manage Trackbacks / Comments"
-msgstr "Beheer naar je weblog / Reacties"
-
-#: views/db-optimizer.php:105 views/wp-optimizer.php:206
-msgid "Trackbacks"
-msgstr "naar je weblog"
-
-#: views/db-optimizer.php:111 views/db-optimizer.php:118
-#: views/db-optimizer.php:132 views/db-optimizer.php:139
-#: views/wp-optimizer.php:212 views/wp-optimizer.php:219
-#: views/wp-optimizer.php:233 views/wp-optimizer.php:240
-msgid "Enable"
-msgstr "staat stellen"
-
-#: views/db-optimizer.php:112 views/db-optimizer.php:119
-#: views/db-optimizer.php:133 views/db-optimizer.php:140
-#: views/wp-optimizer.php:213 views/wp-optimizer.php:220
-#: views/wp-optimizer.php:234 views/wp-optimizer.php:241
-msgid "Disable"
-msgstr "uitschakelen"
-
-#: views/db-optimizer.php:126 views/wp-optimizer.php:227
-msgid "Comments"
-msgstr "Reacties"
-
-#: views/db-optimizer.php:153 views/wp-optimizer.php:254
-msgid "Bulk Action"
-msgstr "Bulkactie"
-
-#: views/db-optimizer.php:154 views/wp-optimizer.php:255
-#: views/wp-optimizer.php:280 views/wp-optimizer.php:294
-#: views/wp-optimizer.php:308 views/wp-optimizer.php:322
-#: views/wp-optimizer.php:336 views/wp-optimizer.php:350
-#: views/wp-optimizer.php:364 views/wp-optimizer.php:378
-#: views/wp-optimizer.php:392 views/wp-optimizer.php:406
-#: views/wp-optimizer.php:420 views/wp-optimizer.php:434
-#: views/wp-optimizer.php:448
-msgid "Clean"
-msgstr "Reinig"
-
-#: views/db-optimizer.php:155
-msgid "Delete"
-msgstr "schrappen"
-
-#: views/db-optimizer.php:157 views/wp-optimizer.php:257
-msgid "Apply"
-msgstr "Solliciteer"
-
-#: views/db-optimizer.php:163
+#: views/dashboard.php:881 views/dashboard.php:1071
 msgid "Table"
-msgstr "tafel"
+msgstr ""
 
-#: views/db-optimizer.php:164
+#: views/dashboard.php:882 views/dashboard.php:1074
 msgid "Rows"
-msgstr "rijen"
+msgstr ""
 
-#: views/db-optimizer.php:165
+#: views/dashboard.php:883 views/dashboard.php:1072 views/licensing.php:65
 msgid "Type"
-msgstr "Soort"
+msgstr ""
 
-#: views/db-optimizer.php:166
+#: views/dashboard.php:884 views/dashboard.php:1075
 msgid "Size"
-msgstr "Maat"
+msgstr ""
 
-#: views/db-optimizer.php:167 views/wp-optimizer.php:265
-msgid "Action"
-msgstr "Aktie"
-
-#: views/db-optimizer.php:238
+#: views/dashboard.php:996 views/dashboard.php:1176
 msgid "Total"
-msgstr "Totaal"
+msgstr ""
 
-#: views/db-optimizer.php:363
-msgid "Are you sure, you want to Delete?"
-msgstr "Weet u zeker dat u wilt verwijderen?"
+#: views/dashboard.php:1065
+msgid "Choose Tables"
+msgstr ""
 
-#: views/db-optimizer.php:387
-msgid "Cleaned Successfully!"
-msgstr "Succesvol schoongemaakt!"
+#: views/dashboard.php:1073
+msgid "Overhead"
+msgstr ""
 
-#: views/db-optimizer.php:390
-msgid "Deleted Successfully!"
-msgstr "Met succes verwijderd!"
+#: views/dashboard.php:1193
+msgid "Manage Database Optimizer Schedules"
+msgstr ""
 
-#: views/db-optimizer.php:401
-msgid "Are you sure, you want to Perform this Action?"
-msgstr "Weet u zeker dat, wil je deze actie uit te voeren?"
+#: views/dashboard.php:1200
+msgid "Tables"
+msgstr ""
 
-#: views/db-optimizer.php:419
-msgid "Please choose Action or Table to proceed!."
-msgstr "Kies actie of Tafel om verder te gaan !."
+#: views/dashboard.php:1267
+msgid "Schedule Type"
+msgstr ""
 
-#: views/db-optimizer.php:425 views/wp-optimizer.php:502
-#: views/wp-optimizer.php:523
+#: views/dashboard.php:1366 views/dashboard.php:1436
 msgid "Are you sure, you want to Clean?"
-msgstr "Weet u zeker dat u wilt opruimen?"
+msgstr ""
 
-#: views/db-optimizer.php:451
-msgid "Are you sure, you want to Repair?"
-msgstr "Weet u zeker dat u wilt repareren?"
+#: views/dashboard.php:1383 views/dashboard.php:1453
+msgid "Successfully Cleaned!"
+msgstr ""
 
-#: views/wp-cleanup-optimizer-system-status.php:29
+#: views/dashboard.php:1391
+msgid "Please choose Action and Type of Data to Proceed!"
+msgstr ""
+
+#: views/dashboard.php:1511 views/dashboard.php:1784
+msgid "Are you sure, you want to save the Scheduler?"
+msgstr ""
+
+#: views/dashboard.php:1528 views/dashboard.php:1801
+msgid "Scheduler has been Saved!"
+msgstr ""
+
+#: views/dashboard.php:1536
+msgid "Please choose type of Data and Action to Configure Scheduler!"
+msgstr ""
+
+#: views/dashboard.php:1543 views/dashboard.php:1816
+msgid "Are you sure, you want to Delete this Scheduler?"
+msgstr ""
+
+#: views/dashboard.php:1641 views/dashboard.php:1683
+msgid "Cleaned Successfully!"
+msgstr ""
+
+#: views/dashboard.php:1644 views/dashboard.php:1686
+msgid "Deleted Successfully!"
+msgstr ""
+
+#: views/dashboard.php:1647 views/dashboard.php:1689
+msgid "Optimized Successfully!"
+msgstr ""
+
+#: views/dashboard.php:1650 views/dashboard.php:1692
+msgid "Repaired Successfully!"
+msgstr ""
+
+#: views/dashboard.php:1653 views/dashboard.php:1704
+msgid "Are you sure, you want to Perform this Action?"
+msgstr ""
+
+#: views/dashboard.php:1729
+msgid "Please choose Action or Table to proceed!."
+msgstr ""
+
+#: views/dashboard.php:1809
+msgid "Please choose Tables and Action to configure Scheduler!"
+msgstr ""
+
+#: views/general-settings.php:40
+msgid "General Settings has been updated  "
+msgstr ""
+
+#: views/general-settings.php:51
+msgid "Save Changes"
+msgstr ""
+
+#: views/general-settings.php:57 views/general-settings.php:65
+msgid "Message Settings"
+msgstr ""
+
+#: views/general-settings.php:58 views/general-settings.php:98
+msgid "Security Settings"
+msgstr ""
+
+#: views/general-settings.php:59 views/general-settings.php:189
+msgid "Plugin Settings"
+msgstr ""
+
+#: views/general-settings.php:70
+msgid "IP Block Message"
+msgstr ""
+
+#: views/general-settings.php:73
+msgid "Enter the error message here when the IP is Blocked."
+msgstr ""
+
+#: views/general-settings.php:78 views/general-settings.php:124
+#: views/premium-edition.php:605 views/premium-edition.php:611
+#: views/premium-edition.php:1102 views/premium-edition.php:1586
+#: views/premium-edition.php:2070 views/premium-edition.php:2554
+#: views/premium-edition.php:3034
+msgid "Max Login Attempts"
+msgstr ""
+
+#: views/general-settings.php:81
+msgid "Enter the error message here for Maxium login Attempts."
+msgstr ""
+
+#: views/general-settings.php:86
+msgid "Max Login Exceeded Error"
+msgstr ""
+
+#: views/general-settings.php:89
+msgid "Enter the error message here for Maxium login Exceeded."
+msgstr ""
+
+#: views/general-settings.php:102 views/premium-edition.php:622
+#: views/premium-edition.php:628 views/premium-edition.php:1114
+#: views/premium-edition.php:1598 views/premium-edition.php:2082
+#: views/premium-edition.php:2566 views/premium-edition.php:3046
+msgid "Auto IP Block"
+msgstr ""
+
+#: views/general-settings.php:131 views/login-logs.php:156
+msgid "Block IP Address"
+msgstr ""
+
+#: views/general-settings.php:134
+msgid "Add Block IP Address"
+msgstr ""
+
+#: views/general-settings.php:138
+msgid "Blocked IP Addresses"
+msgstr ""
+
+#: views/general-settings.php:150
+msgid "Delete Block IP Addresses"
+msgstr ""
+
+#: views/general-settings.php:154
+msgid "Block Start IP Range"
+msgstr ""
+
+#: views/general-settings.php:160
+msgid "Block End IP Range"
+msgstr ""
+
+#: views/general-settings.php:163
+msgid "Add Block IP Range"
+msgstr ""
+
+#: views/general-settings.php:167
+msgid "Blocked IP Range"
+msgstr ""
+
+#: views/general-settings.php:180
+msgid "Delete Block IP Range"
+msgstr ""
+
+#: views/general-settings.php:195
+msgid "Show Clean Up Plugin Menu"
+msgstr ""
+
+#: views/general-settings.php:199
+msgid "Administrator"
+msgstr ""
+
+#: views/general-settings.php:203
+msgid "Editor"
+msgstr ""
+
+#: views/general-settings.php:207
+msgid "Author"
+msgstr ""
+
+#: views/general-settings.php:211
+msgid "Contributor"
+msgstr ""
+
+#: views/general-settings.php:215
+msgid "Subscriber"
+msgstr ""
+
+#: views/general-settings.php:220
+msgid "Clean Up Menu Top Bar"
+msgstr ""
+
+#: views/general-settings.php:275
+msgid "Please enter valid IP Range."
+msgstr ""
+
+#: views/general-settings.php:280
+msgid ""
+"IP Address cannnot be duplicate. Please enter Start IP Address and End IP "
+"Address different!"
+msgstr ""
+
+#: views/general-settings.php:285
+msgid "Start Range cannot be greater than End Range."
+msgstr ""
+
+#: views/general-settings.php:290
+msgid ""
+"IP Address Range cannnot be duplicate. Please enter different IP addresses."
+msgstr ""
+
+#: views/general-settings.php:311
+msgid "Please enter valid IP Address"
+msgstr ""
+
+#: views/general-settings.php:316
+msgid "IP Address cannnot be duplicate. Please enter different IP address"
+msgstr ""
+
+#: views/general-settings.php:424
+msgid ""
+"You have Exceeded Maximum Login Attempts.<br>So, your IP has been blocked "
+"for today.<br>Kindly, try again after 24 Hours."
+msgstr ""
+
+#: views/licensing.php:52
+msgid "WP Clean Up Optimizer Licensing Module"
+msgstr ""
+
+#: views/licensing.php:58
+msgid "Version"
+msgstr ""
+
+#: views/licensing.php:72
+msgid "URL"
+msgstr ""
+
+#: views/licensing.php:79
+msgid "API Key"
+msgstr ""
+
+#: views/licensing.php:86
+msgid "Order ID"
+msgstr ""
+
+#: views/licensing.php:94
+msgid "Update"
+msgstr ""
+
+#: views/licensing.php:138
+msgid "Success! License has been validated."
+msgstr ""
+
+#: views/login-logs.php:37
+msgid "Action has been updated"
+msgstr ""
+
+#: views/login-logs.php:52
+msgid "Recent Login Details on World Map"
+msgstr ""
+
+#: views/login-logs.php:104
+msgid "Recent Login Details"
+msgstr ""
+
+#: views/login-logs.php:110
+msgid "Username"
+msgstr ""
+
+#: views/login-logs.php:111
+msgid "IP Address"
+msgstr ""
+
+#: views/login-logs.php:112
+msgid "Location"
+msgstr ""
+
+#: views/login-logs.php:113
+msgid "Login Date & Time"
+msgstr ""
+
+#: views/login-logs.php:114
+msgid "Status"
+msgstr ""
+
+#: views/login-logs.php:134
+msgid "Success"
+msgstr ""
+
+#: views/login-logs.php:140
+msgid "Failed"
+msgstr ""
+
+#: views/login-logs.php:150
+msgid "Whitelist IP Address"
+msgstr ""
+
+#: views/other-services.php:39
+msgid "WordPress"
+msgstr ""
+
+#: views/other-services.php:42
+msgid "Websites & Programming"
+msgstr ""
+
+#: views/other-services.php:45
+msgid "E-Commerce"
+msgstr ""
+
+#: views/other-services.php:48
+msgid "Designs & Graphics"
+msgstr ""
+
+#: views/other-services.php:51
+msgid "Company Branding "
+msgstr ""
+
+#: views/other-services.php:63
+msgid ""
+"WordPress Theme Installation & Demo Setup ( + Logo + Plugins + Optimization "
+"+ Security)"
+msgstr ""
+
+#: views/other-services.php:67
+msgid "We are specialized in WordPress Theme Installation, which includes :"
+msgstr ""
+
+#: views/other-services.php:70
+msgid "Installation of your purchased Theme."
+msgstr ""
+
+#: views/other-services.php:73
+msgid ""
+"We cover various areas such as Personal Websites, Business Websites and much "
+"more."
+msgstr ""
+
+#: views/other-services.php:81 views/other-services.php:121
+#: views/other-services.php:161 views/other-services.php:199
+#: views/other-services.php:239 views/other-services.php:275
+#: views/other-services.php:311 views/other-services.php:347
+#: views/other-services.php:380 views/other-services.php:415
+#: views/other-services.php:460 views/other-services.php:496
+#: views/other-services.php:532 views/other-services.php:568
+#: views/other-services.php:604 views/other-services.php:640
+#: views/other-services.php:676 views/other-services.php:709
+#: views/other-services.php:750 views/other-services.php:790
+#: views/other-services.php:830 views/other-services.php:870
+#: views/other-services.php:910 views/other-services.php:950
+#: views/other-services.php:987 views/other-services.php:1025
+#: views/other-services.php:1067 views/other-services.php:1103
+#: views/other-services.php:1142 views/other-services.php:1181
+#: views/other-services.php:1223 views/other-services.php:1263
+#: views/other-services.php:1303 views/other-services.php:1345
+#: views/other-services.php:1382 views/other-services.php:1422
+#: views/other-services.php:1461 views/other-services.php:1499
+msgid "Send Enquiry"
+msgstr ""
+
+#: views/other-services.php:83 views/other-services.php:123
+#: views/other-services.php:162 views/other-services.php:201
+#: views/other-services.php:240 views/other-services.php:276
+#: views/other-services.php:312 views/other-services.php:348
+#: views/other-services.php:381 views/other-services.php:416
+#: views/other-services.php:461 views/other-services.php:497
+#: views/other-services.php:569 views/other-services.php:605
+#: views/other-services.php:641 views/other-services.php:677
+#: views/other-services.php:752 views/other-services.php:792
+#: views/other-services.php:832 views/other-services.php:872
+#: views/other-services.php:912 views/other-services.php:952
+#: views/other-services.php:988 views/other-services.php:1026
+#: views/other-services.php:1068 views/other-services.php:1104
+#: views/other-services.php:1143 views/other-services.php:1182
+#: views/other-services.php:1225 views/other-services.php:1265
+#: views/other-services.php:1305 views/other-services.php:1347
+#: views/other-services.php:1384 views/other-services.php:1424
+#: views/other-services.php:1463 views/other-services.php:1501
+msgid "Read More"
+msgstr ""
+
+#: views/other-services.php:91 views/other-services.php:131
+#: views/other-services.php:169
+msgid "Cost of this Service is 50 Pounds."
+msgstr ""
+
+#: views/other-services.php:92
+msgid "The Time Frame would be 2 Business Days and upto 5 Revisions."
+msgstr ""
+
+#: views/other-services.php:101
+msgid "WordPress Website Migration, Backup & Restore"
+msgstr ""
+
+#: views/other-services.php:107
+msgid "With Hundreds of Migrations under our belt, you can trust us."
+msgstr ""
+
+#: views/other-services.php:110
+msgid ""
+"We can transfer your WordPress site to a new Host/Domain in 1 Business Day."
+msgstr ""
+
+#: views/other-services.php:113
+msgid "We will make sure everything is transferred and works properly."
+msgstr ""
+
+#: views/other-services.php:132
+msgid "The Time Frame would be 1 Business Day."
+msgstr ""
+
+#: views/other-services.php:141
+msgid "WordPress Virus Removal Services & Security Review"
+msgstr ""
+
+#: views/other-services.php:147
+msgid ""
+"We will review the Security of your Website and make necessary changes as "
+"required."
+msgstr ""
+
+#: views/other-services.php:150
+msgid ""
+"We will run virus scans and delete viruses and malicious softwares found."
+msgstr ""
+
+#: views/other-services.php:153 views/other-services.php:267
+#: views/other-services.php:339
+msgid "A detailed report would be submitted once we finish our job."
+msgstr ""
+
+#: views/other-services.php:170
+msgid "The Time Frame would be 2 Business Days."
+msgstr ""
+
+#: views/other-services.php:179
+msgid "WordPress Plugin Customization"
+msgstr ""
+
+#: views/other-services.php:185
+msgid "We can customize your existing WordPress Plugin to match your goals."
+msgstr ""
+
+#: views/other-services.php:188
+msgid ""
+"We will modify existing code with some new or modified features as required."
+msgstr ""
+
+#: views/other-services.php:191
+msgid ""
+"We will make sure all functionality works properly once the customization is "
+"complete."
+msgstr ""
+
+#: views/other-services.php:209 views/other-services.php:319
+#: views/other-services.php:388 views/other-services.php:576
+#: views/other-services.php:612 views/other-services.php:648
+#: views/other-services.php:684 views/other-services.php:717
+#: views/other-services.php:800 views/other-services.php:920
+#: views/other-services.php:1075 views/other-services.php:1114
+#: views/other-services.php:1153 views/other-services.php:1189
+#: views/other-services.php:1315 views/other-services.php:1392
+msgid "Cost of this Service is 500 Pounds."
+msgstr ""
+
+#: views/other-services.php:210 views/other-services.php:248
+#: views/other-services.php:284 views/other-services.php:320
+#: views/other-services.php:356 views/other-services.php:427
+#: views/other-services.php:761 views/other-services.php:801
+#: views/other-services.php:841 views/other-services.php:881
+#: views/other-services.php:921 views/other-services.php:961
+#: views/other-services.php:1274 views/other-services.php:1316
+#: views/other-services.php:1356
+msgid "The Time Frame would be 10 Business Days and upto 5 revisions."
+msgstr ""
+
+#: views/other-services.php:219
+msgid "Expert Custom WordPress Plugin Development"
+msgstr ""
+
+#: views/other-services.php:225
+msgid "We are a Team of Experts in developing Custom WordPress Plugins."
+msgstr ""
+
+#: views/other-services.php:228
+msgid ""
+"Our Goal is to provide you with the best, optimized and satisfactory results "
+"to your development needs."
+msgstr ""
+
+#: views/other-services.php:231
+msgid ""
+"We ensure you with clean and optimized code increasing your plugin's "
+"efficiency."
+msgstr ""
+
+#: views/other-services.php:247 views/other-services.php:355
+#: views/other-services.php:426 views/other-services.php:760
+#: views/other-services.php:840 views/other-services.php:880
+#: views/other-services.php:1273 views/other-services.php:1355
+#: views/other-services.php:1509
+msgid "Cost of this Service is 800 Pounds."
+msgstr ""
+
+#: views/other-services.php:256
+msgid "WordPress SEO Optimization"
+msgstr ""
+
+#: views/other-services.php:261
+msgid "We can Increase your site's traffic by improving search engine results."
+msgstr ""
+
+#: views/other-services.php:264
+msgid ""
+"We will perform some actions such as HTML, CSS & JS Minification, Improve "
+"basic load time, Optimize images for SEO etc. to enhance your WordPress "
+"Website Speed."
+msgstr ""
+
+#: views/other-services.php:283 views/other-services.php:1233
+msgid "Cost of this Service is 100 Pounds."
+msgstr ""
+
+#: views/other-services.php:292
+msgid "HTML to WordPress"
+msgstr ""
+
+#: views/other-services.php:297
+msgid "We can convert your HTML into WordPress Theme as needed."
+msgstr ""
+
+#: views/other-services.php:300
+msgid ""
+"We will provide you the User friendly Interface for Managing contents with "
+"an easily understandable documentation."
+msgstr ""
+
+#: views/other-services.php:303
+msgid ""
+"We ensure you the clean and optimized code increasing your theme's "
+"efficiency."
+msgstr ""
+
+#: views/other-services.php:328
+msgid "PSD to WordPress (Responsive)"
+msgstr ""
+
+#: views/other-services.php:333
+msgid "We can convert your PSD Design into WordPress Theme as required."
+msgstr ""
+
+#: views/other-services.php:336
+msgid ""
+"The code would be fully Responsive, Optimized and Cross Browser Compatible."
+msgstr ""
+
+#: views/other-services.php:364
+msgid "WordPress Theme Customization"
+msgstr ""
+
+#: views/other-services.php:369
+msgid ""
+"You will get a theme modified to match your goals. The .zip pack will "
+"contain modified installable WordPress Theme."
+msgstr ""
+
+#: views/other-services.php:372
+msgid ""
+"This is a completed website on a working host loaded with custom contact "
+"forms, SEO configuration & Page Speed Optimization."
+msgstr ""
+
+#: views/other-services.php:389 views/other-services.php:505
+msgid "The Time Frame would be 10 Business Days and 5 Revisions."
+msgstr ""
+
+#: views/other-services.php:398
+msgid "WordPress Theme Development"
+msgstr ""
+
+#: views/other-services.php:404
+msgid ""
+"We can professionally develop a responsive WordPress theme which would be "
+"unique for your company."
+msgstr ""
+
+#: views/other-services.php:407
+msgid ""
+"It would be compatible with all web browsers, Optimized for small screen "
+"devices, Professional coding and SEO friendly."
+msgstr ""
+
+#: views/other-services.php:441
+msgid "Creative & Professional Brochure Design"
+msgstr ""
+
+#: views/other-services.php:446
+msgid ""
+"Our goal is to produce professional, amazing and high quality brochure "
+"designs to target your customers."
+msgstr ""
+
+#: views/other-services.php:449
+msgid ""
+"The brochure could be Bi-fold, Trifold or Multi-page as per your "
+"requirement. "
+msgstr ""
+
+#: views/other-services.php:452
+msgid ""
+"Design brochures in any style to advertise your business, product or "
+"services."
+msgstr ""
+
+#: views/other-services.php:468 views/other-services.php:504
+#: views/other-services.php:540 views/other-services.php:1471
+msgid "Cost of this Service is 400 Pounds."
+msgstr ""
+
+#: views/other-services.php:469 views/other-services.php:1510
+msgid "The Time Frame would be 10 Business Days and upto 5 Revisions."
+msgstr ""
+
+#: views/other-services.php:477
+msgid "E-Books & Digital Design "
+msgstr ""
+
+#: views/other-services.php:482
+msgid "Provide you with unique concepts and eye-catching E-Book designs."
+msgstr ""
+
+#: views/other-services.php:485
+#, php-format
+msgid ""
+"100% satisfaction is guaranteed with the concept and designs provided for "
+"your company."
+msgstr ""
+
+#: views/other-services.php:488
+msgid ""
+"Send us the designs which you like and dislike which help us to gauge a "
+"style which suit your needs."
+msgstr ""
+
+#: views/other-services.php:513
+msgid "Photo Customization"
+msgstr ""
+
+#: views/other-services.php:518
+msgid "We can retouch or manipulate the Graphics for you easily as required."
+msgstr ""
+
+#: views/other-services.php:521
+msgid ""
+"Customizations could be: redesign, color correction and retouch for the "
+"existing Photos or Graphics."
+msgstr ""
+
+#: views/other-services.php:524
+msgid ""
+"Best quality Photos are delivered in the format like jpg, png, tiff, PDF and "
+"PSD with transparent background, to make it flexible."
+msgstr ""
+
+#: views/other-services.php:533 views/other-services.php:710
+msgid "Order Now"
+msgstr ""
+
+#: views/other-services.php:541 views/other-services.php:1115
+msgid "The Time Frame would be 5 Business Days and 3 revisions."
+msgstr ""
+
+#: views/other-services.php:549
+msgid "Caricatures & Cartoon Design"
+msgstr ""
+
+#: views/other-services.php:554
+msgid ""
+"We can design the most creative Caricatures and Cartoon for your business, "
+"advertisement, or mobile game."
+msgstr ""
+
+#: views/other-services.php:557
+msgid ""
+"We focus on colors, line qualities and styles to describe our character and "
+"design to make it flexible."
+msgstr ""
+
+#: views/other-services.php:560
+msgid ""
+"Designs can be delivered in JPEG, PNG and PSD with transparent background, "
+"to make it easier to apply on graphic material. "
+msgstr ""
+
+#: views/other-services.php:577
+msgid "The Time Frame would be 7 Business Days and upto 5 revisions."
+msgstr ""
+
+#: views/other-services.php:585
+msgid "App Icon Design"
+msgstr ""
+
+#: views/other-services.php:590
+msgid ""
+"We design own unique app icon that will really make your app extra special!"
+msgstr ""
+
+#: views/other-services.php:593
+msgid ""
+"Our goal is to give your app a professional look with a great and original "
+"icon."
+msgstr ""
+
+#: views/other-services.php:596 views/other-services.php:1134
+msgid ""
+"Let us know any ideas you may have in mind, it would help us to fulfill your "
+"requirements easily."
+msgstr ""
+
+#: views/other-services.php:613 views/other-services.php:649
+#: views/other-services.php:685 views/other-services.php:718
+#: views/other-services.php:1190
+msgid "The Time Frame would be 8 Business Days and upto 5 revisions."
+msgstr ""
+
+#: views/other-services.php:621
+msgid "Label & Packaging Design"
+msgstr ""
+
+#: views/other-services.php:626
+msgid ""
+"Complete packaging design solution for your products such as Labels, packs, "
+"bags and much more."
+msgstr ""
+
+#: views/other-services.php:629
+msgid ""
+"Unique and original design to suite your needs, products and target "
+"consumers."
+msgstr ""
+
+#: views/other-services.php:632
+msgid ""
+"The final product will be delivered to you in AI, EPS, PSD or PDF format, "
+"all editable."
+msgstr ""
+
+#: views/other-services.php:657
+msgid "CD Cover Artwork"
+msgstr ""
+
+#: views/other-services.php:662
+msgid ""
+"Professionally and Creatively designed CD Artwork & Designs are available "
+"here."
+msgstr ""
+
+#: views/other-services.php:665
+msgid ""
+"We provide you with original cover artwork, with multiple formats and if "
+"desired multiple dimensions too."
+msgstr ""
+
+#: views/other-services.php:668
+msgid "Tell us some ideas and preferences so that we can meet your needs. "
+msgstr ""
+
+#: views/other-services.php:693
+msgid "Banner Design & Customization"
+msgstr ""
+
+#: views/other-services.php:698
+msgid ""
+"We customize from existing banner templates or start banner making from "
+"scratch as required."
+msgstr ""
+
+#: views/other-services.php:701
+msgid ""
+"The final product is delivered in the format like jpg, png and PSD with "
+"transparent background, to make it flexible with other graphics."
+msgstr ""
+
+#: views/other-services.php:733
+msgid "Website Design & Development"
+msgstr ""
+
+#: views/other-services.php:739
+msgid ""
+"We design and develop professional websites with pixel perfect work and "
+"guaranteed satisfaction."
+msgstr ""
+
+#: views/other-services.php:742
+msgid ""
+"We provide high quality and responsive Website designs that represents "
+"perfect image to your customers."
+msgstr ""
+
+#: views/other-services.php:770
+msgid "Website Re-design & Customization"
+msgstr ""
+
+#: views/other-services.php:776
+msgid "We can re-design your website to give it a unique and attractive look."
+msgstr ""
+
+#: views/other-services.php:779
+#, php-format
+msgid "100% satisfaction is guaranteed with the concept and designs provided."
+msgstr ""
+
+#: views/other-services.php:782
+msgid ""
+"For Modifications of layout and design, send us the ideas which would help "
+"us to meet your needs."
+msgstr ""
+
+#: views/other-services.php:810
+msgid "Landing Page Design & Development"
+msgstr ""
+
+#: views/other-services.php:816
+msgid ""
+"We can Design and Develop unique home page which is related to creativity "
+"and expression of ideas "
+msgstr ""
+
+#: views/other-services.php:819
+msgid ""
+"The professional custom design, created by considering all your requirements "
+"and adapted to all your needs"
+msgstr ""
+
+#: views/other-services.php:822
+msgid ""
+"Final Product as Organized & grouped layered PSD file, JPG or PNG file and "
+"Optimized Code with friendly services."
+msgstr ""
+
+#: views/other-services.php:850
+msgid "PHP Programming & Web Development"
+msgstr ""
+
+#: views/other-services.php:856
+msgid ""
+"We are PHP experts ready to work on your project and provides you with SQL "
+"Injection Security Protection."
+msgstr ""
+
+#: views/other-services.php:859
+msgid ""
+"Creation of any php script with secure and optimized code, integration on "
+"your project and compatible with your needs."
+msgstr ""
+
+#: views/other-services.php:862
+msgid ""
+"We will make sure all the functionality and features works properly once the "
+"development process is completed."
+msgstr ""
+
+#: views/other-services.php:890
+msgid "Server Configuration & Management"
+msgstr ""
+
+#: views/other-services.php:896
+msgid "We are here to install, manage or optimize your server efficiently."
+msgstr ""
+
+#: views/other-services.php:899
+msgid ""
+"We specialize in Cpanel Server Management, Website Migration to new "
+"dedicated server and much more."
+msgstr ""
+
+#: views/other-services.php:902
+msgid ""
+"Also, we can Install a Corn Job to Check yours Databases and Tables as "
+"needed."
+msgstr ""
+
+#: views/other-services.php:930
+msgid "Bug Fixes & Error Handling"
+msgstr ""
+
+#: views/other-services.php:936
+msgid "We are specialized into Website Troubleshooting which includes:"
+msgstr ""
+
+#: views/other-services.php:939
+msgid ""
+"PHP errors, Database errors, JavaScript errors and CSS errors and much more."
+msgstr ""
+
+#: views/other-services.php:942
+msgid ""
+"Provide us the detailed description of issue with the error messages or log "
+"files to speed up the fix process."
+msgstr ""
+
+#: views/other-services.php:960 views/other-services.php:1432
+msgid "Cost of this Service is 300 Pounds."
+msgstr ""
+
+#: views/other-services.php:970
+msgid ".Net Programming & Development"
+msgstr ""
+
+#: views/other-services.php:976
+msgid ""
+"We are expertise to develop perfect .NET product and can deliver real worth "
+"to you in succinct solution."
+msgstr ""
+
+#: views/other-services.php:979
+msgid ""
+"Our Service includes: .NET Application Migration, Custom .NET Programming, ."
+"NET Web Services Development and .NET Ecommerce Solutions."
+msgstr ""
+
+#: views/other-services.php:995 views/other-services.php:1033
+msgid "Cost of this Service is 2000 Pounds."
+msgstr ""
+
+#: views/other-services.php:996 views/other-services.php:1034
+msgid "The Time Frame would be 30 Business Days and upto 10 revisions."
+msgstr ""
+
+#: views/other-services.php:1005
+msgid "Desktop Application Development & Customization"
+msgstr ""
+
+#: views/other-services.php:1011
+msgid ""
+"We are into Windows Software Development over years with our extensive "
+"development exposure."
+msgstr ""
+
+#: views/other-services.php:1014
+msgid ""
+"We have great experience in developing desktop applications using wide range "
+"of technologies."
+msgstr ""
+
+#: views/other-services.php:1017
+msgid "Provide us the detailed description of your project to meet your needs."
+msgstr ""
+
+#: views/other-services.php:1048
+msgid "Professional Logo Design"
+msgstr ""
+
+#: views/other-services.php:1053
+msgid ""
+"We are here to create your brand with Unique, Creative and Professional Logo "
+"Designs which suits your requirement."
+msgstr ""
+
+#: views/other-services.php:1056
+msgid ""
+"Logos would be in different file formats such as .ai, .eps, .psd, .pdf, jpg "
+"and transparent .png"
+msgstr ""
+
+#: views/other-services.php:1059
+msgid " We hand over 100% Copyrights to the final logo designs."
+msgstr ""
+
+#: views/other-services.php:1076
+msgid "The Time Frame would be 5 Business Days and upto 3 Revisions."
+msgstr ""
+
+#: views/other-services.php:1084
+msgid "Logo Customization"
+msgstr ""
+
+#: views/other-services.php:1089
+msgid ""
+"We can redesign your existing logos to give it a unique and attractive look."
+msgstr ""
+
+#: views/other-services.php:1092
+#, php-format
+msgid ""
+"We guaranteed 100% satisfaction with the concept and designs provided for "
+"the Company."
+msgstr ""
+
+#: views/other-services.php:1095
+msgid ""
+"For Modifications of concept and design, send us the ideas which would help "
+"us to meet your needs."
+msgstr ""
+
+#: views/other-services.php:1123
+msgid "Stunning Flyer Design"
+msgstr ""
+
+#: views/other-services.php:1128
+msgid ""
+"We can design unique flyer designs to get your name and logo in the market."
+msgstr ""
+
+#: views/other-services.php:1131
+msgid ""
+"The Designs would be creative, professional and eye-catching to attract your "
+"customers."
+msgstr ""
+
+#: views/other-services.php:1154
+msgid "The Time Frame would be 8 Business Days and upto 5 Revisions."
+msgstr ""
+
+#: views/other-services.php:1162
+msgid "Brand Stationery Design"
+msgstr ""
+
+#: views/other-services.php:1167
+msgid ""
+"We are experts in creating professional and unique Design package that "
+"includes:"
+msgstr ""
+
+#: views/other-services.php:1170
+msgid ""
+"Custom Business Card, Letterhead and Envelope Design which are compatible "
+"with your needs."
+msgstr ""
+
+#: views/other-services.php:1173
+msgid ""
+"We focuses on creating a robust brand image and converting Strangers into "
+"your Customers!"
+msgstr ""
+
+#: views/other-services.php:1206
+msgid ""
+"WooCommerce Service Addition (+Theme Installation + Theme Customization + "
+"Payment Gateway Setup)"
+msgstr ""
+
+#: views/other-services.php:1212
+msgid ""
+"We are here to add products to your existing website, increasing the market "
+"value of your business."
+msgstr ""
+
+#: views/other-services.php:1215
+msgid ""
+"We also offer you with WooCommerce Theme Installation, Theme Customization "
+"and Payment Gateway Setup for website."
+msgstr ""
+
+#: views/other-services.php:1234
+msgid "The Time Frame would be 2 Business Days and upto 5 revisions."
+msgstr ""
+
+#: views/other-services.php:1243
+msgid "WooCommerce Theme Development"
+msgstr ""
+
+#: views/other-services.php:1249
+msgid ""
+"Our goal is to provide you with Professional and Unique WordPress "
+"WooCommerce Theme."
+msgstr ""
+
+#: views/other-services.php:1252
+msgid ""
+"The code would be fully Responsive, Optimized and supports Cross Browser "
+"Compatible, increasing market targets."
+msgstr ""
+
+#: views/other-services.php:1255
+msgid ""
+"We have ability to provide the best ecommerce solutions for your business."
+msgstr ""
+
+#: views/other-services.php:1283
+msgid "WooCommerce Theme Customization"
+msgstr ""
+
+#: views/other-services.php:1289
+msgid "We are here to customize your theme to match your requirements."
+msgstr ""
+
+#: views/other-services.php:1292
+msgid ""
+"Our goal is to give your theme a unique and professional look with great "
+"features and functionality."
+msgstr ""
+
+#: views/other-services.php:1295
+msgid "Let us know some ideas and preferences so that we can meet your needs."
+msgstr ""
+
+#: views/other-services.php:1325
+msgid "WooCommerce Plugin Development"
+msgstr ""
+
+#: views/other-services.php:1331
+msgid ""
+"A team of WordPress Experts, now offering WooCommerce Plugin development."
+msgstr ""
+
+#: views/other-services.php:1334
+msgid ""
+"We provide high quality plugin and ensure you with proper working "
+"functionality."
+msgstr ""
+
+#: views/other-services.php:1337
+msgid ""
+"A detailed report with documentation would be submitted once we finish the "
+"development process."
+msgstr ""
+
+#: views/other-services.php:1365
+msgid "WooCommerce Plugin Customization"
+msgstr ""
+
+#: views/other-services.php:1371
+msgid ""
+"We can integrate and customize WooCommerce plugin with additional "
+"functionalities to meet your demands."
+msgstr ""
+
+#: views/other-services.php:1374
+msgid ""
+"We will ensure that all functionality works properly with complete "
+"optimization and documentation once the customization is complete."
+msgstr ""
+
+#: views/other-services.php:1393
+msgid "The Time Frame would be 8 Business Days and upto 4 revisions."
+msgstr ""
+
+#: views/other-services.php:1402
+msgid "WooCommerce Plugin Installation & Optimization"
+msgstr ""
+
+#: views/other-services.php:1408
+msgid "We are specialized in WooCommerce Plugin Installation, which includes :"
+msgstr ""
+
+#: views/other-services.php:1411
+msgid "Installation and Optimization of your purchased WooCommerce Plugin."
+msgstr ""
+
+#: views/other-services.php:1414
+#, php-format
+msgid ""
+"We guarantee you with 100% satisfaction with the results as per your "
+"requirement to match your goals and market demands."
+msgstr ""
+
+#: views/other-services.php:1433 views/other-services.php:1472
+msgid "The Time Frame would be 5 Business Days and upto 3 revisions."
+msgstr ""
+
+#: views/other-services.php:1444
+msgid "WooCommerce Payment Gateway Integration"
+msgstr ""
+
+#: views/other-services.php:1450
+msgid ""
+"Provide you with Default Payment Gateway integration such as PayPal, Bank "
+"Transfer, Credit Card and much more."
+msgstr ""
+
+#: views/other-services.php:1453
+msgid ""
+"Let us know, if you need any other type of Payment Gateway Integration with "
+"your website for your customers."
+msgstr ""
+
+#: views/other-services.php:1481
+msgid "Complete Shopping Cart Setup"
+msgstr ""
+
+#: views/other-services.php:1487
+msgid ""
+"We are specialized in setting up complete shopping cart for your website."
+msgstr ""
+
+#: views/other-services.php:1490
+msgid ""
+"We provide you with basic uploading of files and making the database "
+"connection to a complete store set up, we have packages to meet your needs."
+msgstr ""
+
+#: views/premium-edition.php:39
+msgid "WP Clean Up Optimizer is an one time Investment. Its Worth it!"
+msgstr ""
+
+#: views/premium-edition.php:55
+msgid "choose"
+msgstr ""
+
+#: views/premium-edition.php:55
+msgid "your"
+msgstr ""
+
+#: views/premium-edition.php:55
+msgid "plan"
+msgstr ""
+
+#: views/premium-edition.php:65 views/premium-edition.php:71
+#: views/premium-edition.php:718 views/premium-edition.php:1202
+#: views/premium-edition.php:1686 views/premium-edition.php:2170
+#: views/premium-edition.php:2654
+msgid "Domains per License"
+msgstr ""
+
+#: views/premium-edition.php:69
+msgid "Number of websites that can use the plugin on purchase of a License."
+msgstr ""
+
+#: views/premium-edition.php:82 views/premium-edition.php:88
+#: views/premium-edition.php:730 views/premium-edition.php:1214
+#: views/premium-edition.php:1698 views/premium-edition.php:2182
+#: views/premium-edition.php:2666
+msgid "Technical Support"
+msgstr ""
+
+#: views/premium-edition.php:86
+msgid ""
+"Technical Support by the Development Team for Installation, Bug Fixing, "
+"Plugin Compatibility Issues."
+msgstr ""
+
+#: views/premium-edition.php:99 views/premium-edition.php:105
+#: views/premium-edition.php:742 views/premium-edition.php:1226
+#: views/premium-edition.php:1710 views/premium-edition.php:2194
+#: views/premium-edition.php:2678
+msgid "Plugin Updates"
+msgstr ""
+
+#: views/premium-edition.php:103
+msgid ""
+"Automatic Plugin Update Notification with New Features, Bug Fixing and much "
+"more."
+msgstr ""
+
+#: views/premium-edition.php:116 views/premium-edition.php:122
+#: views/premium-edition.php:754 views/premium-edition.php:1238
+#: views/premium-edition.php:1722 views/premium-edition.php:2206
+#: views/premium-edition.php:2690
+msgid "Multi-Lingual"
+msgstr ""
+
+#: views/premium-edition.php:120
+msgid "Multi-Lingual Facility allows the plugin to be used in 36 languages."
+msgstr ""
+
+#: views/premium-edition.php:133 views/premium-edition.php:139
+#: views/premium-edition.php:766 views/premium-edition.php:1250
+#: views/premium-edition.php:1734 views/premium-edition.php:2218
+#: views/premium-edition.php:2702
+msgid "Clean Auto Draft"
+msgstr ""
+
+#: views/premium-edition.php:137
+msgid "Clean up the WordPress database by removing auto draft."
+msgstr ""
+
+#: views/premium-edition.php:150 views/premium-edition.php:156
+#: views/premium-edition.php:778 views/premium-edition.php:1262
+#: views/premium-edition.php:1746 views/premium-edition.php:2230
+#: views/premium-edition.php:2714
+msgid "Clean Transient Feed"
+msgstr ""
+
+#: views/premium-edition.php:154
+msgid "Clean up the WordPress database by removing Transient Feed."
+msgstr ""
+
+#: views/premium-edition.php:167 views/premium-edition.php:173
+#: views/premium-edition.php:790 views/premium-edition.php:1274
+#: views/premium-edition.php:1758 views/premium-edition.php:2242
+#: views/premium-edition.php:2726
+msgid "Clean Draft"
+msgstr ""
+
+#: views/premium-edition.php:171
+msgid "Clean up the WordPress database by removing Draft."
+msgstr ""
+
+#: views/premium-edition.php:184 views/premium-edition.php:190
+#: views/premium-edition.php:802 views/premium-edition.php:1286
+#: views/premium-edition.php:1770 views/premium-edition.php:2254
+#: views/premium-edition.php:2738
+msgid "Clean Moderated Comments"
+msgstr ""
+
+#: views/premium-edition.php:188
+msgid "Clean up the WordPress database by removing Moderated Comments."
+msgstr ""
+
+#: views/premium-edition.php:201 views/premium-edition.php:207
+#: views/premium-edition.php:814 views/premium-edition.php:1298
+#: views/premium-edition.php:1782 views/premium-edition.php:2266
+#: views/premium-edition.php:2750
+msgid "Clean Orphan Comments Meta"
+msgstr ""
+
+#: views/premium-edition.php:205
+msgid "Clean up the WordPress database by removing Orphan Comments Meta."
+msgstr ""
+
+#: views/premium-edition.php:218 views/premium-edition.php:224
+#: views/premium-edition.php:826 views/premium-edition.php:1310
+#: views/premium-edition.php:1794 views/premium-edition.php:2278
+#: views/premium-edition.php:2762
+msgid "Clean Orphan Posts Meta"
+msgstr ""
+
+#: views/premium-edition.php:222
+msgid "Clean up the WordPress database by removing Orphan Posts Meta."
+msgstr ""
+
+#: views/premium-edition.php:235 views/premium-edition.php:241
+#: views/premium-edition.php:838 views/premium-edition.php:1322
+#: views/premium-edition.php:1806 views/premium-edition.php:2290
+#: views/premium-edition.php:2774
+msgid "Clean Orphan Relationships"
+msgstr ""
+
+#: views/premium-edition.php:239
+msgid "Clean up the WordPress database by removing Orphan Relationships."
+msgstr ""
+
+#: views/premium-edition.php:252 views/premium-edition.php:258
+#: views/premium-edition.php:850 views/premium-edition.php:1334
+#: views/premium-edition.php:1818 views/premium-edition.php:2302
+#: views/premium-edition.php:2786
+msgid "Clean Revision"
+msgstr ""
+
+#: views/premium-edition.php:256
+msgid "Clean up the WordPress database by removing Revision."
+msgstr ""
+
+#: views/premium-edition.php:269 views/premium-edition.php:275
+#: views/premium-edition.php:862 views/premium-edition.php:1346
+#: views/premium-edition.php:1830 views/premium-edition.php:2314
+#: views/premium-edition.php:2798
+msgid "Clean Spam Comments"
+msgstr ""
+
+#: views/premium-edition.php:273
+msgid "Clean up the WordPress database by removing Spam Comments."
+msgstr ""
+
+#: views/premium-edition.php:286 views/premium-edition.php:292
+#: views/premium-edition.php:874 views/premium-edition.php:1358
+#: views/premium-edition.php:1842 views/premium-edition.php:2326
+#: views/premium-edition.php:2810
+msgid "Clean Trash Comments"
+msgstr ""
+
+#: views/premium-edition.php:290
+msgid "Clean up the WordPress database by removing Trash Comments."
+msgstr ""
+
+#: views/premium-edition.php:307
+msgid "Clean up the WordPress database by removing Pingbacks."
+msgstr ""
+
+#: views/premium-edition.php:324
+msgid "Clean up the WordPress database by removing Transient Options."
+msgstr ""
+
+#: views/premium-edition.php:341
+msgid "Clean up the WordPress database by removing Trackbacks."
+msgstr ""
+
+#: views/premium-edition.php:353 views/premium-edition.php:359
+#: views/premium-edition.php:922 views/premium-edition.php:1406
+#: views/premium-edition.php:1890 views/premium-edition.php:2374
+#: views/premium-edition.php:2858
+msgid "Clean Database Tables"
+msgstr ""
+
+#: views/premium-edition.php:357
+msgid " Remove the data from the tables making it clean and empty."
+msgstr ""
+
+#: views/premium-edition.php:374
+msgid ""
+"Allows you to track the current users who are logged in into you website and "
+"show there Geo Location on the map. It shows various details such as "
+"Username, IP Address, Location, Login Date &amp;Time, Login Status, Action "
+"to Block or White list IP Address."
+msgstr ""
+
+#: views/premium-edition.php:387 views/premium-edition.php:392
+#: views/premium-edition.php:946 views/premium-edition.php:1430
+#: views/premium-edition.php:1914 views/premium-edition.php:2398
+#: views/premium-edition.php:2882
+msgid "Database Overview"
+msgstr ""
+
+#: views/premium-edition.php:391
+msgid ""
+"Allows you to view Database Information such as Database Host, Database "
+"Name, Database User, Database Type and Database Version."
+msgstr ""
+
+#: views/premium-edition.php:403 views/premium-edition.php:409
+#: views/premium-edition.php:958 views/premium-edition.php:1442
+#: views/premium-edition.php:1926 views/premium-edition.php:2410
+#: views/premium-edition.php:2894
+msgid "Data Clean Scheduler"
+msgstr ""
+
+#: views/premium-edition.php:407
+msgid ""
+"Remove the data from the WordPress making it clean and empty automatically "
+"(Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually)."
+msgstr ""
+
+#: views/premium-edition.php:420 views/premium-edition.php:425
+#: views/premium-edition.php:970 views/premium-edition.php:1454
+#: views/premium-edition.php:1938 views/premium-edition.php:2422
+#: views/premium-edition.php:2906
+msgid "Database Clean Scheduler"
+msgstr ""
+
+#: views/premium-edition.php:424
+msgid ""
+"Clean data form the tables automatically on different basis i.e. Daily, "
+"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually"
+msgstr ""
+
+#: views/premium-edition.php:436 views/premium-edition.php:442
+#: views/premium-edition.php:982 views/premium-edition.php:1466
+#: views/premium-edition.php:1950 views/premium-edition.php:2434
+#: views/premium-edition.php:2914
+msgid "Manage Comments"
+msgstr ""
+
+#: views/premium-edition.php:440
+msgid ""
+"Enable/Disable Comments on your WordPress website. Manage comments on any "
+"Post or Page. It can be used to disable comments on the entire network."
+msgstr ""
+
+#: views/premium-edition.php:453 views/premium-edition.php:459
+#: views/premium-edition.php:994 views/premium-edition.php:1478
+#: views/premium-edition.php:1962 views/premium-edition.php:2446
+#: views/premium-edition.php:2926
+msgid "Manage Trackbacks"
+msgstr ""
+
+#: views/premium-edition.php:457
+msgid ""
+"Trackbacks are a way to notify legacy blog systems that you've linked to "
+"them.Allows you to Enable/Disable Trackbacks on your WordPress website."
+msgstr ""
+
+#: views/premium-edition.php:470 views/premium-edition.php:476
+#: views/premium-edition.php:1006 views/premium-edition.php:1490
+#: views/premium-edition.php:1974 views/premium-edition.php:2458
+#: views/premium-edition.php:2938
+msgid "Database Delete Scheduler"
+msgstr ""
+
+#: views/premium-edition.php:474
+msgid ""
+"Delete data form the tables automatically on different basis i.e. Daily, "
+"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+msgstr ""
+
+#: views/premium-edition.php:487 views/premium-edition.php:493
+#: views/premium-edition.php:1018 views/premium-edition.php:1502
+#: views/premium-edition.php:1986 views/premium-edition.php:2470
+#: views/premium-edition.php:2950
+msgid "Database Repair Scheduler"
+msgstr ""
+
+#: views/premium-edition.php:491
+msgid ""
+" Repair data form the tables automatically on different basis i.e. Daily, "
+"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+msgstr ""
+
+#: views/premium-edition.php:504 views/premium-edition.php:510
+#: views/premium-edition.php:1514 views/premium-edition.php:1998
+#: views/premium-edition.php:2482 views/premium-edition.php:2962
+msgid "Database Optimizer Scheduler"
+msgstr ""
+
+#: views/premium-edition.php:508
+msgid ""
+"Optimize data form the tables automatically on different basis i.e. Daily, "
+"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+msgstr ""
+
+#: views/premium-edition.php:521 views/premium-edition.php:526
+#: views/premium-edition.php:1042 views/premium-edition.php:1526
+#: views/premium-edition.php:2010 views/premium-edition.php:2494
+#: views/premium-edition.php:2974
+msgid "Preview Database Tables"
+msgstr ""
+
+#: views/premium-edition.php:525
+msgid ""
+" Preview the data of your table which is stored in your database on click of "
+"table name."
+msgstr ""
+
+#: views/premium-edition.php:537 views/premium-edition.php:1054
+#: views/premium-edition.php:1538 views/premium-edition.php:2022
+#: views/premium-edition.php:2506 views/premium-edition.php:2986
+msgid "Repair Database Tables"
+msgstr ""
+
+#: views/premium-edition.php:541
+msgid ""
+" WP Clean Optimizer repairs the possibly corrupted tables in your database."
+msgstr ""
+
+#: views/premium-edition.php:543
+msgid "Repair Database Tables."
+msgstr ""
+
+#: views/premium-edition.php:554 views/premium-edition.php:560
+#: views/premium-edition.php:1066 views/premium-edition.php:1550
+#: views/premium-edition.php:2034 views/premium-edition.php:2518
+#: views/premium-edition.php:2998
+msgid "Delete Database Tables"
+msgstr ""
+
+#: views/premium-edition.php:558
+msgid " Delete or Drop the complete tables of your database."
+msgstr ""
+
+#: views/premium-edition.php:571 views/premium-edition.php:577
+#: views/premium-edition.php:1078 views/premium-edition.php:1562
+#: views/premium-edition.php:2046 views/premium-edition.php:2530
+#: views/premium-edition.php:3010
+msgid "Optimizer Database Tables"
+msgstr ""
+
+#: views/premium-edition.php:575
+msgid "Improves Input/output efficiency when accessing the tables."
+msgstr ""
+
+#: views/premium-edition.php:588 views/premium-edition.php:594
+#: views/premium-edition.php:1090 views/premium-edition.php:1574
+#: views/premium-edition.php:2058 views/premium-edition.php:2542
+#: views/premium-edition.php:3022
+msgid "Block Login IP Address"
+msgstr ""
+
+#: views/premium-edition.php:592
+msgid ""
+"Allows you to block the IP Addresses of the login users from the Login Logs "
+"if he is considered as unauthorized."
+msgstr ""
+
+#: views/premium-edition.php:609
+msgid ""
+"Allows you to set number of login attempts left for the user incase wrong "
+"login attempts."
+msgstr ""
+
+#: views/premium-edition.php:626
+msgid ""
+"Allows you to Blocks IP addresses for next 24 hours when the limit of login "
+"attempts is reached."
+msgstr ""
+
+#: views/premium-edition.php:639 views/premium-edition.php:645
+#: views/premium-edition.php:1126 views/premium-edition.php:1610
+#: views/premium-edition.php:2094 views/premium-edition.php:2578
+#: views/premium-edition.php:3058
+msgid "Block IP Ranges"
+msgstr ""
+
+#: views/premium-edition.php:643
+msgid ""
+" Allows you to block range of IP Addresses that are considered undesirable "
+"or hostile."
+msgstr ""
+
+#: views/premium-edition.php:656 views/premium-edition.php:662
+#: views/premium-edition.php:1138 views/premium-edition.php:1622
+#: views/premium-edition.php:2106 views/premium-edition.php:2590
+#: views/premium-edition.php:3070
+msgid "Block Single IP Address"
+msgstr ""
+
+#: views/premium-edition.php:660
+msgid ""
+"Allows you to add single IP Address for blocking it as per your requirement."
+msgstr ""
+
+#: views/premium-edition.php:673 views/premium-edition.php:679
+#: views/premium-edition.php:1150 views/premium-edition.php:1634
+#: views/premium-edition.php:2118 views/premium-edition.php:2602
+#: views/premium-edition.php:3082
+msgid "Roles and Capabilities"
+msgstr ""
+
+#: views/premium-edition.php:677
+msgid ""
+"Allows you to controls the capabilities of WP Clean Up Optimizer among "
+"different roles of WordPress users."
+msgstr ""
+
+#: views/premium-edition.php:699
+msgid "Lite"
+msgstr ""
+
+#: views/premium-edition.php:708
+msgid "FREE"
+msgstr ""
+
+#: views/premium-edition.php:720 views/premium-edition.php:1204
+#: views/premium-edition.php:1688
+msgid "1"
+msgstr ""
+
+#: views/premium-edition.php:732
+msgid "None"
+msgstr ""
+
+#: views/premium-edition.php:1030
+msgid "Database Optimizer Schedule"
+msgstr ""
+
+#: views/premium-edition.php:1161
+msgid "Download!"
+msgstr ""
+
+#: views/premium-edition.php:1175
+msgid "Eco"
+msgstr ""
+
+#: views/premium-edition.php:1185 views/premium-edition.php:1669
+#: views/premium-edition.php:2153 views/premium-edition.php:2637
+msgid "You just need to pay for once for life time."
+msgstr ""
+
+#: views/premium-edition.php:1188
+msgid "8"
+msgstr ""
+
+#: views/premium-edition.php:1191 views/premium-edition.php:1675
+#: views/premium-edition.php:2159 views/premium-edition.php:2643
+msgid "one time"
+msgstr ""
+
+#: views/premium-edition.php:1216
+msgid "1 Week"
+msgstr ""
+
+#: views/premium-edition.php:1645 views/premium-edition.php:2129
+#: views/premium-edition.php:2613 views/premium-edition.php:3093
+msgid "Order Now!"
+msgstr ""
+
+#: views/premium-edition.php:1659
+msgid "Pro"
+msgstr ""
+
+#: views/premium-edition.php:1672
+msgid "12"
+msgstr ""
+
+#: views/premium-edition.php:1700
+msgid "1 Month"
+msgstr ""
+
+#: views/premium-edition.php:2143
+msgid "Developer"
+msgstr ""
+
+#: views/premium-edition.php:2156
+msgid "49"
+msgstr ""
+
+#: views/premium-edition.php:2172
+msgid "5"
+msgstr ""
+
+#: views/premium-edition.php:2184 views/premium-edition.php:2668
+msgid "1 Year"
+msgstr ""
+
+#: views/premium-edition.php:2627
+msgid "Extended"
+msgstr ""
+
+#: views/premium-edition.php:2640
+msgid "389"
+msgstr ""
+
+#: views/premium-edition.php:2656
+msgid "50"
+msgstr ""
+
+#. translators: 1: The rating
+#: views/recommended-plugins.php:72
+#, php-format
+msgid "%s rating"
+msgstr ""
+
+#. translators: 1: Plugin name and version.
+#: views/recommended-plugins.php:134
+msgid "More Details"
+msgstr ""
+
+#. translators: 1: Plugin name and version.
+#: views/recommended-plugins.php:145
+msgid "Install Now"
+msgstr ""
+
+#. translators: 1: Plugin name and version
+#: views/recommended-plugins.php:152
+msgid "Update Now"
+msgstr ""
+
+#: views/recommended-plugins.php:201 views/recommended-plugins.php:211
+#: views/recommended-plugins.php:221 views/recommended-plugins.php:231
+msgid "Visit Website"
+msgstr ""
+
+#: views/recommended-plugins.php:249
+msgid "Last Updated:"
+msgstr ""
+
+#: views/recommended-plugins.php:260
+msgid "<strong>Untested</strong> with your version of WordPress"
+msgstr ""
+
+#: views/recommended-plugins.php:264
+msgid "Incompatible with your version of WordPress"
+msgstr ""
+
+#: views/recommended-plugins.php:268
+msgid "Compatible with your version of WordPress"
+msgstr ""
+
+#: views/system-status.php:34
 msgid "Wp Clean Up Optimizer System Status"
-msgstr "Wp Clean Up Optimizer stelsel Statuut"
+msgstr ""
 
-#: views/wp-cleanup-optimizer-system-status.php:33
+#: views/system-status.php:38
 msgid "Get System Report"
-msgstr "Krijg stelsel Rapporteer"
+msgstr ""
 
-#: views/wp-cleanup-optimizer-system-status.php:37
+#: views/system-status.php:42
 msgid "Close System Report"
-msgstr "Sluiten stelsel Rapporteer"
+msgstr ""
 
-#: views/wp-cleanup-optimizer-system-status.php:43
+#: views/system-status.php:48
 msgid "Environment"
-msgstr "milieu"
+msgstr ""
 
-#: views/wp-cleanup-optimizer-system-status.php:106
+#: views/system-status.php:54
+msgid "Home URL"
+msgstr ""
+
+#: views/system-status.php:62
+msgid "Site URL"
+msgstr ""
+
+#: views/system-status.php:68
+msgid "WP Version"
+msgstr ""
+
+#: views/system-status.php:74
+msgid "WP Multisite Enabled"
+msgstr ""
+
+#: views/system-status.php:80
+msgid "Web Server Info"
+msgstr ""
+
+#: views/system-status.php:86
+msgid "PHP Version"
+msgstr ""
+
+#: views/system-status.php:92
+msgid "MySQL Version"
+msgstr ""
+
+#: views/system-status.php:102
+msgid "WP Debug Mode"
+msgstr ""
+
+#: views/system-status.php:108
+msgid "WP Language"
+msgstr ""
+
+#: views/system-status.php:110
 msgid "Default"
-msgstr "standaardwaarde"
+msgstr ""
 
-#: views/wp-optimizer.php:263
-msgid "Type of Data"
-msgstr "Soort gegevens"
+#: views/system-status.php:114
+msgid "PHP Post Max Size"
+msgstr ""
 
-#: views/wp-optimizer.php:264
-msgid "Count"
-msgstr "graaf"
+#: views/system-status.php:124
+msgid "WP Max Upload Size"
+msgstr ""
 
-#: views/wp-optimizer.php:540
-msgid "Please choose Action to Proceed!"
-msgstr "Maak aub een keuze Actie om Doorgaan!"
+#: views/system-status.php:140
+msgid "WP Remote Post"
+msgstr ""
 
-#, fuzzy
-#~ msgid "WP Data Optimizer Scheduler"
-#~ msgstr "Optimaliseer"
+#: views/system-status.php:157
+msgid "PHP Max Script Execute Time"
+msgstr ""
 
-#, fuzzy
-#~ msgid "DB Optimizer Scheduler"
-#~ msgstr "Met succes geoptimaliseerd!"
+#: views/system-status.php:163
+msgid "PHP Max Input Vars"
+msgstr ""
 
-#~ msgid "Optimize"
-#~ msgstr "Optimaliseer"
+#: views/system-status.php:169
+msgid "SUHOSIN Installed"
+msgstr ""
 
-#~ msgid "Repair"
-#~ msgstr "reparatie"
+#: views/system-status.php:176
+msgid "Default Timezone"
+msgstr ""
 
-#~ msgid "Optimized Successfully!"
-#~ msgstr "Met succes geoptimaliseerd!"
+#: views/system-status.php:229
+msgid "Operating System"
+msgstr ""
 
-#~ msgid "Repaired Successfully!"
-#~ msgstr "Met succes gerepareerd!"
+#: views/system-status.php:237
+msgid "Memory usage"
+msgstr ""
 
-#~ msgid "Are you sure, you want to Optimize?"
-#~ msgstr "Weet u zeker dat u wilt optimaliseren?"
+#: views/system-status.php:245
+msgid "SQL Mode"
+msgstr ""
 
-#~ msgid "Total Rows"
-#~ msgstr "Totaal Rijen"
+#: views/system-status.php:253
+msgid "PHP Safe Mode"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Action "
-#~ msgstr "Aktie"
+#: views/system-status.php:261
+msgid "PHP Allow URL fopen"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Tables"
-#~ msgstr "tafel"
+#: views/system-status.php:269
+msgid "PHP Memory Limit"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Action Type"
-#~ msgstr "Aktie"
+#: views/system-status.php:277
+msgid "PHP Max Post Size"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Are you sure, you want to save the Scheduler?"
-#~ msgstr "Weet u zeker dat u wilt verwijderen?"
+#: views/system-status.php:285
+msgid "PCRE Backtracking Limit"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Are you sure, you want to Delete this Scheduler?"
-#~ msgstr "Weet u zeker dat u wilt verwijderen?"
+#: views/system-status.php:293
+msgid "PHP Exif support"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Choose Type of Data"
-#~ msgstr "Soort gegevens"
+#: views/system-status.php:301
+msgid "PHP IPTC support"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Action : "
-#~ msgstr "Aktie"
+#: views/system-status.php:309
+msgid "PHP XML support"
+msgstr ""
+
+#: views/system-status.php:322
+msgid "Plugins"
+msgstr ""
+
+#: views/system-status.php:326
+msgid "Installed Plugins"
+msgstr ""
+
+#: views/system-status.php:387
+msgid "Themes"
+msgstr ""
+
+#: views/system-status.php:391
+msgid "Theme Name"
+msgstr ""
+
+#: views/system-status.php:397
+msgid "Theme Version"
+msgstr ""
+
+#: views/system-status.php:407
+msgid "Author URL"
+msgstr ""

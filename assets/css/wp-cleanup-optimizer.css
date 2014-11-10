@@ -1,5 +1,74 @@
+/****************************OTHERS***************************************************/
+.dataTables_length
+{
+	text-align:right;
+	margin-bottom:8px !important;
+}
+.widefat .cleanup-optimizer-header-text-align
+{
+	text-align: center !important;
+	vertical-align: middle !important;
+}
+
+.custom-label-width
+{
+	width: 180px !important;
+}
+
+.custom-layout-controls-cleanup
+{
+	margin-left: 210px !important;
+}
+.rdl_cleanup
+{
+	margin-top:9px;
+}
+.chk_bottom 
+{
+	margin-bottom: 5px;
+	display:block;
+}
+.lbl-custom-margin
+{
+	margin-top:10px;
+}
+.log_success
+{
+	background-color:green;
+	color:white;
+	padding:5px 10px;
+	font-size:11px
+}
+.log_Failed
+{
+	background-color:red;
+	color:white;
+	padding:5px 10px;
+	font-size:11px
+}
+.custom-btn-align
+{
+	margin-top: 3px !important;
+}
+.apply_btn_align
+{
+	margin-top: 1px !important;
+}
+.custon-font
+{
+	font-weight:600 !important;
+}
+.scheduler_layout
+{
+	width: 922px;
+}
+.standard_edition
+{
+	color: #FF0000;
+}
 /**********************Popup on Preview table*******************************/
-.postback-div {
+.postback-div
+{
 	overflow-x: auto;
 	overflow-y: auto;
 	padding-bottom: 1%;
@@ -8,111 +77,118 @@
 	max-width:650px;
 	max-height:520px;
 }
-
-.black_overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 1001;
-    -moz-opacity: 0.8;
-    opacity: .80;
-    filter: alpha(opacity=80);
-}
-
-.white_content {
-    display: none;
-    position: fixed;
-    padding: 10px;
-    border: 10px solid #999999;
-    background-color: white;
-    z-index: 1002;
-    width: 650px;
-}
-
-.closeButtonLightbox {
-    position: absolute;
-    top: -22px;
-    right: -22px;
-    width: 30px;
-    height: 30px;
-    background: transparent url("../images/fancybox.png") -40px 0;
-    cursor: pointer;
-    z-index: 1103;
-}
-
-.widefat .cleanup-optimizer-header-text-align
+.black_overlay
 {
-	text-align: center !important;
-	vertical-align: middle !important;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
 }
-
+.white_content
+{
+	display: none;
+	position: fixed;
+	padding: 10px;
+	border: 10px solid #999999;
+	background-color: white;
+	z-index: 1002;
+	width: 650px;
+}
+.closeButtonLightbox
+{
+	position: absolute;
+	top: -22px;
+	right: -22px;
+	width: 30px;
+	height: 30px;
+	background: transparent url("../images/fancybox.png") -40px 0;
+	cursor: pointer;
+	z-index: 1103;
+}
 /******************************System Status***********************************/
 .layout-system-report {
-    display: none;
-    margin: 10px 0;
-    padding: 0;
-    position: relative;
+	display: none;
+	margin: 10px 0;
+	padding: 0;
+	position: relative;
 }
 .close-report
 {
  display: none;
 }
-.layout-system-report textarea {
-    font-family: monospace;
-    width: 100%;
-    margin: 0;
-    height: 300px;
-    padding: 20px;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    resize: none;
-    font-size: 12px;
-    line-height: 20px;
-    outline: 0;
+.layout-system-report textarea
+{
+	font-family: monospace;
+	width: 100%;
+	margin: 0;
+	height: 300px;
+	padding: 20px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	resize: none;
+	font-size: 12px;
+	line-height: 20px;
+	outline: 0;
 }
 .wpcpo-label-system-status
 {
 	margin-top: 8px;
 }
+.underline
+{
+	position: relative !important;
+	display: inline-block !important;
+	border-bottom: 1px dotted #444444 !important;
+	cursor: pointer;
+}
+/******************************TOOLTIP FOR DASHBOARD****************************************/
+.tooltip { position: absolute; z-index: 10300; display: block; visibility: visible; padding: 5px; font-size: 12px; opacity: 0; filter: alpha(opacity=0); }
+.tooltip.in { opacity: 0.8; filter: alpha(opacity=80); }
+.tooltip.top { margin-top: -3px; }
+.tooltip.right { margin-left: 5px; }
+.tooltip.bottom { margin-top: 3px; }
+.tooltip.left { margin-left: -3px; }
+.tooltip-inner { max-width: 200px; padding: 3px 8px; color: #ffffff; text-align: center; text-decoration: none; background-color: #202020; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+.tooltip-arrow { position: absolute; width: 0; height: 0; border-color: transparent; border-style: solid; }
+.tooltip.top .tooltip-arrow { bottom: 0; left: 50%; margin-left: -5px; border-width: 5px 5px 0; border-top-color: #000000; }
+.tooltip.right .tooltip-arrow { top: 50%; left: 0; margin-top: -5px; border-width: 5px 5px 5px 0; border-right-color: #000000; }
+.tooltip.left .tooltip-arrow {  top: 50%; right: 0; margin-top: -5px; border-width: 5px 0 5px 5px; border-left-color: #000000; }
+.tooltip.bottom .tooltip-arrow { top: 0; left: 50%; margin-left: -5px; border-width: 0 5px 5px; border-bottom-color: #000000; }
 
 /******************************Custom Icons css****************************************/
-.framework_message.licensing_icon {
-    display: block;
-    background : url(../images/icons/icon-error.png) no-repeat 10px 8px #F8E9E9;
-    border: 1px solid #E4BBBC;
-    color: #b80000;
-    margin: 0px 0px 10px 0px;
+.custom_message {
+	position: relative;
+	display: inline-block;
+	margin: 20px 11px 0 0;
+	padding: 0 0 0 35px;
+	-moz-box-shadow: 1px 1px 0 #e6e6e6;
+	-webkit-box-shadow: 1px 1px 0 #e6e6e6;
+	box-shadow: 1px 1px 0 #e6e6e6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#e6e6e6')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#e6e6e6');
+	zoom: 1;
 }
-
 .custom_icon_red
 {
-	background : url(../images/icons/icon-error.png) no-repeat 10px 14px #F8E9E9 !important;
+	background : url(../images/icons/icon-error.png) no-repeat 10px 10px #F8E9E9 !important;
+	border: 1px solid #E4BBBC;
+	color: #b80000;
 	margin: 10px 10px 0px 10px !important;
 }
-
-.custom_icon_green
-{
-	background: url(../images/icons/icon-succes.png) no-repeat 4px 8px #EBF9E2 !important;
-	margin: 0px 0px 10px 0px !important;
+.custom_message:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
 }
-
-/****************************OTHER Css***************************************************/
-.wpcpo_nav-tab
-{
-	padding: 8px 10px !important;	
-}
-.dataTables_length
-{
-	text-align:right;
-}
-
 /******************************Popup Structure Css******************************************************/
-p.custom-tbl-name
+.custom-tbl-name
 {
 	text-align:left;
 	font-weight:800;

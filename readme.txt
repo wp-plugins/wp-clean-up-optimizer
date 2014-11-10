@@ -4,12 +4,24 @@ Tags: admin, AJAX, automatic, clean, cleaner, cleanup, comments, database, delet
 License: GPLv2
 Requires at least: 2.7
 Tested up to: 4.0
-Stable tag: 1.3
+Stable tag: 2.0
 
 WP Clean Up Optimizer helps you to extensively clean up your WordPress Database and Optimize it without doing manual queries.
 == Description ==
 
+### [WP Clean Up Optimizer](http://tech-banker.com/products/wp-clean-up-optimizer/)
+
 ### WP Clean Up Optimizer is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
+
+> #### **Live Demos**
+
+> * [WP Clean Up Optimizer](http://tech-banker.com/products/wp-clean-up-optimizer/)
+> * [WP Clean Up Optimizer Bank Demos](http://tech-banker.com/products/wp-clean-up-optimizer/demo/)
+> * [Dashboard](http://tech-banker.com/products/wp-clean-up-optimizer/demo/dashboard/)
+> * [Login Logs](http://tech-banker.com/products/wp-clean-up-optimizer/demo/login-logs/)
+> * [Cron Jobs](http://tech-banker.com/products/wp-clean-up-optimizer/demo/cron-jobs/)
+> * [General Settings](http://tech-banker.com/products/wp-clean-up-optimizer/demo/general-settings/)
+> * [System Status](http://tech-banker.com/products/wp-clean-up-optimizer/demo/system-status/)
 
 ### WP Clean Up Optimizer Features : ###
 
@@ -107,6 +119,12 @@ After downloading the ZIP file,
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Changelog ==
+
+= 2.0 = 
+
+* Major Version Release
+* Login Logs
+* Cron Jobs
 
 = 1.1 =
 

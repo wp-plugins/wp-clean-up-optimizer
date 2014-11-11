@@ -10,8 +10,8 @@ WP Clean Up Optimizer helps you to extensively clean up your WordPress Database 
 
 == Description ==
 
-[WP Clean Up Optimizer](http://tech-banker.com/products/wp-clean-up-optimizer/)
-===============================================================================
+##[WP Clean Up Optimizer - Best Optimizer Plugin for WordPress](http://tech-banker.com/products/wp-clean-up-optimizer/)
+
 
 ### WP Clean Up Optimizer is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
 

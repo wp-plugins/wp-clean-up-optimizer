@@ -1,6 +1,6 @@
 === WP Clean Up Optimizer - Optimize WordPress ===
 Contributors: contact-banker, Gallery-Bank
-Tags: automatic, clean, cleaner, cleanup, comments, database, delete revision, mysql, optimize, optimize database, phpMyAdmin, plugin, post revisions, postmeta, posts, Revision, revisions, schedule, spam, trash, wordpress, wp clean up, wp cleaner, wp cleanup, comments, spam, optimize, database, revision, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, cron jobs, scheduler, database optimize, multisite, cron, tracking, track user
+Tags: admin, ajax, automatic, clean, cleaner, cleanup, comments, database, delete revision, mysql, optimize, optimize database, phpMyAdmin, plugin, post revisions, postmeta, posts, Revision, revisions, schedule, spam, trash, wordpress, wp clean up, wp cleaner, wp cleanup, comments, spam, optimize, database, revision, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, cron jobs, scheduler, database optimize, multisite, cron, tracking, track user, optimizer, clean up, clean up optimizer
 Requires at least: 2.7
 Tested up to: 4.0
 Stable Tag: 2.0
@@ -11,7 +11,7 @@ WP Clean Up Optimizer extensively clean up your WordPress database along with Op
 
 == Description ==
 
-[WP Clean Up Optimize](http://tech-banker.com/products/wp-clean-up-optimizer/) optimizes your WordPress as well as clean up the obsolete data from database. You can schedule the 
+[**WP Clean Up Optimizer**](http://tech-banker.com/products/wp-clean-up-optimizer/) optimizes your WordPress as well as clean up the obsolete data from database. You can schedule the 
 process of Cleaning, Optimizing , Deleting and Repairing the database tables without going to phpMyAdmin.
 
 By removing revision, draft, auto draft, moderated comments, spam comments, trash comments, orphan postmeta, orphan commentmeta, orphan relationships, dashboard transient feed and other data will optimize your WordPress and keep your database reform and safe.
@@ -19,62 +19,71 @@ Advance feature i.e. confining the user by blocking their IP Address and Keep tr
 Cron Jobs adds a new information panel to WP Clean Up Optimizer that displays details such as List of the Scheduled events, Individual Schedule Interval, 
 Date & Time for next event Execution and Arguments to pass to the hook function(s) for WP scheduled events (both custom and core). 
 
-> == **Live Demos** ==
+> **Live Demos**
 
 > * [WP Clean Up Optimizer](http://tech-banker.com/products/wp-clean-up-optimizer/)
 > * [WP Clean Up Optimizer Bank Demos](http://tech-banker.com/products/wp-clean-up-optimizer/demo/)
-> * [Dashboard](http://tech-banker.com/products/wp-clean-up-optimizer/demo/dashboard/)
-> * [Login Logs](http://tech-banker.com/products/wp-clean-up-optimizer/demo/login-logs/)
-> * [Cron Jobs](http://tech-banker.com/products/wp-clean-up-optimizer/demo/cron-jobs/)
-> * [General Settings](http://tech-banker.com/products/wp-clean-up-optimizer/demo/general-settings/)
-> * [System Status](http://tech-banker.com/products/wp-clean-up-optimizer/demo/system-status/)
+> * [Dashboard Demo](http://tech-banker.com/products/wp-clean-up-optimizer/demo/dashboard/)
+> * [Login Logs Demo](http://tech-banker.com/products/wp-clean-up-optimizer/demo/login-logs/)
+> * [Cron Jobs Demo](http://tech-banker.com/products/wp-clean-up-optimizer/demo/cron-jobs/)
+> * [General Settings Demo](http://tech-banker.com/products/wp-clean-up-optimizer/demo/general-settings/)
+> * [System Status Demo](http://tech-banker.com/products/wp-clean-up-optimizer/demo/system-status/)
+
+**[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/wp-clean-up-optimizer-support/)**
+
+**[Knowledge Base](http://tech-banker.com/products/wp-clean-up-optimizer/knowledge-base/)**
+
+**[Upgrade to Pro Version](http://tech-banker.com/products/wp-clean-up-optimizer/)**
+
+**[Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)**
 
 = Key Features in WP Clean Up Optimizer Lite Edition: =
 
-*	Multi-Lingual. Available now in 36 Languages.
-*	Table Optimizing.
-*	Database Information.
-*	Clean obsolete data from WordPress Tables. 
-*	Removal of other stale metadata from comments.
-*	Mobile device friendly, now you can optimize your site on the go.
-*	Removal of transient options.
-*	Clear out the post trash.
-*	Track current user loging with Geo Location.
-*	Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
-*	Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
-*	Enabled for Administrators only.
+* Multi-Lingual. Available now in 36 Languages.
+* Table Optimizing.
+* Database Information.
+* Clean obsolete data from WordPress Tables. 
+* Removal of other stale metadata from comments.
+* Mobile device friendly, now you can optimize your site on the go.
+* Removal of transient options.
+* Clear out the post trash.
+* Track current user loging with Geo Location.
+* Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
+* Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
+* Enabled for Administrators only.
 
 = Key Features in WP Clean Up Optimizer Premium Editions =
 
-*	Multi-Lingual. Available now in 36 Languages.
-*	Removal of stale post revisions.
-*	Removal of stale unapproved and spam comments.
-*	Removal of trashed comments.
-*	Database Information.
-*	Removal of akismet metadata from comments.
-*	Removal of other stale metadata from comments.
-*	Mobile device friendly, now you can optimize your site on the go.
-*	Removal of all trackbacks and pingbacks.
-*	Cleaning up auto draft posts.
-*	Removal of transient options.
-*	Clear out the post trash.
-*	Roles and Capabilities.
-*	Repair WordPress Tables.
-*	Delete WordPress Tables.
-*	Clean WordPress Tables.
-*	Optimize WordPress Tables.
-*	Table Preview Option.
-*	Automatic scheduling for Cleaning, Deleting, Optimizing and Repairing WordPress tables.
-*	Automatic cleanup of all the integrated options (also uses retention if enabled).
-*	Ability to keep selected number of weeks data when cleaning up.
-*	Option to add or remove link on wp admin bar.
-*	Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
-*	Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
-*	Enabled for Administrators only.
-*	Maximum Login attempts for each user.
-*	Shows the Status of your Current Wordpress.
-*	Powerfull control panel.
-*	24/7 Technical Support.
+* Multi-Lingual. Available now in 36 Languages.
+* Cron Jobs
+* Removal of stale post revisions.
+* Removal of stale unapproved and spam comments.
+* Removal of trashed comments.
+* Database Information.
+* Removal of akismet metadata from comments.
+* Removal of other stale metadata from comments.
+* Mobile device friendly, now you can optimize your site on the go.
+* Removal of all trackbacks and pingbacks.
+* Cleaning up auto draft posts.
+* Removal of transient options.
+* Clear out the post trash.
+* Roles and Capabilities.
+* Repair WordPress Tables.
+* Delete WordPress Tables.
+* Clean WordPress Tables.
+* Optimize WordPress Tables.
+* Table Preview Option.
+* Automatic scheduling for Cleaning, Deleting, Optimizing and Repairing WordPress tables.
+* Automatic cleanup of all the integrated options (also uses retention if enabled).
+* Ability to keep selected number of weeks data when cleaning up.
+* Option to add or remove link on wp admin bar.
+* Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
+* Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
+* Enabled for Administrators only.
+* Maximum Login attempts for each user.
+* Shows the Status of your Current Wordpress.
+* Powerfull control panel.
+* 24/7 Technical Support.
 
 = Multi-Lingual =
 

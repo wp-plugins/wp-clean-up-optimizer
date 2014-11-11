@@ -118,11 +118,39 @@ After downloading the ZIP file,
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
+== Screenshots ==
+
+1. WP Clean Up Optimzier Dashboard Page.
+
+2. Data Optimizer Page.
+
+3. Data Optimizer Scheduler Page.
+
+4. DB Optimizer Page.
+
+5. DB Optimizer Scheduler Page.
+
+6. Login Logs Page.
+
+7. Message Settings Page.
+
+8. Security Settings Page.
+
+9. Plugin Settings Page.
+
+10. Custom Cron Job Page.
+
+11. Core Cron Job Page.
+
+12. System Status Page.
+
+13. Licensing Page.
+
 == Frequently Asked Questions ==
 
 ### What is WP Clean Up Optimizer?
 
-WP Clean Up Optimizer is a hassle free yet a powerful plugin to clean up the WordPress database by removing “revision“,  “draft“, “auto draft”, “moderated comments”, “spam comments”, “trash comments”, “orphan post meta“, “orphan comment meta“, “orphan relationships”, “dashboard transient feed” and other data.
+WP Clean Up Optimizer is a hassle free yet a powerful plugin to clean up the WordPress database by removing "revision",  "draft", "auto draft", "moderated comments", "spam comments", "trash comments", "orphan post meta", "orphan comment meta", "orphan relationships", "dashboard transient feed" and other data.
 
 It allows you to optimize your WordPress database without phpMyAdmin.
 
@@ -193,7 +221,7 @@ Clean Revision from WordPress Database by locating WP Clean Up Optimizer Menu on
 
 ### How to Remove Pingbacks from WordPress Database?
 
-A Pingback is a type of comment that’s created when you link to another blog post where Pingbacks are enabled.
+A Pingback is a type of comment that's created when you link to another blog post where Pingbacks are enabled.
 
 To remove Pingbacks from WordPress Database, locate WP Clean Up Optimizer Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
@@ -209,7 +237,7 @@ In order to remove Transient Options from WordPress Database, locate WP Clean Up
 
 ### How to Remove Trackbacks from WordPress Database?
 
-Trackbacks are a way to notify legacy blog systems that you’ve linked to them.
+Trackbacks are a way to notify legacy blog systems that you've linked to them.
 
 You can remove Trackbacks from WordPress Database easily by locating WP Clean Up Optimizer Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 

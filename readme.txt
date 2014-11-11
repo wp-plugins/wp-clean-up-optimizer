@@ -10,7 +10,8 @@ WP Clean Up Optimizer helps you to extensively clean up your WordPress Database 
 
 == Description ==
 
-### [WP Clean Up Optimizer](http://tech-banker.com/products/wp-clean-up-optimizer/)
+[WP Clean Up Optimizer](http://tech-banker.com/products/wp-clean-up-optimizer/)
+===============================================================================
 
 ### WP Clean Up Optimizer is an extensive WordPress database cleanup and optimization tool. It doesn't require PhpMyAdmin to clean and optimize your database tables.
 
@@ -251,14 +252,13 @@ In order to **clean** Trash Comments from WordPress Database, locate **WP Clean 
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
-###
- How to Clean Orphan Relationships from WordPress Database?
+### How to Clean Orphan Relationships from WordPress Database?
 
-Orphan Relationships holds the junk or obsolete Category and Tag. To **clean** Orphan Relationships from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
+Orphan Relationships holds the junk or obsolete Category and Tag. To **clean** Orphan Relationships from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menu and the click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
-### What is Login Logs?How to view Log Information for login users?
+### What is Login Logs? How to view Log Information for login users?
 
 Login Logs allows you to track the current users who are logging into you website and show there Geo Location on the map.
 

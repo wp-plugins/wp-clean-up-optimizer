@@ -6,7 +6,7 @@ Requires at least: 2.7
 Tested up to: 4.0
 Stable tag: 2.0
 
-**WP Clean Up Optimizer** helps you to extensively **clean** up your WordPress Database and Optimize it without doing manual queries.
+WP Clean Up Optimizer helps you to extensively clean up your WordPress Database and Optimize it without doing manual queries.
 
 == Description ==
 
@@ -31,7 +31,7 @@ Stable tag: 2.0
 *   Removal of trashed comments
 *   Removal of akismet metadata from comments
 *   Removal of other stale metadata from comments
-*   Mobile device friendly, now you can optimize your site on the go
+*   Mobile device friendly, now you can **optimize** your site on the go
 *   Removal of all trackbacks and pingbacks
 *   Cleaning up auto draft posts
 *   Removal of transient options
@@ -40,7 +40,7 @@ Stable tag: 2.0
 *   Ability to keep selected number of weeks data when cleaning up
 *   Option to add or remove link on wp admin bar.
 *   Apply native WordPress MySql optimize commands on your database tables without phpMyAdmin or any manual query.
-*   Display Database table statistics. Shows how much space can be optimized and how much space has been cleared.
+*   Display Database table statistics. Shows how much space can be **optimized** and how much space has been cleared.
 *   Enabled for Administrators only.
 
 
@@ -48,7 +48,7 @@ Stable tag: 2.0
 
 **How this could help you?**
 
-*   Every-time you save a new post or pages, WordPress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes that's on your MySQL overhead. **WP Clean Up Optimizer** allows you to optimize and shrink your posts table by removing not necessary post revisions from the database.
+*   Every-time you save a new post or pages, WordPress creates a revision of that post or page. If you edit a post 6 times you might have 5 copy of that post as revisions. Imagine if your post or pages are long and big. It is a huge number of bytes that's on your MySQL overhead. **WP Clean Up Optimizer** allows you to **optimize** and shrink your posts table by removing not necessary post revisions from the database.
 *   Similar to the scenario described above, there might be thousands of spam and un-approved comments in your comments table, **WP Clean Up Optimizer** can **clean** and remove those in a single click
 *   **WP Clean Up Optimizer** reports which database tables have overhead and wasted spaces also it allows you to shrink and get rid of those wasted spaces
 *   Automatically **cleans** database every week and respects the "Keeps selected number of weeks data" option.
@@ -107,13 +107,13 @@ After downloading the ZIP file,
 
 1. Log in to the administrator panel.  
 2. Go to Plugins Add > New > Upload.  
-3. Click “Choose file” (“Browse”) and select the downloaded zip file.  
+3. Click "Choose file" ("Browse") and select the downloaded zip file.  
 
 *For Mac Users*  
 *Go to your Downloads folder and locate the folder with the plugin. Right-click on the folder and select Compress. Now you have a newly created .zip file which can be installed as described here.*  
 
-1. Click “Install Now” button.  
-2. Click “Activate Plugin” button for activating the plugin.  
+1. Click "Install Now" button.  
+2. Click "Activate Plugin" button for activating the plugin.  
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
@@ -121,13 +121,13 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 1. **WP Clean Up Optimzier** Dashboard Page.
 
-2. Data Optimizer Page.
+2. Data **Optimizer** Page.
 
-3. Data Optimizer Scheduler Page.
+3. Data **Optimizer** Scheduler Page.
 
-4. DB Optimizer Page.
+4. DB **Optimizer** Page.
 
-5. DB Optimizer Scheduler Page.
+5. DB **Optimizer** Scheduler Page.
 
 6. Login Logs Page.
 
@@ -151,7 +151,7 @@ If any problem occurs, please contact us at [support@tech-banker.com](mailto:sup
 
 **WP Clean Up Optimizer** is a hassle free yet a powerful plugin to **clean** up the WordPress database by removing "revision",  "draft", "auto draft", "moderated comments", "spam comments", "trash comments", "orphan post meta", "orphan comment meta", "orphan relationships", "dashboard transient feed" and other data.
 
-It allows you to optimize your WordPress database without phpMyAdmin.
+It allows you to **optimize** your WordPress database without phpMyAdmin.
 
 ### How to view Database Information in WP Clean Up Optimizer Plugin?
 
@@ -203,13 +203,6 @@ Orphan Post Meta is meta data belonging to posts which no longer exist. You can 
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
-###
- How to Clean Orphan Relationships from WordPress Database?
-
-Orphan Relationships holds the junk or obsolete Category and Tag. To **clean** Orphan Relationships from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
-
-[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
-
 ### How to Clean Revision from WordPress Database?
 
 The WordPress revisions system stores a record of each saved draft or published update. Revisions are stored in the posts table. 
@@ -255,6 +248,13 @@ In order to do so, locate **WP Clean Up Optimizer** Menu on the left side of Wor
 Trash Comments are the comments which are stored in the WordPress Trash.
 
 In order to **clean** Trash Comments from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
+
+###
+ How to Clean Orphan Relationships from WordPress Database?
+
+Orphan Relationships holds the junk or obsolete Category and Tag. To **clean** Orphan Relationships from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
@@ -329,7 +329,7 @@ In order to view status of your system, locate **WP Clean Up Optimizer** Menu on
 
 = 1.1 =
 
-* **WP Clean Up Optimizer** Languages Updated
+* WP Clean Up Optimizer Languages Updated
 
 = 1.2 =
 
@@ -337,8 +337,8 @@ In order to view status of your system, locate **WP Clean Up Optimizer** Menu on
 
 = 1.1 =
 
-* **WP Clean Up Optimizer** Languages Added
+* WP Clean Up Optimizer Languages Added
 
 = 1.0 =
 
-* **WP Clean Up Optimizer** Initial Release
+* WP Clean Up Optimizer Initial Release

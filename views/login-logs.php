@@ -165,7 +165,7 @@ else
 			{
 				"sLengthMenu": "<span>Show entries:</span> _MENU_"
 			},
-			"aaSorting": [[ 6, "asc" ]]
+			"aaSorting": [[ 5, "desc" ]]
 		});
 		initialize_cleanup_optimizer()
 	});

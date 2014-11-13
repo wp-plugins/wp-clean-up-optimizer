@@ -613,7 +613,7 @@ else
 																			<div class="layout-controls">
 																				<select id="ux_ddl_bulk_action_wp_scheduler" name="ux_ddl_bulk_action_wp_scheduler" style="vertical-align:top" class="layout-span12">
 																					<option value="0"><?php _e("Bulk Action", cleanup_optimizer); ?></option>
-																					<option value="1"><?php _e("Empty", cleanup_optimizer); ?></option>
+																					<option value="1" disabled="disabled"><?php _e("Empty", cleanup_optimizer); ?></option>
 																				</select>
 																			</div>
 																		</div>
@@ -621,13 +621,13 @@ else
 																			<label class="layout-control-label"><?php _e("Duration ", cleanup_optimizer); ?> : </label>
 																			<div class="layout-controls">
 																				<select id="type_of_scheduler" name="type_of_scheduler" class="layout-span12">
-																					<option value="1day"><?php _e("Daily", cleanup_optimizer); ?></option>
-																					<option value="weekly"><?php _e("Weekly", cleanup_optimizer); ?></option>
-																					<option value="14days"><?php _e("Biweekly", cleanup_optimizer); ?></option>
-																					<option value="30days"><?php _e("Monthly", cleanup_optimizer); ?></option>
-																					<option value="90days"><?php _e("Quarterly", cleanup_optimizer); ?></option>
-																					<option value="183days"><?php _e("Half-Yearly", cleanup_optimizer); ?></option>
-																					<option value="365days"><?php _e("Annually", cleanup_optimizer); ?></option>
+																					<option value="1day" disabled="disabled"><?php _e("Daily", cleanup_optimizer); ?></option>
+																					<option value="weekly" disabled="disabled"><?php _e("Weekly", cleanup_optimizer); ?></option>
+																					<option value="14days" disabled="disabled"><?php _e("Biweekly", cleanup_optimizer); ?></option>
+																					<option value="30days" disabled="disabled"><?php _e("Monthly", cleanup_optimizer); ?></option>
+																					<option value="90days" disabled="disabled"><?php _e("Quarterly", cleanup_optimizer); ?></option>
+																					<option value="183days" disabled="disabled"><?php _e("Half-Yearly", cleanup_optimizer); ?></option>
+																					<option value="365days" disabled="disabled"><?php _e("Annually", cleanup_optimizer); ?></option>
 																				</select><br><br>
 																				<input type="button" id="ux_btn_submit" name="ux_btn_submit" value="<?php _e("Save Scheduler", cleanup_optimizer); ?>" onclick="set_scheduler_wp_optimizer();" class="button-primary apply_btn_align"/>
 																			</div>	
@@ -969,10 +969,10 @@ else
 																		<label class="layout-control-label"><?php _e("Action ", cleanup_optimizer); ?> : </label>
 																		<div class="layout-controls">
 																			<select id="ux_ddl_bulk_action_scheduler" name="ux_ddl_bulk_action_scheduler" class="bulk-action-width layout-span8">
-																				<option value="1"><?php _e("Empty", cleanup_optimizer); ?></option>
-																				<option value="2"><?php _e("Delete", cleanup_optimizer); ?></option>
-																				<option value="3"><?php _e("Optimize", cleanup_optimizer); ?></option>
-																				<option value="4"><?php _e("Repair", cleanup_optimizer); ?></option>
+																				<option value="1" disabled="disabled"><?php _e("Empty", cleanup_optimizer); ?></option>
+																				<option value="2" disabled="disabled"><?php _e("Delete", cleanup_optimizer); ?></option>
+																				<option value="3" disabled="disabled"><?php _e("Optimize", cleanup_optimizer); ?></option>
+																				<option value="4" disabled="disabled"><?php _e("Repair", cleanup_optimizer); ?></option>
 																			</select>
 																		</div>
 																	</div>
@@ -980,13 +980,13 @@ else
 																		<label class="layout-control-label"><?php _e("Duration ", cleanup_optimizer); ?> : </label>
 																		<div class="layout-controls">
 																			<select id="schedule_type" name="schedule_type" class="layout-span2">
-																				<option value="1day"><?php _e("Daily", cleanup_optimizer); ?></option>
-																				<option value="weekly"><?php _e("Weekly", cleanup_optimizer); ?></option>
-																				<option value="14days"><?php _e("Biweekly", cleanup_optimizer); ?></option>
-																				<option value="30days"><?php _e("Monthly", cleanup_optimizer); ?></option>
-																				<option value="90days"><?php _e("Quarterly", cleanup_optimizer); ?></option>
-																				<option value="183days"><?php _e("Half-Yearly", cleanup_optimizer); ?></option>
-																				<option value="365days"><?php _e("Annually", cleanup_optimizer); ?></option>
+																				<option value="1day" disabled="disabled"><?php _e("Daily", cleanup_optimizer); ?></option>
+																				<option value="weekly" disabled="disabled"><?php _e("Weekly", cleanup_optimizer); ?></option>
+																				<option value="14days" disabled="disabled"><?php _e("Biweekly", cleanup_optimizer); ?></option>
+																				<option value="30days" disabled="disabled"><?php _e("Monthly", cleanup_optimizer); ?></option>
+																				<option value="90days" disabled="disabled"><?php _e("Quarterly", cleanup_optimizer); ?></option>
+																				<option value="183days" disabled="disabled"><?php _e("Half-Yearly", cleanup_optimizer); ?></option>
+																				<option value="365days" disabled="disabled"><?php _e("Annually", cleanup_optimizer); ?></option>
 																			</select>
 																			<input type="button" id="ux_btn_submit" name="ux_btn_submit" value="<?php _e("Save Scheduler",cleanup_optimizer); ?>" onclick="set_scheduler_db_optimizer();" class="button-primary apply_btn_align" style="margin-left:10%;" />
 																		</div>

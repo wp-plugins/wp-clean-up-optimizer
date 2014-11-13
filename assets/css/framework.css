@@ -1875,6 +1875,11 @@ div.loader_opacity
 {
     
 }
+
+.service-div-settings .desc p
+{
+	line-height: 2em !important;
+}
 .service-div-settings-top 
 {
     position: relative;

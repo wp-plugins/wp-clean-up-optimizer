@@ -1,18 +1,21 @@
 <?php
 /*
-Plugin Name: Wp Cleanup Optimizer Standard Edition
+Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0
+Version: 2.0.1
 Author URI: http://tech-banker.com
+
 */
 
 ////////////////////////////////////  Define  Wp Cleanup Optimizer  Constants  /////////////////////////////
 
 if (!defined("CLEANUP_BK_PLUGIN_DIR")) define("CLEANUP_BK_PLUGIN_DIR",  plugin_dir_path( __FILE__ ));
 if (!defined("CLEANUP_BK_PLUGIN_DIRNAME")) define("CLEANUP_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__FILE__)));
+if (!defined("CLEANUP_BK_PLUGIN_BASENAME")) define("CLEANUP_BK_PLUGIN_BASENAME", plugin_basename(__FILE__));
 if (!defined("cleanup_optimizer")) define("cleanup_optimizer", "cleanup_optimizer");
+if (!defined("tech_bank")) define("tech_bank", "cleanup_optimizer");
 
 /////////////////////////////////////  Call Install Script on Plugin Activation ////////////////////////////
 if(!function_exists("plugin_install_script_for_cleanup_optimizer"))
@@ -185,19 +188,32 @@ if(!function_exists("wp_cleanup_optimizer_settings_link"))
 		return $links;
 	}
 }
-/////////////////////////////////////Language Convertions///////////////////////////////////
+/////////////////////////////////////Language Convertions for Services///////////////////////////////////
 
 if(!function_exists("plugin_load_textdomain_wp_cleanup_optimizer"))
 {
 	function plugin_load_textdomain_wp_cleanup_optimizer()
 	{
-		if(function_exists( "plugin_load_textdomain_wp_cleanup_optimizer" ))
+		if(function_exists( "load_plugin_textdomain" ))
+		{
+			load_plugin_textdomain(tech_bank, false, CLEANUP_BK_PLUGIN_DIRNAME ."/tech-banker-services");
+		}
+	}
+}
+add_action("plugins_loaded", "plugin_load_textdomain_wp_cleanup_optimizer");
+
+/////////////////////////////////////Language Convertions for Plugin///////////////////////////////////
+if(!function_exists("plugin_load_textdomain_services"))
+{
+	function plugin_load_textdomain_services()
+	{
+		if(function_exists( "load_plugin_textdomain" ))
 		{
 			load_plugin_textdomain(cleanup_optimizer, false, CLEANUP_BK_PLUGIN_DIRNAME ."/languages");
 		}
 	}
 }
-add_action("plugins_loaded", "plugin_load_textdomain_wp_cleanup_optimizer");
+add_action("plugins_loaded", "plugin_load_textdomain_services");
 
 /////////////////////////////////////Login Logs///////////////////////////////////
 
@@ -212,6 +228,22 @@ if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php"))
 	global $wpdb;
 	include_once CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php";
 }
+
+////////////////////////////////////Additional Links to Plugin/////////////////////////////////////////
+
+function custom_plugin_row($links,$file)
+{
+	if ($file == CLEANUP_BK_PLUGIN_BASENAME)
+	{
+		$cpo_row_meta = array(
+			"docs"		=>	"<a href='".esc_url( apply_filters("wp_cleanup_optimizer_docs_url","http://tech-banker.com/products/wp-clean-up-optimizer/knowledge-base/"))."' title='".esc_attr(__( "View WP Clean Up Optimzier Documentation",cleanup_optimizer))."'>".__("Docs",cleanup_optimizer)."</a>",
+			"gopremium"	=>	"<a href='" .esc_url( apply_filters("wp_cleanup_optimizer_premium_editions_url", "http://tech-banker.com/products/wp-clean-up-optimizer/pricing/"))."' title='".esc_attr(__( "View WP Clean Up Optimzier Premium Editions",cleanup_optimizer))."'>".__("Go for Premium!",cleanup_optimizer)."</a>",
+		);
+		return array_merge($links,$cpo_row_meta);
+	}
+	return (array)$links;
+}
+
 ///////////////////////////////////  Calling Hooks   /////////////////////////////////////////////////////
 
 //------------------------------------------------------------------------------------------------------------//
@@ -234,6 +266,10 @@ add_action("admin_bar_menu", "add_wp_cleanup_optimizer_admin_bar",100);
 // plugin_action_links Hook called for function wp_cleanup_optimizer_settings_link
 //------------------------------------------------------------------------------------------------------------//
 add_filter("plugin_action_links_" . plugin_basename(__FILE__), "wp_cleanup_optimizer_settings_link");
+//------------------------------------------------------------------------------------------------------------//
+// plugin_row_meta Hook called for function custom_plugin_row to add additional link to the plugin.
+//------------------------------------------------------------------------------------------------------------//
+add_filter("plugin_row_meta","custom_plugin_row", 10, 2 );
 //------------------------------------------------------------------------------------------------------------//
 // add_action Hook called for function create_global_menus_for_cleanup_optimizer
 //------------------------------------------------------------------------------------------------------------//

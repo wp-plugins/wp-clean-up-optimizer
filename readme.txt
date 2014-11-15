@@ -251,6 +251,12 @@ You can also click on the Dashboard tab located on the top of the page.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+Once you click on the link or the tab as mentioned above, this page would open.
+
+Here you can view this information under Database Information Section.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/database-info.png)
+
 = How to Clean Auto Drafts from WordPress Database? =
 
 Auto Draft are the Page / Post saved as draft automatically in WordPress Database. 
@@ -258,17 +264,31 @@ You can **clean** Auto Drafts from WordPress Database by locating **WP Clean Up 
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action.
+
+Once you click on the link, this page would open.Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Auto Drafts to clean all the Auto Drafts from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Auto_Draft.png)
+
 = How to Clean Dashboard Transient Feed from WordPress Database? =
 
 Transient Feed in WordPress are use DB entries to cache a certain entries. In order to **clean** Dashboard Transient Feed from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Dashboard Transient Feed to clean all the Dashboard Transient Feeds from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard_Transient_Feed.png)
+
 = How to Clean Draft from WordPress Database? =
 
 Drafts are the New Post / Page created as Draft in WordPress. To **clean** Draft from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
+
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Draft to clean all the Drafts from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Draft.png)
 
 = How to Clean Moderated Comments from WordPress Database? =
 
@@ -279,17 +299,29 @@ In order to do so locate **WP Clean Up Optimizer** Menu on the left side of Word
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Moderated Comments to clean all the Moderated Comments from your WordPress Database. 
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Moderated_Comments.png)
+
 = How to Clean Orphan Comments Meta from WordPress Database? =
 
 Orphan Comments Meta holds the miscellaneous bits of extra information of comment. To **clean** Orphan Comments Meta from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Orphan Comments Meta to clean all the Orphan Comments Meta from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Orphan_Comments_Meta.png)
+
 = How to Clean Orphan Posts Meta from WordPress Database? =
 
 Orphan Post Meta is meta data belonging to posts which no longer exist. You can **clean** Orphan Posts Meta from WordPress Database by locating **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
+
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Orphan Posts Meta to clean all the Orphan Posts Meta from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Orphan_Posts_Meta.png)
 
 = How to Clean Revision from WordPress Database? =
 
@@ -299,6 +331,10 @@ The WordPress revisions system stores a record of each saved draft or published 
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Revision to clean all the Revision from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Revision.png)
+
 = How to Remove Pingbacks from WordPress Database? =
 
 A Pingback is a type of comment that's created when you link to another blog post where Pingbacks are enabled.
@@ -306,6 +342,10 @@ A Pingback is a type of comment that's created when you link to another blog pos
 To remove Pingbacks from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
+
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Remove Pingbacks to remove Pingbacks from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Remove_Pingbacks.png)
 
 = How to Remove Transient Options from WordPress Database? =
 
@@ -315,6 +355,10 @@ In order to remove Transient Options from WordPress Database, locate **WP Clean 
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Remove Transient Options to clean all the Transient Options from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Remove_Transient_Options.png)
+
 = How to Remove Trackbacks from WordPress Database? =
 
 Trackbacks are a way to notify legacy blog systems that you've linked to them.
@@ -322,6 +366,10 @@ Trackbacks are a way to notify legacy blog systems that you've linked to them.
 You can remove Trackbacks from WordPress Database easily by locating **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
+
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Remove Trackbacksto remove all the Trackbacks from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Remove_Trackbacks.png)
 
 = How to Clean Spam Comments from WordPress Database? =
 
@@ -331,6 +379,10 @@ In order to do so, locate **WP Clean Up Optimizer** Menu on the left side of Wor
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Spam Comments to clean all the Spam Comments from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Spam_Comments.png) 
+
 = How to Clean Trash Comments from WordPress Database? =
 
 Trash Comments are the comments which are stored in the WordPress Trash.
@@ -339,11 +391,19 @@ In order to **clean** Trash Comments from WordPress Database, locate **WP Clean 
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
 
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Trash Comments to clean all the Trash Comments from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Trash_Comments.png)
+
 = How to Clean Orphan Relationships from WordPress Database? =
 
 Orphan Relationships holds the junk or obsolete Category and Tag. To **clean** Orphan Relationships from WordPress Database, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menu and the click on Dashboard link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Dashboard-Menu.png)
+
+You can also click on the Dashboard tab located on the top of the page to perform the required action. Once you click on the link, this page would open. Then click on the Data Optimizer tab followed by Clean Button located at the right side of the Orphan Relationships to clean all the Orphan Relationships from your WordPress Database.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Orphan_Relationships.png)
 
 = What is Login Logs? How to view Log Information for login users? =
 
@@ -356,6 +416,10 @@ To view all the Log Information (Username, IP Address, Location, Date and Time, 
 Then click on the Login Logs link under **WP Clean Up Optimizer** menu or you can also click the Login Logs tab on the top of the page just next to Dashboard tab.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Login_Logs_Menu.png)
+
+Once you click on the link or the tab as stated above, this page would appear. Here you can view all the Log Information (Username, IP Address, Location, Date and Time, Login Status) for login users.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Log_Information.png)
 
 = What is Cron Jobs in WP Clean Up Optimizer? =
 
@@ -385,6 +449,10 @@ In order to view this information in **WP Clean Up Optimizer**, you need to loca
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Cron_Jobs_Menu.png)
 
+Then click on the Cron Jobs link under WP Clean UP Optimizer menu or you can also click the Cron Jobs tab on the top of the page just next to Login Logs tab. Once you click on the link or the tab as stated above, this page would appear. Then click on Custom tab and here you can view all the information for Custom Scheduled Events.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Cron_Jobs.png)
+
 = What are Core Events? How to view Core Events information in Clean Up Optimizer? =
 
 Core Events are the default scheduled events of WordPress shown in **WP Clean Up Optimizer**. As these are the default scheduled events of WordPress, so it cannot be deleted by the user itself.
@@ -400,11 +468,19 @@ You can view this information in **WP Clean Up Optimizer** by locating **WP Clea
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Cron_Jobs_Menu.png)
 
+Then click on the Cron Jobs link under WP Clean UP Optimizer menu or you can also click the Cron Jobs tab on the top of the page just next to Login Logs tab. Once you click on the link or the tab as stated above, this page would appear. Then click on Core tab and here you can view all the information for Core Scheduled Events.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/Core_Events.png)
+
 = How to view Status of you System? =
 
 In order to view status of your system, locate **WP Clean Up Optimizer** Menu on the left side of WordPress Dashboard Menus and then click on System Status link.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/System_Status_Menu.png)
+
+Once you click on the link, this page would open and there you could see the status of your system.
+
+[Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/System_Status.png)
 
 == Screenshots ==
 

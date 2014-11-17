@@ -1,0 +1,887 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Clean Up Optimizer\n"
+"POT-Creation-Date: 2014-11-14 04:08-0800\n"
+"PO-Revision-Date: 2014-11-14 04:08-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-KeywordsList: .;__;_e;gettext\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/header.php:42
+msgid "Get Started"
+msgstr ""
+
+#: lib/header.php:45
+msgid "Watch Clean Up Video!"
+msgstr ""
+
+#: lib/header.php:49
+msgid "read documentation here"
+msgstr ""
+
+#: lib/header.php:54
+msgid "Go Premium"
+msgstr ""
+
+#: lib/header.php:58
+msgid "Features"
+msgstr ""
+
+#: lib/header.php:63
+msgid "Online Demos"
+msgstr ""
+
+#: lib/header.php:68
+msgid "Why Go for Premium ?"
+msgstr ""
+
+#: lib/header.php:75
+msgid "Knowledge Base"
+msgstr ""
+
+#: lib/header.php:80
+msgid "Support Forum"
+msgstr ""
+
+#: lib/header.php:85
+msgid "FAQ's"
+msgstr ""
+
+#: lib/header.php:90
+msgid "Detailed Features"
+msgstr ""
+
+#: lib/header.php:96
+msgid "More Actions"
+msgstr ""
+
+#: lib/header.php:100
+msgid "Premium Pricing Plans"
+msgstr ""
+
+#: lib/header.php:105 lib/header.php:163 lib/menus.php:15 lib/menus.php:26
+#: lib/menus.php:37 lib/top-bar-menu.php:65 lib/top-bar-menu.php:121
+#: lib/top-bar-menu.php:177
+msgid "Recommendations"
+msgstr ""
+
+#: lib/header.php:110 lib/header.php:166 lib/menus.php:16 lib/menus.php:27
+#: lib/menus.php:38 lib/top-bar-menu.php:71 lib/top-bar-menu.php:127
+#: lib/top-bar-menu.php:183
+msgid "Our Other Services"
+msgstr ""
+
+#: lib/header.php:148 lib/menus.php:9 lib/menus.php:20 lib/menus.php:31
+#: lib/top-bar-menu.php:29 lib/top-bar-menu.php:85 lib/top-bar-menu.php:141
+msgid "Dashboard"
+msgstr ""
+
+#: lib/header.php:151 lib/menus.php:10 lib/menus.php:21 lib/menus.php:32
+#: lib/top-bar-menu.php:35 lib/top-bar-menu.php:91 lib/top-bar-menu.php:147
+#: views/login-logs.php:38
+msgid "Login Logs"
+msgstr ""
+
+#: lib/header.php:154 lib/menus.php:11 lib/menus.php:22 lib/menus.php:33
+#: lib/top-bar-menu.php:41 lib/top-bar-menu.php:97 lib/top-bar-menu.php:153
+#: views/cron-job.php:68
+msgid "Cron Jobs"
+msgstr ""
+
+#: lib/header.php:157 lib/menus.php:12 lib/menus.php:23 lib/menus.php:34
+#: lib/top-bar-menu.php:47 lib/top-bar-menu.php:103 lib/top-bar-menu.php:159
+#: views/general-settings.php:42
+msgid "General Settings"
+msgstr ""
+
+#: lib/header.php:160 lib/menus.php:14 lib/menus.php:25 lib/menus.php:35
+#: lib/top-bar-menu.php:59 lib/top-bar-menu.php:115 lib/top-bar-menu.php:171
+msgid "Premium Editions"
+msgstr ""
+
+#: lib/install-script.php:154
+msgid "Your IP has been blocked!"
+msgstr ""
+
+#: lib/install-script.php:155
+msgid "Maximum Login attempts left [maxAttempts]"
+msgstr ""
+
+#: lib/install-script.php:156
+msgid ""
+"You have Exceeded Maximum Login Attempts.\n"
+" So, your IP has been blocked for today. \n"
+" Kindly, try again after 24 Hours."
+msgstr ""
+
+#: lib/menus.php:13 lib/menus.php:24 lib/menus.php:36 lib/top-bar-menu.php:53
+#: lib/top-bar-menu.php:109 lib/top-bar-menu.php:165
+msgid "System Status"
+msgstr ""
+
+#: views/cron-job.php:75
+msgid "Custom"
+msgstr ""
+
+#: views/cron-job.php:76
+msgid "Core"
+msgstr ""
+
+#: views/cron-job.php:82
+msgid "Custom Events"
+msgstr ""
+
+#: views/cron-job.php:82 views/dashboard.php:232 views/dashboard.php:608
+#: views/dashboard.php:812 views/dashboard.php:813 views/dashboard.php:814
+#: views/dashboard.php:965 views/general-settings.php:59
+#: views/general-settings.php:92 views/general-settings.php:169
+msgid " (Available in Premium Editions)"
+msgstr ""
+
+#: views/cron-job.php:89 views/dashboard.php:272 views/dashboard.php:615
+#: views/dashboard.php:810
+msgid "Bulk Action"
+msgstr ""
+
+#: views/cron-job.php:90 views/cron-job.php:124 views/dashboard.php:782
+#: views/dashboard.php:812 views/dashboard.php:973 views/dashboard.php:1169
+#: views/dashboard.php:1239
+msgid "Delete"
+msgstr ""
+
+#: views/cron-job.php:92 views/dashboard.php:275 views/dashboard.php:816
+#: views/dashboard.php:917
+msgid "Apply"
+msgstr ""
+
+#: views/cron-job.php:99 views/cron-job.php:221
+msgid "Name of the Hook"
+msgstr ""
+
+#: views/cron-job.php:100 views/cron-job.php:222
+msgid "Interval Hook"
+msgstr ""
+
+#: views/cron-job.php:101 views/cron-job.php:223
+msgid "Args"
+msgstr ""
+
+#: views/cron-job.php:102 views/cron-job.php:224 views/dashboard.php:735
+#: views/dashboard.php:1191
+msgid "Next Execution"
+msgstr ""
+
+#: views/cron-job.php:212
+msgid "Core Events"
+msgstr ""
+
+#: views/cron-job.php:360 views/cron-job.php:377 views/dashboard.php:1373
+#: views/dashboard.php:1540
+msgid "Show entries"
+msgstr ""
+
+#: views/cron-job.php:390 views/cron-job.php:397 views/dashboard.php:1311
+#: views/dashboard.php:1386 views/dashboard.php:1422 views/dashboard.php:1504
+#: views/dashboard.php:1553 views/general-settings.php:234
+#: views/general-settings.php:240 views/general-settings.php:246
+#: views/general-settings.php:252 views/general-settings.php:258
+#: views/login-logs.php:175
+msgid "Error!"
+msgstr ""
+
+#: views/cron-job.php:390 views/cron-job.php:397 views/dashboard.php:1386
+#: views/dashboard.php:1422 views/dashboard.php:1553
+#: views/general-settings.php:234 views/general-settings.php:240
+#: views/general-settings.php:246 views/general-settings.php:252
+#: views/general-settings.php:258 views/login-logs.php:175
+msgid "This Feature is Available in Premium Editions!"
+msgstr ""
+
+#: views/dashboard.php:174 views/general-settings.php:33
+#: views/login-logs.php:30
+msgid "Success!"
+msgstr ""
+
+#: views/dashboard.php:183
+msgid "WP Clean Up Optimizer"
+msgstr ""
+
+#: views/dashboard.php:189
+msgid "Database Information"
+msgstr ""
+
+#: views/dashboard.php:193
+msgid "Database Host "
+msgstr ""
+
+#: views/dashboard.php:199
+msgid "Database Name "
+msgstr ""
+
+#: views/dashboard.php:205
+msgid "Database User "
+msgstr ""
+
+#: views/dashboard.php:211
+msgid "Database Type "
+msgstr ""
+
+#: views/dashboard.php:219
+msgid "Database Version"
+msgstr ""
+
+#: views/dashboard.php:232
+msgid "Manage Trackbacks / Comments"
+msgstr ""
+
+#: views/dashboard.php:236
+msgid "Trackbacks"
+msgstr ""
+
+#: views/dashboard.php:238 views/dashboard.php:245
+#: views/general-settings.php:98 views/general-settings.php:202
+msgid "Enable"
+msgstr ""
+
+#: views/dashboard.php:239 views/dashboard.php:246
+#: views/general-settings.php:99 views/general-settings.php:203
+msgid "Disable"
+msgstr ""
+
+#: views/dashboard.php:243
+msgid "Comments"
+msgstr ""
+
+#: views/dashboard.php:256 views/dashboard.php:265
+msgid "Data Optimizer"
+msgstr ""
+
+#: views/dashboard.php:257 views/dashboard.php:479
+msgid "Data Optimizer Scheduler"
+msgstr ""
+
+#: views/dashboard.php:258 views/dashboard.php:798
+msgid "DB Optimizer"
+msgstr ""
+
+#: views/dashboard.php:259 views/dashboard.php:953
+msgid "DB Optimizer Scheduler"
+msgstr ""
+
+#: views/dashboard.php:273 views/dashboard.php:298 views/dashboard.php:312
+#: views/dashboard.php:326 views/dashboard.php:340 views/dashboard.php:354
+#: views/dashboard.php:368 views/dashboard.php:382 views/dashboard.php:396
+#: views/dashboard.php:410 views/dashboard.php:424 views/dashboard.php:438
+#: views/dashboard.php:452 views/dashboard.php:466 views/dashboard.php:616
+#: views/dashboard.php:811 views/dashboard.php:913 views/dashboard.php:972
+#: views/dashboard.php:1166
+msgid "Empty"
+msgstr ""
+
+#: views/dashboard.php:281 views/dashboard.php:493 views/dashboard.php:652
+msgid "Type of Data"
+msgstr ""
+
+#: views/dashboard.php:282
+msgid "Count"
+msgstr ""
+
+#: views/dashboard.php:283 views/dashboard.php:826 views/login-logs.php:109
+msgid "Action"
+msgstr ""
+
+#: views/dashboard.php:292 views/dashboard.php:502
+msgid "Auto Draft"
+msgstr ""
+
+#: views/dashboard.php:306 views/dashboard.php:510
+msgid "Dashboard Transient Feed"
+msgstr ""
+
+#: views/dashboard.php:320 views/dashboard.php:518
+msgid "Draft"
+msgstr ""
+
+#: views/dashboard.php:334 views/dashboard.php:526
+msgid "Moderated Comments"
+msgstr ""
+
+#: views/dashboard.php:348 views/dashboard.php:534
+msgid "Orphan Comments Meta"
+msgstr ""
+
+#: views/dashboard.php:362 views/dashboard.php:542
+msgid "Orphan Posts Meta"
+msgstr ""
+
+#: views/dashboard.php:376 views/dashboard.php:550
+msgid "Orphan Relationships"
+msgstr ""
+
+#: views/dashboard.php:390 views/dashboard.php:558
+msgid "Revision"
+msgstr ""
+
+#: views/dashboard.php:404 views/dashboard.php:566
+msgid "Remove Pingbacks"
+msgstr ""
+
+#: views/dashboard.php:418 views/dashboard.php:574
+msgid "Remove Transient Options"
+msgstr ""
+
+#: views/dashboard.php:432 views/dashboard.php:582
+msgid "Remove Trackbacks"
+msgstr ""
+
+#: views/dashboard.php:446 views/dashboard.php:590
+msgid "Spam Comments"
+msgstr ""
+
+#: views/dashboard.php:460 views/dashboard.php:598
+msgid "Trash Comments"
+msgstr ""
+
+#: views/dashboard.php:487
+msgid "Choose Type of Data"
+msgstr ""
+
+#: views/dashboard.php:608 views/dashboard.php:965
+msgid "Configure Scheduler"
+msgstr ""
+
+#: views/dashboard.php:612 views/dashboard.php:969
+msgid "Action "
+msgstr ""
+
+#: views/dashboard.php:621 views/dashboard.php:980
+msgid "Duration "
+msgstr ""
+
+#: views/dashboard.php:624 views/dashboard.php:983
+msgid "Daily"
+msgstr ""
+
+#: views/dashboard.php:625 views/dashboard.php:754 views/dashboard.php:984
+#: views/dashboard.php:1210
+msgid "Weekly"
+msgstr ""
+
+#: views/dashboard.php:626 views/dashboard.php:758 views/dashboard.php:985
+#: views/dashboard.php:1214
+msgid "Biweekly"
+msgstr ""
+
+#: views/dashboard.php:627 views/dashboard.php:762 views/dashboard.php:986
+#: views/dashboard.php:1218
+msgid "Monthly"
+msgstr ""
+
+#: views/dashboard.php:628 views/dashboard.php:766 views/dashboard.php:987
+#: views/dashboard.php:1222
+msgid "Quarterly"
+msgstr ""
+
+#: views/dashboard.php:629 views/dashboard.php:770 views/dashboard.php:988
+#: views/dashboard.php:1226
+msgid "Half-Yearly"
+msgstr ""
+
+#: views/dashboard.php:630 views/dashboard.php:774 views/dashboard.php:989
+#: views/dashboard.php:1230
+msgid "Annually"
+msgstr ""
+
+#: views/dashboard.php:632 views/dashboard.php:991
+msgid "Save Scheduler"
+msgstr ""
+
+#: views/dashboard.php:645
+msgid "Manage Wp Data Optimizer Schedules"
+msgstr ""
+
+#: views/dashboard.php:653 views/dashboard.php:1134
+msgid "Overview"
+msgstr ""
+
+#: views/dashboard.php:673
+msgid "Auto Draft<br>"
+msgstr ""
+
+#: views/dashboard.php:676
+msgid "Dashboard Transient Feed<br>"
+msgstr ""
+
+#: views/dashboard.php:679
+msgid "Draft<br>"
+msgstr ""
+
+#: views/dashboard.php:682
+msgid "Moderated Comments<br>"
+msgstr ""
+
+#: views/dashboard.php:685
+msgid "Orphan Comments Meta<br>"
+msgstr ""
+
+#: views/dashboard.php:688
+msgid "Orphan Posts Meta<br>"
+msgstr ""
+
+#: views/dashboard.php:691
+msgid "Orphan Relationships<br>"
+msgstr ""
+
+#: views/dashboard.php:694
+msgid "Revision<br>"
+msgstr ""
+
+#: views/dashboard.php:697
+msgid "Remove Pingbacks<br>"
+msgstr ""
+
+#: views/dashboard.php:700
+msgid "Remove Transient Options<br>"
+msgstr ""
+
+#: views/dashboard.php:703
+msgid "Remove Trackbacks<br>"
+msgstr ""
+
+#: views/dashboard.php:706
+msgid "Spam Comments<br>"
+msgstr ""
+
+#: views/dashboard.php:709
+msgid "Trash Comments<br>"
+msgstr ""
+
+#: views/dashboard.php:719 views/dashboard.php:1161
+msgid "Action Type"
+msgstr ""
+
+#: views/dashboard.php:727 views/dashboard.php:1183
+msgid "Start Date"
+msgstr ""
+
+#: views/dashboard.php:744
+msgid "Scheduler Type"
+msgstr ""
+
+#: views/dashboard.php:802 views/dashboard.php:957
+msgid ""
+"Note : Table Names highlighted with red color and an asterisk (*) are "
+"wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
+"delete and clean action because they can destroy your Wordpress "
+"unintentionally."
+msgstr ""
+
+#: views/dashboard.php:813 views/dashboard.php:974 views/dashboard.php:1172
+msgid "Optimize"
+msgstr ""
+
+#: views/dashboard.php:814 views/dashboard.php:975 views/dashboard.php:1175
+msgid "Repair"
+msgstr ""
+
+#: views/dashboard.php:822 views/dashboard.php:1004
+msgid "Table"
+msgstr ""
+
+#: views/dashboard.php:823 views/dashboard.php:1007
+msgid "Rows"
+msgstr ""
+
+#: views/dashboard.php:824 views/dashboard.php:1005
+msgid "Type"
+msgstr ""
+
+#: views/dashboard.php:825 views/dashboard.php:1008
+msgid "Size"
+msgstr ""
+
+#: views/dashboard.php:929 views/dashboard.php:1109
+msgid "Total"
+msgstr ""
+
+#: views/dashboard.php:998
+msgid "Choose Tables"
+msgstr ""
+
+#: views/dashboard.php:1006
+msgid "Overhead"
+msgstr ""
+
+#: views/dashboard.php:1126
+msgid "Manage Database Optimizer Schedules"
+msgstr ""
+
+#: views/dashboard.php:1133
+msgid "Tables"
+msgstr ""
+
+#: views/dashboard.php:1200
+msgid "Schedule Type"
+msgstr ""
+
+#: views/dashboard.php:1286 views/dashboard.php:1318
+msgid "Are you sure, you want to Clean?"
+msgstr ""
+
+#: views/dashboard.php:1303 views/dashboard.php:1335
+msgid "Successfully Cleaned!"
+msgstr ""
+
+#: views/dashboard.php:1311
+msgid "Please choose Action and Type of Data to Proceed!"
+msgstr ""
+
+#: views/dashboard.php:1392
+msgid "Are you sure, you want to Delete this Scheduler?"
+msgstr ""
+
+#: views/dashboard.php:1409
+msgid "Scheduler has been Deleted!"
+msgstr ""
+
+#: views/dashboard.php:1433 views/dashboard.php:1467
+msgid "Cleaned Successfully!"
+msgstr ""
+
+#: views/dashboard.php:1437 views/dashboard.php:1479
+msgid "Are you sure, you want to Perform this Action?"
+msgstr ""
+
+#: views/dashboard.php:1504
+msgid "Please choose Action or Table to proceed!."
+msgstr ""
+
+#: views/general-settings.php:34
+msgid "General Settings has been updated  "
+msgstr ""
+
+#: views/general-settings.php:45
+msgid "Save Changes"
+msgstr ""
+
+#: views/general-settings.php:51 views/general-settings.php:59
+msgid "Message Settings"
+msgstr ""
+
+#: views/general-settings.php:52 views/general-settings.php:92
+msgid "Security Settings"
+msgstr ""
+
+#: views/general-settings.php:53 views/general-settings.php:169
+msgid "Plugin Settings"
+msgstr ""
+
+#: views/general-settings.php:64
+msgid "IP Block Message"
+msgstr ""
+
+#: views/general-settings.php:67
+msgid "Enter the error message here when the IP is Blocked."
+msgstr ""
+
+#: views/general-settings.php:72 views/general-settings.php:104
+msgid "Max Login Attempts"
+msgstr ""
+
+#: views/general-settings.php:75
+msgid "Enter the error message here for Maxium login Attempts."
+msgstr ""
+
+#: views/general-settings.php:80
+msgid "Max Login Exceeded Error"
+msgstr ""
+
+#: views/general-settings.php:83
+msgid "Enter the error message here for Maxium login Exceeded."
+msgstr ""
+
+#: views/general-settings.php:96
+msgid "Auto IP Block"
+msgstr ""
+
+#: views/general-settings.php:111 views/login-logs.php:140
+msgid "Block IP Address"
+msgstr ""
+
+#: views/general-settings.php:114
+msgid "Add Block IP Address"
+msgstr ""
+
+#: views/general-settings.php:118
+msgid "Blocked IP Addresses"
+msgstr ""
+
+#: views/general-settings.php:130
+msgid "Delete Block IP Addresses"
+msgstr ""
+
+#: views/general-settings.php:134
+msgid "Block Start IP Range"
+msgstr ""
+
+#: views/general-settings.php:140
+msgid "Block End IP Range"
+msgstr ""
+
+#: views/general-settings.php:143
+msgid "Add Block IP Range"
+msgstr ""
+
+#: views/general-settings.php:147
+msgid "Blocked IP Range"
+msgstr ""
+
+#: views/general-settings.php:160
+msgid "Delete Block IP Range"
+msgstr ""
+
+#: views/general-settings.php:175
+msgid "Show Clean Up Plugin Menu"
+msgstr ""
+
+#: views/general-settings.php:179
+msgid "Administrator"
+msgstr ""
+
+#: views/general-settings.php:183
+msgid "Editor"
+msgstr ""
+
+#: views/general-settings.php:187
+msgid "Author"
+msgstr ""
+
+#: views/general-settings.php:191
+msgid "Contributor"
+msgstr ""
+
+#: views/general-settings.php:195
+msgid "Subscriber"
+msgstr ""
+
+#: views/general-settings.php:200
+msgid "Clean Up Menu Top Bar"
+msgstr ""
+
+#: views/login-logs.php:31
+msgid "Action has been updated"
+msgstr ""
+
+#: views/login-logs.php:46
+msgid "Recent Login Details on World Map"
+msgstr ""
+
+#: views/login-logs.php:98
+msgid "Recent Login Details"
+msgstr ""
+
+#: views/login-logs.php:104
+msgid "Username"
+msgstr ""
+
+#: views/login-logs.php:105
+msgid "IP Address"
+msgstr ""
+
+#: views/login-logs.php:106
+msgid "Location"
+msgstr ""
+
+#: views/login-logs.php:107
+msgid "Login Date & Time"
+msgstr ""
+
+#: views/login-logs.php:108
+msgid "Status"
+msgstr ""
+
+#: views/login-logs.php:128
+msgid "Success"
+msgstr ""
+
+#: views/login-logs.php:134
+msgid "Failed"
+msgstr ""
+
+#: views/system-status.php:28
+msgid "Wp Clean Up Optimizer System Status"
+msgstr ""
+
+#: views/system-status.php:32
+msgid "Get System Report"
+msgstr ""
+
+#: views/system-status.php:36
+msgid "Close System Report"
+msgstr ""
+
+#: views/system-status.php:42
+msgid "Environment"
+msgstr ""
+
+#: views/system-status.php:48
+msgid "Home URL"
+msgstr ""
+
+#: views/system-status.php:56
+msgid "Site URL"
+msgstr ""
+
+#: views/system-status.php:62
+msgid "WP Version"
+msgstr ""
+
+#: views/system-status.php:68
+msgid "WP Multisite Enabled"
+msgstr ""
+
+#: views/system-status.php:74
+msgid "Web Server Info"
+msgstr ""
+
+#: views/system-status.php:80
+msgid "PHP Version"
+msgstr ""
+
+#: views/system-status.php:86
+msgid "MySQL Version"
+msgstr ""
+
+#: views/system-status.php:96
+msgid "WP Debug Mode"
+msgstr ""
+
+#: views/system-status.php:102
+msgid "WP Language"
+msgstr ""
+
+#: views/system-status.php:104
+msgid "Default"
+msgstr ""
+
+#: views/system-status.php:108
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: views/system-status.php:118
+msgid "WP Max Upload Size"
+msgstr ""
+
+#: views/system-status.php:134
+msgid "WP Remote Post"
+msgstr ""
+
+#: views/system-status.php:151
+msgid "PHP Max Script Execute Time"
+msgstr ""
+
+#: views/system-status.php:157
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: views/system-status.php:163
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: views/system-status.php:170
+msgid "Default Timezone"
+msgstr ""
+
+#: views/system-status.php:223
+msgid "Operating System"
+msgstr ""
+
+#: views/system-status.php:231
+msgid "Memory usage"
+msgstr ""
+
+#: views/system-status.php:239
+msgid "SQL Mode"
+msgstr ""
+
+#: views/system-status.php:247
+msgid "PHP Safe Mode"
+msgstr ""
+
+#: views/system-status.php:255
+msgid "PHP Allow URL fopen"
+msgstr ""
+
+#: views/system-status.php:263
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: views/system-status.php:271
+msgid "PHP Max Post Size"
+msgstr ""
+
+#: views/system-status.php:279
+msgid "PCRE Backtracking Limit"
+msgstr ""
+
+#: views/system-status.php:287
+msgid "PHP Exif support"
+msgstr ""
+
+#: views/system-status.php:295
+msgid "PHP IPTC support"
+msgstr ""
+
+#: views/system-status.php:303
+msgid "PHP XML support"
+msgstr ""
+
+#: views/system-status.php:316
+msgid "Plugins"
+msgstr ""
+
+#: views/system-status.php:320
+msgid "Installed Plugins"
+msgstr ""
+
+#: views/system-status.php:381
+msgid "Themes"
+msgstr ""
+
+#: views/system-status.php:385
+msgid "Theme Name"
+msgstr ""
+
+#: views/system-status.php:391
+msgid "Theme Version"
+msgstr ""
+
+#: views/system-status.php:401
+msgid "Author URL"
+msgstr ""
+
+#: wp-cleanup-optimizer.php:226
+msgid "View WP Clean Up Optimzier Documentation"
+msgstr ""
+
+#: wp-cleanup-optimizer.php:226
+msgid "Docs"
+msgstr ""
+
+#: wp-cleanup-optimizer.php:227
+msgid "View WP Clean Up Optimzier Premium Editions"
+msgstr ""
+
+#: wp-cleanup-optimizer.php:227
+msgid "Go for Premium!"
+msgstr ""

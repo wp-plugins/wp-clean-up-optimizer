@@ -79,7 +79,11 @@ else
 										<div id="custom_cron" class="framework_tab active">
 											<div class="widget-layout">
 												<div class="widget-layout-title">
-													<h4><?php _e("Custom Events", cleanup_optimizer); ?><i class="standard_edition"><?php _e(" (Available in Premium Editions)",cleanup_optimizer)?></i></h4>
+													<h4><?php _e("Custom Events", cleanup_optimizer); ?>
+														<i class="standard_edition">
+															<?php _e(" (Available in Premium Editions)",cleanup_optimizer)?>
+														</i>
+													</h4>
 												</div>
 												<div class="widget-layout-body">
 													<div class="fluid-layout">
@@ -96,10 +100,21 @@ else
 																	<tr>
 																		<th style="display:none;"></th>
 																		<th><input type="checkbox" id="ux_chk_select_all_scheduler" name="ux_chk_scheduler" style="margin:1px 0px 0px 1px" disabled="disabled" /></th>
-																		<th scope="col" style="width:25%;"><?php _e("Name of the Hook",cleanup_optimizer); ?></th>	
-																		<th scope="col" style="width:25%;"><?php _e("Interval Hook",cleanup_optimizer); ?></th>
-																		<th scope="col" style="width:25%;"><?php _e("Args",cleanup_optimizer); ?></th>
-																		<th scope="col" style="width:25%;"><?php _e("Next Execution",cleanup_optimizer); ?></th>
+																		<th scope="col" style="width:25%;">
+																			<?php _e("Name of the Hook",cleanup_optimizer); ?>
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("List of Custom scheduled events.",cleanup_optimizer) ;?>'/>
+																		</th>	
+																		<th scope="col" style="width:25%;">
+																			<?php _e("Interval Hook",cleanup_optimizer); ?>
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("It specifies the Interval of a Scheduler. ",cleanup_optimizer) ;?>'/>
+																		</th>
+																		<th scope="col" style="width:25%;">
+																			<?php _e("Args",cleanup_optimizer); ?>
+																		</th>
+																		<th scope="col" style="width:25%;">
+																			<?php _e("Next Execution",cleanup_optimizer); ?>
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("It allows you to view the Date & Time for next execution of a Scheduler.",cleanup_optimizer) ;?>'/>
+																		</th>
 																	</tr>
 																</thead>
 																<tbody class="all_wp_chks">
@@ -209,7 +224,9 @@ else
 										<div id="core_cron" class="framework_tab">
 											<div class="widget-layout">
 												<div class="widget-layout-title">
-													<h4><?php _e("Core Events", cleanup_optimizer); ?></h4>
+													<h4>
+														<?php _e("Core Events", cleanup_optimizer); ?>
+													</h4>
 												</div>
 												<div class="widget-layout-body">
 													<div class="fluid-layout">
@@ -218,10 +235,21 @@ else
 																<thead>
 																	<tr>
 																		<th style="display:none;"></th>
-																		<th scope="col" style="width:20%;"><?php _e("Name of the Hook",cleanup_optimizer); ?></th>	
-																		<th scope="col" style="width:20%;"><?php _e("Interval Hook",cleanup_optimizer); ?></th>
-																		<th scope="col" style="width:20%;"><?php _e("Args",cleanup_optimizer); ?></th>
-																		<th scope="col" style="width:20%;"><?php _e("Next Execution",cleanup_optimizer); ?></th>
+																		<th scope="col" style="width:20%;">
+																			<?php _e("Name of the Hook",cleanup_optimizer); ?>
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("List of Core scheduled events. Which are Default schedulers created by WordPress.",cleanup_optimizer) ;?>'/>
+																		</th>	
+																		<th scope="col" style="width:20%;">
+																			<?php _e("Interval Hook",cleanup_optimizer); ?>
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("It specifies the Interval of a Scheduler. ",cleanup_optimizer) ;?>'/>
+																		</th>
+																		<th scope="col" style="width:20%;">
+																			<?php _e("Args",cleanup_optimizer); ?>
+																		</th>
+																		<th scope="col" style="width:20%;">
+																			<?php _e("Next Execution",cleanup_optimizer); ?>
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("It allows you to view the Date & Time for next execution of a Scheduler.",cleanup_optimizer) ;?>'/>
+																		</th>
 																	</tr>
 																</thead>
 																<tbody>
@@ -343,6 +371,7 @@ else
 		</div>
 	</form>
 	<script type="text/javascript">
+		jQuery(".hovertip").tooltip({placement: "right"});
 		jQuery('.framework_tabs .framework_tab-links a').on('click', function(e)  {
 			var currentAttrValue = jQuery(this).attr('href');
 			jQuery('.framework_tabs ' + currentAttrValue).show().siblings().hide();

@@ -120,76 +120,66 @@ else
 	}
 	if(isset($_REQUEST["param"]))
 	{
-		if($_REQUEST["param"] == "truncate_table")
+		switch($_REQUEST["param"])
 		{
-			$truncate_table=esc_attr($_REQUEST["table_name"]);
-			$wpdb->query
-			(
-				"TRUNCATE TABLE $truncate_table"
-			);
-			die();
-		}
-		else if($_REQUEST["param"] == "wp_cleanup")
-		{
-			$type= $_REQUEST["typeClean"];
-			clean_data($type);
-			die();
-		}
-		else if($_REQUEST["param"] == "bulk_delete_action")
-		{
-			$val="";
-			$types= $_REQUEST["ux_chk_cleanup"];
-			print_r($types);
-			for($flag=0; $flag<count($types); $flag++)
-			{
-				clean_data($types[$flag]);
-			}
-			die();
-		}
-		else if($_REQUEST["param"] == "bulk_selected_action")
-		{
-			$types= $_REQUEST["ux_ddl_bulk_action_db_optimzier"];
-			$chk_value=$_REQUEST["ux_chk_cleanup_arr_db"];
-			$test=array();
-			for($flag1=0; $flag1 < count($chk_value); $flag1++)
-			{
-				if((strstr($chk_value[$flag1],$wpdb->terms) || strstr($chk_value[$flag1],$wpdb->term_taxonomy) || strstr($chk_value[$flag1],$wpdb->term_relationships) || strstr($chk_value[$flag1],$wpdb->commentmeta) || strstr($chk_value[$flag1],$wpdb->comments) 
-					|| strstr($chk_value[$flag1],$wpdb->links) || strstr($chk_value[$flag1],$wpdb->options)|| strstr($chk_value[$flag1],$wpdb->postmeta) || strstr($chk_value[$flag1], $wpdb->posts) || strstr($chk_value[$flag1],$wpdb->users) || strstr($chk_value[$flag1],$wpdb->usermeta)
-					|| strstr($chk_value[$flag1],$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_login_log") 
-					|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_single_ip")
-					|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_range_ip") ) == true)
+			case "wp_cleanup":
+				$type= $_REQUEST["typeClean"];
+				clean_data($type);
+				die();
+			break;
+			case "bulk_delete_action":
+				$val="";
+				$types= $_REQUEST["ux_chk_cleanup"];
+				print_r($types);
+				for($flag=0; $flag<count($types); $flag++)
 				{
-					
+					clean_data($types[$flag]);
 				}
-				else
+				die();
+			break;
+			case "bulk_selected_action":
+				$types= $_REQUEST["ux_ddl_bulk_action_db_optimzier"];
+				$chk_value=$_REQUEST["ux_chk_cleanup_arr_db"];
+				$test=array();
+				for($flag1=0; $flag1 < count($chk_value); $flag1++)
 				{
-					switch($types)
+					if((strstr($chk_value[$flag1],$wpdb->terms) || strstr($chk_value[$flag1],$wpdb->term_taxonomy) || strstr($chk_value[$flag1],$wpdb->term_relationships) || strstr($chk_value[$flag1],$wpdb->commentmeta) || strstr($chk_value[$flag1],$wpdb->comments)
+					|| strstr($chk_value[$flag1],$wpdb->links) || strstr($chk_value[$flag1],$wpdb->options)|| strstr($chk_value[$flag1],$wpdb->postmeta) || strstr($chk_value[$flag1], $wpdb->posts) || strstr($chk_value[$flag1],$wpdb->users) || strstr($chk_value[$flag1],$wpdb->usermeta)
+					|| strstr($chk_value[$flag1],$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_login_log")
+						|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_single_ip")
+						|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_range_ip") ) == true)
 					{
-						case 1:
-							$wpdb->query
-							(
-								"TRUNCATE TABLE $chk_value[$flag1]"
-							);
-						break;
+								
+					}
+					else
+					{
+						switch($types)
+						{
+							case 1:
+								$wpdb->query
+								(
+									"TRUNCATE TABLE $chk_value[$flag1]"
+								);
+							break;
+						}
 					}
 				}
-			}
-			die();
-		}
-		else if($_REQUEST["param"] =="table_action")
-		{
-			$perform_action=intval($_REQUEST["perform_action"]);
-			$table_name=esc_attr($_REQUEST["table_name"]);
-			switch($perform_action)
-			{
-				case 1:
-					$wpdb->query
-					(
-						"TRUNCATE TABLE $table_name"
-					);
-				break;
-			}
-			die();
+				die();
+			break;
+			case "table_action":
+				$perform_action=intval($_REQUEST["perform_action"]);
+				$table_name=esc_attr($_REQUEST["table_name"]);
+				switch($perform_action)
+				{
+					case 1:
+						$wpdb->query
+						(
+							"TRUNCATE TABLE $table_name"
+						);
+					break;
+				}
+				die();
+			break;
 		}
 		die();
 	}

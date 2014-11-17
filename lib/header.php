@@ -65,7 +65,7 @@ else
 						</li>
 						<li>
 							<a href="http://tech-banker.com/products/wp-clean-up-optimizer/pricing/" target="_blank" class="welcome-icon">
-								<?php _e("Why Go for Premium ?", cleanup_optimizer); ?>
+								<?php _e("Premium Pricing Plan", cleanup_optimizer); ?>
 							</a>
 						</li>
 					</ul>
@@ -96,8 +96,8 @@ else
 					<h4 class="welcome-screen-margin"><?php _e("More Actions", cleanup_optimizer); ?></h4>
 					<ul>
 						<li>
-							<a href="http://tech-banker.com/products/wp-clean-up-optimizer/pricing/" target="_blank" class="welcome-icon">
-								<?php _e("Premium Pricing Plans", cleanup_optimizer); ?>
+							<a href="http://tech-banker.com/shop/uncategorized/order-customization-wp-clean-optimizer/" target="_blank" class="welcome-icon">
+								<?php _e("Plugin Customization", cleanup_optimizer); ?>
 							</a>
 						</li>
 						<li>

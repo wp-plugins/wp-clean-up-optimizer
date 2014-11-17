@@ -12,7 +12,7 @@
 
 .custom-label-width
 {
-	width: 180px !important;
+	width: 201px !important;
 }
 
 .custom-layout-controls-cleanup
@@ -57,6 +57,7 @@
 .standard_edition
 {
 	color: #FF0000;
+	margin-right:0px;
 }
 .custom-message {
 	position: relative;
@@ -87,6 +88,11 @@
 	background : #F8E9E9;
 	border: 1px solid #E4BBBC;
 	color: #b80000;
+}
+.tooltip_img
+{
+	vertical-align:middle;
+	width:15px !important;
 }
 /******************************System Status***********************************/
 .layout-system-report {

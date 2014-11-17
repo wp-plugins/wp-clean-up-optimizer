@@ -101,13 +101,31 @@ else
 							<table class="widefat" style="background-color:#ffffff; margin-top:10px;" id="data-table-logs">
 								<thead>
 									<tr>
-										<th style="width:14%"><?php _e( "Username", cleanup_optimizer ); ?></th>
-										<th style="width:16%"><?php _e( "IP Address", cleanup_optimizer ); ?></th>
-										<th style="width:16%"><?php _e( "Location", cleanup_optimizer ); ?></th>
-										<th style="width:22%"><?php _e( "Login Date & Time", cleanup_optimizer ); ?></th>
-										<th style="width:14%; text-align: center;"><?php _e( "Status", cleanup_optimizer ); ?></th>
-										<th style="width:18%;"><?php _e( "Action", cleanup_optimizer ); ?></th>
-										</tr>
+										<th style="width:14%">
+											<?php _e( "Username", cleanup_optimizer ); ?>
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the username of recent logged in users.",cleanup_optimizer) ;?>'/>
+										</th>
+										<th style="width:16%">
+											<?php _e( "IP Address", cleanup_optimizer ); ?>
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the IP Address of the logged in users.",cleanup_optimizer) ;?>'/>
+										</th>
+										<th style="width:16%">
+											<?php _e( "Location", cleanup_optimizer ); ?>
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the current location of the logged in users.",cleanup_optimizer) ;?>'/>
+										</th>
+										<th style="width:22%">
+											<?php _e( "Login Date & Time", cleanup_optimizer ); ?>
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the logged in date and time of the users.",cleanup_optimizer) ;?>'/>
+										</th>
+										<th style="width:14%; text-align: center;">
+											<?php _e( "Status", cleanup_optimizer ); ?>
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Lets, you know the status of the users, whether they have successfully logged in or not.",cleanup_optimizer) ;?>'/>
+										</th>
+										<th style="width:18%;">
+											<?php _e( "Action", cleanup_optimizer ); ?>
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to block or whitelist IP Addresses for the logged in users as per your requirement.",cleanup_optimizer) ;?>'/>
+										</th>
+									</tr>
 								</thead>
 								<tbody>
 								<?php 
@@ -137,7 +155,7 @@ else
 												?>
 											</td>
 											<td>
-												<a href="#" style="color:#0d1ff6;"  onclick="block_ip();"><?php _e("Block IP Address", cleanup_optimizer); ?></a>
+												<a href="#" style="color:#0d1ff6;" onclick="block_ip();"><?php _e("Block IP Address", cleanup_optimizer); ?></a>
 											</td>
 											
 										</tr>
@@ -153,6 +171,7 @@ else
 		</div>
 	</div>
 	<script type="text/javascript">
+	jQuery(".hovertip").tooltip({placement: "right"});
 	jQuery(document).ready(function()
 	{
 		var oTable = jQuery("#data-table-logs").dataTable

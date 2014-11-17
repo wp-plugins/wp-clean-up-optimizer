@@ -512,6 +512,14 @@ Once you click on the link, this page would open and there you could see the sta
 
 == Changelog ==
 
+= 2.0.2 =
+
+* Added Tooltips
+* Udpated  Po & Mo Files
+* Updated Css Fixes
+* Updated Js Fixes
+* Optimized Clean Up Code
+
 = 2.0.1 =
 
 * Udpated  Po & Mo Files

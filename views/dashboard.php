@@ -17,6 +17,10 @@ if (!current_user_can($user_role_permission))
 }
 else
 {
+	$wp_clear= wp_create_nonce( "clear_data" );
+	$del_images = wp_create_nonce( "delete_pics" );
+	$del_images = wp_create_nonce( "delete_pics" );
+	$del_images = wp_create_nonce( "delete_pics" );
 	$alternate = "class='alternate'";
 	$alternate_class="class='alternate'";
 	$total_size = "" ;
@@ -233,14 +237,19 @@ else
 								</div>
 								<div class="widget-layout-body">
 									<div class="layout-control-group"> 
-										<label class="layout-control-label"><span class="hovertip underline" data-original-title="Trackbacks are a way to notify legacy blog systems that you've linked to them. If you link to a WordPress blog they'll be notified automatically using pingbacks, no other action necessary."><?php _e("Trackbacks", cleanup_optimizer); ?> : </span></label>
+										<label class="layout-control-label"><?php _e("Trackbacks", cleanup_optimizer); ?> :
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Trackbacks are a way to notify legacy blog systems that you have linked to them. If you link to a WordPress blog they will be notified automatically using pingbacks, no other action necessary.",cleanup_optimizer) ;?>'/>
+										</label>
 										<div class="layout-controls wpcpo-label-system-status">
 											<input type="radio" id="ux_rdl_tackbacks_on" name="ux_rdl_trackbacks" checked="checked" value="1" disabled="disabled" /><?php echo _e("Enable",cleanup_optimizer)?>
 											<input type="radio" id="ux_rdl_tackbacks_off" name="ux_rdl_trackbacks" value="0" disabled="disabled" /><?php echo _e("Disable",cleanup_optimizer)?>
 										</div>
 									</div>
 									<div class="layout-control-group"> 
-										<label class="layout-control-label"><span class="hovertip underline" data-original-title="Manage comments on any Post or Page. It can be used to disable comments on the entire Blog."><?php _e("Comments", cleanup_optimizer); ?> : </span></label>
+										<label class="layout-control-label">
+											<?php _e("Comments", cleanup_optimizer); ?> : 
+											<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Manage comments on any Post or Page. It can be used to disable comments on the entire Blog.",cleanup_optimizer) ;?>'/>
+										</label>
 										<div class="layout-controls wpcpo-label-system-status">
 											<input type="radio" id="ux_rdl_comments_on" name="ux_rdl_comments_action" checked="checked" value="1" disabled="disabled" /><?php echo _e("Enable",cleanup_optimizer)?>
 											<input type="radio" id="ux_rdl_comments_off" name="ux_rdl_comments_action" value="0" disabled="disabled" /><?php echo _e("Disable",cleanup_optimizer)?>
@@ -289,7 +298,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_1" name="ux_chk_cleanup[]" style="margin:0px" value="1" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Auto Draft are the Page / Post saved as draft automatically in WordPress Database."><?php _e("Auto Draft", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Auto Draft are the Page / Post saved as draft automatically in WordPress Database.",cleanup_optimizer)?>'><?php _e("Auto Draft", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("autodraft"); ?>
@@ -303,7 +312,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_2" name="ux_chk_cleanup[]" style="margin:0px"  value="2" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Transient Feed in WordPress are use Database entries to cache a certain entries."><?php _e("Dashboard Transient Feed", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Transient Feed in WordPress are use Database entries to cache a certain entries.",cleanup_optimizer) ;?>'><?php _e("Dashboard Transient Feed", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("feed"); ?>
@@ -317,7 +326,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_3" name="ux_chk_cleanup[]" style="margin:0px"  value="3" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="New Post / Page created as Draft in WordPress."><?php _e("Draft", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("New Post / Page created as Draft in WordPress.",cleanup_optimizer) ;?>'><?php _e("Draft", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("draft"); ?>
@@ -331,7 +340,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_cleanup[]" style="margin:0px"  value="4" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Moderated Comments is a feature in WordPress that allows you to prevent comments from appearing on your site without your express approval."><?php _e("Moderated Comments", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Moderated Comments is a feature in WordPress that allows you to prevent comments from appearing on your site without your express approval.",cleanup_optimizer) ;?>'><?php _e("Moderated Comments", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("moderated"); ?>
@@ -345,7 +354,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_cleanup[]" style="margin:0px"  value="5" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Orphan Comments Meta holds the miscellaneous bits of extra information of comment."><?php _e("Orphan Comments Meta", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Orphan Comments Meta holds the miscellaneous bits of extra information of comment.",cleanup_optimizer) ;?>'><?php _e("Orphan Comments Meta", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("commentmeta"); ?>
@@ -359,7 +368,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_cleanup[]" style="margin:0px" value="6" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Orphan Posts Meta holds the junk or obsolete data."><?php _e("Orphan Posts Meta", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Orphan Posts Meta holds the junk or obsolete data.",cleanup_optimizer) ;?>'><?php _e("Orphan Posts Meta", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("postmeta"); ?>
@@ -373,7 +382,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_cleanup[]" style="margin:0px"  value="7" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Orphan Relationships holds the junk or obsolete Category and Tag."><?php _e("Orphan Relationships", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Orphan Relationships holds the junk or obsolete Category and Tag.",cleanup_optimizer) ;?>'><?php _e("Orphan Relationships", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("relationships"); ?>
@@ -387,7 +396,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_cleanup[]" style="margin:0px"  value="8" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="The WordPress revisions system stores a record of each saved draft or published update.Revisions are stored in the posts table"><?php _e("Revision", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("The WordPress revisions system stores a record of each saved draft or published update.Revisions are stored in the posts table.",cleanup_optimizer) ;?>'><?php _e("Revision", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("revision"); ?>
@@ -401,7 +410,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_cleanup[]" style="margin:0px"  value="9" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="A Pingback is a type of comment that's created when you link to another blog post where pingbacks are enabled."><?php _e("Remove Pingbacks", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("A Pingback is a type of comment that's created when you link to another blog post where pingbacks are enabled.",cleanup_optimizer) ;?>'><?php _e("Remove Pingbacks", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("remove_pingbacks"); ?>
@@ -415,7 +424,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_cleanup[]" style="margin:0px"  value="10" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Transient Options are like a basic cache system used by wordpress. Clearing these options before a backup will help to save space in your backup files."><?php _e("Remove Transient Options", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Transient Options are like a basic cache system used by wordpress. Clearing these options before a backup will help to save space in your backup files.",cleanup_optimizer) ;?>'><?php _e("Remove Transient Options", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("remove_transient_options"); ?>
@@ -429,7 +438,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_11" name="ux_chk_cleanup[]" style="margin:0px"  value="11" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Trackbacks are a way to notify legacy blog systems that you've linked to them. If you link to a WordPress blog they'll be notified automatically using pingbacks, no other action necessary."><?php _e("Remove Trackbacks", cleanup_optimizer); ?></span> 
+																			<span class="hovertip underline" data-original-title ='<?php _e("Trackbacks are a way to notify legacy blog systems that you have linked to them. If you link to a WordPress blog they will be notified automatically using pingbacks, no other action necessary.",cleanup_optimizer) ;?>'><?php _e("Remove Trackbacks", cleanup_optimizer); ?></span> 
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("remove_trackbacks"); ?>
@@ -443,7 +452,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_12" name="ux_chk_cleanup[]" style="margin:0px"  value="12" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Spam Comments are the unwanted comments in the WordPress database."><?php _e("Spam Comments", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Spam Comments are the unwanted comments in the WordPress database.",cleanup_optimizer) ;?>'><?php _e("Spam Comments", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("spam"); ?>
@@ -457,7 +466,7 @@ else
 																			<input type="checkbox" id="ux_chk_cleanup_13" name="ux_chk_cleanup[]" style="margin:0px"  value="13" />
 																		</td>
 																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ="Trash Comments are the comments which are stored in the WordPress Trash."><?php _e("Trash Comments", cleanup_optimizer); ?></span>
+																			<span class="hovertip underline" data-original-title ='<?php _e("Trash Comments are the comments which are stored in the WordPress Trash.",cleanup_optimizer) ;?>'><?php _e("Trash Comments", cleanup_optimizer); ?></span>
 																		</td>
 																		<td class="column-name">
 																			<?php echo wp_clean_up_optimizer_count("trash"); ?>
@@ -496,106 +505,106 @@ else
 																		<tbody id="the-list" class="ux_scheduler_chks">
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_1" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="1" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_1" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="1" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Auto Draft are the Page / Post saved as draft automatically in WordPress Database."><?php _e("Auto Draft", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Auto Draft are the Page / Post saved as draft automatically in WordPress Database.",cleanup_optimizer)?>'><?php _e("Auto Draft", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_2" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="2" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_2" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="2" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Transient Feed in WordPress are use Database entries to cache a certain entries."><?php _e("Dashboard Transient Feed", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Transient Feed in WordPress are use Database entries to cache a certain entries.",cleanup_optimizer) ;?>'><?php _e("Dashboard Transient Feed", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_3" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="3" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_3" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="3" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="New Post / Page created as Draft in WordPress."><?php _e("Draft", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("New Post / Page created as Draft in WordPress.",cleanup_optimizer) ;?>'><?php _e("Draft", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="4" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="4" />
 																				</td>
 																				<td class="column-name">
-																						<span class="hovertip underline" data-original-title ="Moderated Comments is a feature in WordPress that allows you to prevent comments from appearing on your site without your express approval."><?php _e("Moderated Comments", cleanup_optimizer); ?></span>
+																						<span class="hovertip underline" data-original-title ='<?php _e("Moderated Comments is a feature in WordPress that allows you to prevent comments from appearing on your site without your express approval.",cleanup_optimizer) ;?>'><?php _e("Moderated Comments", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="5" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="5" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Orphan Comments Meta holds the miscellaneous bits of extra information of comment."><?php _e("Orphan Comments Meta", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Comments Meta holds the miscellaneous bits of extra information of comment.",cleanup_optimizer) ;?>'><?php _e("Orphan Comments Meta", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="6" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="6" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Orphan Posts Meta holds the junk or obsolete data."><?php _e("Orphan Posts Meta", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Posts Meta holds the junk or obsolete data.",cleanup_optimizer) ;?>'><?php _e("Orphan Posts Meta", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="7" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="7" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Orphan Relationships holds the junk or obsolete Category and Tag."><?php _e("Orphan Relationships", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Relationships holds the junk or obsolete Category and Tag.",cleanup_optimizer) ;?>'><?php _e("Orphan Relationships", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="8" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="8" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="The WordPress revisions system stores a record of each saved draft or published update.Revisions are stored in the posts table"><?php _e("Revision", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("The WordPress revisions system stores a record of each saved draft or published update.Revisions are stored in the posts table.",cleanup_optimizer) ;?>'><?php _e("Revision", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="9" disabled="disabled" />
+																					<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="9" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="A Pingback is a type of comment that's created when you link to another blog post where pingbacks are enabled."><?php _e("Remove Pingbacks", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("A Pingback is a type of comment that's created when you link to another blog post where pingbacks are enabled.",cleanup_optimizer) ;?>'><?php _e("Remove Pingbacks", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="10" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="10" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Transient Options are like a basic cache system used by wordpress. Clearing these options before a backup will help to save space in your backup files."><?php _e("Remove Transient Options", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Transient Options are like a basic cache system used by wordpress. Clearing these options before a backup will help to save space in your backup files.",cleanup_optimizer) ;?>'><?php _e("Remove Transient Options", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_11" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="11" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_11" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="11" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Trackbacks are a way to notify legacy blog systems that you've linked to them. If you link to a WordPress blog they'll be notified automatically using pingbacks, no other action necessary."><?php _e("Remove Trackbacks", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Trackbacks are a way to notify legacy blog systems that you've linked to them. If you link to a WordPress blog they'll be notified automatically using pingbacks, no other action necessary.",cleanup_optimizer) ;?>'><?php _e("Remove Trackbacks", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_12" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="12" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_12" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="12" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Spam Comments are the unwanted comments in the WordPress database."><?php _e("Spam Comments", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Spam Comments are the unwanted comments in the WordPress database.",cleanup_optimizer) ;?>'><?php _e("Spam Comments", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_13" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="13" disabled="disabled"/>
+																					<input type="checkbox" id="ux_chk_cleanup_13" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="13" />
 																				</td>
 																				<td class="column-name">
-																					<span class="hovertip underline" data-original-title ="Trash Comments are the comments which are stored in the WordPress Trash."><?php _e("Trash Comments", cleanup_optimizer); ?></span>
+																					<span class="hovertip underline" data-original-title ='<?php _e("Trash Comments are the comments which are stored in the WordPress Trash.",cleanup_optimizer) ;?>'><?php _e("Trash Comments", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
 																		</tbody>
@@ -609,7 +618,10 @@ else
 																	</div>
 																	<div class="widget-layout-body">
 																		<div class="layout-control-group">
-																			<label class="layout-control-label"><?php _e("Action ", cleanup_optimizer); ?> : </label>
+																			<label class="layout-control-label">
+																				<?php _e("Action ", cleanup_optimizer); ?> : 
+																				<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to select the type of Action.",cleanup_optimizer) ;?>'/>
+																			</label>
 																			<div class="layout-controls">
 																				<select id="ux_ddl_bulk_action_wp_scheduler" name="ux_ddl_bulk_action_wp_scheduler" style="vertical-align:top" class="layout-span12">
 																					<option value="0"><?php _e("Bulk Action", cleanup_optimizer); ?></option>
@@ -618,7 +630,10 @@ else
 																			</div>
 																		</div>
 																		<div class="layout-control-group">
-																			<label class="layout-control-label"><?php _e("Duration ", cleanup_optimizer); ?> : </label>
+																			<label class="layout-control-label">
+																				<?php _e("Duration ", cleanup_optimizer); ?> : 
+																				<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Configuration the scheduler Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually from the DropDown.",cleanup_optimizer) ;?>'/>
+																			</label>
 																			<div class="layout-controls">
 																				<select id="type_of_scheduler" name="type_of_scheduler" class="layout-span12">
 																					<option value="1day" disabled="disabled"><?php _e("Daily", cleanup_optimizer); ?></option>
@@ -966,7 +981,10 @@ else
 																</div>
 																<div class="widget-layout-body">
 																	<div class="layout-control-group layout-span5">
-																		<label class="layout-control-label"><?php _e("Action ", cleanup_optimizer); ?> : </label>
+																		<label class="layout-control-label">
+																			<?php _e("Action ", cleanup_optimizer); ?> : 
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to select the type of Action.",cleanup_optimizer) ;?>'/>
+																		</label>
 																		<div class="layout-controls">
 																			<select id="ux_ddl_bulk_action_scheduler" name="ux_ddl_bulk_action_scheduler" class="bulk-action-width layout-span8">
 																				<option value="1" disabled="disabled"><?php _e("Empty", cleanup_optimizer); ?></option>
@@ -977,7 +995,10 @@ else
 																		</div>
 																	</div>
 																	<div class="layout-control-group">
-																		<label class="layout-control-label"><?php _e("Duration ", cleanup_optimizer); ?> : </label>
+																		<label class="layout-control-label">
+																			<?php _e("Duration ", cleanup_optimizer); ?> : 
+																			<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Configuration the scheduler Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually from the DropDown.",cleanup_optimizer) ;?>'/>
+																		</label>
 																		<div class="layout-controls">
 																			<select id="schedule_type" name="schedule_type" class="layout-span2">
 																				<option value="1day" disabled="disabled"><?php _e("Daily", cleanup_optimizer); ?></option>
@@ -1323,7 +1344,7 @@ else
 			var overlay = jQuery("<div class=\"loader_opacity\"><div class=\"processing_overlay\"></div></div>");
 		 	jQuery("body").append(overlay);
 		 	
-			jQuery.post(ajaxurl, "typeClean="+typeClean+"&param=wp_cleanup&action=cleanup_library", function(data)
+			jQuery.post(ajaxurl, "typeClean="+typeClean+"&param=wp_cleanup&action=cleanup_library&_wpnonce=<?php echo $wp_clear ;?>", function(data)
 			{
 				jQuery("body,html").animate({
 					scrollTop: jQuery("body,html").position().top}, "slow");
@@ -1385,32 +1406,6 @@ else
 		jQuery("#top-error").remove();
 		var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 		jQuery("body").append(error_message);
-	}
-	
-	function clear_wp_scheduler(delete_scheduler)
-	{
-		var confirm_selection =  confirm("<?php _e( "Are you sure, you want to Delete this Scheduler?", cleanup_optimizer ); ?>");
-		if(confirm_selection == true)
-		{
-			var overlay_opacity = jQuery("<div class=\"opacity_overlay\"></div>");
-			jQuery("body").append(overlay_opacity);
-			var overlay = jQuery("<div class=\"loader_opacity\"><div class=\"processing_overlay\"></div></div>");
-			jQuery("body").append(overlay);
-			
-			jQuery.post(ajaxurl, "delete_scheduler="+delete_scheduler+"&param=wp_clear_scheduler&action=cleanup_library", function(data)
-			{
-				jQuery("body,html").animate({
-					scrollTop: jQuery("body,html").position().top}, "slow");
-				setTimeout(function ()
-				{
-					jQuery(".loader_opacity").remove();
-					jQuery(".opacity_overlay").remove();
-					jQuery(".message").css("display","block");
-					jQuery("#success_message").html("<?php _e('Scheduler has been Deleted!',cleanup_optimizer)?>");
-					window.location.reload();
-				}, 2000);
-			});
-		}
 	}
 	//////////////////////////////////////////////////////////////////////////////////////////
 	///////////                           DB Optimizer                             ///////

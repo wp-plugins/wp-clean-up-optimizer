@@ -174,10 +174,6 @@
 		{
 			create_table_block_range_ip();
 		}
-		update_option("wp-cleanup-optimizer-version-number","2.0");
 	}
-	else
-	{
-		
-	}
+	update_option("wp-cleanup-optimizer-version-number","2.0.2");
 ?>

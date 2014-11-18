@@ -8,13 +8,13 @@ if(!function_exists("add_wp_cleanup_optimizer_admin_bar"))
 	function add_wp_cleanup_optimizer_admin_bar($meta = TRUE)
 	{
 		global $wp_admin_bar,$wpdb,$current_user;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if (!is_user_logged_in()) {
 			return;
 		}
-		switch ($cpo_role)
+		switch ($role)
 		{
 			case "administrator":
 				$wp_admin_bar->add_menu( array(

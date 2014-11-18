@@ -2,7 +2,7 @@
 //--------------------------------------------------------------------------------------------------------------//
 // CODE FOR CREATING MENUS
 //---------------------------------------------------------------------------------------------------------------//
-switch($cpo_role)
+switch($role)
 {
 	case "administrator":
 		add_menu_page("WP Clean Up Optimizer", "WP Clean Up Optimizer", "read", "cpo_dashboard", "",plugins_url("/assets/images/icons/icon.png" , dirname(__FILE__)));
@@ -46,9 +46,9 @@ if(!function_exists("cpo_dashboard"))
 	function cpo_dashboard()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
@@ -64,9 +64,9 @@ if(!function_exists("cpo_general_settings"))
 	function cpo_general_settings()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
@@ -86,9 +86,9 @@ if(!function_exists("cpo_login_logs"))
 	function cpo_login_logs()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
@@ -104,9 +104,9 @@ if(!function_exists("cpo_cron_jobs"))
 	function cpo_cron_jobs()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
@@ -122,9 +122,9 @@ if(!function_exists("cpo_system_status"))
 	function cpo_system_status()
 	{
 		global $wpdb,$current_user,$user_role_permission,$wp_version,$gb;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
@@ -140,9 +140,9 @@ if(!function_exists("cpo_premium_edition"))
 	function cpo_premium_edition()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
@@ -158,9 +158,9 @@ if(!function_exists("cpo_recommendations"))
 	function cpo_recommendations()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
@@ -176,9 +176,9 @@ if(!function_exists("cpo_other_services"))
 	function cpo_other_services()
 	{
 		global $wpdb,$current_user,$user_role_permission;
-		$cpo_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cpo_role);
-		$cpo_role = $current_user->role[0];
+		$role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$role);
+		$role = $current_user->role[0];
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 		{
 			include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";

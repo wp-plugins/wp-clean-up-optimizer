@@ -1,5 +1,5 @@
 <?php
-switch($cpo_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
@@ -1635,7 +1635,7 @@ else
 										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align">
-													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-eco-edition/" class="sign_up sign_up_orange radius3">
+													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-eco-edition/" class="sign_up sign_up_orange radius3" target="_blank">
 														<?php _e("Order Now!",cleanup_optimizer)?>
 													</a>
 												</span>
@@ -2119,7 +2119,7 @@ else
 										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align">
-													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-pro-edition/" class="sign_up sign_up_orange radius3">
+													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-pro-edition/" class="sign_up sign_up_orange radius3" target="_blank">
 														<?php _e("Order Now!",cleanup_optimizer)?>
 													</a>
 												</span>
@@ -2603,7 +2603,7 @@ else
 										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align">
-													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-developer-edition/" class="sign_up sign_up_orange radius3">
+													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-developer-edition/" class="sign_up sign_up_orange radius3" target="_blank">
 														<?php _e("Order Now!",cleanup_optimizer)?>
 													</a>
 												</span>
@@ -3083,7 +3083,7 @@ else
 										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align">
-													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-extended-edition/" class="sign_up sign_up_orange radius3">
+													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-extended-edition/" class="sign_up sign_up_orange radius3" target="_blank">
 														<?php _e("Order Now!",cleanup_optimizer)?>
 													</a>
 												</span>

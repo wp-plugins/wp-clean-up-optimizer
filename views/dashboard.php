@@ -1,5 +1,5 @@
 <?php
-switch($cpo_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
@@ -17,10 +17,10 @@ if (!current_user_can($user_role_permission))
 }
 else
 {
-	$wp_clear= wp_create_nonce( "clear_data" );
-	$del_images = wp_create_nonce( "delete_pics" );
-	$del_images = wp_create_nonce( "delete_pics" );
-	$del_images = wp_create_nonce( "delete_pics" );
+	$wp_clear_data = wp_create_nonce( "clear_wp_data" );
+	$action_bulk_clear = wp_create_nonce( "bulk_clear_wp_data" );
+	$db_clear_data = wp_create_nonce( "clear_db_data" );
+	$bulk_table_action = wp_create_nonce( "bulk_action_table" );
 	$alternate = "class='alternate'";
 	$alternate_class="class='alternate'";
 	$total_size = "" ;
@@ -1296,6 +1296,7 @@ else
 	
 	function bulk_delete()
 	{
+		jQuery("#top-error").remove();
 		wp_schedule_array = [];
 		var searchIDs = jQuery(".all_wp_chks input:checkbox:checked").map(function()
 		{
@@ -1312,7 +1313,7 @@ else
 				var overlay = jQuery("<div class=\"loader_opacity\"><div class=\"processing_overlay\"></div></div>");
 				jQuery("body").append(overlay);
 				
-				jQuery.post(ajaxurl, jQuery("#ux_frm_cleanup_optimizer").serialize()+"&param=bulk_delete_action&action=cleanup_library", function(data)
+				jQuery.post(ajaxurl, jQuery("#ux_frm_cleanup_optimizer").serialize()+"&param=bulk_delete_action&action=cleanup_library&_wpnonce=<?php echo $action_bulk_clear ;?>", function(data)
 				{
 					jQuery("body,html").animate({
 						scrollTop: jQuery("body,html").position().top}, "slow");
@@ -1336,6 +1337,7 @@ else
 
 	function cleanup_function(typeClean)
 	{
+		jQuery("#top-error").remove();
 		var confirm_delete =  confirm("<?php _e( "Are you sure, you want to Clean?",cleanup_optimizer ); ?>");
 		if(confirm_delete == true)
 		{
@@ -1344,7 +1346,7 @@ else
 			var overlay = jQuery("<div class=\"loader_opacity\"><div class=\"processing_overlay\"></div></div>");
 		 	jQuery("body").append(overlay);
 		 	
-			jQuery.post(ajaxurl, "typeClean="+typeClean+"&param=wp_cleanup&action=cleanup_library&_wpnonce=<?php echo $wp_clear ;?>", function(data)
+			jQuery.post(ajaxurl, "typeClean="+typeClean+"&param=wp_cleanup&action=cleanup_library&_wpnonce=<?php echo $wp_clear_data ;?>", function(data)
 			{
 				jQuery("body,html").animate({
 					scrollTop: jQuery("body,html").position().top}, "slow");
@@ -1420,6 +1422,7 @@ else
 
 	function table_action(table_name,ddl_value)
 	{
+		jQuery("#top-error").remove();
 		var perform_action = jQuery("#ux_ddl_action_table_"+ddl_value).val();
 		var typeMessage="";
 		switch(parseInt(perform_action))
@@ -1436,7 +1439,7 @@ else
 			jQuery("body").append(overlay_opacity);
 			var overlay = jQuery("<div class=\"loader_opacity\"><div class=\"processing_overlay\"></div></div>");
 		 	jQuery("body").append(overlay);
-			jQuery.post(ajaxurl, "perform_action="+perform_action+"&table_name="+table_name+"&param=table_action&action=cleanup_library", function(data)
+			jQuery.post(ajaxurl, "perform_action="+perform_action+"&table_name="+table_name+"&param=table_action&action=cleanup_library&_wpnonce=<?php echo $db_clear_data ;?>", function(data)
 			{
 				jQuery("body,html").animate({
 					scrollTop: jQuery("body,html").position().top}, "slow");
@@ -1454,6 +1457,7 @@ else
 
 	function bulk_action()
 	{
+		jQuery("#top-error").remove();
 		var bulk_type=jQuery("#ux_ddl_bulk_action_db_optimzier").val();
 		var typeMessage="";
 		switch(parseInt(bulk_type))
@@ -1462,7 +1466,6 @@ else
 				typeMessage="<?php _e("Cleaned Successfully!",cleanup_optimizer); ?>";
 				break;
 		}
-		
 		chk_tables_array = [];
 		var searchIDs = jQuery(".all_chks_dp_optimzier input:checkbox:checked").map(function()
 		{
@@ -1479,7 +1482,7 @@ else
 				var overlay = jQuery("<div class=\"loader_opacity\"><div class=\"processing_overlay\"></div></div>");
 				jQuery("body").append(overlay);
 				
-				jQuery.post(ajaxurl, jQuery("#ux_frm_cleanup_optimizer").serialize()+"&param=bulk_selected_action&action=cleanup_library", function(data)
+				jQuery.post(ajaxurl, jQuery("#ux_frm_cleanup_optimizer").serialize()+"&param=bulk_selected_action&action=cleanup_library&_wpnonce=<?php echo $bulk_table_action ;?>", function(data)
 				{
 					jQuery("body,html").animate({
 						scrollTop: jQuery("body,html").position().top}, "slow");

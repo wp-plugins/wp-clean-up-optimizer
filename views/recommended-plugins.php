@@ -1,5 +1,5 @@
 <?php 
-switch($cpo_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
@@ -170,7 +170,7 @@ else
 														</p>
 														<p class="authors">
 															<cite>
-																<?php _e(By ,tech_bank); echo $author ?>
+																<?php _e("By " ,tech_bank); echo $author ?>
 															</cite>
 														</p>
 													</div>

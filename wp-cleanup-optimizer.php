@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.2
+Version: 2.0.3
 Author URI: http://tech-banker.com
 
 */
@@ -118,10 +118,10 @@ if(!function_exists("create_global_menus_for_cleanup_optimizer"))
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php"))
 		{
 			global $wpdb,$current_user;
-			$cpo_role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$cpo_role);
-			$cpo_role = $current_user->role[0];
-			switch($cpo_role)
+			$role = $wpdb->prefix . "capabilities";
+			$current_user->role = array_keys($current_user->$role);
+			$role = $current_user->role[0];
+			switch($role)
 			{
 				case "administrator":
 					if (file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php"))
@@ -158,9 +158,9 @@ if (isset($_REQUEST["action"]))
 				function cleanup_library()
 				{	
 					global $wpdb,$current_user,$user_role_permission;
-					$cpo_role = $wpdb->prefix . "capabilities";
-					$current_user->role = array_keys($current_user->$cpo_role);
-					$cpo_role = $current_user->role[0];
+					$role = $wpdb->prefix . "capabilities";
+					$current_user->role = array_keys($current_user->$role);
+					$role = $current_user->role[0];
 					
 					if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/db-helper.php"))
 					{

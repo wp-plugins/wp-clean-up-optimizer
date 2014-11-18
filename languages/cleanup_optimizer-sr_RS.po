@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Clean Up Optimizer\n"
-"POT-Creation-Date: 2014-11-18 04:54-0800\n"
-"PO-Revision-Date: 2014-11-18 04:54-0800\n"
+"POT-Creation-Date: 2014-11-18 22:07-0800\n"
+"PO-Revision-Date: 2014-11-18 22:07-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sr_RS\n"
@@ -208,22 +208,22 @@ msgid ""
 "WordPress."
 msgstr ""
 
-#: views/cron-job.php:389 views/cron-job.php:406 views/dashboard.php:1394
-#: views/dashboard.php:1535
+#: views/cron-job.php:389 views/cron-job.php:406 views/dashboard.php:1396
+#: views/dashboard.php:1538
 msgid "Show entries"
 msgstr ""
 
-#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1332
-#: views/dashboard.php:1407 views/dashboard.php:1417 views/dashboard.php:1499
-#: views/dashboard.php:1548 views/general-settings.php:265
+#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1333
+#: views/dashboard.php:1409 views/dashboard.php:1419 views/dashboard.php:1502
+#: views/dashboard.php:1551 views/general-settings.php:265
 #: views/general-settings.php:271 views/general-settings.php:277
 #: views/general-settings.php:283 views/general-settings.php:289
 #: views/login-logs.php:194
 msgid "Error!"
 msgstr ""
 
-#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1407
-#: views/dashboard.php:1417 views/dashboard.php:1548
+#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1409
+#: views/dashboard.php:1419 views/dashboard.php:1551
 #: views/general-settings.php:265 views/general-settings.php:271
 #: views/general-settings.php:277 views/general-settings.php:283
 #: views/general-settings.php:289 views/login-logs.php:194
@@ -662,27 +662,27 @@ msgstr ""
 msgid "Schedule Type"
 msgstr ""
 
-#: views/dashboard.php:1307 views/dashboard.php:1339
+#: views/dashboard.php:1308 views/dashboard.php:1341
 msgid "Are you sure, you want to Clean?"
 msgstr ""
 
-#: views/dashboard.php:1324 views/dashboard.php:1356
+#: views/dashboard.php:1325 views/dashboard.php:1358
 msgid "Successfully Cleaned!"
 msgstr ""
 
-#: views/dashboard.php:1332
+#: views/dashboard.php:1333
 msgid "Please choose Action and Type of Data to Proceed!"
 msgstr ""
 
-#: views/dashboard.php:1428 views/dashboard.php:1462
+#: views/dashboard.php:1431 views/dashboard.php:1466
 msgid "Cleaned Successfully!"
 msgstr ""
 
-#: views/dashboard.php:1432 views/dashboard.php:1474
+#: views/dashboard.php:1435 views/dashboard.php:1477
 msgid "Are you sure, you want to Perform this Action?"
 msgstr ""
 
-#: views/dashboard.php:1499
+#: views/dashboard.php:1502
 msgid "Please choose Action or Table to proceed!."
 msgstr ""
 

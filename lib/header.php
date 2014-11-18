@@ -1,10 +1,10 @@
 <?php 
 global $wpdb,$current_user,$user_role_permission;
-$cpo_role = $wpdb->prefix . "capabilities";
-$current_user->role = array_keys($current_user->$cpo_role);
-$cpo_role = $current_user->role[0];
+$role = $wpdb->prefix . "capabilities";
+$current_user->role = array_keys($current_user->$role);
+$role = $current_user->role[0];
 
-switch($cpo_role)
+switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";

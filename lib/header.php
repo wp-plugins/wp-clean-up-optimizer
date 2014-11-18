@@ -96,7 +96,7 @@ else
 					<h4 class="welcome-screen-margin"><?php _e("More Actions", cleanup_optimizer); ?></h4>
 					<ul>
 						<li>
-							<a href="http://tech-banker.com/shop/uncategorized/order-customization-wp-clean-optimizer/" target="_blank" class="welcome-icon">
+							<a href="http://tech-banker.com/shop/plugin-customization/order-customization-wp-clean-optimizer/" target="_blank" class="welcome-icon">
 								<?php _e("Plugin Customization", cleanup_optimizer); ?>
 							</a>
 						</li>

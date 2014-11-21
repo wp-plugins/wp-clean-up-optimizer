@@ -2,8 +2,8 @@
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, ajax, automatic, clean, cleaner, cleanup, comments, database, delete revision, mysql, optimize, optimize database, phpMyAdmin, plugin, post revisions, postmeta, posts, Revision, revisions, schedule, spam, trash, wordpress, wp clean up, wp cleaner, wp cleanup, comments, spam, optimize, database, revision, posts, trash, schedule, automatic, clean, phpmyadmin, meta, postmeta, responsive, cron jobs, scheduler, database optimize, multisite, cron, tracking, track user, optimizer, clean up, clean up optimizer, wp cleanup optimizer
 Requires at least: 2.7
-Tested up to: 4.0
-Stable Tag: 2.0.3
+Tested up to: 4.0.1
+Stable Tag: 2.0.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -511,6 +511,13 @@ Once you click on the link, this page would open and there you could see the sta
 13. Licensing Page.
 
 == Changelog ==
+
+= 2.0.4 =
+
+* Added Compatibility with Multisite WordPress
+* Added Compatible with WordPress 4.0.1
+* Updated Pricing Table
+* Optimized Code
 
 = 2.0.3 =
 

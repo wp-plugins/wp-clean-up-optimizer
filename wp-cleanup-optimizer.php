@@ -4,9 +4,8 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.3
+Version: 2.0.4
 Author URI: http://tech-banker.com
-
 */
 
 ////////////////////////////////////  Define  Wp Cleanup Optimizer  Constants  /////////////////////////////
@@ -18,17 +17,36 @@ if (!defined("cleanup_optimizer")) define("cleanup_optimizer", "cleanup_optimize
 if (!defined("tech_bank")) define("tech_bank", "tech-banker");
 
 /////////////////////////////////////  Call Install Script on Plugin Activation ////////////////////////////
+
 if(!function_exists("plugin_install_script_for_cleanup_optimizer"))
 {
 	function plugin_install_script_for_cleanup_optimizer()
 	{
-		if(file_exists(CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php"))
+		global $wpdb;
+		if(is_multisite())
 		{
-			include_once CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php";
+			$blog_ids = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
+			foreach($blog_ids as $blog_id)
+			{
+				switch_to_blog($blog_id);
+				if(file_exists(CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php"))
+				{
+					include CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php";
+				}
+				restore_current_blog();
+			}
+		}
+		else
+		{
+			if(file_exists(CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php"))
+			{
+				include CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php";
+			}
 		}
 	}
 }
 /////////////////////////////////////  Functions for Returing Table Names  /////////////////////////////////
+
 if(!function_exists("wp_scheduler_tbl"))
 {
 	function wp_scheduler_tbl()
@@ -106,7 +124,6 @@ if(!function_exists("admin_panel_css_calls_for_cleanup_optimizer"))
 		wp_enqueue_style("premium-edition.css", plugins_url("/assets/css/premium-edition.css",__FILE__));
 		wp_enqueue_style("responsive.css", plugins_url("/assets/css/responsive.css",__FILE__));
 		wp_enqueue_style("google-fonts-roboto", "//fonts.googleapis.com/css?family=Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:regular|Roboto Condensed:300");
-		
 	}
 }
 
@@ -118,30 +135,38 @@ if(!function_exists("create_global_menus_for_cleanup_optimizer"))
 		if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php"))
 		{
 			global $wpdb,$current_user;
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			if(is_super_admin())
+			{
+				$role = "administrator";
+			}
+			else
+			{
+				$role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$role);
+				$role = $current_user->role[0];
+			}
 			switch($role)
 			{
 				case "administrator":
 					if (file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php"))
 					{
-						include_once CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php";
+						include CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php";
 					}
 				break;
 				case "editor":
 					if (file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php"))
 					{
-						include_once CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php";
+						include CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php";
 					}
 				break;
 				case "author":
 					if (file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php"))
 					{
-						include_once CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php";
+						include CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php";
 					}
 				break;
 			}
+			
 		}
 	}
 }
@@ -168,7 +193,7 @@ if (isset($_REQUEST["action"]))
 					}
 					if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/cleanup-optimizer-class.php"))
 					{
-						include_once CLEANUP_BK_PLUGIN_DIR . "/lib/cleanup-optimizer-class.php";
+						include CLEANUP_BK_PLUGIN_DIR . "/lib/cleanup-optimizer-class.php";
 					}
 					die();
 				}
@@ -219,16 +244,49 @@ add_action("plugins_loaded", "plugin_load_textdomain_services");
 
 if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/login-logs-class.php"))
 {
-	include_once CLEANUP_BK_PLUGIN_DIR . "/lib/login-logs-class.php";
+	include CLEANUP_BK_PLUGIN_DIR . "/lib/login-logs-class.php";
 }
 ////////////////////////////////////////Adding Top-bar Menus///////////////////////////////////////////
 
-if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php"))
+if(!function_exists("add_wp_cleanup_optimizer_admin_bar"))
 {
-	global $wpdb;
-	include_once CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php";
+	function add_wp_cleanup_optimizer_admin_bar($meta = TRUE)
+	{
+		global $wp_admin_bar,$wpdb,$current_user;
+		if(is_super_admin())
+		{
+			$role = "administrator";
+		}
+		else
+		{
+			$role = $wpdb->prefix . "capabilities";
+			$current_user->role = array_keys($current_user->$role);
+			$role = $current_user->role[0];
+		}
+		switch ($role)
+		{
+			case "administrator":
+				if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php"))
+				{
+					include CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php";
+				}
+			break;
+			case "editor":
+				if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php"))
+				{
+					include CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php";
+				}
+			break;
+			case "author":
+				if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php"))
+				{
+					include CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php";
+				}
+			break;
+			
+		}
+	}
 }
-
 ////////////////////////////////////Additional Links to Plugin/////////////////////////////////////////
 
 function custom_plugin_row($links,$file)
@@ -244,6 +302,11 @@ function custom_plugin_row($links,$file)
 	return (array)$links;
 }
 
+$version = get_option("wp-cleanup-optimizer-version-number");
+if($version != "")
+{
+	add_action("admin_init", "plugin_install_script_for_cleanup_optimizer");
+}
 ///////////////////////////////////  Calling Hooks   /////////////////////////////////////////////////////
 
 //------------------------------------------------------------------------------------------------------------//
@@ -274,4 +337,8 @@ add_filter("plugin_row_meta","custom_plugin_row", 10, 2 );
 // add_action Hook called for function create_global_menus_for_cleanup_optimizer
 //------------------------------------------------------------------------------------------------------------//
 add_action("admin_menu", "create_global_menus_for_cleanup_optimizer");
+//------------------------------------------------------------------------------------------------------------//
+// network_admin_menu Hook called for function 
+//------------------------------------------------------------------------------------------------------------//
+add_action( "network_admin_menu", "create_global_menus_for_cleanup_optimizer" );
 ?>

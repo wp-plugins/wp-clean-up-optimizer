@@ -676,6 +676,23 @@ else
 												</span>
 											</span>
 										</li>
+										<li class="css3_grid_row_3 row_style_2 css3_grid_row_3_responsive">
+											<span class="css3_grid_vertical_align_table">
+												<span class="css3_grid_vertical_align">
+													<span>
+														<span class="css3_hidden_caption">
+														<?php _e("Multisite Compatibility*",cleanup_optimizer)?>
+														</span>
+														<span class="css3_grid_tooltip">
+															<span>
+																<?php _e("Allows you to use this Plugin with network of sites / Multisites WordPress. But you need to have separate license for each domain.",cleanup_optimizer)?>
+															</span>
+															<?php _e("Multisite Compatibility*",cleanup_optimizer)?>
+														</span>
+													</span>
+												</span>
+											</span>
+										</li>
 										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align"></span>
@@ -1144,6 +1161,18 @@ else
 															<?php _e("Roles and Capabilities",cleanup_optimizer)?>
 														</span>
 														<img src="<?php echo plugins_url("/assets/images/cross_04.png" , dirname(__FILE__)); ?>" alt="no">
+													</span>
+												</span>
+											</span>
+										</li>
+										<li class="css3_grid_row_3 row_style_1 css3_grid_row_3_responsive align_center">
+											<span class="css3_grid_vertical_align_table">
+												<span class="css3_grid_vertical_align">
+													<span>
+														<span class="css3_hidden_caption">
+															<?php _e("Multisite Compatibility*",cleanup_optimizer)?>
+														</span>
+														<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
 													</span>
 												</span>
 											</span>
@@ -1632,7 +1661,19 @@ else
 												</span>
 											</span>
 										</li>
-										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
+										<li class="css3_grid_row_39 row_style_2 css3_grid_row_39_responsive align_center">
+											<span class="css3_grid_vertical_align_table">
+												<span class="css3_grid_vertical_align">
+													<span>
+														<span class="css3_hidden_caption">
+															<?php _e("Multisite Compatibility*",cleanup_optimizer)?>
+														</span>
+														<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+													</span>
+												</span>
+											</span>
+										</li>
+										<li class="css3_grid_row_40 footer_row css3_grid_row_40_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align">
 													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-eco-edition/" class="sign_up sign_up_orange radius3" target="_blank">
@@ -2116,7 +2157,19 @@ else
 												</span>
 											</span>
 										</li>
-										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
+										<li class="css3_grid_row_39 row_style_1 css3_grid_row_39_responsive align_center">
+											<span class="css3_grid_vertical_align_table">
+												<span class="css3_grid_vertical_align">
+													<span>
+														<span class="css3_hidden_caption">
+															<?php _e("Multisite Compatibility*",cleanup_optimizer)?>
+														</span>
+														<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+													</span>
+												</span>
+											</span>
+										</li>
+										<li class="css3_grid_row_40 footer_row css3_grid_row_40_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align">
 													<a href="http://tech-banker.com/shop/wp-clean-up-optimizer/wp-clean-up-optimizer-pro-edition/" class="sign_up sign_up_orange radius3" target="_blank">
@@ -2600,6 +2653,18 @@ else
 												</span>
 											</span>
 										</li>
+										<li class="css3_grid_row_3 row_style_2 css3_grid_row_3_responsive align_center">
+											<span class="css3_grid_vertical_align_table">
+												<span class="css3_grid_vertical_align">
+													<span>
+														<span class="css3_hidden_caption">
+															<?php _e("Multisite Compatibility*",cleanup_optimizer)?>
+														</span>
+														<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+													</span>
+												</span>
+											</span>
+										</li>
 										<li class="css3_grid_row_39 footer_row css3_grid_row_39_responsive">
 											<span class="css3_grid_vertical_align_table">
 												<span class="css3_grid_vertical_align">
@@ -3077,6 +3142,18 @@ else
 														</span>
 														<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
 													</span>
+												</span>
+											</span>
+										</li>
+										<li class="css3_grid_row_3 row_style_1 css3_grid_row_3_responsive align_center">
+											<span class="css3_grid_vertical_align_table">
+												<span class="css3_grid_vertical_align">
+													<span>
+														<span class="css3_hidden_caption">
+															<?php _e("Multisite Compatibility*",cleanup_optimizer)?>
+														</span>
+														<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
+														</span>
 												</span>
 											</span>
 										</li>

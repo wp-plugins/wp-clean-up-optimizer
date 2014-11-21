@@ -31,7 +31,6 @@ else
 		"do_pings",
 		"wp_version_check",
 		"wp_update_plugins",
-		"wp_maybe_auto_update",
 		"wp_clean_up_optimizer_scheduler",
 		"wp_update_themes"
 	);
@@ -144,41 +143,48 @@ else
 																						?>
 																						<td>
 																						<?php 
-																							switch($info["interval"])
+																							if(empty($info["interval"]))
 																							{
-																								case $info["interval"] <= 60 :
-																									echo "Second";
-																									break;
-																								case $info["interval"] <= 60*1 :
-																									echo "Minute";
-																									break;
-																								case $info["interval"] <= 60*60 :
-																									echo "Hourly";
-																									break;
-																								case $info["interval"] <= 60*60*24 :
-																									echo "Daily";
-																									break;
-																								case $info["interval"] <= 60*60*24*7 :
-																									echo "Weekly";
-																									break;
-																								case $info["interval"] <= 60*60*24*14:
-																									echo "Bi-Weekly";
-																									break;
-																								case $info["interval"] <= 60*60*24*30:
-																									echo "Monthly";
-																									break;
-																								case $info["interval"] <= 60*60*24*60:
-																									echo "Bi-Monthly";
-																									break;
-																								case $info["interval"] <= 60*60*24*120:
-																									echo "Quarterly";
-																									break;
-																								case $info["interval"] <= 60*60*24*183:
-																									echo "Half-Yearly";
-																									break;
-																								case $info["interval"] <= 60*60*24*365:
-																									echo "Annually";
-																									break;
+																								echo "Single Event";
+																							}
+																							else
+																							{
+																								switch($info["interval"])
+																								{
+																									case $info["interval"] <= 60 :
+																										echo "Second";
+																										break;
+																									case $info["interval"] <= 60*1 :
+																										echo "Minute";
+																										break;
+																									case $info["interval"] <= 60*60 :
+																										echo "Hourly";
+																										break;
+																									case $info["interval"] <= 60*60*24 :
+																										echo "Daily";
+																										break;
+																									case $info["interval"] <= 60*60*24*7 :
+																										echo "Weekly";
+																										break;
+																									case $info["interval"] <= 60*60*24*14:
+																										echo "Bi-Weekly";
+																										break;
+																									case $info["interval"] <= 60*60*24*30:
+																										echo "Monthly";
+																										break;
+																									case $info["interval"] <= 60*60*24*60:
+																										echo "Bi-Monthly";
+																										break;
+																									case $info["interval"] <= 60*60*24*120:
+																										echo "Quarterly";
+																										break;
+																									case $info["interval"] <= 60*60*24*183:
+																										echo "Half-Yearly";
+																										break;
+																									case $info["interval"] <= 60*60*24*365:
+																										echo "Annually";
+																										break;
+																								}
 																							}
 																						?>
 																						</td>

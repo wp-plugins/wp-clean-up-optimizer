@@ -25,7 +25,20 @@ else
 	$alternate_class="class='alternate'";
 	$total_size = "" ;
 	$total_size_table = "" ;
-	$wcpo_sql = "SHOW TABLE STATUS FROM `".DB_NAME."`";
+	if(is_multisite())
+	{
+		$condition = "";
+		$blog_ids = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
+		foreach($blog_ids as $blog_id)
+		{
+			$condition.= " AND Name NOT LIKE '". $wpdb->prefix . $blog_id ."%'";
+		}
+		$wcpo_sql = "SHOW TABLE STATUS FROM `".DB_NAME."` WHERE Name LIKE '".$wpdb->prefix."%'" . $condition;
+	}
+	else
+	{
+		$wcpo_sql = "SHOW TABLE STATUS FROM `".DB_NAME."`";
+	}
 	$result = $wpdb->get_results($wcpo_sql);
 
 	if(!function_exists("wp_clean_up_optimizer_count"))
@@ -505,7 +518,7 @@ else
 																		<tbody id="the-list" class="ux_scheduler_chks">
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_1" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="1" />
+																					<input type="checkbox" id="ux_chk_cleanup_1" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="1" disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Auto Draft are the Page / Post saved as draft automatically in WordPress Database.",cleanup_optimizer)?>'><?php _e("Auto Draft", cleanup_optimizer); ?></span>
@@ -513,7 +526,7 @@ else
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_2" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="2" />
+																					<input type="checkbox" id="ux_chk_cleanup_2" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="2"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Transient Feed in WordPress are use Database entries to cache a certain entries.",cleanup_optimizer) ;?>'><?php _e("Dashboard Transient Feed", cleanup_optimizer); ?></span>
@@ -521,7 +534,7 @@ else
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_3" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="3" />
+																					<input type="checkbox" id="ux_chk_cleanup_3" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="3"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("New Post / Page created as Draft in WordPress.",cleanup_optimizer) ;?>'><?php _e("Draft", cleanup_optimizer); ?></span>
@@ -529,7 +542,7 @@ else
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="4" />
+																					<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="4"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																						<span class="hovertip underline" data-original-title ='<?php _e("Moderated Comments is a feature in WordPress that allows you to prevent comments from appearing on your site without your express approval.",cleanup_optimizer) ;?>'><?php _e("Moderated Comments", cleanup_optimizer); ?></span>
@@ -537,7 +550,7 @@ else
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="5" />
+																					<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="5"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Comments Meta holds the miscellaneous bits of extra information of comment.",cleanup_optimizer) ;?>'><?php _e("Orphan Comments Meta", cleanup_optimizer); ?></span>
@@ -545,7 +558,7 @@ else
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="6" />
+																					<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="6"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Posts Meta holds the junk or obsolete data.",cleanup_optimizer) ;?>'><?php _e("Orphan Posts Meta", cleanup_optimizer); ?></span>
@@ -553,7 +566,7 @@ else
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="7" />
+																					<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="7"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Relationships holds the junk or obsolete Category and Tag.",cleanup_optimizer) ;?>'><?php _e("Orphan Relationships", cleanup_optimizer); ?></span>
@@ -561,7 +574,7 @@ else
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="8" />
+																					<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="8"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("The WordPress revisions system stores a record of each saved draft or published update.Revisions are stored in the posts table.",cleanup_optimizer) ;?>'><?php _e("Revision", cleanup_optimizer); ?></span>
@@ -569,7 +582,7 @@ else
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="9" />
+																					<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="9"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("A Pingback is a type of comment that's created when you link to another blog post where pingbacks are enabled.",cleanup_optimizer) ;?>'><?php _e("Remove Pingbacks", cleanup_optimizer); ?></span>
@@ -577,7 +590,7 @@ else
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="10" />
+																					<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="10"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Transient Options are like a basic cache system used by wordpress. Clearing these options before a backup will help to save space in your backup files.",cleanup_optimizer) ;?>'><?php _e("Remove Transient Options", cleanup_optimizer); ?></span>
@@ -585,7 +598,7 @@ else
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_11" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="11" />
+																					<input type="checkbox" id="ux_chk_cleanup_11" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="11"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Trackbacks are a way to notify legacy blog systems that you've linked to them. If you link to a WordPress blog they'll be notified automatically using pingbacks, no other action necessary.",cleanup_optimizer) ;?>'><?php _e("Remove Trackbacks", cleanup_optimizer); ?></span>
@@ -593,7 +606,7 @@ else
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_12" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="12" />
+																					<input type="checkbox" id="ux_chk_cleanup_12" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="12"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Spam Comments are the unwanted comments in the WordPress database.",cleanup_optimizer) ;?>'><?php _e("Spam Comments", cleanup_optimizer); ?></span>
@@ -601,7 +614,7 @@ else
 																			</tr>
 																			<tr class="alternate">
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_13" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="13" />
+																					<input type="checkbox" id="ux_chk_cleanup_13" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="13"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Trash Comments are the comments which are stored in the WordPress Trash.",cleanup_optimizer) ;?>'><?php _e("Trash Comments", cleanup_optimizer); ?></span>
@@ -636,7 +649,7 @@ else
 																			</label>
 																			<div class="layout-controls">
 																				<select id="type_of_scheduler" name="type_of_scheduler" class="layout-span12">
-																					<option value="1day" disabled="disabled"><?php _e("Daily", cleanup_optimizer); ?></option>
+																					<option value="1day"><?php _e("Daily", cleanup_optimizer); ?></option>
 																					<option value="weekly" disabled="disabled"><?php _e("Weekly", cleanup_optimizer); ?></option>
 																					<option value="14days" disabled="disabled"><?php _e("Biweekly", cleanup_optimizer); ?></option>
 																					<option value="30days" disabled="disabled"><?php _e("Monthly", cleanup_optimizer); ?></option>
@@ -862,7 +875,8 @@ else
 																				|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
 																				|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log") 
 																				|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
-																				|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip") ) == true)
+																				|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($tables,$wpdb->signups) || strstr($tables,$wpdb->sitemeta) || strstr($tables,$wpdb->site) || strstr($tables,$wpdb->registration_log)
+																				|| strstr($tables,$wpdb->blogs) || strstr($tables,$wpdb->blog_versions)) == true)
 																			{
 																				?>
 																				<tr <?php echo $alternate ;?>>
@@ -987,7 +1001,7 @@ else
 																		</label>
 																		<div class="layout-controls">
 																			<select id="ux_ddl_bulk_action_scheduler" name="ux_ddl_bulk_action_scheduler" class="bulk-action-width layout-span8">
-																				<option value="1" disabled="disabled"><?php _e("Empty", cleanup_optimizer); ?></option>
+																				<option value="1"><?php _e("Empty", cleanup_optimizer); ?></option>
 																				<option value="2" disabled="disabled"><?php _e("Delete", cleanup_optimizer); ?></option>
 																				<option value="3" disabled="disabled"><?php _e("Optimize", cleanup_optimizer); ?></option>
 																				<option value="4" disabled="disabled"><?php _e("Repair", cleanup_optimizer); ?></option>
@@ -1001,7 +1015,7 @@ else
 																		</label>
 																		<div class="layout-controls">
 																			<select id="schedule_type" name="schedule_type" class="layout-span2">
-																				<option value="1day" disabled="disabled"><?php _e("Daily", cleanup_optimizer); ?></option>
+																				<option value="1day"><?php _e("Daily", cleanup_optimizer); ?></option>
 																				<option value="weekly" disabled="disabled"><?php _e("Weekly", cleanup_optimizer); ?></option>
 																				<option value="14days" disabled="disabled"><?php _e("Biweekly", cleanup_optimizer); ?></option>
 																				<option value="30days" disabled="disabled"><?php _e("Monthly", cleanup_optimizer); ?></option>
@@ -1051,7 +1065,8 @@ else
 																					|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
 																					|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log") 
 																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
-																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip")) == true)
+																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($tables,$wpdb->signups) || strstr($tables,$wpdb->sitemeta) || strstr($tables,$wpdb->site) || strstr($tables,$wpdb->registration_log)
+																					|| strstr($tables,$wpdb->blogs) || strstr($tables,$wpdb->blog_versions)) == true)
 																				{
 																					?>
 																					<tr <?php echo $alternate ;?>>

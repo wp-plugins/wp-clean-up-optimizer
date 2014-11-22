@@ -1890,3 +1890,18 @@ div.loader_opacity
 {
     min-height:150px;
 }
+
+/*********************************PLUGIN UPDATE*******************************************/
+
+.framework_plugin_message
+{
+ font-weight: 400;
+ background: #d54d21;
+ padding: 1em;
+ margin: 10px 0;
+}
+.framework_plugin_message > p
+{
+ color: #fff;
+ margin: 0px !important;
+}

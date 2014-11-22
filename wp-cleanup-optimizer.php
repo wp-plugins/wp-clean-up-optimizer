@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.4
+Version: 2.0.5
 Author URI: http://tech-banker.com
 */
 
@@ -13,6 +13,7 @@ Author URI: http://tech-banker.com
 if (!defined("CLEANUP_BK_PLUGIN_DIR")) define("CLEANUP_BK_PLUGIN_DIR",  plugin_dir_path( __FILE__ ));
 if (!defined("CLEANUP_BK_PLUGIN_DIRNAME")) define("CLEANUP_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__FILE__)));
 if (!defined("CLEANUP_BK_PLUGIN_BASENAME")) define("CLEANUP_BK_PLUGIN_BASENAME", plugin_basename(__FILE__));
+if (!defined("CLEANUP_OPTIMIZER_FILE")) define("CLEANUP_OPTIMIZER_FILE","wp-clean-up-optimizer/wp-cleanup-optimizer.php");
 if (!defined("cleanup_optimizer")) define("cleanup_optimizer", "cleanup_optimizer");
 if (!defined("tech_bank")) define("tech_bank", "tech-banker");
 
@@ -40,7 +41,7 @@ if(!function_exists("plugin_install_script_for_cleanup_optimizer"))
 		{
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php"))
 			{
-				include CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php";
+				include_once CLEANUP_BK_PLUGIN_DIR. "/lib/install-script.php";
 			}
 		}
 	}
@@ -301,11 +302,37 @@ function custom_plugin_row($links,$file)
 	}
 	return (array)$links;
 }
+////////////////////////////////////////Update version/////////////////////////////////////////////
 
 $version = get_option("wp-cleanup-optimizer-version-number");
 if($version != "")
 {
 	add_action("admin_init", "plugin_install_script_for_cleanup_optimizer");
+}
+
+///////////////////////////////////////Additional Links to Plugin///////////////////////////////////////
+
+function cleanup_optimizer_plugin_update_message($args)
+{
+	$response = wp_remote_get('http://plugins.svn.wordpress.org/wp-clean-up-optimizer/trunk/readme.txt');
+	if (!is_wp_error( $response ) && ! empty( $response['body']))
+	{
+		// Output Upgrade Notice
+		$matches = null;
+		$regexp = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote($args['Version']) . '\s*=|$)~Uis';
+		$upgrade_notice = '';
+		if (preg_match($regexp,$response['body'],$matches))
+		{
+			$changelog = (array)preg_split('~[\r\n]+~', trim($matches[1]));
+			$upgrade_notice .='<div class="framework_plugin_message">';
+			foreach($changelog as $index => $line)
+			{
+				$upgrade_notice .= "<p>".$line."</p>";
+			}
+			$upgrade_notice .= '</div> ';
+			echo $upgrade_notice;
+		}
+	}
 }
 ///////////////////////////////////  Calling Hooks   /////////////////////////////////////////////////////
 
@@ -341,4 +368,8 @@ add_action("admin_menu", "create_global_menus_for_cleanup_optimizer");
 // network_admin_menu Hook called for function 
 //------------------------------------------------------------------------------------------------------------//
 add_action( "network_admin_menu", "create_global_menus_for_cleanup_optimizer" );
+//------------------------------------------------------------------------------------------------------------//
+// in_plugin_update_message Hook called for function to check updates
+//------------------------------------------------------------------------------------------------------------//
+add_action("in_plugin_update_message-".CLEANUP_OPTIMIZER_FILE,"cleanup_optimizer_plugin_update_message" );
 ?>

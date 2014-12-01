@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, AJAX, automatic, clean, clean up, clean up optimizer, cleaner, cleanup, comments, cron, cron jobs, database, database optimize, database size, delete, delete revision, meta, multisite, mysql, optimize, optimize database, optimizer, page, pages, phpMyAdmin, plugin, Post, post revisions, postmeta, posts, responsive, Revision, revisions, schedule, scheduler, spam, spammed, track user, tracking, transients, trash, trashed, unused tags, wordpress, wp clean up, wp cleaner, wp cleanup, wp cleanup optimizer
 Requires at least: 2.7
 Tested up to: 4.0.1
-Stable Tag: 2.0.6
+Stable Tag: 2.0.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -512,12 +512,18 @@ Once you click on the link, this page would open and there you could see the sta
 
 == Changelog ==
 
+= 2.0.7 =
+
+* Recommendations Missing Files Added
+* Other Services Missing Files Added
+* Premium Plugin Missing Files Added
+
 = 2.0.6 =
 
 * Changes in Code for Multisite Wordpress.
 * Changes in Install Script file.
-* Dutch Language Updated.
-* Minor Bugs Fixed.
+* Translated in Dutch Language.
+* Minor Bug Fixed.
 
 = 2.0.5 =
 

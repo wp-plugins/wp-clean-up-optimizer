@@ -871,82 +871,164 @@ else
 																				"SELECT COUNT(*) FROM $row->Name"
 																			);
 																			$tables=$row->Name;
-																			if((strstr($tables,$wpdb->terms) || strstr($tables,$wpdb->term_taxonomy) || strstr($tables,$wpdb->term_relationships) || strstr($tables,$wpdb->commentmeta) || strstr($tables,$wpdb->comments) 
-																				|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
-																				|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log") 
-																				|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
-																				|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($tables,$wpdb->signups) || strstr($tables,$wpdb->sitemeta) || strstr($tables,$wpdb->site) || strstr($tables,$wpdb->registration_log)
-																				|| strstr($tables,$wpdb->blogs) || strstr($tables,$wpdb->blog_versions)) == true)
+																			if(is_multisite())
 																			{
-																				?>
-																				<tr <?php echo $alternate ;?>>
-																					<td>
-																						<input type="checkbox" id="ux_chk_cleanup_db" name="ux_chk_cleanup_arr_db[]" value="<?php echo $row->Name ;?>">
-																					</td>
-																					<td>
-																						<a href="#ux_preview_table" style="font-size:13px;color:#FF0000 !important;" onclick="table_preview('<?php echo $row->Name ;?>');" ><?php echo $row->Name."*" ;?></a>
-																					</td>
-																					<td>
-																						<?php echo $count_rows ;?>
-																					</td>
-																					<td>
-																						 <?php echo $row->Engine ;?>
-																					</td>
-																					<td>
-																						<?php echo sprintf("%0.1f",$table_size) ." KB" ;?>
-																					</td>
-																					<td>
-																					</td>
-																					<td>
-																					</td>
-																				</tr>
-																				<?php
-																			}
-																			else
-																			{
-																				if($count_rows == 0)
+																				if((strstr($tables,$wpdb->terms) || strstr($tables,$wpdb->term_taxonomy) || strstr($tables,$wpdb->term_relationships) || strstr($tables,$wpdb->commentmeta) || strstr($tables,$wpdb->comments) 
+																					|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
+																					|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log") 
+																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
+																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($tables,$wpdb->signups) || strstr($tables,$wpdb->sitemeta) || strstr($tables,$wpdb->site) || strstr($tables,$wpdb->registration_log)
+																					|| strstr($tables,$wpdb->blogs) || strstr($tables,$wpdb->blog_versions)) == true)
 																				{
-																					$show_rows="disabled";
-																					$btn_class="button";
+																					?>
+																					<tr <?php echo $alternate ;?>>
+																						<td>
+																							<input type="checkbox" id="ux_chk_cleanup_db" name="ux_chk_cleanup_arr_db[]" value="<?php echo $row->Name ;?>">
+																						</td>
+																						<td>
+																							<a href="#ux_preview_table" style="font-size:13px;color:#FF0000 !important;" onclick="table_preview('<?php echo $row->Name ;?>');" ><?php echo $row->Name."*" ;?></a>
+																						</td>
+																						<td>
+																							<?php echo $count_rows ;?>
+																						</td>
+																						<td>
+																							 <?php echo $row->Engine ;?>
+																						</td>
+																						<td>
+																							<?php echo sprintf("%0.1f",$table_size) ." KB" ;?>
+																						</td>
+																						<td>
+																						</td>
+																						<td>
+																						</td>
+																					</tr>
+																					<?php
 																				}
 																				else
 																				{
-																					$show_rows="";
-																					$btn_class="button-primary";
+																					if($count_rows == 0)
+																					{
+																						$show_rows="disabled";
+																						$btn_class="button";
+																					}
+																					else
+																					{
+																						$show_rows="";
+																						$btn_class="button-primary";
+																					}
+																					?>
+																					<tr <?php echo $alternate ;?>>
+																						<td>
+																							<input type="checkbox" id="ux_chk_cleanup_db" name="ux_chk_cleanup_arr_db[]" value="<?php echo $row->Name ;?>" >
+																						</td>
+																						<td>
+																							<a href="#ux_preview_table" style="font-size:13px;" onclick="table_preview('<?php echo $row->Name ;?>');" ><?php echo $row->Name?></a>
+																						</td>
+																						<td>
+																							<?php 
+																								echo $count_rows;
+																							?>
+																						</td>
+																						<td>
+																							<?php 
+																								echo $row->Engine;
+																							?>
+																						</td>
+																						<td>
+																							<?php 
+																								echo sprintf("%0.1f",$table_size) ." KB";
+																							?>
+																						</td>
+																						<td>
+																							<select id="ux_ddl_action_table_<?php echo $increment ;?>" name="ux_ddl_action_table_<?php echo $increment ;?>" style="width:100px;">
+																								<option value="1"><?php _e("Empty",cleanup_optimizer) ;?></option>
+																							</select>
+																						</td>
+																						<td>
+																							<input type="button" value="<?php echo _e('Apply',cleanup_optimizer) ;?>" class="button-primary" style="font-size:11px;" onclick="table_action('<?php echo $row->Name."','".$increment?>');" />
+																						</td>
+																					</tr>
+																					<?php
 																				}
-																				?>
-																				<tr <?php echo $alternate ;?>>
-																					<td>
-																						<input type="checkbox" id="ux_chk_cleanup_db" name="ux_chk_cleanup_arr_db[]" value="<?php echo $row->Name ;?>" >
-																					</td>
-																					<td>
-																						<a href="#ux_preview_table" style="font-size:13px;" onclick="table_preview('<?php echo $row->Name ;?>');" ><?php echo $row->Name?></a>
-																					</td>
-																					<td>
-																						<?php 
-																							echo $count_rows;
-																						?>
-																					</td>
-																					<td>
-																						<?php 
-																							echo $row->Engine;
-																						?>
-																					</td>
-																					<td>
-																						<?php 
-																							echo sprintf("%0.1f",$table_size) ." KB";
-																						?>
-																					</td>
-																					<td>
-																						<select id="ux_ddl_action_table_<?php echo $increment ;?>" name="ux_ddl_action_table_<?php echo $increment ;?>" style="width:100px;">
-																							<option value="1"><?php _e("Empty",cleanup_optimizer) ;?></option>
-																						</select>
-																					</td>
-																					<td>
-																						<input type="button" value="<?php echo _e('Apply',cleanup_optimizer) ;?>" class="button-primary" style="font-size:11px;" onclick="table_action('<?php echo $row->Name."','".$increment?>');" />
-																					</td>
-																				</tr>
-																				<?php
+																			}
+																			else
+																			{
+																				if((strstr($tables,$wpdb->terms) || strstr($tables,$wpdb->term_taxonomy) || strstr($tables,$wpdb->term_relationships) || strstr($tables,$wpdb->commentmeta) || strstr($tables,$wpdb->comments)
+																					|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
+																					|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log")
+																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
+																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip")) == true)
+																				{
+																					?>
+																					<tr <?php echo $alternate ;?>>
+																						<td>
+																							<input type="checkbox" id="ux_chk_cleanup_db" name="ux_chk_cleanup_arr_db[]" value="<?php echo $row->Name ;?>">
+																						</td>
+																						<td>
+																							<a href="#ux_preview_table" style="font-size:13px;color:#FF0000 !important;" onclick="table_preview('<?php echo $row->Name ;?>');" ><?php echo $row->Name."*" ;?></a>
+																						</td>
+																						<td>
+																							<?php echo $count_rows ;?>
+																						</td>
+																						<td>
+																							 <?php echo $row->Engine ;?>
+																						</td>
+																						<td>
+																							<?php echo sprintf("%0.1f",$table_size) ." KB" ;?>
+																						</td>
+																						<td>
+																						</td>
+																						<td>
+																						</td>
+																					</tr>
+																					<?php
+																				}
+																				else
+																				{
+																					if($count_rows == 0)
+																					{
+																						$show_rows="disabled";
+																						$btn_class="button";
+																					}
+																					else
+																					{
+																						$show_rows="";
+																						$btn_class="button-primary";
+																					}
+																					?>
+																					<tr <?php echo $alternate ;?>>
+																						<td>
+																							<input type="checkbox" id="ux_chk_cleanup_db" name="ux_chk_cleanup_arr_db[]" value="<?php echo $row->Name ;?>" >
+																						</td>
+																						<td>
+																							<a href="#ux_preview_table" style="font-size:13px;" onclick="table_preview('<?php echo $row->Name ;?>');" ><?php echo $row->Name?></a>
+																						</td>
+																						<td>
+																							<?php 
+																								echo $count_rows;
+																							?>
+																						</td>
+																						<td>
+																							<?php 
+																								echo $row->Engine;
+																							?>
+																						</td>
+																						<td>
+																							<?php 
+																								echo sprintf("%0.1f",$table_size) ." KB";
+																							?>
+																						</td>
+																						<td>
+																							<select id="ux_ddl_action_table_<?php echo $increment ;?>" name="ux_ddl_action_table_<?php echo $increment ;?>" style="width:100px;">
+																								<option value="1"><?php _e("Empty",cleanup_optimizer) ;?></option>
+																							</select>
+																						</td>
+																						<td>
+																							<input type="button" value="<?php echo _e('Apply',cleanup_optimizer) ;?>" class="button-primary" style="font-size:11px;" onclick="table_action('<?php echo $row->Name."','".$increment?>');" />
+																						</td>
+																					</tr>
+																					<?php
+																				}
 																			}
 																			$increment++;
 																			$alternate = (empty($alternate)) ? " class='alternate'" : "";
@@ -1061,80 +1143,160 @@ else
 																					"SELECT COUNT(*) FROM $row->Name"
 																				);
 																				$tables=$row->Name;
-																				if((strstr($tables,$wpdb->terms) || strstr($tables,$wpdb->term_taxonomy) || strstr($tables,$wpdb->term_relationships) || strstr($tables,$wpdb->commentmeta) || strstr($tables,$wpdb->comments) 
-																					|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
-																					|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log") 
-																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
-																					|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($tables,$wpdb->signups) || strstr($tables,$wpdb->sitemeta) || strstr($tables,$wpdb->site) || strstr($tables,$wpdb->registration_log)
-																					|| strstr($tables,$wpdb->blogs) || strstr($tables,$wpdb->blog_versions)) == true)
+																				if(is_multisite())
 																				{
-																					?>
-																					<tr <?php echo $alternate ;?>>
-																						<td>
-																							<input type="checkbox" id="ux_chk_cleanup_db_scheduler" name="ux_chk_cleanup_arr_db_scheduler[]" value="<?php echo $row->Name ;?>" disabled="disabled" />
-																						</td>
-																						<td style="font-size:13px;color:#FF0000 !important;"">
-																							<?php 
-																								echo $row->Name ."*";
-																							?>
-																						</td>
-																						<td>
-																							<?php 
-																								echo $row->Engine;
-																							?>
-																						</td>
-																						<td>
-																							<?php
-																								echo cpo_format_size($row->Data_free);
-																							?>
-																						</td>
-																						<td>
-																							<?php 
+																					if((strstr($tables,$wpdb->terms) || strstr($tables,$wpdb->term_taxonomy) || strstr($tables,$wpdb->term_relationships) || strstr($tables,$wpdb->commentmeta) || strstr($tables,$wpdb->comments) 
+																						|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
+																						|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log") 
+																						|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
+																						|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($tables,$wpdb->signups) || strstr($tables,$wpdb->sitemeta) || strstr($tables,$wpdb->site) || strstr($tables,$wpdb->registration_log)
+																						|| strstr($tables,$wpdb->blogs) || strstr($tables,$wpdb->blog_versions)) == true)
+																					{
+																						?>
+																						<tr <?php echo $alternate ;?>>
+																							<td>
+																								<input type="checkbox" id="ux_chk_cleanup_db_scheduler" name="ux_chk_cleanup_arr_db_scheduler[]" value="<?php echo $row->Name ;?>" disabled="disabled" />
+																							</td>
+																							<td style="font-size:13px;color:#FF0000 !important;"">
+																								<?php 
+																									echo $row->Name ."*";
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo $row->Engine;
+																								?>
+																							</td>
+																							<td>
+																								<?php
+																									echo cpo_format_size($row->Data_free);
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo $count_rows;
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo sprintf("%0.1f",$table_size) ." KB";
+																								?>
+																							</td>
+																						</tr>
+																						<?php
+																					}
+																					else
+																					{
+																						?>
+																						<tr <?php echo $alternate ;?>>
+																							<td>
+																								<input type="checkbox" id="ux_chk_cleanup_db_scheduler" name="ux_chk_cleanup_arr_db_scheduler[]" value="<?php echo $row->Name ;?>" disabled="disabled">
+																							</td>
+																							<td>
+																								<?php 
+																									echo  $row->Name;
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo $row->Engine;
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo cpo_format_size($row->Data_free);
+																								?>
+																							</td>
+																							<td>
+																								<?php 
 																								echo $count_rows;
-																							?>
-																						</td>
-																						<td>
-																							<?php 
-																								echo sprintf("%0.1f",$table_size) ." KB";
-																							?>
-																						</td>
-																					</tr>
-																					<?php
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo sprintf("%0.1f",$table_size) ." KB";
+																								?>
+																							</td>
+																						</tr>
+																						<?php
+																					}
 																				}
 																				else
 																				{
-																					?>
-																					<tr <?php echo $alternate ;?>>
-																						<td>
-																							<input type="checkbox" id="ux_chk_cleanup_db_scheduler" name="ux_chk_cleanup_arr_db_scheduler[]" value="<?php echo $row->Name ;?>" disabled="disabled">
-																						</td>
-																						<td>
-																							<?php 
-																								echo  $row->Name;
-																							?>
-																						</td>
-																						<td>
-																							<?php 
-																								echo $row->Engine;
-																							?>
-																						</td>
-																						<td>
-																							<?php 
-																								echo cpo_format_size($row->Data_free);
-																							?>
-																						</td>
-																						<td>
-																							<?php 
-																							echo $count_rows;
-																							?>
-																						</td>
-																						<td>
-																							<?php 
-																								echo sprintf("%0.1f",$table_size) ." KB";
-																							?>
-																						</td>
-																					</tr>
-																					<?php
+																					if((strstr($tables,$wpdb->terms) || strstr($tables,$wpdb->term_taxonomy) || strstr($tables,$wpdb->term_relationships) || strstr($tables,$wpdb->commentmeta) || strstr($tables,$wpdb->comments)
+																						|| strstr($tables,$wpdb->links) || strstr($tables,$wpdb->options)|| strstr($tables,$wpdb->postmeta) || strstr($tables, $wpdb->posts) || strstr($tables,$wpdb->users) || strstr($tables,$wpdb->usermeta)
+																						|| strstr($tables,$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_login_log")
+																						|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_single_ip")
+																						|| strstr($tables,$wpdb->prefix . "cleanup_optimizer_block_range_ip")) == true)
+																					{
+																						?>
+																						<tr <?php echo $alternate ;?>>
+																							<td>
+																								<input type="checkbox" id="ux_chk_cleanup_db_scheduler" name="ux_chk_cleanup_arr_db_scheduler[]" value="<?php echo $row->Name ;?>" disabled="disabled" />
+																							</td>
+																							<td style="font-size:13px;color:#FF0000 !important;"">
+																								<?php 
+																									echo $row->Name ."*";
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo $row->Engine;
+																								?>
+																							</td>
+																							<td>
+																								<?php
+																									echo cpo_format_size($row->Data_free);
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo $count_rows;
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo sprintf("%0.1f",$table_size) ." KB";
+																								?>
+																							</td>
+																						</tr>
+																						<?php
+																					}
+																					else
+																					{
+																						?>
+																						<tr <?php echo $alternate ;?>>
+																							<td>
+																								<input type="checkbox" id="ux_chk_cleanup_db_scheduler" name="ux_chk_cleanup_arr_db_scheduler[]" value="<?php echo $row->Name ;?>" disabled="disabled">
+																							</td>
+																							<td>
+																								<?php 
+																									echo  $row->Name;
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo $row->Engine;
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo cpo_format_size($row->Data_free);
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																								echo $count_rows;
+																								?>
+																							</td>
+																							<td>
+																								<?php 
+																									echo sprintf("%0.1f",$table_size) ." KB";
+																								?>
+																							</td>
+																						</tr>
+																						<?php
+																					}
 																				}
 																				$alternate = (empty($alternate)) ? " class='alternate'" : "";
 																			}

@@ -24,7 +24,6 @@ else
 	{	
 		class manage_data	
 		{
-	
 			function insert_data($tbl, $data)
 			{
 				global $wpdb;

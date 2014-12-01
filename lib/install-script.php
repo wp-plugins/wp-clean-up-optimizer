@@ -20,7 +20,7 @@
 		{
 			$sql = "CREATE TABLE " . db_scheduler_tbl() . "(
 					scheduler_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-					db_optimizer VARCHAR(700),
+					db_optimizer TEXT,
 					start_date DATE,
 					schedule_type VARCHAR(100),
 					cron_name VARCHAR(100),
@@ -112,68 +112,108 @@
 	global $wpdb;
 	require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 	$version=get_option("wp-cleanup-optimizer-version-number");
-	if($version == "")
+	switch($version)
 	{
-		if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_scheduler_tbl() . "'")) == 0)
-		{
-			create_table_wp_scheduler();
-		}
-		if (count($wpdb->get_var("SHOW TABLES LIKE '" . db_scheduler_tbl() . "'")) == 0)
-		{
-			create_table_db_optimizer();
-		}
-		if (count($wpdb->get_var("SHOW TABLES LIKE '" . cleanup_optimizer_log() . "'")) == 0)
-		{
-			create_table_cleanup_optimizer_log();
-		}
-		if (count($wpdb->get_var("SHOW TABLES LIKE '" . cleanup_optimizer_plugin_settings() . "'")) == 0)
-		{
-			create_table_cleanup_optimizer_plugin_settings();
-			if(!class_exists("save_cleanup_settings"))
+		case "":
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_scheduler_tbl() . "'")) == 0)
 			{
-				class save_cleanup_settings
+				create_table_wp_scheduler();
+			}
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . db_scheduler_tbl() . "'")) == 0)
+			{
+				create_table_db_optimizer();
+			}
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . cleanup_optimizer_log() . "'")) == 0)
+			{
+				create_table_cleanup_optimizer_log();
+			}
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . cleanup_optimizer_plugin_settings() . "'")) == 0)
+			{
+				create_table_cleanup_optimizer_plugin_settings();
+				if(!class_exists("save_cleanup_settings"))
 				{
-					function insert_data($tbl, $data)
+					class save_cleanup_settings
 					{
-						global $wpdb;
-						$wpdb->insert($tbl,$data);
+						function insert_data($tbl, $data)
+						{
+							global $wpdb;
+							$wpdb->insert($tbl,$data);
+						}
 					}
 				}
+				$insert_plugin_settings = new save_cleanup_settings();
+				$plugin_setting_value = array();
+				$plugin_settings = array();
+				$plugin_settings["show_cleanup_plugin_menu_admin"] = "1";
+				$plugin_settings["show_cleanup_plugin_menu_editor"] = "1";
+				$plugin_settings["show_cleanup_plugin_menu_author"] = "1";
+				$plugin_settings["show_cleanup_plugin_menu_contributor"] = "0";
+				$plugin_settings["show_cleanup_plugin_menu_subscriber"] = "0";
+				$plugin_settings["cleanup_menu_top_bar"] = "1";
+				$plugin_settings["auto_ip_block"] = "1";
+				$plugin_settings["max_login_attempts"] = "5";
+				$plugin_settings["ip_block_msg"] =__("Your IP has been blocked!", cleanup_optimizer);
+				$plugin_settings["max_login_msg"] =__("Maximum Login attempts left [maxAttempts]", cleanup_optimizer) ;
+				$plugin_settings["max_login_exceeded_msg"] = __("You have Exceeded Maximum Login Attempts.\n So, your IP has been blocked for today. \n Kindly, try again after 24 Hours.", cleanup_optimizer);
+			
+				foreach ($plugin_settings as $val => $innerKey)
+				{
+					$plugin_setting_value["plugin_settings_key"] = $val;
+					$plugin_setting_value["plugin_settings_value"] = $innerKey;
+					$insert_plugin_settings->insert_data(cleanup_optimizer_plugin_settings(),$plugin_setting_value);
+				}
 			}
-			$insert_plugin_settings = new save_cleanup_settings();
-			$plugin_setting_value = array();
-			$plugin_settings = array();
-			$plugin_settings["show_cleanup_plugin_menu_admin"] = "1";
-			$plugin_settings["show_cleanup_plugin_menu_editor"] = "1";
-			$plugin_settings["show_cleanup_plugin_menu_author"] = "1";
-			$plugin_settings["show_cleanup_plugin_menu_contributor"] = "0";
-			$plugin_settings["show_cleanup_plugin_menu_subscriber"] = "0";
-			$plugin_settings["cleanup_menu_top_bar"] = "1";
-			$plugin_settings["auto_ip_block"] = "1";
-			$plugin_settings["max_login_attempts"] = "5";
-			$plugin_settings["ip_block_msg"] =__("Your IP has been blocked!", cleanup_optimizer);
-			$plugin_settings["max_login_msg"] =__("Maximum Login attempts left [maxAttempts]", cleanup_optimizer) ;
-			$plugin_settings["max_login_exceeded_msg"] = __("You have Exceeded Maximum Login Attempts.\n So, your IP has been blocked for today. \n Kindly, try again after 24 Hours.", cleanup_optimizer);
-		
-			foreach ($plugin_settings as $val => $innerKey)
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_cleanup_optimizer_licensing() . "'")) == 0)
 			{
-				$plugin_setting_value["plugin_settings_key"] = $val;
-				$plugin_setting_value["plugin_settings_value"] = $innerKey;
-				$insert_plugin_settings->insert_data(cleanup_optimizer_plugin_settings(),$plugin_setting_value);
+				create_wp_cleanup_optimizer_licensing();
 			}
-		}
-		if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_cleanup_optimizer_licensing() . "'")) == 0)
-		{
-			create_wp_cleanup_optimizer_licensing();
-		}
-		if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_cleanup_optimizer_block_single_ip() . "'")) == 0)
-		{
-			create_table_block_single_ip();
-		}
-		if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_cleanup_optimizer_block_range_ip() . "'")) == 0)
-		{
-			create_table_block_range_ip();
-		}
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_cleanup_optimizer_block_single_ip() . "'")) == 0)
+			{
+				create_table_block_single_ip();
+			}
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . wp_cleanup_optimizer_block_range_ip() . "'")) == 0)
+			{
+				create_table_block_range_ip();
+			}
+		break;
+		case "2.0":
+			if (count($wpdb->get_var("SHOW TABLES LIKE '" . db_scheduler_tbl() . "'")) != 0)
+			{
+				if(!class_exists("manage_data"))
+				{
+					class manage_data
+					{
+						function insert_data($tbl, $data)
+						{
+							global $wpdb;
+							$wpdb->insert($tbl,$data);
+						}
+					}
+				}
+				$db_scheduler_data = $wpdb->get_results
+				(
+					"SELECT * FROM " . db_scheduler_tbl()
+				);
+				$sql = "DROP TABLE " . db_scheduler_tbl();
+				$wpdb->query($sql);
+				
+				create_table_db_optimizer();
+				
+				$db_schedulers = array();
+				$insert_db_schedulers = new manage_data();
+				for($flag = 0; $flag < count($db_scheduler_data); $flag++)
+				{
+					$db_schedulers["scheduler_id"] = $db_scheduler_data[$flag]->scheduler_id;
+					$db_schedulers["db_optimizer"] = $db_scheduler_data[$flag]->db_optimizer;
+					$db_schedulers["start_date"] = $db_scheduler_data[$flag]->start_date;
+					$db_schedulers["schedule_type"] = $db_scheduler_data[$flag]->schedule_type;
+					$db_schedulers["cron_name"] =  $db_scheduler_data[$flag]->cron_name;
+					$db_schedulers["scheduler_action"] = $db_scheduler_data[$flag]->scheduler_action;
+					
+					$insert_db_schedulers->insert_data(db_scheduler_tbl(),$db_schedulers);
+				}
+			}
+		break;
 	}
 	update_option("wp-cleanup-optimizer-version-number","2.0");
 ?>

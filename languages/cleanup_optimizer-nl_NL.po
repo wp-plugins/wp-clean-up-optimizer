@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Clean Up Optimizer\n"
-"POT-Creation-Date: 2014-11-18 22:06-0800\n"
-"PO-Revision-Date: 2014-11-18 22:06-0800\n"
+"POT-Creation-Date: 2014-12-02 03:24-0800\n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -10,723 +10,737 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
-"\\wp-clean-up-optimizer\\\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Poedit-KeywordsList: .;__;_e;gettext\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\contact_bank\\wp-content\\plugins\\wp-"
+"clean-up-optimizer\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: lib/header.php:42
+#: lib/header.php:37
 msgid "Get Started"
-msgstr ""
+msgstr "Aan de slag"
 
-#: lib/header.php:45
+#: lib/header.php:40
 msgid "Watch Clean Up Video!"
-msgstr ""
+msgstr "Bekijk de Clean Up video!"
+
+#: lib/header.php:44
+msgid "read documentation here"
+msgstr "lees de documentatie hier"
 
 #: lib/header.php:49
-msgid "read documentation here"
-msgstr ""
-
-#: lib/header.php:54
 msgid "Go Premium"
-msgstr ""
+msgstr "Ga Premie"
+
+#: lib/header.php:53
+msgid "Features"
+msgstr "Functies"
 
 #: lib/header.php:58
-msgid "Features"
-msgstr ""
+msgid "Online Demos"
+msgstr "Online Demo"
 
 #: lib/header.php:63
-msgid "Online Demos"
-msgstr ""
-
-#: lib/header.php:68
+#, fuzzy
 msgid "Premium Pricing Plan"
-msgstr ""
+msgstr "Premium Prijzen"
+
+#: lib/header.php:70
+msgid "Knowledge Base"
+msgstr "Kennisbank"
 
 #: lib/header.php:75
-msgid "Knowledge Base"
-msgstr ""
+msgid "Support Forum"
+msgstr "Ondersteuning Forum"
 
 #: lib/header.php:80
-msgid "Support Forum"
-msgstr ""
+msgid "FAQ's"
+msgstr "FAQ's"
 
 #: lib/header.php:85
-msgid "FAQ's"
-msgstr ""
-
-#: lib/header.php:90
+#, fuzzy
 msgid "Detailed Features"
-msgstr ""
+msgstr "Functies"
 
-#: lib/header.php:96
+#: lib/header.php:91
 msgid "More Actions"
-msgstr ""
+msgstr "Meer Acties"
 
-#: lib/header.php:100
+#: lib/header.php:95
 msgid "Plugin Customization"
-msgstr ""
+msgstr "Plugin Aanpassingen"
 
-#: lib/header.php:105 lib/header.php:163 lib/menus.php:15 lib/menus.php:26
-#: lib/menus.php:37 lib/top-bar-menu.php:65 lib/top-bar-menu.php:121
-#: lib/top-bar-menu.php:177
+#: lib/header.php:100 lib/header.php:158 lib/menus.php:18
+#: lib/top-bar-menu.php:56
 msgid "Recommendations"
-msgstr ""
+msgstr "Aanbevelingen"
 
-#: lib/header.php:110 lib/header.php:166 lib/menus.php:16 lib/menus.php:27
-#: lib/menus.php:38 lib/top-bar-menu.php:71 lib/top-bar-menu.php:127
-#: lib/top-bar-menu.php:183
+#: lib/header.php:105 lib/header.php:161 lib/menus.php:19
+#: lib/top-bar-menu.php:62
 msgid "Our Other Services"
-msgstr ""
+msgstr "Onze Andere Diensten"
 
-#: lib/header.php:148 lib/menus.php:9 lib/menus.php:20 lib/menus.php:31
-#: lib/top-bar-menu.php:29 lib/top-bar-menu.php:85 lib/top-bar-menu.php:141
+#: lib/header.php:143 lib/menus.php:12 lib/top-bar-menu.php:20
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
-#: lib/header.php:151 lib/menus.php:10 lib/menus.php:21 lib/menus.php:32
-#: lib/top-bar-menu.php:35 lib/top-bar-menu.php:91 lib/top-bar-menu.php:147
-#: views/login-logs.php:38 views/premium-edition.php:364
-#: views/premium-edition.php:370 views/premium-edition.php:928
-#: views/premium-edition.php:1412 views/premium-edition.php:1896
-#: views/premium-edition.php:2380 views/premium-edition.php:2864
+#: lib/header.php:146 lib/menus.php:13 lib/top-bar-menu.php:26
+#: views/login-logs.php:38
 msgid "Login Logs"
-msgstr ""
+msgstr "Login Logs"
 
-#: lib/header.php:154 lib/menus.php:11 lib/menus.php:22 lib/menus.php:33
-#: lib/top-bar-menu.php:41 lib/top-bar-menu.php:97 lib/top-bar-menu.php:153
-#: views/cron-job.php:68
+#: lib/header.php:149 lib/menus.php:14 lib/top-bar-menu.php:32
+#: views/cron-job.php:67
 msgid "Cron Jobs"
-msgstr ""
+msgstr "Automatische Taken"
 
-#: lib/header.php:157 lib/menus.php:12 lib/menus.php:23 lib/menus.php:34
-#: lib/top-bar-menu.php:47 lib/top-bar-menu.php:103 lib/top-bar-menu.php:159
+#: lib/header.php:152 lib/menus.php:15 lib/top-bar-menu.php:38
 #: views/general-settings.php:42
 msgid "General Settings"
-msgstr ""
+msgstr "Algemene instellingen"
 
-#: lib/header.php:160 lib/menus.php:14 lib/menus.php:25 lib/menus.php:35
-#: lib/top-bar-menu.php:59 lib/top-bar-menu.php:115 lib/top-bar-menu.php:171
-#: views/premium-edition.php:26
+#: lib/header.php:155 lib/menus.php:17 lib/top-bar-menu.php:50
 msgid "Premium Editions"
-msgstr ""
-
-#: lib/install-script.php:154
-msgid "Your IP has been blocked!"
-msgstr ""
+msgstr "Premium Edities"
 
 #: lib/install-script.php:155
-msgid "Maximum Login attempts left [maxAttempts]"
-msgstr ""
+msgid "Your IP has been blocked!"
+msgstr "Uw IP is geblokkeerd!"
 
 #: lib/install-script.php:156
+msgid "Maximum Login attempts left [maxAttempts]"
+msgstr "Maximale Inlog pogingen over [maxAttempts]"
+
+#: lib/install-script.php:157
 msgid ""
 "You have Exceeded Maximum Login Attempts.\n"
 " So, your IP has been blocked for today. \n"
 " Kindly, try again after 24 Hours."
 msgstr ""
+"Je hebt de Maximale Inloggen Pogingen overschreden.\n"
+" Daarom is uw IP is geblokkeerd voor vandaag.\n"
+"Probeer het a.u.b. opnieuw na 24 uur."
 
-#: lib/menus.php:13 lib/menus.php:24 lib/menus.php:36 lib/top-bar-menu.php:53
-#: lib/top-bar-menu.php:109 lib/top-bar-menu.php:165
+#: lib/menus.php:16 lib/top-bar-menu.php:44
 msgid "System Status"
-msgstr ""
+msgstr "System Status"
+
+#: views/cron-job.php:74
+msgid "Custom"
+msgstr "Aangepast"
 
 #: views/cron-job.php:75
-msgid "Custom"
-msgstr ""
-
-#: views/cron-job.php:76
 msgid "Core"
-msgstr ""
+msgstr "Core"
 
-#: views/cron-job.php:82
+#: views/cron-job.php:81
 msgid "Custom Events"
-msgstr ""
+msgstr "Aangepaste Events"
 
-#: views/cron-job.php:84 views/dashboard.php:236 views/dashboard.php:617
-#: views/dashboard.php:827 views/dashboard.php:828 views/dashboard.php:829
-#: views/dashboard.php:980 views/general-settings.php:59
+#: views/cron-job.php:83 views/dashboard.php:249 views/dashboard.php:630
+#: views/dashboard.php:840 views/dashboard.php:841 views/dashboard.php:842
+#: views/dashboard.php:1076 views/general-settings.php:59
 #: views/general-settings.php:95 views/general-settings.php:193
+#, fuzzy
 msgid " (Available in Premium Editions)"
-msgstr ""
+msgstr "Premium Edities"
 
-#: views/cron-job.php:93 views/dashboard.php:281 views/dashboard.php:627
-#: views/dashboard.php:825
+#: views/cron-job.php:92 views/dashboard.php:294 views/dashboard.php:640
+#: views/dashboard.php:838
 msgid "Bulk Action"
-msgstr ""
+msgstr "Bulkactie"
 
-#: views/cron-job.php:94 views/cron-job.php:139 views/dashboard.php:797
-#: views/dashboard.php:827 views/dashboard.php:991 views/dashboard.php:1190
-#: views/dashboard.php:1260
+#: views/cron-job.php:93 views/cron-job.php:138 views/dashboard.php:810
+#: views/dashboard.php:840 views/dashboard.php:1087 views/dashboard.php:1367
+#: views/dashboard.php:1437
 msgid "Delete"
-msgstr ""
+msgstr "Verwijderen"
 
-#: views/cron-job.php:96 views/dashboard.php:284 views/dashboard.php:831
-#: views/dashboard.php:932
+#: views/cron-job.php:95 views/dashboard.php:297 views/dashboard.php:844
+#: views/dashboard.php:948 views/dashboard.php:1027
 msgid "Apply"
-msgstr ""
+msgstr "Toepassen"
 
-#: views/cron-job.php:104 views/cron-job.php:239
+#: views/cron-job.php:103 views/cron-job.php:245
 msgid "Name of the Hook"
-msgstr ""
+msgstr "Naam van de Hook"
 
-#: views/cron-job.php:105
+#: views/cron-job.php:104
 msgid "List of Custom scheduled events."
-msgstr ""
+msgstr "Lijst van Aangepaste geplande gebeurtenissen."
 
-#: views/cron-job.php:108 views/cron-job.php:243
+#: views/cron-job.php:107 views/cron-job.php:249
 msgid "Interval Hook"
-msgstr ""
+msgstr "Interval Hook"
 
-#: views/cron-job.php:109 views/cron-job.php:244
+#: views/cron-job.php:108 views/cron-job.php:250
 msgid "It specifies the Interval of a Scheduler. "
-msgstr ""
+msgstr "Het specificeert de interval van een Scheduler."
 
-#: views/cron-job.php:112 views/cron-job.php:247
+#: views/cron-job.php:111 views/cron-job.php:253
 msgid "Args"
-msgstr ""
+msgstr "Args"
 
-#: views/cron-job.php:115 views/cron-job.php:250 views/dashboard.php:750
-#: views/dashboard.php:1212
+#: views/cron-job.php:114 views/cron-job.php:256 views/dashboard.php:763
+#: views/dashboard.php:1389
 msgid "Next Execution"
-msgstr ""
+msgstr "Volgende Uitvoering"
 
-#: views/cron-job.php:116 views/cron-job.php:251
+#: views/cron-job.php:115 views/cron-job.php:257
 msgid ""
 "It allows you to view the Date & Time for next execution of a Scheduler."
 msgstr ""
+"Hiermee kunt u de datum en tijd voor de volgende uitvoering van een "
+"Scheduler bekijken."
 
-#: views/cron-job.php:228
+#: views/cron-job.php:234
 msgid "Core Events"
-msgstr ""
+msgstr "Core Evenementen"
 
-#: views/cron-job.php:240
+#: views/cron-job.php:246
 msgid ""
 "List of Core scheduled events. Which are Default schedulers created by "
 "WordPress."
 msgstr ""
+"Lijst van Core geplande evenementen. Die zijn Default planners gemaakt door "
+"WordPress."
 
-#: views/cron-job.php:389 views/cron-job.php:406 views/dashboard.php:1396
-#: views/dashboard.php:1538
+#: views/cron-job.php:395 views/cron-job.php:412 views/dashboard.php:1573
+#: views/dashboard.php:1715
 msgid "Show entries"
-msgstr ""
+msgstr "Itemweergave"
 
-#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1333
-#: views/dashboard.php:1409 views/dashboard.php:1419 views/dashboard.php:1502
-#: views/dashboard.php:1551 views/general-settings.php:265
+#: views/cron-job.php:425 views/cron-job.php:432 views/dashboard.php:1510
+#: views/dashboard.php:1586 views/dashboard.php:1596 views/dashboard.php:1679
+#: views/dashboard.php:1728 views/general-settings.php:265
 #: views/general-settings.php:271 views/general-settings.php:277
 #: views/general-settings.php:283 views/general-settings.php:289
 #: views/login-logs.php:194
 msgid "Error!"
-msgstr ""
+msgstr "Fout!"
 
-#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1409
-#: views/dashboard.php:1419 views/dashboard.php:1551
+#: views/cron-job.php:425 views/cron-job.php:432 views/dashboard.php:1586
+#: views/dashboard.php:1596 views/dashboard.php:1728
 #: views/general-settings.php:265 views/general-settings.php:271
 #: views/general-settings.php:277 views/general-settings.php:283
 #: views/general-settings.php:289 views/login-logs.php:194
 msgid "This Feature is Available in Premium Editions!"
-msgstr ""
+msgstr "Deze functie is beschikbaar in Premie Editions!"
 
-#: views/dashboard.php:178 views/general-settings.php:33
+#: views/dashboard.php:191 views/general-settings.php:33
 #: views/login-logs.php:30
 msgid "Success!"
-msgstr ""
+msgstr "Succes!"
 
-#: views/dashboard.php:187
+#: views/dashboard.php:200
 msgid "WP Clean Up Optimizer"
-msgstr ""
+msgstr "WP Clean Up Optimizer"
 
-#: views/dashboard.php:193
+#: views/dashboard.php:206
 msgid "Database Information"
-msgstr ""
+msgstr "Database Informatie"
 
-#: views/dashboard.php:197
+#: views/dashboard.php:210
 msgid "Database Host "
-msgstr ""
+msgstr "Database Host"
 
-#: views/dashboard.php:203
+#: views/dashboard.php:216
 msgid "Database Name "
-msgstr ""
+msgstr "Database Naam"
 
-#: views/dashboard.php:209
+#: views/dashboard.php:222
 msgid "Database User "
-msgstr ""
+msgstr "Database Gebruiker"
 
-#: views/dashboard.php:215
+#: views/dashboard.php:228
 msgid "Database Type "
-msgstr ""
-
-#: views/dashboard.php:223
-msgid "Database Version"
-msgstr ""
+msgstr "Database Type"
 
 #: views/dashboard.php:236
+msgid "Database Version"
+msgstr "Database Versie"
+
+#: views/dashboard.php:249
 msgid "Manage Trackbacks / Comments"
-msgstr ""
+msgstr "Beheer Trackbacks / Reacties"
 
-#: views/dashboard.php:240
+#: views/dashboard.php:253
 msgid "Trackbacks"
-msgstr ""
+msgstr "Trackbacks"
 
-#: views/dashboard.php:241 views/dashboard.php:441
+#: views/dashboard.php:254 views/dashboard.php:454
 msgid ""
 "Trackbacks are a way to notify legacy blog systems that you have linked to "
 "them. If you link to a WordPress blog they will be notified automatically "
 "using pingbacks, no other action necessary."
 msgstr ""
+"Trackbacks zijn een manier om legacy blog systemen die u hebt gekoppeld aan "
+"te melden. Als u linkt naar een WordPress blog zullen ze automatisch worden "
+"gemeld met pingbacks, geen andere maatregelen nodig."
 
-#: views/dashboard.php:244 views/dashboard.php:254
+#: views/dashboard.php:257 views/dashboard.php:267
 #: views/general-settings.php:104 views/general-settings.php:232
 msgid "Enable"
-msgstr ""
+msgstr "Inschakelen"
 
-#: views/dashboard.php:245 views/dashboard.php:255
+#: views/dashboard.php:258 views/dashboard.php:268
 #: views/general-settings.php:105 views/general-settings.php:233
 msgid "Disable"
-msgstr ""
+msgstr "Uitschakelen"
 
-#: views/dashboard.php:250
+#: views/dashboard.php:263
 msgid "Comments"
-msgstr ""
+msgstr "Reacties"
 
-#: views/dashboard.php:251
+#: views/dashboard.php:264
 msgid ""
 "Manage comments on any Post or Page. It can be used to disable comments on "
 "the entire Blog."
 msgstr ""
+"Beheer reacties over ieder bericht of pagina. Het kan worden gebruikt om "
+"opmerkingen over de gehele blog schakelen."
 
-#: views/dashboard.php:265 views/dashboard.php:274
+#: views/dashboard.php:278 views/dashboard.php:287
 msgid "Data Optimizer"
-msgstr ""
+msgstr "Gegevens Optimizer"
 
-#: views/dashboard.php:266 views/dashboard.php:488
+#: views/dashboard.php:279 views/dashboard.php:501
 msgid "Data Optimizer Scheduler"
-msgstr ""
+msgstr "Gegevens Optimizer Scheduler"
 
-#: views/dashboard.php:267 views/dashboard.php:813
+#: views/dashboard.php:280 views/dashboard.php:826
 msgid "DB Optimizer"
-msgstr ""
+msgstr "DB Optimizer"
 
-#: views/dashboard.php:268 views/dashboard.php:968
+#: views/dashboard.php:281 views/dashboard.php:1064
 msgid "DB Optimizer Scheduler"
-msgstr ""
+msgstr "DB Optimizer Scheduler"
 
-#: views/dashboard.php:282 views/dashboard.php:307 views/dashboard.php:321
-#: views/dashboard.php:335 views/dashboard.php:349 views/dashboard.php:363
-#: views/dashboard.php:377 views/dashboard.php:391 views/dashboard.php:405
-#: views/dashboard.php:419 views/dashboard.php:433 views/dashboard.php:447
-#: views/dashboard.php:461 views/dashboard.php:475 views/dashboard.php:628
-#: views/dashboard.php:826 views/dashboard.php:928 views/dashboard.php:990
-#: views/dashboard.php:1187
+#: views/dashboard.php:295 views/dashboard.php:320 views/dashboard.php:334
+#: views/dashboard.php:348 views/dashboard.php:362 views/dashboard.php:376
+#: views/dashboard.php:390 views/dashboard.php:404 views/dashboard.php:418
+#: views/dashboard.php:432 views/dashboard.php:446 views/dashboard.php:460
+#: views/dashboard.php:474 views/dashboard.php:488 views/dashboard.php:641
+#: views/dashboard.php:839 views/dashboard.php:944 views/dashboard.php:1023
+#: views/dashboard.php:1086 views/dashboard.php:1364
 msgid "Empty"
-msgstr ""
+msgstr "Leeg"
 
-#: views/dashboard.php:290 views/dashboard.php:502 views/dashboard.php:667
+#: views/dashboard.php:303 views/dashboard.php:515 views/dashboard.php:680
 msgid "Type of Data"
-msgstr ""
+msgstr "Soort gegevens"
 
-#: views/dashboard.php:291
+#: views/dashboard.php:304
 msgid "Count"
-msgstr ""
+msgstr "Aantal"
 
-#: views/dashboard.php:292 views/dashboard.php:841 views/login-logs.php:125
+#: views/dashboard.php:305 views/dashboard.php:854 views/login-logs.php:125
 msgid "Action"
-msgstr ""
+msgstr "Actie"
 
-#: views/dashboard.php:301 views/dashboard.php:511
+#: views/dashboard.php:314 views/dashboard.php:524
 msgid ""
 "Auto Draft are the Page / Post saved as draft automatically in WordPress "
 "Database."
 msgstr ""
+"Auto Concept zijn de pagina / berichten,  automatisch opgeslagen als concept "
+"in de WordPress Database."
 
-#: views/dashboard.php:301 views/dashboard.php:511
+#: views/dashboard.php:314 views/dashboard.php:524
 msgid "Auto Draft"
-msgstr ""
+msgstr "Auto Concept"
 
-#: views/dashboard.php:315 views/dashboard.php:519
+#: views/dashboard.php:328 views/dashboard.php:532
 msgid ""
 "Transient Feed in WordPress are use Database entries to cache a certain "
 "entries."
 msgstr ""
+"Voorbijgaande Feed in WordPress zijn gebruik Database items naar een "
+"bepaalde vermeldingen te legen."
 
-#: views/dashboard.php:315 views/dashboard.php:519
+#: views/dashboard.php:328 views/dashboard.php:532
 msgid "Dashboard Transient Feed"
-msgstr ""
+msgstr "Dashboard Transient Feed"
 
-#: views/dashboard.php:329 views/dashboard.php:527
+#: views/dashboard.php:342 views/dashboard.php:540
 msgid "New Post / Page created as Draft in WordPress."
-msgstr ""
+msgstr "Nieuwe Post / Pagina opgebouwd als concept in WordPress."
 
-#: views/dashboard.php:329 views/dashboard.php:527
+#: views/dashboard.php:342 views/dashboard.php:540
 msgid "Draft"
-msgstr ""
+msgstr "Concept"
 
-#: views/dashboard.php:343 views/dashboard.php:535
+#: views/dashboard.php:356 views/dashboard.php:548
 msgid ""
 "Moderated Comments is a feature in WordPress that allows you to prevent "
 "comments from appearing on your site without your express approval."
 msgstr ""
+"Gemodereerd Reacties is een functie in WordPress die u toelaat om reacties "
+"te voorkomen, dat ze op uw site, zonder uw expliciete goedkeuring."
 
-#: views/dashboard.php:343 views/dashboard.php:535
+#: views/dashboard.php:356 views/dashboard.php:548
 msgid "Moderated Comments"
-msgstr ""
+msgstr "Gemodereerde Reacties"
 
-#: views/dashboard.php:357 views/dashboard.php:543
+#: views/dashboard.php:370 views/dashboard.php:556
 msgid ""
 "Orphan Comments Meta holds the miscellaneous bits of extra information of "
 "comment."
 msgstr ""
+"Orphan Reacties Meta houdt de diverse stukjes van extra informatie van de "
+"opmerking toe."
 
-#: views/dashboard.php:357 views/dashboard.php:543
+#: views/dashboard.php:370 views/dashboard.php:556
 msgid "Orphan Comments Meta"
-msgstr ""
+msgstr "Wezen Meta Reacties"
 
-#: views/dashboard.php:371 views/dashboard.php:551
+#: views/dashboard.php:384 views/dashboard.php:564
 msgid "Orphan Posts Meta holds the junk or obsolete data."
-msgstr ""
+msgstr "Orphan Berichten Meta houdt de junk of verouderde gegevens."
 
-#: views/dashboard.php:371 views/dashboard.php:551
+#: views/dashboard.php:384 views/dashboard.php:564
 msgid "Orphan Posts Meta"
-msgstr ""
+msgstr "Wezen Meta Berichten"
 
-#: views/dashboard.php:385 views/dashboard.php:559
+#: views/dashboard.php:398 views/dashboard.php:572
 msgid "Orphan Relationships holds the junk or obsolete Category and Tag."
-msgstr ""
+msgstr "Orphan Relaties houdt de ongewenste of verouderde Categorie en Tag."
 
-#: views/dashboard.php:385 views/dashboard.php:559
+#: views/dashboard.php:398 views/dashboard.php:572
 msgid "Orphan Relationships"
-msgstr ""
+msgstr "Wezen Relaties"
 
-#: views/dashboard.php:399 views/dashboard.php:567
+#: views/dashboard.php:412 views/dashboard.php:580
 msgid ""
 "The WordPress revisions system stores a record of each saved draft or "
 "published update.Revisions are stored in the posts table."
 msgstr ""
+"De WordPress herzieningen systeem slaat een record van elk opgeslagen tocht "
+"of gepubliceerd update.Revisions worden opgeslagen in de tabel posts."
 
-#: views/dashboard.php:399 views/dashboard.php:567
+#: views/dashboard.php:412 views/dashboard.php:580
 msgid "Revision"
-msgstr ""
+msgstr "Herziening"
 
-#: views/dashboard.php:413 views/dashboard.php:575
+#: views/dashboard.php:426 views/dashboard.php:588
 msgid ""
 "A Pingback is a type of comment that's created when you link to another blog "
 "post where pingbacks are enabled."
 msgstr ""
+"Een Pingback is een soort van commentaar dat wordt gemaakt wanneer u een "
+"koppeling naar een andere blog post waar pingbacks zijn ingeschakeld."
 
-#: views/dashboard.php:413 views/dashboard.php:575
-#: views/premium-edition.php:297 views/premium-edition.php:303
-#: views/premium-edition.php:880 views/premium-edition.php:1364
-#: views/premium-edition.php:1848 views/premium-edition.php:2332
-#: views/premium-edition.php:2816
+#: views/dashboard.php:426 views/dashboard.php:588
 msgid "Remove Pingbacks"
-msgstr ""
+msgstr "Verwijder Pingbacks"
 
-#: views/dashboard.php:427 views/dashboard.php:583
+#: views/dashboard.php:440 views/dashboard.php:596
 msgid ""
 "Transient Options are like a basic cache system used by wordpress. Clearing "
 "these options before a backup will help to save space in your backup files."
 msgstr ""
+"Voorbijgaande opties zijn als een eenvoudige cache-systeem wordt gebruikt "
+"door wordpress. Door deze opties uit voordat er een back-up zal helpen om "
+"ruimte te besparen in uw back-upbestanden."
 
-#: views/dashboard.php:427 views/dashboard.php:583
-#: views/premium-edition.php:314 views/premium-edition.php:320
-#: views/premium-edition.php:892 views/premium-edition.php:1376
-#: views/premium-edition.php:1860 views/premium-edition.php:2344
-#: views/premium-edition.php:2828
+#: views/dashboard.php:440 views/dashboard.php:596
 msgid "Remove Transient Options"
-msgstr ""
+msgstr "Verwijder Transient Opties"
 
-#: views/dashboard.php:441 views/dashboard.php:591
-#: views/premium-edition.php:331 views/premium-edition.php:337
-#: views/premium-edition.php:904 views/premium-edition.php:1388
-#: views/premium-edition.php:1872 views/premium-edition.php:2356
-#: views/premium-edition.php:2840
+#: views/dashboard.php:454 views/dashboard.php:604
 msgid "Remove Trackbacks"
-msgstr ""
+msgstr "Verwijder Trackbacks"
 
-#: views/dashboard.php:455 views/dashboard.php:599
+#: views/dashboard.php:468 views/dashboard.php:612
 msgid "Spam Comments are the unwanted comments in the WordPress database."
-msgstr ""
+msgstr "Spam Commentaar is de ongewenste opmerkingen in de WordPress database."
 
-#: views/dashboard.php:455 views/dashboard.php:599
+#: views/dashboard.php:468 views/dashboard.php:612
 msgid "Spam Comments"
-msgstr ""
+msgstr "Spam Reacties"
 
-#: views/dashboard.php:469 views/dashboard.php:607
+#: views/dashboard.php:482 views/dashboard.php:620
 msgid ""
 "Trash Comments are the comments which are stored in the WordPress Trash."
 msgstr ""
+"Trash Commentaar is de opmerkingen die zijn opgeslagen in de WordPress Trash."
 
-#: views/dashboard.php:469 views/dashboard.php:607
+#: views/dashboard.php:482 views/dashboard.php:620
 msgid "Trash Comments"
-msgstr ""
+msgstr "Prullenbak Reacties"
 
-#: views/dashboard.php:496
+#: views/dashboard.php:509
 msgid "Choose Type of Data"
-msgstr ""
+msgstr "Kies datatype"
 
-#: views/dashboard.php:591
+#: views/dashboard.php:604
+#, fuzzy
 msgid ""
 "Trackbacks are a way to notify legacy blog systems that you've linked to "
 "them. If you link to a WordPress blog they'll be notified automatically "
 "using pingbacks, no other action necessary."
 msgstr ""
+"Trackbacks zijn een manier om legacy blog systemen die u hebt gekoppeld aan "
+"te melden. Als u linkt naar een WordPress blog zullen ze automatisch worden "
+"gemeld met pingbacks, geen andere maatregelen nodig."
 
-#: views/dashboard.php:617 views/dashboard.php:980
+#: views/dashboard.php:630 views/dashboard.php:1076
 msgid "Configure Scheduler"
-msgstr ""
+msgstr "Configureer Scheduler"
 
-#: views/dashboard.php:622 views/dashboard.php:985
+#: views/dashboard.php:635 views/dashboard.php:1081
 msgid "Action "
-msgstr ""
+msgstr "Actie"
 
-#: views/dashboard.php:623 views/dashboard.php:986
+#: views/dashboard.php:636 views/dashboard.php:1082
 msgid "Allows you to select the type of Action."
-msgstr ""
+msgstr "Hiermee kunt u het type van de actie selecteren."
 
-#: views/dashboard.php:634 views/dashboard.php:999
+#: views/dashboard.php:647 views/dashboard.php:1095
 msgid "Duration "
-msgstr ""
+msgstr "Duur"
 
-#: views/dashboard.php:635 views/dashboard.php:1000
+#: views/dashboard.php:648 views/dashboard.php:1096
 msgid ""
 "Configuration the scheduler Daily, Weekly, Biweekly, Monthly, Quarterly, "
 "Half-Yearly, Annually from the DropDown."
 msgstr ""
+"Configuratie van de scheduler Dagelijks, wekelijks, tweewekelijks, "
+"maandelijks, driemaandelijks, halfjaarlijks Jaarlijks met de dropdown."
 
-#: views/dashboard.php:639 views/dashboard.php:1004
+#: views/dashboard.php:652 views/dashboard.php:1100
 msgid "Daily"
-msgstr ""
+msgstr "Dagelijks"
 
-#: views/dashboard.php:640 views/dashboard.php:769 views/dashboard.php:1005
-#: views/dashboard.php:1231
+#: views/dashboard.php:653 views/dashboard.php:782 views/dashboard.php:1101
+#: views/dashboard.php:1408
 msgid "Weekly"
-msgstr ""
+msgstr "Wekelijks"
 
-#: views/dashboard.php:641 views/dashboard.php:773 views/dashboard.php:1006
-#: views/dashboard.php:1235
+#: views/dashboard.php:654 views/dashboard.php:786 views/dashboard.php:1102
+#: views/dashboard.php:1412
 msgid "Biweekly"
-msgstr ""
+msgstr "Tweewekelijkse"
 
-#: views/dashboard.php:642 views/dashboard.php:777 views/dashboard.php:1007
-#: views/dashboard.php:1239
+#: views/dashboard.php:655 views/dashboard.php:790 views/dashboard.php:1103
+#: views/dashboard.php:1416
 msgid "Monthly"
-msgstr ""
+msgstr "Maandelijks"
 
-#: views/dashboard.php:643 views/dashboard.php:781 views/dashboard.php:1008
-#: views/dashboard.php:1243
+#: views/dashboard.php:656 views/dashboard.php:794 views/dashboard.php:1104
+#: views/dashboard.php:1420
 msgid "Quarterly"
-msgstr ""
+msgstr "Driemaandelijks"
 
-#: views/dashboard.php:644 views/dashboard.php:785 views/dashboard.php:1009
-#: views/dashboard.php:1247
+#: views/dashboard.php:657 views/dashboard.php:798 views/dashboard.php:1105
+#: views/dashboard.php:1424
 msgid "Half-Yearly"
-msgstr ""
+msgstr "Halfjaarlijks"
 
-#: views/dashboard.php:645 views/dashboard.php:789 views/dashboard.php:1010
-#: views/dashboard.php:1251
+#: views/dashboard.php:658 views/dashboard.php:802 views/dashboard.php:1106
+#: views/dashboard.php:1428
 msgid "Annually"
-msgstr ""
+msgstr "Jaarlijks"
 
-#: views/dashboard.php:647 views/dashboard.php:1012
+#: views/dashboard.php:660 views/dashboard.php:1108
 msgid "Save Scheduler"
-msgstr ""
+msgstr "Opslaan Scheduler"
 
-#: views/dashboard.php:660
+#: views/dashboard.php:673
 msgid "Manage Wp Data Optimizer Schedules"
-msgstr ""
+msgstr "Beheer Wp Data Optimizer Schedules"
 
-#: views/dashboard.php:668 views/dashboard.php:1155
+#: views/dashboard.php:681 views/dashboard.php:1332
 msgid "Overview"
-msgstr ""
+msgstr "Overzicht"
 
-#: views/dashboard.php:688
+#: views/dashboard.php:701
 msgid "Auto Draft<br>"
-msgstr ""
+msgstr "Auto Concept <br>"
 
-#: views/dashboard.php:691
+#: views/dashboard.php:704
 msgid "Dashboard Transient Feed<br>"
-msgstr ""
+msgstr "Dashboard Transient Feed <br>"
 
-#: views/dashboard.php:694
+#: views/dashboard.php:707
 msgid "Draft<br>"
-msgstr ""
+msgstr "Ontwerp <br>"
 
-#: views/dashboard.php:697
+#: views/dashboard.php:710
 msgid "Moderated Comments<br>"
-msgstr ""
+msgstr "Gemodereerde Reacties <br>"
 
-#: views/dashboard.php:700
+#: views/dashboard.php:713
 msgid "Orphan Comments Meta<br>"
-msgstr ""
+msgstr "Wees Reacties Meta <br>"
 
-#: views/dashboard.php:703
+#: views/dashboard.php:716
 msgid "Orphan Posts Meta<br>"
-msgstr ""
+msgstr "Wees Berichten Meta <br>"
 
-#: views/dashboard.php:706
+#: views/dashboard.php:719
 msgid "Orphan Relationships<br>"
-msgstr ""
+msgstr "Wees Relaties <br>"
 
-#: views/dashboard.php:709
+#: views/dashboard.php:722
 msgid "Revision<br>"
-msgstr ""
+msgstr "Revisie <br>"
 
-#: views/dashboard.php:712
+#: views/dashboard.php:725
 msgid "Remove Pingbacks<br>"
-msgstr ""
+msgstr "Verwijder Pingbacks <br>"
 
-#: views/dashboard.php:715
+#: views/dashboard.php:728
 msgid "Remove Transient Options<br>"
-msgstr ""
+msgstr "Verwijder Transient Opties <br>"
 
-#: views/dashboard.php:718
+#: views/dashboard.php:731
 msgid "Remove Trackbacks<br>"
-msgstr ""
+msgstr "Verwijder Trackbacks <br>"
 
-#: views/dashboard.php:721
+#: views/dashboard.php:734
 msgid "Spam Comments<br>"
-msgstr ""
+msgstr "Spam Reacties <br>"
 
-#: views/dashboard.php:724
+#: views/dashboard.php:737
 msgid "Trash Comments<br>"
-msgstr ""
+msgstr "Prullenbak Reacties <br>"
 
-#: views/dashboard.php:734 views/dashboard.php:1182
+#: views/dashboard.php:747 views/dashboard.php:1359
 msgid "Action Type"
-msgstr ""
+msgstr "Actie Type"
 
-#: views/dashboard.php:742 views/dashboard.php:1204
+#: views/dashboard.php:755 views/dashboard.php:1381
 msgid "Start Date"
-msgstr ""
+msgstr "Startdatum"
 
-#: views/dashboard.php:759
+#: views/dashboard.php:772
 msgid "Scheduler Type"
-msgstr ""
+msgstr "Scheduler Type"
 
-#: views/dashboard.php:817 views/dashboard.php:972
+#: views/dashboard.php:830 views/dashboard.php:1068
 msgid ""
 "Note : Table Names highlighted with red color and an asterisk (*) are "
 "wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
 "delete and clean action because they can destroy your Wordpress "
 "unintentionally."
 msgstr ""
+"Opmerking: Tabel Namen gemarkeerd met rode kleur en een asterisk (*) zijn "
+"wordpress ingebouwde tabellen. <br/> Ze worden uitgeschakeld door ons om dus "
+"niet te verwijderen en schoon te maken omdat ze uw Wordpress onbedoeld kan "
+"vernietigen."
 
-#: views/dashboard.php:828 views/dashboard.php:992 views/dashboard.php:1193
+#: views/dashboard.php:841 views/dashboard.php:1088 views/dashboard.php:1370
 msgid "Optimize"
-msgstr ""
+msgstr "Optimaliseren"
 
-#: views/dashboard.php:829 views/dashboard.php:993 views/dashboard.php:1196
+#: views/dashboard.php:842 views/dashboard.php:1089 views/dashboard.php:1373
 msgid "Repair"
-msgstr ""
+msgstr "Reparatie"
 
-#: views/dashboard.php:837 views/dashboard.php:1025
+#: views/dashboard.php:850 views/dashboard.php:1121
 msgid "Table"
-msgstr ""
+msgstr "Tabel"
 
-#: views/dashboard.php:838 views/dashboard.php:1028
+#: views/dashboard.php:851 views/dashboard.php:1124
 msgid "Rows"
-msgstr ""
+msgstr "Rijen"
 
-#: views/dashboard.php:839 views/dashboard.php:1026
+#: views/dashboard.php:852 views/dashboard.php:1122
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
-#: views/dashboard.php:840 views/dashboard.php:1029
+#: views/dashboard.php:853 views/dashboard.php:1125
 msgid "Size"
-msgstr ""
+msgstr "Grootte"
 
-#: views/dashboard.php:944 views/dashboard.php:1130
+#: views/dashboard.php:1040 views/dashboard.php:1307
 msgid "Total"
-msgstr ""
+msgstr "Totaal"
 
-#: views/dashboard.php:1019
+#: views/dashboard.php:1115
 msgid "Choose Tables"
-msgstr ""
+msgstr "Kies Tabellen"
 
-#: views/dashboard.php:1027
+#: views/dashboard.php:1123
 msgid "Overhead"
-msgstr ""
+msgstr "Overhead"
 
-#: views/dashboard.php:1147
+#: views/dashboard.php:1324
 msgid "Manage Database Optimizer Schedules"
-msgstr ""
+msgstr "Database beheren Optimizer Schema's"
 
-#: views/dashboard.php:1154
+#: views/dashboard.php:1331
 msgid "Tables"
-msgstr ""
+msgstr "Tabellen"
 
-#: views/dashboard.php:1221
+#: views/dashboard.php:1398
 msgid "Schedule Type"
-msgstr ""
+msgstr "Schema Type"
 
-#: views/dashboard.php:1308 views/dashboard.php:1341
+#: views/dashboard.php:1485 views/dashboard.php:1518
 msgid "Are you sure, you want to Clean?"
-msgstr ""
+msgstr "Weet u zeker dat u wilt opruimen?"
 
-#: views/dashboard.php:1325 views/dashboard.php:1358
+#: views/dashboard.php:1502 views/dashboard.php:1535
 msgid "Successfully Cleaned!"
-msgstr ""
+msgstr "Succes schoongemaakt!"
 
-#: views/dashboard.php:1333
+#: views/dashboard.php:1510
 msgid "Please choose Action and Type of Data to Proceed!"
-msgstr ""
+msgstr "Gelieve Actie te kiezen en het type gegevens om door te gaan!"
 
-#: views/dashboard.php:1431 views/dashboard.php:1466
+#: views/dashboard.php:1608 views/dashboard.php:1643
 msgid "Cleaned Successfully!"
-msgstr ""
+msgstr "Succesvol schoongemaakt!"
 
-#: views/dashboard.php:1435 views/dashboard.php:1477
+#: views/dashboard.php:1612 views/dashboard.php:1654
 msgid "Are you sure, you want to Perform this Action?"
-msgstr ""
+msgstr "Weet u zeker dat, wil je deze actie uit te voeren?"
 
-#: views/dashboard.php:1502
+#: views/dashboard.php:1679
 msgid "Please choose Action or Table to proceed!."
-msgstr ""
+msgstr "Kies Actie of tabel om door te gaan !."
 
 #: views/general-settings.php:34
 msgid "General Settings has been updated  "
-msgstr ""
+msgstr "Algemene instellingen is bijgewerkt"
 
 #: views/general-settings.php:45
 msgid "Save Changes"
-msgstr ""
+msgstr "Wijzigingen opslaan"
 
 #: views/general-settings.php:51 views/general-settings.php:59
 msgid "Message Settings"
-msgstr ""
+msgstr "Bericht Instellingen"
 
 #: views/general-settings.php:52 views/general-settings.php:95
 msgid "Security Settings"
-msgstr ""
+msgstr "Veiligheids Instellingen"
 
 #: views/general-settings.php:53 views/general-settings.php:193
 msgid "Plugin Settings"
-msgstr ""
+msgstr "Plugin-instellingen"
 
 #: views/general-settings.php:64
 msgid "IP Block Message"
-msgstr ""
+msgstr "IP blokkeer bericht"
 
 #: views/general-settings.php:65
 msgid ""
 "It shows the Error Message for the users whose IP is blocked from the "
 "Security Settings or Login Logs if the users seems to be unauthorized."
 msgstr ""
+"Het toont de foutmelding voor de gebruikers die met een IP zijn geblokkeerd "
+"en de Veiligheids Instellingen of Inloggen Logs als de gebruikers niet als "
+"toegestaan ​​lijkt te zijn aangemerkt."
 
 #: views/general-settings.php:68
 msgid "Enter the error message here when the IP is Blocked."
-msgstr ""
+msgstr "Voer de foutmelding hier in wanneer de IP is geblokkeerd."
 
 #: views/general-settings.php:73 views/general-settings.php:111
-#: views/premium-edition.php:599 views/premium-edition.php:605
-#: views/premium-edition.php:1096 views/premium-edition.php:1580
-#: views/premium-edition.php:2064 views/premium-edition.php:2548
-#: views/premium-edition.php:3028
 msgid "Max Login Attempts"
-msgstr ""
+msgstr "Max Inloggen Pogingen"
 
 #: views/general-settings.php:74
 msgid ""
@@ -734,886 +748,700 @@ msgid ""
 "of login attempts left incase username or password is left empty or filled "
 "invalid."
 msgstr ""
+"Hiermee kunt u dynamische Foutmelding ingestellen voor de gebruikers om het "
+"aantal inlogpogingen die over zijn in het geval men gebruikersnaam of "
+"wachtwoord leeg laat of ongeldig gevuld word."
 
 #: views/general-settings.php:77
 msgid "Enter the error message here for Maxium login Attempts."
-msgstr ""
+msgstr "Vul hier de foutmelding voor Maxium inlogpogingen."
 
 #: views/general-settings.php:82
 msgid "Max Login Exceeded Error"
-msgstr ""
+msgstr "Max Inloggen overschreden Fout"
 
 #: views/general-settings.php:83
 msgid ""
 "User can set dynamic Error Message for the users whose IP gets blocked after "
 "the Maximum Login Attempts Exceeds."
 msgstr ""
+"De gebruiker kan een dynamische Foutmelding ingestellen voor de gebruikers "
+"met een IP dat wordt geblokkeerd nadat de Maximale Inloggen Pogingen zijn "
+"overschreden."
 
 #: views/general-settings.php:86
 msgid "Enter the error message here for Maxium login Exceeded."
-msgstr ""
+msgstr "Voer hier de foutmelding in voor Maxium login overschreden."
 
-#: views/general-settings.php:100 views/premium-edition.php:616
-#: views/premium-edition.php:622 views/premium-edition.php:1108
-#: views/premium-edition.php:1592 views/premium-edition.php:2076
-#: views/premium-edition.php:2560 views/premium-edition.php:3040
+#: views/general-settings.php:100
 msgid "Auto IP Block"
-msgstr ""
+msgstr "Auto IP Blokkeren"
 
 #: views/general-settings.php:101
 msgid ""
 "Auto IP Block allows to block the IP Address when the user exceeds the "
 "Maximum Login Attempts."
 msgstr ""
+"Auto IP Blokkeren maakt het mogelijk om het IP-adres te blokkeren wanneer de "
+"gebruiker de maximale Inlog Pogingen overschrijdt."
 
 #: views/general-settings.php:112
 msgid "User can set Maximum Login Attempts for their Website."
-msgstr ""
+msgstr "De gebruiker kan maximaal Inloggen Pogingen instellen op hun website."
 
 #: views/general-settings.php:121 views/login-logs.php:158
 msgid "Block IP Address"
-msgstr ""
+msgstr "Blokkeer IP-adres"
 
 #: views/general-settings.php:122
 msgid ""
 "It allows you to block IP Address that are considered undesirable or hostile."
 msgstr ""
+"Hiermee kunt u het IP-adres dat als ongewenst of vijandig worden beschouwd "
+"blokkeren."
 
 #: views/general-settings.php:126
 msgid "Add Block IP Address"
-msgstr ""
+msgstr "Voeg te blokkeren IP-adres toe"
 
 #: views/general-settings.php:131
 msgid "Blocked IP Addresses"
-msgstr ""
+msgstr "Geblokkeerde IP-adressen"
 
 #: views/general-settings.php:132
 msgid "It show the list of all IP Addresses that are blocked by the User."
 msgstr ""
+"Toont van de lijst van alle IP-adressen die worden geblokkeerd door de "
+"Gebruiker."
 
 #: views/general-settings.php:145
 msgid "Delete Block IP Addresses"
-msgstr ""
+msgstr "Verwijderen Block IP-adressen"
 
 #: views/general-settings.php:150
 msgid "Block Start IP Range"
-msgstr ""
+msgstr "Blokkeer Start IP Range"
 
 #: views/general-settings.php:151
 msgid "It is the Starting range of the IP Address to be blocked."
-msgstr ""
+msgstr "Het is het startpunt van het te blokkeren IP-adres."
 
 #: views/general-settings.php:159
 msgid "Block End IP Range"
-msgstr ""
+msgstr "Blok Einde IP-bereik"
 
 #: views/general-settings.php:160
 msgid "It is the Ending range of the IP Address to be blocked."
-msgstr ""
+msgstr "Het is het einde bereik van te blokkeren het IP-adres."
 
 #: views/general-settings.php:164
 msgid "Add Block IP Range"
-msgstr ""
+msgstr "Voeg Blokkering IP-bereik toe"
 
 #: views/general-settings.php:169
 msgid "Blocked IP Range"
-msgstr ""
+msgstr "Geblokkeerde IP-bereik"
 
 #: views/general-settings.php:170
 msgid ""
 "Blocked IP Range show the list of all the IP Addresses range that are "
 "blocked by the user."
 msgstr ""
+"Geblokkeerde IP-bereik toon de lijst van alle IP-adressen bereik die worden "
+"geblokkeerd door de gebruiker."
 
 #: views/general-settings.php:184
 msgid "Delete Block IP Range"
-msgstr ""
+msgstr "Verwijderen Blokkering IP Bereik"
 
 #: views/general-settings.php:200
 msgid "Show Clean Up Plugin Menu"
-msgstr ""
+msgstr "Toon Clean Up Plugin Menu"
 
 #: views/general-settings.php:201
 msgid ""
 "It allows you to control the capabilities of WP Clean Up Optimizer among "
 "different roles of WordPress users."
 msgstr ""
+"Hiermee kunt u de mogelijkheden van WP Clean Up Optimizer regelen tussen de "
+"verschillende rollen van WordPress gebruikers."
 
 #: views/general-settings.php:206
 msgid "Administrator"
-msgstr ""
+msgstr "Beheerder"
 
 #: views/general-settings.php:210
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 #: views/general-settings.php:214
 msgid "Author"
-msgstr ""
+msgstr "Auteur"
 
 #: views/general-settings.php:218
 msgid "Contributor"
-msgstr ""
+msgstr "Inzender"
 
 #: views/general-settings.php:222
 msgid "Subscriber"
-msgstr ""
+msgstr "Abonnee"
 
 #: views/general-settings.php:228
 msgid "Clean Up Menu Top Bar"
-msgstr ""
+msgstr "Clean Up Menu Top Bar"
 
 #: views/general-settings.php:229
 msgid ""
 "It allows you to enable or disable WP Clean Up Optimizer for top menu bar "
 "among different roles of WordPress users."
 msgstr ""
+"Hiermee kunt u WP Clean Up Optimizer in- of uitschakelen voor bovenste "
+"menubalk onder de verschillende rollen van WordPress gebruikers."
 
 #: views/login-logs.php:31
 msgid "Action has been updated"
-msgstr ""
+msgstr "Actie is bijgewerkt"
 
 #: views/login-logs.php:46
 msgid "Recent Login Details on World Map"
-msgstr ""
+msgstr "Recente Log Details op de Wereld kaart"
 
 #: views/login-logs.php:98
 msgid "Recent Login Details"
-msgstr ""
+msgstr "Recente Inlog Details"
 
 #: views/login-logs.php:105
 msgid "Username"
-msgstr ""
+msgstr "Gebruikersnaam"
 
 #: views/login-logs.php:106
 msgid "Allows you to view the username of recent logged in users."
 msgstr ""
+"Hiermee kunt u de gebruikersnaam van recente ingelogde gebruikers zien."
 
 #: views/login-logs.php:109
 msgid "IP Address"
-msgstr ""
+msgstr "IP Adres"
 
 #: views/login-logs.php:110
 msgid "Allows you to view the IP Address of the logged in users."
-msgstr ""
+msgstr "Hiermee kunt u het IP-adres van de ingelogde gebruikers zien."
 
 #: views/login-logs.php:113
 msgid "Location"
-msgstr ""
+msgstr "Plaats"
 
 #: views/login-logs.php:114
 msgid "Allows you to view the current location of the logged in users."
 msgstr ""
+"Hiermee kunt u de huidige locatie van de ingelogde gebruikers kunnen zien."
 
 #: views/login-logs.php:117
 msgid "Login Date & Time"
-msgstr ""
+msgstr "Inloggen Datum en tijd"
 
 #: views/login-logs.php:118
 msgid "Allows you to view the logged in date and time of the users."
-msgstr ""
+msgstr "Hiermee kunt u de  ingelogde datum en tijd bekijken van de gebruikers."
 
 #: views/login-logs.php:121
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: views/login-logs.php:122
 msgid ""
 "Lets, you know the status of the users, whether they have successfully "
 "logged in or not."
 msgstr ""
+"Laat je de status weten van de gebruikers, of ze succesvol bent ingelogd of "
+"niet."
 
 #: views/login-logs.php:126
+#, fuzzy
 msgid ""
 "Allows you to block or whitelist IP Addresses for the logged in users as per "
 "your requirement."
 msgstr ""
+"Hiermee kunt u het IP adres blokkeren of whitelisten voor de gebruikers die "
+"ingelogd zijn zoals je wenst."
 
 #: views/login-logs.php:146
 msgid "Success"
-msgstr ""
+msgstr "Succes"
 
 #: views/login-logs.php:152
 msgid "Failed"
-msgstr ""
-
-#: views/premium-edition.php:33
-msgid "WP Clean Up Optimizer is an one time Investment. Its Worth it!"
-msgstr ""
-
-#: views/premium-edition.php:49
-msgid "choose"
-msgstr ""
-
-#: views/premium-edition.php:49
-msgid "your"
-msgstr ""
-
-#: views/premium-edition.php:49
-msgid "plan"
-msgstr ""
-
-#: views/premium-edition.php:59 views/premium-edition.php:65
-#: views/premium-edition.php:712 views/premium-edition.php:1196
-#: views/premium-edition.php:1680 views/premium-edition.php:2164
-#: views/premium-edition.php:2648
-msgid "Domains per License"
-msgstr ""
-
-#: views/premium-edition.php:63
-msgid "Number of websites that can use the plugin on purchase of a License."
-msgstr ""
-
-#: views/premium-edition.php:76 views/premium-edition.php:82
-#: views/premium-edition.php:724 views/premium-edition.php:1208
-#: views/premium-edition.php:1692 views/premium-edition.php:2176
-#: views/premium-edition.php:2660
-msgid "Technical Support"
-msgstr ""
-
-#: views/premium-edition.php:80
-msgid ""
-"Technical Support by the Development Team for Installation, Bug Fixing, "
-"Plugin Compatibility Issues."
-msgstr ""
-
-#: views/premium-edition.php:93 views/premium-edition.php:99
-#: views/premium-edition.php:736 views/premium-edition.php:1220
-#: views/premium-edition.php:1704 views/premium-edition.php:2188
-#: views/premium-edition.php:2672
-msgid "Plugin Updates"
-msgstr ""
-
-#: views/premium-edition.php:97
-msgid ""
-"Automatic Plugin Update Notification with New Features, Bug Fixing and much "
-"more."
-msgstr ""
-
-#: views/premium-edition.php:110 views/premium-edition.php:116
-#: views/premium-edition.php:748 views/premium-edition.php:1232
-#: views/premium-edition.php:1716 views/premium-edition.php:2200
-#: views/premium-edition.php:2684
-msgid "Multi-Lingual"
-msgstr ""
-
-#: views/premium-edition.php:114
-msgid "Multi-Lingual Facility allows the plugin to be used in 36 languages."
-msgstr ""
-
-#: views/premium-edition.php:127 views/premium-edition.php:133
-#: views/premium-edition.php:760 views/premium-edition.php:1244
-#: views/premium-edition.php:1728 views/premium-edition.php:2212
-#: views/premium-edition.php:2696
-msgid "Clean Auto Draft"
-msgstr ""
-
-#: views/premium-edition.php:131
-msgid "Clean up the WordPress database by removing auto draft."
-msgstr ""
-
-#: views/premium-edition.php:144 views/premium-edition.php:150
-#: views/premium-edition.php:772 views/premium-edition.php:1256
-#: views/premium-edition.php:1740 views/premium-edition.php:2224
-#: views/premium-edition.php:2708
-msgid "Clean Transient Feed"
-msgstr ""
-
-#: views/premium-edition.php:148
-msgid "Clean up the WordPress database by removing Transient Feed."
-msgstr ""
-
-#: views/premium-edition.php:161 views/premium-edition.php:167
-#: views/premium-edition.php:784 views/premium-edition.php:1268
-#: views/premium-edition.php:1752 views/premium-edition.php:2236
-#: views/premium-edition.php:2720
-msgid "Clean Draft"
-msgstr ""
-
-#: views/premium-edition.php:165
-msgid "Clean up the WordPress database by removing Draft."
-msgstr ""
-
-#: views/premium-edition.php:178 views/premium-edition.php:184
-#: views/premium-edition.php:796 views/premium-edition.php:1280
-#: views/premium-edition.php:1764 views/premium-edition.php:2248
-#: views/premium-edition.php:2732
-msgid "Clean Moderated Comments"
-msgstr ""
-
-#: views/premium-edition.php:182
-msgid "Clean up the WordPress database by removing Moderated Comments."
-msgstr ""
-
-#: views/premium-edition.php:195 views/premium-edition.php:201
-#: views/premium-edition.php:808 views/premium-edition.php:1292
-#: views/premium-edition.php:1776 views/premium-edition.php:2260
-#: views/premium-edition.php:2744
-msgid "Clean Orphan Comments Meta"
-msgstr ""
-
-#: views/premium-edition.php:199
-msgid "Clean up the WordPress database by removing Orphan Comments Meta."
-msgstr ""
-
-#: views/premium-edition.php:212 views/premium-edition.php:218
-#: views/premium-edition.php:820 views/premium-edition.php:1304
-#: views/premium-edition.php:1788 views/premium-edition.php:2272
-#: views/premium-edition.php:2756
-msgid "Clean Orphan Posts Meta"
-msgstr ""
-
-#: views/premium-edition.php:216
-msgid "Clean up the WordPress database by removing Orphan Posts Meta."
-msgstr ""
-
-#: views/premium-edition.php:229 views/premium-edition.php:235
-#: views/premium-edition.php:832 views/premium-edition.php:1316
-#: views/premium-edition.php:1800 views/premium-edition.php:2284
-#: views/premium-edition.php:2768
-msgid "Clean Orphan Relationships"
-msgstr ""
-
-#: views/premium-edition.php:233
-msgid "Clean up the WordPress database by removing Orphan Relationships."
-msgstr ""
-
-#: views/premium-edition.php:246 views/premium-edition.php:252
-#: views/premium-edition.php:844 views/premium-edition.php:1328
-#: views/premium-edition.php:1812 views/premium-edition.php:2296
-#: views/premium-edition.php:2780
-msgid "Clean Revision"
-msgstr ""
-
-#: views/premium-edition.php:250
-msgid "Clean up the WordPress database by removing Revision."
-msgstr ""
-
-#: views/premium-edition.php:263 views/premium-edition.php:269
-#: views/premium-edition.php:856 views/premium-edition.php:1340
-#: views/premium-edition.php:1824 views/premium-edition.php:2308
-#: views/premium-edition.php:2792
-msgid "Clean Spam Comments"
-msgstr ""
-
-#: views/premium-edition.php:267
-msgid "Clean up the WordPress database by removing Spam Comments."
-msgstr ""
-
-#: views/premium-edition.php:280 views/premium-edition.php:286
-#: views/premium-edition.php:868 views/premium-edition.php:1352
-#: views/premium-edition.php:1836 views/premium-edition.php:2320
-#: views/premium-edition.php:2804
-msgid "Clean Trash Comments"
-msgstr ""
-
-#: views/premium-edition.php:284
-msgid "Clean up the WordPress database by removing Trash Comments."
-msgstr ""
-
-#: views/premium-edition.php:301
-msgid "Clean up the WordPress database by removing Pingbacks."
-msgstr ""
-
-#: views/premium-edition.php:318
-msgid "Clean up the WordPress database by removing Transient Options."
-msgstr ""
-
-#: views/premium-edition.php:335
-msgid "Clean up the WordPress database by removing Trackbacks."
-msgstr ""
-
-#: views/premium-edition.php:347 views/premium-edition.php:353
-#: views/premium-edition.php:916 views/premium-edition.php:1400
-#: views/premium-edition.php:1884 views/premium-edition.php:2368
-#: views/premium-edition.php:2852
-msgid "Clean Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:351
-msgid " Remove the data from the tables making it clean and empty."
-msgstr ""
-
-#: views/premium-edition.php:368
-msgid ""
-"Allows you to track the current users who are logged in into you website and "
-"show there Geo Location on the map. It shows various details such as "
-"Username, IP Address, Location, Login Date &amp;Time, Login Status, Action "
-"to Block or White list IP Address."
-msgstr ""
-
-#: views/premium-edition.php:381 views/premium-edition.php:386
-#: views/premium-edition.php:940 views/premium-edition.php:1424
-#: views/premium-edition.php:1908 views/premium-edition.php:2392
-#: views/premium-edition.php:2876
-msgid "Database Overview"
-msgstr ""
-
-#: views/premium-edition.php:385
-msgid ""
-"Allows you to view Database Information such as Database Host, Database "
-"Name, Database User, Database Type and Database Version."
-msgstr ""
-
-#: views/premium-edition.php:397 views/premium-edition.php:403
-#: views/premium-edition.php:952 views/premium-edition.php:1436
-#: views/premium-edition.php:1920 views/premium-edition.php:2404
-#: views/premium-edition.php:2888
-msgid "Data Clean Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:401
-msgid ""
-"Remove the data from the WordPress making it clean and empty automatically "
-"(Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually)."
-msgstr ""
-
-#: views/premium-edition.php:414 views/premium-edition.php:419
-#: views/premium-edition.php:964 views/premium-edition.php:1448
-#: views/premium-edition.php:1932 views/premium-edition.php:2416
-#: views/premium-edition.php:2900
-msgid "Database Clean Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:418
-msgid ""
-"Clean data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually"
-msgstr ""
-
-#: views/premium-edition.php:430 views/premium-edition.php:436
-#: views/premium-edition.php:976 views/premium-edition.php:1460
-#: views/premium-edition.php:1944 views/premium-edition.php:2428
-#: views/premium-edition.php:2908
-msgid "Manage Comments"
-msgstr ""
-
-#: views/premium-edition.php:434
-msgid ""
-"Enable/Disable Comments on your WordPress website. Manage comments on any "
-"Post or Page. It can be used to disable comments on the entire network."
-msgstr ""
-
-#: views/premium-edition.php:447 views/premium-edition.php:453
-#: views/premium-edition.php:988 views/premium-edition.php:1472
-#: views/premium-edition.php:1956 views/premium-edition.php:2440
-#: views/premium-edition.php:2920
-msgid "Manage Trackbacks"
-msgstr ""
-
-#: views/premium-edition.php:451
-msgid ""
-"Trackbacks are a way to notify legacy blog systems that you've linked to "
-"them.Allows you to Enable/Disable Trackbacks on your WordPress website."
-msgstr ""
-
-#: views/premium-edition.php:464 views/premium-edition.php:470
-#: views/premium-edition.php:1000 views/premium-edition.php:1484
-#: views/premium-edition.php:1968 views/premium-edition.php:2452
-#: views/premium-edition.php:2932
-msgid "Database Delete Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:468
-msgid ""
-"Delete data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
-msgstr ""
-
-#: views/premium-edition.php:481 views/premium-edition.php:487
-#: views/premium-edition.php:1012 views/premium-edition.php:1496
-#: views/premium-edition.php:1980 views/premium-edition.php:2464
-#: views/premium-edition.php:2944
-msgid "Database Repair Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:485
-msgid ""
-" Repair data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
-msgstr ""
-
-#: views/premium-edition.php:498 views/premium-edition.php:504
-#: views/premium-edition.php:1508 views/premium-edition.php:1992
-#: views/premium-edition.php:2476 views/premium-edition.php:2956
-msgid "Database Optimizer Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:502
-msgid ""
-"Optimize data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
-msgstr ""
-
-#: views/premium-edition.php:515 views/premium-edition.php:520
-#: views/premium-edition.php:1036 views/premium-edition.php:1520
-#: views/premium-edition.php:2004 views/premium-edition.php:2488
-#: views/premium-edition.php:2968
-msgid "Preview Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:519
-msgid ""
-" Preview the data of your table which is stored in your database on click of "
-"table name."
-msgstr ""
-
-#: views/premium-edition.php:531 views/premium-edition.php:1048
-#: views/premium-edition.php:1532 views/premium-edition.php:2016
-#: views/premium-edition.php:2500 views/premium-edition.php:2980
-msgid "Repair Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:535
-msgid ""
-" WP Clean Optimizer repairs the possibly corrupted tables in your database."
-msgstr ""
-
-#: views/premium-edition.php:537
-msgid "Repair Database Tables."
-msgstr ""
-
-#: views/premium-edition.php:548 views/premium-edition.php:554
-#: views/premium-edition.php:1060 views/premium-edition.php:1544
-#: views/premium-edition.php:2028 views/premium-edition.php:2512
-#: views/premium-edition.php:2992
-msgid "Delete Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:552
-msgid " Delete or Drop the complete tables of your database."
-msgstr ""
-
-#: views/premium-edition.php:565 views/premium-edition.php:571
-#: views/premium-edition.php:1072 views/premium-edition.php:1556
-#: views/premium-edition.php:2040 views/premium-edition.php:2524
-#: views/premium-edition.php:3004
-msgid "Optimizer Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:569
-msgid "Improves Input/output efficiency when accessing the tables."
-msgstr ""
-
-#: views/premium-edition.php:582 views/premium-edition.php:588
-#: views/premium-edition.php:1084 views/premium-edition.php:1568
-#: views/premium-edition.php:2052 views/premium-edition.php:2536
-#: views/premium-edition.php:3016
-msgid "Block Login IP Address"
-msgstr ""
-
-#: views/premium-edition.php:586
-msgid ""
-"Allows you to block the IP Addresses of the login users from the Login Logs "
-"if he is considered as unauthorized."
-msgstr ""
-
-#: views/premium-edition.php:603
-msgid ""
-"Allows you to set number of login attempts left for the user incase wrong "
-"login attempts."
-msgstr ""
-
-#: views/premium-edition.php:620
-msgid ""
-"Allows you to Blocks IP addresses for next 24 hours when the limit of login "
-"attempts is reached."
-msgstr ""
-
-#: views/premium-edition.php:633 views/premium-edition.php:639
-#: views/premium-edition.php:1120 views/premium-edition.php:1604
-#: views/premium-edition.php:2088 views/premium-edition.php:2572
-#: views/premium-edition.php:3052
-msgid "Block IP Ranges"
-msgstr ""
-
-#: views/premium-edition.php:637
-msgid ""
-" Allows you to block range of IP Addresses that are considered undesirable "
-"or hostile."
-msgstr ""
-
-#: views/premium-edition.php:650 views/premium-edition.php:656
-#: views/premium-edition.php:1132 views/premium-edition.php:1616
-#: views/premium-edition.php:2100 views/premium-edition.php:2584
-#: views/premium-edition.php:3064
-msgid "Block Single IP Address"
-msgstr ""
-
-#: views/premium-edition.php:654
-msgid ""
-"Allows you to add single IP Address for blocking it as per your requirement."
-msgstr ""
-
-#: views/premium-edition.php:667 views/premium-edition.php:673
-#: views/premium-edition.php:1144 views/premium-edition.php:1628
-#: views/premium-edition.php:2112 views/premium-edition.php:2596
-#: views/premium-edition.php:3076
-msgid "Roles and Capabilities"
-msgstr ""
-
-#: views/premium-edition.php:671
-msgid ""
-"Allows you to controls the capabilities of WP Clean Up Optimizer among "
-"different roles of WordPress users."
-msgstr ""
-
-#: views/premium-edition.php:693
-msgid "Lite"
-msgstr ""
-
-#: views/premium-edition.php:702
-msgid "FREE"
-msgstr ""
-
-#: views/premium-edition.php:714 views/premium-edition.php:1198
-#: views/premium-edition.php:1682
-msgid "1"
-msgstr ""
-
-#: views/premium-edition.php:726
-msgid "None"
-msgstr ""
-
-#: views/premium-edition.php:1024
-msgid "Database Optimizer Schedule"
-msgstr ""
-
-#: views/premium-edition.php:1155
-msgid "Download!"
-msgstr ""
-
-#: views/premium-edition.php:1169
-msgid "Eco"
-msgstr ""
-
-#: views/premium-edition.php:1179 views/premium-edition.php:1663
-#: views/premium-edition.php:2147 views/premium-edition.php:2631
-msgid "You just need to pay for once for life time."
-msgstr ""
-
-#: views/premium-edition.php:1182
-msgid "8"
-msgstr ""
-
-#: views/premium-edition.php:1185 views/premium-edition.php:1669
-#: views/premium-edition.php:2153 views/premium-edition.php:2637
-msgid "one time"
-msgstr ""
-
-#: views/premium-edition.php:1210
-msgid "1 Week"
-msgstr ""
-
-#: views/premium-edition.php:1639 views/premium-edition.php:2123
-#: views/premium-edition.php:2607 views/premium-edition.php:3087
-msgid "Order Now!"
-msgstr ""
-
-#: views/premium-edition.php:1653
-msgid "Pro"
-msgstr ""
-
-#: views/premium-edition.php:1666
-msgid "12"
-msgstr ""
-
-#: views/premium-edition.php:1694
-msgid "1 Month"
-msgstr ""
-
-#: views/premium-edition.php:2137
-msgid "Developer"
-msgstr ""
-
-#: views/premium-edition.php:2150
-msgid "49"
-msgstr ""
-
-#: views/premium-edition.php:2166
-msgid "5"
-msgstr ""
-
-#: views/premium-edition.php:2178 views/premium-edition.php:2662
-msgid "1 Year"
-msgstr ""
-
-#: views/premium-edition.php:2621
-msgid "Extended"
-msgstr ""
-
-#: views/premium-edition.php:2634
-msgid "389"
-msgstr ""
-
-#: views/premium-edition.php:2650
-msgid "50"
-msgstr ""
+msgstr "Mislukt"
 
 #: views/system-status.php:28
 msgid "Wp Clean Up Optimizer System Status"
-msgstr ""
+msgstr "Wp Clean Up Optimizer Systeem Status"
 
 #: views/system-status.php:32
 msgid "Get System Report"
-msgstr ""
+msgstr "Krijg Systeem Rapport"
 
 #: views/system-status.php:36
 msgid "Close System Report"
-msgstr ""
+msgstr "Sluiten Systeem Rapport"
 
 #: views/system-status.php:42
 msgid "Environment"
-msgstr ""
+msgstr "Omgeving"
 
 #: views/system-status.php:48
 msgid "Home URL"
-msgstr ""
+msgstr "URL startpagina"
 
 #: views/system-status.php:56
 msgid "Site URL"
-msgstr ""
+msgstr "URL van de site"
 
 #: views/system-status.php:62
 msgid "WP Version"
-msgstr ""
+msgstr "WP Versie"
 
 #: views/system-status.php:68
 msgid "WP Multisite Enabled"
-msgstr ""
+msgstr "WP Multisite Ingeschakeld"
 
 #: views/system-status.php:74
 msgid "Web Server Info"
-msgstr ""
+msgstr "Web Server Info"
 
 #: views/system-status.php:80
 msgid "PHP Version"
-msgstr ""
+msgstr "PHP Versie"
 
 #: views/system-status.php:86
 msgid "MySQL Version"
-msgstr ""
+msgstr "MySQL Versie"
 
 #: views/system-status.php:96
 msgid "WP Debug Mode"
-msgstr ""
+msgstr "WP Debug Mode"
 
 #: views/system-status.php:102
 msgid "WP Language"
-msgstr ""
+msgstr "WP Taal"
 
 #: views/system-status.php:104
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: views/system-status.php:108
 msgid "PHP Post Max Size"
-msgstr ""
+msgstr "PHP Bericht Max Grootte"
 
 #: views/system-status.php:118
 msgid "WP Max Upload Size"
-msgstr ""
+msgstr "WP Max uploaden Grootte"
 
 #: views/system-status.php:134
 msgid "WP Remote Post"
-msgstr ""
+msgstr "WP Remote Bericht"
 
 #: views/system-status.php:151
 msgid "PHP Max Script Execute Time"
-msgstr ""
+msgstr "PHP Max Script uitvoeringstijd"
 
 #: views/system-status.php:157
 msgid "PHP Max Input Vars"
-msgstr ""
+msgstr "PHP Max Input Vars"
 
 #: views/system-status.php:163
 msgid "SUHOSIN Installed"
-msgstr ""
+msgstr "SUHOSIN Geïnstalleerd"
 
 #: views/system-status.php:170
 msgid "Default Timezone"
-msgstr ""
+msgstr "Standaard Tijdzone"
 
 #: views/system-status.php:223
 msgid "Operating System"
-msgstr ""
+msgstr "Besturingssysteem"
 
 #: views/system-status.php:231
 msgid "Memory usage"
-msgstr ""
+msgstr "Geheugengebruik"
 
 #: views/system-status.php:239
 msgid "SQL Mode"
-msgstr ""
+msgstr "SQL-modus"
 
 #: views/system-status.php:247
 msgid "PHP Safe Mode"
-msgstr ""
+msgstr "PHP Safe Mode"
 
 #: views/system-status.php:255
 msgid "PHP Allow URL fopen"
-msgstr ""
+msgstr "PHP Toestaan URL fopen"
 
 #: views/system-status.php:263
 msgid "PHP Memory Limit"
-msgstr ""
+msgstr "PHP Geheugen Limiet"
 
 #: views/system-status.php:271
 msgid "PHP Max Post Size"
-msgstr ""
+msgstr "PHP Max Bericht Grootte"
 
 #: views/system-status.php:279
 msgid "PCRE Backtracking Limit"
-msgstr ""
+msgstr "PCRE Backtracking Limiet"
 
 #: views/system-status.php:287
 msgid "PHP Exif support"
-msgstr ""
+msgstr "PHP Exif ondersteuning"
 
 #: views/system-status.php:295
 msgid "PHP IPTC support"
-msgstr ""
+msgstr "PHP IPTC ondersteuning"
 
 #: views/system-status.php:303
 msgid "PHP XML support"
-msgstr ""
+msgstr "PHP XML-ondersteuning"
 
 #: views/system-status.php:316
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: views/system-status.php:320
 msgid "Installed Plugins"
-msgstr ""
+msgstr "Geïnstalleerde Plugins"
 
 #: views/system-status.php:381
 msgid "Themes"
-msgstr ""
+msgstr "Thema's"
 
 #: views/system-status.php:385
 msgid "Theme Name"
-msgstr ""
+msgstr "Thema Naam"
 
 #: views/system-status.php:391
 msgid "Theme Version"
-msgstr ""
+msgstr "Thema Versie"
 
 #: views/system-status.php:401
 msgid "Author URL"
-msgstr ""
+msgstr "Auteur URL"
 
-#: wp-cleanup-optimizer.php:239
+#: wp-cleanup-optimizer.php:298
 msgid "View WP Clean Up Optimzier Documentation"
-msgstr ""
+msgstr "Bekijk WP Clean Up Optimzier Documentatie"
 
-#: wp-cleanup-optimizer.php:239
+#: wp-cleanup-optimizer.php:298
 msgid "Docs"
-msgstr ""
+msgstr "Docs"
 
-#: wp-cleanup-optimizer.php:240
+#: wp-cleanup-optimizer.php:299
+#, fuzzy
 msgid "View WP Clean Up Optimzier Premium Editions"
-msgstr ""
+msgstr "Bekijk WP Clean Up Optimzier Documentatie"
 
-#: wp-cleanup-optimizer.php:240
+#: wp-cleanup-optimizer.php:299
 msgid "Go for Premium!"
-msgstr ""
+msgstr "Ga voor Premium!"
+
+#, fuzzy
+#~ msgid "Plugin Updates"
+#~ msgstr "Plugins"
+
+#, fuzzy
+#~ msgid "Clean Auto Draft"
+#~ msgstr "Auto Concept"
+
+#, fuzzy
+#~ msgid "Clean Transient Feed"
+#~ msgstr "Dashboard Transient Feed"
+
+#, fuzzy
+#~ msgid "Clean Draft"
+#~ msgstr "Concept"
+
+#, fuzzy
+#~ msgid "Clean Moderated Comments"
+#~ msgstr "Gemodereerde Reacties"
+
+#, fuzzy
+#~ msgid "Clean Orphan Comments Meta"
+#~ msgstr "Wezen Meta Reacties"
+
+#, fuzzy
+#~ msgid "Clean Orphan Posts Meta"
+#~ msgstr "Wezen Meta Berichten"
+
+#, fuzzy
+#~ msgid "Clean Orphan Relationships"
+#~ msgstr "Wezen Relaties"
+
+#, fuzzy
+#~ msgid "Clean Revision"
+#~ msgstr "Herziening"
+
+#, fuzzy
+#~ msgid "Clean Spam Comments"
+#~ msgstr "Spam Reacties"
+
+#, fuzzy
+#~ msgid "Clean Trash Comments"
+#~ msgstr "Prullenbak Reacties"
+
+#, fuzzy
+#~ msgid "Clean Database Tables"
+#~ msgstr "Database Type"
+
+#, fuzzy
+#~ msgid "Database Overview"
+#~ msgstr "Database Versie"
+
+#, fuzzy
+#~ msgid "Data Clean Scheduler"
+#~ msgstr "Gegevens Optimizer Scheduler"
+
+#, fuzzy
+#~ msgid ""
+#~ "Remove the data from the WordPress making it clean and empty "
+#~ "automatically (Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, "
+#~ "Annually)."
+#~ msgstr ""
+#~ "Configuratie van de scheduler Dagelijks, wekelijks, tweewekelijks, "
+#~ "maandelijks, driemaandelijks, halfjaarlijks Jaarlijks met de dropdown."
+
+#, fuzzy
+#~ msgid "Database Clean Scheduler"
+#~ msgstr "Gegevens Optimizer Scheduler"
+
+#, fuzzy
+#~ msgid ""
+#~ "Clean data form the tables automatically on different basis i.e. Daily, "
+#~ "Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually"
+#~ msgstr ""
+#~ "Configuratie van de scheduler Dagelijks, wekelijks, tweewekelijks, "
+#~ "maandelijks, driemaandelijks, halfjaarlijks Jaarlijks met de dropdown."
+
+#, fuzzy
+#~ msgid "Manage Comments"
+#~ msgstr "Gemodereerde Reacties"
+
+#, fuzzy
+#~ msgid ""
+#~ "Enable/Disable Comments on your WordPress website. Manage comments on any "
+#~ "Post or Page. It can be used to disable comments on the entire network."
+#~ msgstr ""
+#~ "Beheer reacties over ieder bericht of pagina. Het kan worden gebruikt om "
+#~ "opmerkingen over de gehele blog schakelen."
+
+#, fuzzy
+#~ msgid "Manage Trackbacks"
+#~ msgstr "Beheer Trackbacks / Reacties"
+
+#, fuzzy
+#~ msgid ""
+#~ "Trackbacks are a way to notify legacy blog systems that you've linked to "
+#~ "them.Allows you to Enable/Disable Trackbacks on your WordPress website."
+#~ msgstr ""
+#~ "Trackbacks zijn een manier om legacy blog systemen die u hebt gekoppeld "
+#~ "aan te melden. Als u linkt naar een WordPress blog zullen ze automatisch "
+#~ "worden gemeld met pingbacks, geen andere maatregelen nodig."
+
+#, fuzzy
+#~ msgid "Database Delete Scheduler"
+#~ msgstr "Gegevens Optimizer Scheduler"
+
+#, fuzzy
+#~ msgid ""
+#~ "Delete data form the tables automatically on different basis i.e. Daily, "
+#~ "Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+#~ msgstr ""
+#~ "Configuratie van de scheduler Dagelijks, wekelijks, tweewekelijks, "
+#~ "maandelijks, driemaandelijks, halfjaarlijks Jaarlijks met de dropdown."
+
+#, fuzzy
+#~ msgid "Database Repair Scheduler"
+#~ msgstr "Gegevens Optimizer Scheduler"
+
+#, fuzzy
+#~ msgid ""
+#~ " Repair data form the tables automatically on different basis i.e. Daily, "
+#~ "Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+#~ msgstr ""
+#~ "Configuratie van de scheduler Dagelijks, wekelijks, tweewekelijks, "
+#~ "maandelijks, driemaandelijks, halfjaarlijks Jaarlijks met de dropdown."
+
+#, fuzzy
+#~ msgid "Database Optimizer Scheduler"
+#~ msgstr "Gegevens Optimizer Scheduler"
+
+#, fuzzy
+#~ msgid ""
+#~ "Optimize data form the tables automatically on different basis i.e. "
+#~ "Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+#~ msgstr ""
+#~ "Configuratie van de scheduler Dagelijks, wekelijks, tweewekelijks, "
+#~ "maandelijks, driemaandelijks, halfjaarlijks Jaarlijks met de dropdown."
+
+#, fuzzy
+#~ msgid "Repair Database Tables"
+#~ msgstr "Database Type"
+
+#, fuzzy
+#~ msgid "Delete Database Tables"
+#~ msgstr "Database Type"
+
+#, fuzzy
+#~ msgid "Block Login IP Address"
+#~ msgstr "Blokkeer IP-adres"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to block the IP Addresses of the login users from the Login "
+#~ "Logs if he is considered as unauthorized."
+#~ msgstr ""
+#~ "Hiermee kunt u het IP adres blokkeren of whitelisten voor de gebruikers "
+#~ "die ingelogd zijn zoals je wenst."
+
+#, fuzzy
+#~ msgid "Block IP Ranges"
+#~ msgstr "Geblokkeerde IP-bereik"
+
+#, fuzzy
+#~ msgid ""
+#~ " Allows you to block range of IP Addresses that are considered "
+#~ "undesirable or hostile."
+#~ msgstr ""
+#~ "Hiermee kunt u het IP-adres dat als ongewenst of vijandig worden "
+#~ "beschouwd blokkeren."
+
+#, fuzzy
+#~ msgid "Block Single IP Address"
+#~ msgstr "Blokkeer IP-adres"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to add single IP Address for blocking it as per your "
+#~ "requirement."
+#~ msgstr ""
+#~ "Hiermee kunt u het IP adres blokkeren of whitelisten voor de gebruikers "
+#~ "die ingelogd zijn zoals je wenst."
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to controls the capabilities of WP Clean Up Optimizer among "
+#~ "different roles of WordPress users."
+#~ msgstr ""
+#~ "Hiermee kunt u de mogelijkheden van WP Clean Up Optimizer regelen tussen "
+#~ "de verschillende rollen van WordPress gebruikers."
+
+#, fuzzy
+#~ msgid "Database Optimizer Schedule"
+#~ msgstr "Gegevens Optimizer Scheduler"
+
+#, fuzzy
+#~ msgid "1 Week"
+#~ msgstr "Wekelijks"
+
+#, fuzzy
+#~ msgid "Order Now!"
+#~ msgstr "Order ID"
+
+#, fuzzy
+#~ msgid "1 Month"
+#~ msgstr "Maandelijks"
+
+#~ msgid "Renew Premium Support"
+#~ msgstr "Vernieuwen Premium Ondersteuning"
+
+#~ msgid "Licensing"
+#~ msgstr "Licenties"
+
+#~ msgid "Scheduler has been Deleted!"
+#~ msgstr "Scheduler is verwijderd!"
+
+#~ msgid "Are you sure, you want to Perform this action?"
+#~ msgstr "Weet u zeker dat u deze actie wilt uitvoeren?"
+
+#~ msgid "Schedulers has been Deleted!"
+#~ msgstr "Planners is verwijderd!"
+
+#~ msgid "Please choose Action and Scheduler to Proceed!"
+#~ msgstr "Gelieve Actie en Scheduler te kiezen om door te gaan!"
+
+#~ msgid "Are you sure, you want to save the Scheduler?"
+#~ msgstr "Weet u zeker dat, wil je het Schema wilt opslaan?"
+
+#~ msgid "Scheduler has been Saved!"
+#~ msgstr "Schema is opgeslagen!"
+
+#~ msgid "Please choose type of Data and Action to Configure Scheduler!"
+#~ msgstr ""
+#~ "Kies dan het type van de gegevens en de Actie om het Schema te "
+#~ "configureren!"
+
+#~ msgid "Are you sure, you want to Delete this Scheduler?"
+#~ msgstr "Weet u zeker dat u dit Schema wilt Verwijderen?"
+
+#~ msgid "Deleted Successfully!"
+#~ msgstr "Met succes verwijderd!"
+
+#~ msgid "Optimized Successfully!"
+#~ msgstr "Succesvol geoptimaliseerd!"
+
+#~ msgid "Repaired Successfully!"
+#~ msgstr "Met succes gerepareerd!"
+
+#~ msgid "Please choose Tables and Action to configure Scheduler!"
+#~ msgstr "Kies Tabellen en Actie om Schema configureren!"
+
+#~ msgid "Please enter valid IP Range."
+#~ msgstr "Voer een geldige IP-bereik in."
+
+#~ msgid ""
+#~ "IP Address cannnot be duplicate. Please enter Start IP Address and End IP "
+#~ "Address different!"
+#~ msgstr ""
+#~ "IP-adres kan niet het zelfde zijn. Vul Start IP-adres en het laatste IP-"
+#~ "adres anders!"
+
+#~ msgid "Start Range cannot be greater than End Range."
+#~ msgstr "Start Berijk kan niet groter zijn dan Einde Berijk zijn."
+
+#~ msgid ""
+#~ "IP Address Range cannnot be duplicate. Please enter different IP "
+#~ "addresses."
+#~ msgstr ""
+#~ "IP-adres Berijk kan niet het zelfde zijn. Vul de verschillende IP-"
+#~ "adressen in."
+
+#~ msgid "Please enter valid IP Address"
+#~ msgstr "Voer een geldige IP-adres in"
+
+#~ msgid "IP Address cannnot be duplicate. Please enter different IP address"
+#~ msgstr "IP-adres kan niet het zelfde zijn. Vul ander IP-adres in"
+
+#~ msgid ""
+#~ "You have Exceeded Maximum Login Attempts.<br>So, your IP has been blocked "
+#~ "for today.<br>Kindly, try again after 24 Hours."
+#~ msgstr ""
+#~ "Je hebt de Maximale Inloggen Pogingen overschreden. <br> Dus, is uw IP is "
+#~ "geblokkeerd voor vandaag. Probeer het graag opnieuw na 24 uur."
+
+#~ msgid "WP Clean Up Optimizer Licensing Module"
+#~ msgstr "WP Clean Up Optimizer Licentie Module"
+
+#~ msgid "Version"
+#~ msgstr "Versie"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "API Key"
+#~ msgstr "API Key"
+
+#~ msgid "Update"
+#~ msgstr "Update"
+
+#~ msgid "Success! License has been validated."
+#~ msgstr "Succes! Licentie is gevalideerd."
+
+#~ msgid "Whitelist IP Address"
+#~ msgstr "Whitelist IP-adres"

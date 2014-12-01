@@ -149,27 +149,56 @@ else
 					$types= $_REQUEST["ux_ddl_bulk_action_db_optimzier"];
 					$chk_value=$_REQUEST["ux_chk_cleanup_arr_db"];
 					$test=array();
-					for($flag1=0; $flag1 < count($chk_value); $flag1++)
+					if(is_multisite())
 					{
-						if((strstr($chk_value[$flag1],$wpdb->terms) || strstr($chk_value[$flag1],$wpdb->term_taxonomy) || strstr($chk_value[$flag1],$wpdb->term_relationships) || strstr($chk_value[$flag1],$wpdb->commentmeta) || strstr($chk_value[$flag1],$wpdb->comments)
-							|| strstr($chk_value[$flag1],$wpdb->links) || strstr($chk_value[$flag1],$wpdb->options)|| strstr($chk_value[$flag1],$wpdb->postmeta) || strstr($chk_value[$flag1], $wpdb->posts) || strstr($chk_value[$flag1],$wpdb->users) || strstr($chk_value[$flag1],$wpdb->usermeta)
-							|| strstr($chk_value[$flag1],$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_login_log")
-							|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_single_ip")
-							|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($chk_value[$flag1],$wpdb->signups) || strstr($chk_value[$flag1],$wpdb->sitemeta) || strstr($chk_value[$flag1],$wpdb->site) || strstr($chk_value[$flag1],$wpdb->registration_log)
-							|| strstr($chk_value[$flag1],$wpdb->blogs) || strstr($chk_value[$flag1],$wpdb->blog_versions)) == true)
+						for($flag1=0; $flag1 < count($chk_value); $flag1++)
 						{
-
-						}
-						else
-						{
-							switch($types)
+							if((strstr($chk_value[$flag1],$wpdb->terms) || strstr($chk_value[$flag1],$wpdb->term_taxonomy) || strstr($chk_value[$flag1],$wpdb->term_relationships) || strstr($chk_value[$flag1],$wpdb->commentmeta) || strstr($chk_value[$flag1],$wpdb->comments)
+								|| strstr($chk_value[$flag1],$wpdb->links) || strstr($chk_value[$flag1],$wpdb->options)|| strstr($chk_value[$flag1],$wpdb->postmeta) || strstr($chk_value[$flag1], $wpdb->posts) || strstr($chk_value[$flag1],$wpdb->users) || strstr($chk_value[$flag1],$wpdb->usermeta)
+								|| strstr($chk_value[$flag1],$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_login_log")
+								|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_single_ip")
+								|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_range_ip") || strstr($chk_value[$flag1],$wpdb->signups) || strstr($chk_value[$flag1],$wpdb->sitemeta) || strstr($chk_value[$flag1],$wpdb->site) || strstr($chk_value[$flag1],$wpdb->registration_log)
+								|| strstr($chk_value[$flag1],$wpdb->blogs) || strstr($chk_value[$flag1],$wpdb->blog_versions)) == true)
 							{
-								case 1:
-									$wpdb->query
-									(
-										"TRUNCATE TABLE $chk_value[$flag1]"
-									);
-								break;
+							
+							}
+							else
+							{
+								switch($types)
+								{
+									case 1:
+										$wpdb->query
+										(
+											"TRUNCATE TABLE $chk_value[$flag1]"
+										);
+									break;
+								}
+							}
+						}
+					}
+					else
+					{
+						for($flag1=0; $flag1 < count($chk_value); $flag1++)
+						{
+							if((strstr($chk_value[$flag1],$wpdb->terms) || strstr($chk_value[$flag1],$wpdb->term_taxonomy) || strstr($chk_value[$flag1],$wpdb->term_relationships) || strstr($chk_value[$flag1],$wpdb->commentmeta) || strstr($chk_value[$flag1],$wpdb->comments)
+								|| strstr($chk_value[$flag1],$wpdb->links) || strstr($chk_value[$flag1],$wpdb->options)|| strstr($chk_value[$flag1],$wpdb->postmeta) || strstr($chk_value[$flag1], $wpdb->posts) || strstr($chk_value[$flag1],$wpdb->users) || strstr($chk_value[$flag1],$wpdb->usermeta)
+								|| strstr($chk_value[$flag1],$wpdb->prefix."cleanup_optimizer_wp_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_db_scheduler") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_login_log")
+								|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_plugin_settings") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_licensing") || strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_single_ip")
+								|| strstr($chk_value[$flag1],$wpdb->prefix . "cleanup_optimizer_block_range_ip")) == true)
+							{
+								
+							}
+							else
+							{
+								switch($types)
+								{
+									case 1:
+										$wpdb->query
+										(
+											"TRUNCATE TABLE $chk_value[$flag1]"
+										);
+									break;
+								}
 							}
 						}
 					}

@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, AJAX, automatic, clean, clean up, clean up optimizer, cleaner, cleanup, comments, cron, cron jobs, database, database optimize, database size, delete, delete revision, meta, multisite, mysql, optimize, optimize database, optimizer, page, pages, phpMyAdmin, plugin, Post, post revisions, postmeta, posts, responsive, Revision, revisions, schedule, scheduler, spam, spammed, track user, tracking, transients, trash, trashed, unused tags, wordpress, wp clean up, wp cleaner, wp cleanup, wp cleanup optimizer
 Requires at least: 2.7
 Tested up to: 4.0.1
-Stable Tag: 2.0.7
+Stable Tag: 2.0.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,6 +18,8 @@ By removing revision, draft, auto draft, moderated comments, spam comments, tras
 Advance feature i.e. confining the user by blocking their IP Address and Keep tracking the user who are currently logged in as well as trying to login. 
 Cron Jobs adds a new information panel to WP Clean Up Optimizer that displays details such as List of the Scheduled events, Individual Schedule Interval, 
 Date & Time for next event Execution and Arguments to pass to the hook function(s) for WP scheduled events (both custom and core). 
+
+WP Clean Up Optimizer uses our own Tech Banker API based on Maxmind Database to fetch location and other details based on IP Address for its feature Login Logs.
 
 > **Live Demos**
 
@@ -511,6 +513,10 @@ Once you click on the link, this page would open and there you could see the sta
 13. Licensing Page.
 
 == Changelog ==
+
+= 2.0.8 =
+
+* Changed Free GeoIP API to Tech Banker API
 
 = 2.0.7 =
 

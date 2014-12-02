@@ -2,9 +2,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////                        Getting Login IP's                               //////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-function cpo_get_ip_location($ip)
+function cpo_get_ip_location()
 {
-	$apiCall = "freegeoip.net/json/".$ip;
+	$apiCall = "http://tech-banker.com/tracker/LocateIp.php";
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $apiCall);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array("Accept: application/json"));
@@ -14,22 +14,6 @@ function cpo_get_ip_location($ip)
 
 	$jsonData = curl_exec($ch);
 	return json_decode($jsonData);
-}
-if(!function_exists("getIpAddress"))
-{
-	function getIpAddress()
-	{
-		foreach (array("HTTP_CLIENT_IP", "HTTP_X_FORWARDED_FOR", "HTTP_X_FORWARDED", "HTTP_X_CLUSTER_CLIENT_IP", "HTTP_FORWARDED_FOR", "HTTP_FORWARDED", "REMOTE_ADDR") as $key)
-		{
-			if (array_key_exists($key, $_SERVER) === true)
-			{
-				foreach (explode(',', $_SERVER[$key]) as $ip)
-				{
-					return $ip = trim($ip);
-				}
-			}
-		}
-	}
 }
 if(!class_exists("log_data"))
 {
@@ -51,12 +35,11 @@ if(isset($_REQUEST["wp-submit"]))
 		{
 			global $wpdb;
 			$setting_value = array();
-			$ipAddress = getIpAddress();
 			$date_time = date("Y-m-d H:i:s");
-			$log_data = cpo_get_ip_location($ipAddress);
+			$log_data = cpo_get_ip_location();
 			$insert = new log_data();
 			$setting_value["username"] = esc_attr($_REQUEST["log"]);
-			$setting_value["ip_address"] = $ipAddress;
+			$setting_value["ip_address"] = $log_data->ip;
 			if($log_data->city =="" || $log_data->country_name =="")
 			{
 				$setting_value["geo_location"] = $log_data->city.$log_data->country_name;

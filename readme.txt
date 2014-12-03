@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, AJAX, automatic, clean, clean up, clean up optimizer, cleaner, cleanup, comments, cron, cron jobs, database, database optimize, database size, delete, delete revision, meta, multisite, mysql, optimize, optimize database, optimizer, page, pages, phpMyAdmin, plugin, Post, post revisions, postmeta, posts, responsive, Revision, revisions, schedule, scheduler, spam, spammed, track user, tracking, transients, trash, trashed, unused tags, wordpress, wp clean up, wp cleaner, wp cleanup, wp cleanup optimizer
 Requires at least: 2.7
 Tested up to: 4.0.1
-Stable Tag: 2.0.8
+Stable Tag: 2.0.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -480,7 +480,7 @@ In order to view status of your system, locate **WP Clean Up Optimizer** Menu on
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/System_Status_Menu.png)
 
-Once you click on the link, this page would open and there you could see the status of your .system.
+Once you click on the link, this page would open and there you could see Cthe status of your .system.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2014/10/System_Status.png)
 
@@ -513,6 +513,11 @@ Once you click on the link, this page would open and there you could see the sta
 13. Licensing Page.
 
 == Changelog ==
+
+= 2.0.9 =
+
+* Bug Fixed related to Login Log.
+* Login Compatibility with WooCommerce.
 
 = 2.0.8 =
 

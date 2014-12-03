@@ -2,9 +2,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////                        Getting Login IP's                               //////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-function cpo_get_ip_location()
+function cpo_get_ip_location($ip_Address)
 {
-	$apiCall = "http://tech-banker.com/tracker/LocateIp.php";
+	$apiCall = "http://tech-banker.com/tracker/LocateIp.php?ip_address=".$ip_Address;
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $apiCall);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array("Accept: application/json"));
@@ -14,6 +14,22 @@ function cpo_get_ip_location()
 
 	$jsonData = curl_exec($ch);
 	return json_decode($jsonData);
+}
+if(!function_exists("getIpAddress"))
+{
+	function getIpAddress()
+	{
+		foreach (array("HTTP_CLIENT_IP", "HTTP_X_FORWARDED_FOR", "HTTP_X_FORWARDED", "HTTP_X_CLUSTER_CLIENT_IP", "HTTP_FORWARDED_FOR", "HTTP_FORWARDED", "REMOTE_ADDR") as $key)
+		{
+			if (array_key_exists($key, $_SERVER) === true)
+			{
+				foreach (explode(',', $_SERVER[$key]) as $ip)
+				{
+					return $ip = trim($ip);
+				}
+			}
+		}
+	}
 }
 if(!class_exists("log_data"))
 {
@@ -26,7 +42,7 @@ if(!class_exists("log_data"))
 		}
 	}
 }
-if(isset($_REQUEST["wp-submit"]))
+if(isset($_REQUEST["wp-submit"]) || isset($_REQUEST["login"]))
 {
 	add_action ("wp_authenticate","check_custom_authentication",10,2);
 	if(!function_exists("check_custom_authentication"))
@@ -36,10 +52,11 @@ if(isset($_REQUEST["wp-submit"]))
 			global $wpdb;
 			$setting_value = array();
 			$date_time = date("Y-m-d H:i:s");
-			$log_data = cpo_get_ip_location();
+			$ip_Address = getIpAddress();
+			$log_data = cpo_get_ip_location($ip_Address);
 			$insert = new log_data();
-			$setting_value["username"] = esc_attr($_REQUEST["log"]);
-			$setting_value["ip_address"] = $log_data->ip;
+			$setting_value["username"] = isset($_REQUEST["log"]) ? esc_attr($_REQUEST["log"]) : esc_attr($_REQUEST["username"]);
+			$setting_value["ip_address"] = $ip_Address;
 			if($log_data->city =="" || $log_data->country_name =="")
 			{
 				$setting_value["geo_location"] = $log_data->city.$log_data->country_name;

@@ -27,13 +27,13 @@ else
 			global $wpdb,$current_user,$user_role_permission;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{
@@ -52,13 +52,13 @@ else
 			global $wpdb,$current_user,$user_role_permission;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{
@@ -81,13 +81,13 @@ else
 			global $wpdb,$current_user,$user_role_permission;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{
@@ -106,13 +106,13 @@ else
 			global $wpdb,$current_user,$user_role_permission;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{
@@ -131,13 +131,13 @@ else
 			global $wpdb,$current_user,$user_role_permission,$wp_version,$gb;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{
@@ -156,13 +156,13 @@ else
 			global $wpdb,$current_user,$user_role_permission;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{
@@ -181,13 +181,13 @@ else
 			global $wpdb,$current_user,$user_role_permission;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{
@@ -206,13 +206,13 @@ else
 			global $wpdb,$current_user,$user_role_permission;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
 			{

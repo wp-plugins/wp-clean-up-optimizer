@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.9
+Version: 2.0.10
 Author URI: http://tech-banker.com
 */
 
@@ -138,15 +138,15 @@ if(!function_exists("create_global_menus_for_cleanup_optimizer"))
 			global $wpdb,$current_user;
 			if(is_super_admin())
 			{
-				$role = "administrator";
+				$cpo_role = "administrator";
 			}
 			else
 			{
-				$role = $wpdb->prefix . "capabilities";
-				$current_user->role = array_keys($current_user->$role);
-				$role = $current_user->role[0];
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
 			}
-			switch($role)
+			switch($cpo_role)
 			{
 				case "administrator":
 					if (file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/menus.php"))
@@ -184,9 +184,9 @@ if (isset($_REQUEST["action"]))
 				function cleanup_library()
 				{	
 					global $wpdb,$current_user,$user_role_permission;
-					$role = $wpdb->prefix . "capabilities";
-					$current_user->role = array_keys($current_user->$role);
-					$role = $current_user->role[0];
+					$cpo_role = $wpdb->prefix . "capabilities";
+					$current_user->role = array_keys($current_user->$cpo_role);
+					$cpo_role = $current_user->role[0];
 					
 					if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/db-helper.php"))
 					{
@@ -256,15 +256,15 @@ if(!function_exists("add_wp_cleanup_optimizer_admin_bar"))
 		global $wp_admin_bar,$wpdb,$current_user;
 		if(is_super_admin())
 		{
-			$role = "administrator";
+			$cpo_role = "administrator";
 		}
 		else
 		{
-			$role = $wpdb->prefix . "capabilities";
-			$current_user->role = array_keys($current_user->$role);
-			$role = $current_user->role[0];
+			$cpo_role = $wpdb->prefix . "capabilities";
+			$current_user->role = array_keys($current_user->$cpo_role);
+			$cpo_role = $current_user->role[0];
 		}
-		switch ($role)
+		switch ($cpo_role)
 		{
 			case "administrator":
 				if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php"))

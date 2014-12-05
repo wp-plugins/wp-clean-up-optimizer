@@ -1,732 +1,725 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Clean Up Optimizer\n"
-"POT-Creation-Date: 2014-11-18 22:07-0800\n"
-"PO-Revision-Date: 2014-11-18 22:07-0800\n"
+"POT-Creation-Date: 2014-12-05 10:48-0800\n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: zh\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
-"\\wp-clean-up-optimizer\\\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Poedit-KeywordsList: .;__;_e;gettext\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: _e;__;gettext\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\contact_bank\\wp-content\\plugins\\wp-"
+"clean-up-optimizer\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: lib/header.php:42
+#: lib/header.php:37
 msgid "Get Started"
-msgstr ""
+msgstr "開始吧！"
 
-#: lib/header.php:45
+#: lib/header.php:40
 msgid "Watch Clean Up Video!"
-msgstr ""
+msgstr "觀看清理影片！"
+
+#: lib/header.php:44
+msgid "read documentation here"
+msgstr "在這裡閱讀檔案"
 
 #: lib/header.php:49
-msgid "read documentation here"
-msgstr ""
-
-#: lib/header.php:54
 msgid "Go Premium"
-msgstr ""
+msgstr "轉到保費"
+
+#: lib/header.php:53
+msgid "Features"
+msgstr "特點"
 
 #: lib/header.php:58
-msgid "Features"
-msgstr ""
+msgid "Online Demos"
+msgstr "線上展示"
 
 #: lib/header.php:63
-msgid "Online Demos"
-msgstr ""
-
-#: lib/header.php:68
+#, fuzzy
 msgid "Premium Pricing Plan"
-msgstr ""
+msgstr "Premium 價格計畫"
+
+#: lib/header.php:70
+msgid "Knowledge Base"
+msgstr "知識庫"
 
 #: lib/header.php:75
-msgid "Knowledge Base"
-msgstr ""
+msgid "Support Forum"
+msgstr "支援論壇"
 
 #: lib/header.php:80
-msgid "Support Forum"
-msgstr ""
+msgid "FAQ's"
+msgstr "常見問題"
 
 #: lib/header.php:85
-msgid "FAQ's"
-msgstr ""
-
-#: lib/header.php:90
+#, fuzzy
 msgid "Detailed Features"
-msgstr ""
+msgstr "特點"
 
-#: lib/header.php:96
+#: lib/header.php:91
 msgid "More Actions"
-msgstr ""
+msgstr "更多操作"
 
-#: lib/header.php:100
+#: lib/header.php:95
 msgid "Plugin Customization"
-msgstr ""
+msgstr "自訂Plugin"
 
-#: lib/header.php:105 lib/header.php:163 lib/menus.php:15 lib/menus.php:26
-#: lib/menus.php:37 lib/top-bar-menu.php:65 lib/top-bar-menu.php:121
-#: lib/top-bar-menu.php:177
+#: lib/header.php:100 lib/header.php:158 lib/menus.php:18
+#: lib/top-bar-menu.php:56
 msgid "Recommendations"
-msgstr ""
+msgstr "建議"
 
-#: lib/header.php:110 lib/header.php:166 lib/menus.php:16 lib/menus.php:27
-#: lib/menus.php:38 lib/top-bar-menu.php:71 lib/top-bar-menu.php:127
-#: lib/top-bar-menu.php:183
+#: lib/header.php:105 lib/header.php:161 lib/menus.php:19
+#: lib/top-bar-menu.php:62
 msgid "Our Other Services"
-msgstr ""
+msgstr "其他服務"
 
-#: lib/header.php:148 lib/menus.php:9 lib/menus.php:20 lib/menus.php:31
-#: lib/top-bar-menu.php:29 lib/top-bar-menu.php:85 lib/top-bar-menu.php:141
+#: lib/header.php:143 lib/menus.php:12 lib/top-bar-menu.php:20
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
-#: lib/header.php:151 lib/menus.php:10 lib/menus.php:21 lib/menus.php:32
-#: lib/top-bar-menu.php:35 lib/top-bar-menu.php:91 lib/top-bar-menu.php:147
-#: views/login-logs.php:38 views/premium-edition.php:364
-#: views/premium-edition.php:370 views/premium-edition.php:928
-#: views/premium-edition.php:1412 views/premium-edition.php:1896
-#: views/premium-edition.php:2380 views/premium-edition.php:2864
+#: lib/header.php:146 lib/menus.php:13 lib/top-bar-menu.php:26
+#: views/login-logs.php:38
 msgid "Login Logs"
-msgstr ""
+msgstr "登入紀錄"
 
-#: lib/header.php:154 lib/menus.php:11 lib/menus.php:22 lib/menus.php:33
-#: lib/top-bar-menu.php:41 lib/top-bar-menu.php:97 lib/top-bar-menu.php:153
-#: views/cron-job.php:68
+#: lib/header.php:149 lib/menus.php:14 lib/top-bar-menu.php:32
+#: views/cron-job.php:67
 msgid "Cron Jobs"
-msgstr ""
+msgstr "Cron Jobs"
 
-#: lib/header.php:157 lib/menus.php:12 lib/menus.php:23 lib/menus.php:34
-#: lib/top-bar-menu.php:47 lib/top-bar-menu.php:103 lib/top-bar-menu.php:159
+#: lib/header.php:152 lib/menus.php:15 lib/top-bar-menu.php:38
 #: views/general-settings.php:42
 msgid "General Settings"
-msgstr ""
+msgstr "一般設定"
 
-#: lib/header.php:160 lib/menus.php:14 lib/menus.php:25 lib/menus.php:35
-#: lib/top-bar-menu.php:59 lib/top-bar-menu.php:115 lib/top-bar-menu.php:171
-#: views/premium-edition.php:26
+#: lib/header.php:155 lib/menus.php:17 lib/top-bar-menu.php:50
 msgid "Premium Editions"
-msgstr ""
-
-#: lib/install-script.php:154
-msgid "Your IP has been blocked!"
-msgstr ""
+msgstr "Premium版"
 
 #: lib/install-script.php:155
-msgid "Maximum Login attempts left [maxAttempts]"
-msgstr ""
+msgid "Your IP has been blocked!"
+msgstr "你的IP已遭到封鎖！"
 
 #: lib/install-script.php:156
+msgid "Maximum Login attempts left [maxAttempts]"
+msgstr "最多只可在嘗試[maxAttempts]次"
+
+#: lib/install-script.php:157
 msgid ""
 "You have Exceeded Maximum Login Attempts.\n"
 " So, your IP has been blocked for today. \n"
 " Kindly, try again after 24 Hours."
 msgstr ""
+"您已超過最多登錄嘗試次數。\n"
+"你的IP將會被封鎖24小時。\n"
+"請24小時後重試。"
 
-#: lib/menus.php:13 lib/menus.php:24 lib/menus.php:36 lib/top-bar-menu.php:53
-#: lib/top-bar-menu.php:109 lib/top-bar-menu.php:165
+#: lib/menus.php:16 lib/top-bar-menu.php:44
 msgid "System Status"
-msgstr ""
+msgstr "系統狀態"
+
+#: views/cron-job.php:74
+msgid "Custom"
+msgstr "自訂"
 
 #: views/cron-job.php:75
-msgid "Custom"
-msgstr ""
-
-#: views/cron-job.php:76
 msgid "Core"
-msgstr ""
+msgstr "核心"
 
-#: views/cron-job.php:82
+#: views/cron-job.php:81
 msgid "Custom Events"
-msgstr ""
+msgstr "自定事件"
 
-#: views/cron-job.php:84 views/dashboard.php:236 views/dashboard.php:617
-#: views/dashboard.php:827 views/dashboard.php:828 views/dashboard.php:829
-#: views/dashboard.php:980 views/general-settings.php:59
+#: views/cron-job.php:83 views/dashboard.php:249 views/dashboard.php:630
+#: views/dashboard.php:840 views/dashboard.php:841 views/dashboard.php:842
+#: views/dashboard.php:1076 views/general-settings.php:59
 #: views/general-settings.php:95 views/general-settings.php:193
+#, fuzzy
 msgid " (Available in Premium Editions)"
-msgstr ""
+msgstr "Premium版"
 
-#: views/cron-job.php:93 views/dashboard.php:281 views/dashboard.php:627
-#: views/dashboard.php:825
+#: views/cron-job.php:92 views/dashboard.php:294 views/dashboard.php:640
+#: views/dashboard.php:838
 msgid "Bulk Action"
-msgstr ""
+msgstr "批次操作"
 
-#: views/cron-job.php:94 views/cron-job.php:139 views/dashboard.php:797
-#: views/dashboard.php:827 views/dashboard.php:991 views/dashboard.php:1190
-#: views/dashboard.php:1260
+#: views/cron-job.php:93 views/cron-job.php:138 views/dashboard.php:810
+#: views/dashboard.php:840 views/dashboard.php:1087 views/dashboard.php:1367
+#: views/dashboard.php:1437
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
-#: views/cron-job.php:96 views/dashboard.php:284 views/dashboard.php:831
-#: views/dashboard.php:932
+#: views/cron-job.php:95 views/dashboard.php:297 views/dashboard.php:844
+#: views/dashboard.php:948 views/dashboard.php:1027
 msgid "Apply"
-msgstr ""
+msgstr "申請"
 
-#: views/cron-job.php:104 views/cron-job.php:239
+#: views/cron-job.php:103 views/cron-job.php:245
 msgid "Name of the Hook"
-msgstr ""
+msgstr "鉤的名字"
 
-#: views/cron-job.php:105
+#: views/cron-job.php:104
 msgid "List of Custom scheduled events."
-msgstr ""
+msgstr "對自定義安排的活動列表。"
 
-#: views/cron-job.php:108 views/cron-job.php:243
+#: views/cron-job.php:107 views/cron-job.php:249
 msgid "Interval Hook"
-msgstr ""
+msgstr "區間掛鉤"
 
-#: views/cron-job.php:109 views/cron-job.php:244
+#: views/cron-job.php:108 views/cron-job.php:250
 msgid "It specifies the Interval of a Scheduler. "
-msgstr ""
+msgstr "它指定一個調度的時間間隔。"
 
-#: views/cron-job.php:112 views/cron-job.php:247
+#: views/cron-job.php:111 views/cron-job.php:253
 msgid "Args"
-msgstr ""
+msgstr "ARGS"
 
-#: views/cron-job.php:115 views/cron-job.php:250 views/dashboard.php:750
-#: views/dashboard.php:1212
+#: views/cron-job.php:114 views/cron-job.php:256 views/dashboard.php:763
+#: views/dashboard.php:1389
 msgid "Next Execution"
-msgstr ""
+msgstr "接下來執行"
 
-#: views/cron-job.php:116 views/cron-job.php:251
+#: views/cron-job.php:115 views/cron-job.php:257
 msgid ""
 "It allows you to view the Date & Time for next execution of a Scheduler."
-msgstr ""
+msgstr "它允許您查看日期和時間的調度的下一次執行。"
 
-#: views/cron-job.php:228
+#: views/cron-job.php:234
 msgid "Core Events"
-msgstr ""
+msgstr "核心活動"
 
-#: views/cron-job.php:240
+#: views/cron-job.php:246
 msgid ""
 "List of Core scheduled events. Which are Default schedulers created by "
 "WordPress."
-msgstr ""
+msgstr "核心安排的活動列表。這是由WordPress創建默認調度。"
 
-#: views/cron-job.php:389 views/cron-job.php:406 views/dashboard.php:1396
-#: views/dashboard.php:1538
+#: views/cron-job.php:395 views/cron-job.php:412 views/dashboard.php:1573
+#: views/dashboard.php:1715
 msgid "Show entries"
-msgstr ""
+msgstr "顯示條目"
 
-#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1333
-#: views/dashboard.php:1409 views/dashboard.php:1419 views/dashboard.php:1502
-#: views/dashboard.php:1551 views/general-settings.php:265
+#: views/cron-job.php:425 views/cron-job.php:432 views/dashboard.php:1510
+#: views/dashboard.php:1586 views/dashboard.php:1596 views/dashboard.php:1679
+#: views/dashboard.php:1728 views/general-settings.php:265
 #: views/general-settings.php:271 views/general-settings.php:277
 #: views/general-settings.php:283 views/general-settings.php:289
 #: views/login-logs.php:194
 msgid "Error!"
-msgstr ""
+msgstr "錯誤！"
 
-#: views/cron-job.php:419 views/cron-job.php:426 views/dashboard.php:1409
-#: views/dashboard.php:1419 views/dashboard.php:1551
+#: views/cron-job.php:425 views/cron-job.php:432 views/dashboard.php:1586
+#: views/dashboard.php:1596 views/dashboard.php:1728
 #: views/general-settings.php:265 views/general-settings.php:271
 #: views/general-settings.php:277 views/general-settings.php:283
 #: views/general-settings.php:289 views/login-logs.php:194
 msgid "This Feature is Available in Premium Editions!"
-msgstr ""
+msgstr "此功能可在高級版！"
 
-#: views/dashboard.php:178 views/general-settings.php:33
+#: views/dashboard.php:191 views/general-settings.php:33
 #: views/login-logs.php:30
 msgid "Success!"
-msgstr ""
+msgstr "成功！"
 
-#: views/dashboard.php:187
+#: views/dashboard.php:200
 msgid "WP Clean Up Optimizer"
-msgstr ""
+msgstr "WP清理優化"
 
-#: views/dashboard.php:193
+#: views/dashboard.php:206
 msgid "Database Information"
-msgstr ""
+msgstr "數據庫信息"
 
-#: views/dashboard.php:197
+#: views/dashboard.php:210
 msgid "Database Host "
-msgstr ""
+msgstr "數據庫主機"
 
-#: views/dashboard.php:203
+#: views/dashboard.php:216
 msgid "Database Name "
-msgstr ""
+msgstr "數據庫名稱"
 
-#: views/dashboard.php:209
+#: views/dashboard.php:222
 msgid "Database User "
-msgstr ""
+msgstr "數據庫用戶"
 
-#: views/dashboard.php:215
+#: views/dashboard.php:228
 msgid "Database Type "
-msgstr ""
-
-#: views/dashboard.php:223
-msgid "Database Version"
-msgstr ""
+msgstr "數據庫類型"
 
 #: views/dashboard.php:236
+msgid "Database Version"
+msgstr "數據庫版本"
+
+#: views/dashboard.php:249
 msgid "Manage Trackbacks / Comments"
-msgstr ""
+msgstr "管理搬場/評論"
 
-#: views/dashboard.php:240
+#: views/dashboard.php:253
 msgid "Trackbacks"
-msgstr ""
+msgstr "搬場"
 
-#: views/dashboard.php:241 views/dashboard.php:441
+#: views/dashboard.php:254 views/dashboard.php:454
 msgid ""
 "Trackbacks are a way to notify legacy blog systems that you have linked to "
 "them. If you link to a WordPress blog they will be notified automatically "
 "using pingbacks, no other action necessary."
 msgstr ""
+"引用的方式來通知你已經鏈接到他們傳統的博客系統。如果您鏈接到WordPress的博客，"
+"他們會自動使用，沒有其他必​​要的行動禁用Pingbacks通知。"
 
-#: views/dashboard.php:244 views/dashboard.php:254
+#: views/dashboard.php:257 views/dashboard.php:267
 #: views/general-settings.php:104 views/general-settings.php:232
 msgid "Enable"
-msgstr ""
+msgstr "啟用"
 
-#: views/dashboard.php:245 views/dashboard.php:255
+#: views/dashboard.php:258 views/dashboard.php:268
 #: views/general-settings.php:105 views/general-settings.php:233
 msgid "Disable"
-msgstr ""
+msgstr "關閉"
 
-#: views/dashboard.php:250
+#: views/dashboard.php:263
 msgid "Comments"
-msgstr ""
+msgstr "評論"
 
-#: views/dashboard.php:251
+#: views/dashboard.php:264
 msgid ""
 "Manage comments on any Post or Page. It can be used to disable comments on "
 "the entire Blog."
-msgstr ""
+msgstr "管理上的任何帖子或頁面意見。它可以用來禁止對整個博客評論。"
 
-#: views/dashboard.php:265 views/dashboard.php:274
+#: views/dashboard.php:278 views/dashboard.php:287
 msgid "Data Optimizer"
-msgstr ""
+msgstr "數據優化"
 
-#: views/dashboard.php:266 views/dashboard.php:488
+#: views/dashboard.php:279 views/dashboard.php:501
 msgid "Data Optimizer Scheduler"
-msgstr ""
+msgstr "數據優化調度"
 
-#: views/dashboard.php:267 views/dashboard.php:813
+#: views/dashboard.php:280 views/dashboard.php:826
 msgid "DB Optimizer"
-msgstr ""
+msgstr "DB優化"
 
-#: views/dashboard.php:268 views/dashboard.php:968
+#: views/dashboard.php:281 views/dashboard.php:1064
 msgid "DB Optimizer Scheduler"
-msgstr ""
+msgstr "DB優化調度"
 
-#: views/dashboard.php:282 views/dashboard.php:307 views/dashboard.php:321
-#: views/dashboard.php:335 views/dashboard.php:349 views/dashboard.php:363
-#: views/dashboard.php:377 views/dashboard.php:391 views/dashboard.php:405
-#: views/dashboard.php:419 views/dashboard.php:433 views/dashboard.php:447
-#: views/dashboard.php:461 views/dashboard.php:475 views/dashboard.php:628
-#: views/dashboard.php:826 views/dashboard.php:928 views/dashboard.php:990
-#: views/dashboard.php:1187
+#: views/dashboard.php:295 views/dashboard.php:320 views/dashboard.php:334
+#: views/dashboard.php:348 views/dashboard.php:362 views/dashboard.php:376
+#: views/dashboard.php:390 views/dashboard.php:404 views/dashboard.php:418
+#: views/dashboard.php:432 views/dashboard.php:446 views/dashboard.php:460
+#: views/dashboard.php:474 views/dashboard.php:488 views/dashboard.php:641
+#: views/dashboard.php:839 views/dashboard.php:944 views/dashboard.php:1023
+#: views/dashboard.php:1086 views/dashboard.php:1364
 msgid "Empty"
-msgstr ""
+msgstr "空"
 
-#: views/dashboard.php:290 views/dashboard.php:502 views/dashboard.php:667
+#: views/dashboard.php:303 views/dashboard.php:515 views/dashboard.php:680
 msgid "Type of Data"
-msgstr ""
+msgstr "數據類型"
 
-#: views/dashboard.php:291
+#: views/dashboard.php:304
 msgid "Count"
-msgstr ""
+msgstr "算"
 
-#: views/dashboard.php:292 views/dashboard.php:841 views/login-logs.php:125
+#: views/dashboard.php:305 views/dashboard.php:854 views/login-logs.php:125
 msgid "Action"
-msgstr ""
+msgstr "行動"
 
-#: views/dashboard.php:301 views/dashboard.php:511
+#: views/dashboard.php:314 views/dashboard.php:524
 msgid ""
 "Auto Draft are the Page / Post saved as draft automatically in WordPress "
 "Database."
-msgstr ""
+msgstr "自動草案是頁/郵政WordPress的數據庫自動保存為草稿。"
 
-#: views/dashboard.php:301 views/dashboard.php:511
+#: views/dashboard.php:314 views/dashboard.php:524
 msgid "Auto Draft"
-msgstr ""
+msgstr "自動草稿"
 
-#: views/dashboard.php:315 views/dashboard.php:519
+#: views/dashboard.php:328 views/dashboard.php:532
 msgid ""
 "Transient Feed in WordPress are use Database entries to cache a certain "
 "entries."
-msgstr ""
+msgstr "在WordPress的瞬態飼料的使用數據庫條目緩存一定的條目。"
 
-#: views/dashboard.php:315 views/dashboard.php:519
+#: views/dashboard.php:328 views/dashboard.php:532
 msgid "Dashboard Transient Feed"
-msgstr ""
+msgstr "儀表板瞬態供稿"
 
-#: views/dashboard.php:329 views/dashboard.php:527
+#: views/dashboard.php:342 views/dashboard.php:540
 msgid "New Post / Page created as Draft in WordPress."
-msgstr ""
+msgstr "新郵/頁創建為WordPress的草案。"
 
-#: views/dashboard.php:329 views/dashboard.php:527
+#: views/dashboard.php:342 views/dashboard.php:540
 msgid "Draft"
-msgstr ""
+msgstr "草案"
 
-#: views/dashboard.php:343 views/dashboard.php:535
+#: views/dashboard.php:356 views/dashboard.php:548
 msgid ""
 "Moderated Comments is a feature in WordPress that allows you to prevent "
 "comments from appearing on your site without your express approval."
 msgstr ""
+"主持人評論是WordPress的一項功能，可以讓你避免評論出現在您的網站未經您的明確批"
+"准。"
 
-#: views/dashboard.php:343 views/dashboard.php:535
+#: views/dashboard.php:356 views/dashboard.php:548
 msgid "Moderated Comments"
-msgstr ""
+msgstr "主持人評論"
 
-#: views/dashboard.php:357 views/dashboard.php:543
+#: views/dashboard.php:370 views/dashboard.php:556
 msgid ""
 "Orphan Comments Meta holds the miscellaneous bits of extra information of "
 "comment."
-msgstr ""
+msgstr "孤兒評論的元持有評論額外信息的雜位。"
 
-#: views/dashboard.php:357 views/dashboard.php:543
+#: views/dashboard.php:370 views/dashboard.php:556
 msgid "Orphan Comments Meta"
-msgstr ""
+msgstr "孤兒評論元"
 
-#: views/dashboard.php:371 views/dashboard.php:551
+#: views/dashboard.php:384 views/dashboard.php:564
 msgid "Orphan Posts Meta holds the junk or obsolete data."
-msgstr ""
+msgstr "孤兒的帖子的元持有垃圾或過時的數據。"
 
-#: views/dashboard.php:371 views/dashboard.php:551
+#: views/dashboard.php:384 views/dashboard.php:564
 msgid "Orphan Posts Meta"
-msgstr ""
+msgstr "孤兒的帖子元"
 
-#: views/dashboard.php:385 views/dashboard.php:559
+#: views/dashboard.php:398 views/dashboard.php:572
 msgid "Orphan Relationships holds the junk or obsolete Category and Tag."
-msgstr ""
+msgstr "孤兒關係持有垃圾或過時的類別和的標籤。"
 
-#: views/dashboard.php:385 views/dashboard.php:559
+#: views/dashboard.php:398 views/dashboard.php:572
 msgid "Orphan Relationships"
-msgstr ""
+msgstr "孤兒關係"
 
-#: views/dashboard.php:399 views/dashboard.php:567
+#: views/dashboard.php:412 views/dashboard.php:580
 msgid ""
 "The WordPress revisions system stores a record of each saved draft or "
 "published update.Revisions are stored in the posts table."
 msgstr ""
+"WordPress的版本的系統存儲每個保存草稿紀錄或發布update.Revisions存儲在職位表"
+"中。"
 
-#: views/dashboard.php:399 views/dashboard.php:567
+#: views/dashboard.php:412 views/dashboard.php:580
 msgid "Revision"
-msgstr ""
+msgstr "調整"
 
-#: views/dashboard.php:413 views/dashboard.php:575
+#: views/dashboard.php:426 views/dashboard.php:588
 msgid ""
 "A Pingback is a type of comment that's created when you link to another blog "
 "post where pingbacks are enabled."
 msgstr ""
+"Pingback的是創建一個類型的註釋，當你鏈接到另一個博客帖子裡其中Pingbacks被啟"
+"用。"
 
-#: views/dashboard.php:413 views/dashboard.php:575
-#: views/premium-edition.php:297 views/premium-edition.php:303
-#: views/premium-edition.php:880 views/premium-edition.php:1364
-#: views/premium-edition.php:1848 views/premium-edition.php:2332
-#: views/premium-edition.php:2816
+#: views/dashboard.php:426 views/dashboard.php:588
 msgid "Remove Pingbacks"
-msgstr ""
+msgstr "刪除禁用Pingbacks"
 
-#: views/dashboard.php:427 views/dashboard.php:583
+#: views/dashboard.php:440 views/dashboard.php:596
 msgid ""
 "Transient Options are like a basic cache system used by wordpress. Clearing "
 "these options before a backup will help to save space in your backup files."
 msgstr ""
+"瞬態選項都喜歡WordPress的一個基本的緩存系統。清除備份之前這些選項有助於節省空"
+"間，在你的備份文件。"
 
-#: views/dashboard.php:427 views/dashboard.php:583
-#: views/premium-edition.php:314 views/premium-edition.php:320
-#: views/premium-edition.php:892 views/premium-edition.php:1376
-#: views/premium-edition.php:1860 views/premium-edition.php:2344
-#: views/premium-edition.php:2828
+#: views/dashboard.php:440 views/dashboard.php:596
 msgid "Remove Transient Options"
-msgstr ""
+msgstr "刪除瞬態選項"
 
-#: views/dashboard.php:441 views/dashboard.php:591
-#: views/premium-edition.php:331 views/premium-edition.php:337
-#: views/premium-edition.php:904 views/premium-edition.php:1388
-#: views/premium-edition.php:1872 views/premium-edition.php:2356
-#: views/premium-edition.php:2840
+#: views/dashboard.php:454 views/dashboard.php:604
 msgid "Remove Trackbacks"
-msgstr ""
+msgstr "引用刪除"
 
-#: views/dashboard.php:455 views/dashboard.php:599
+#: views/dashboard.php:468 views/dashboard.php:612
 msgid "Spam Comments are the unwanted comments in the WordPress database."
-msgstr ""
+msgstr "垃圾評論是不需要的意見在在WordPress數據庫。"
 
-#: views/dashboard.php:455 views/dashboard.php:599
+#: views/dashboard.php:468 views/dashboard.php:612
 msgid "Spam Comments"
-msgstr ""
+msgstr "垃圾評論"
 
-#: views/dashboard.php:469 views/dashboard.php:607
+#: views/dashboard.php:482 views/dashboard.php:620
 msgid ""
 "Trash Comments are the comments which are stored in the WordPress Trash."
-msgstr ""
+msgstr "垃圾箱評論是評論這是保存在WordPress的廢紙簍。"
 
-#: views/dashboard.php:469 views/dashboard.php:607
+#: views/dashboard.php:482 views/dashboard.php:620
 msgid "Trash Comments"
-msgstr ""
+msgstr "垃圾評論"
 
-#: views/dashboard.php:496
+#: views/dashboard.php:509
 msgid "Choose Type of Data"
-msgstr ""
+msgstr "選擇數據類型"
 
-#: views/dashboard.php:591
+#: views/dashboard.php:604
+#, fuzzy
 msgid ""
 "Trackbacks are a way to notify legacy blog systems that you've linked to "
 "them. If you link to a WordPress blog they'll be notified automatically "
 "using pingbacks, no other action necessary."
 msgstr ""
+"引用的方式來通知你已經鏈接到他們傳統的博客系統。如果您鏈接到WordPress的博客，"
+"他們會自動使用，沒有其他必​​要的行動禁用Pingbacks通知。"
 
-#: views/dashboard.php:617 views/dashboard.php:980
+#: views/dashboard.php:630 views/dashboard.php:1076
 msgid "Configure Scheduler"
-msgstr ""
+msgstr "配置調度"
 
-#: views/dashboard.php:622 views/dashboard.php:985
+#: views/dashboard.php:635 views/dashboard.php:1081
 msgid "Action "
-msgstr ""
+msgstr "行動"
 
-#: views/dashboard.php:623 views/dashboard.php:986
+#: views/dashboard.php:636 views/dashboard.php:1082
 msgid "Allows you to select the type of Action."
-msgstr ""
+msgstr "允許您選擇行動的類型。"
 
-#: views/dashboard.php:634 views/dashboard.php:999
+#: views/dashboard.php:647 views/dashboard.php:1095
 msgid "Duration "
-msgstr ""
+msgstr "長短"
 
-#: views/dashboard.php:635 views/dashboard.php:1000
+#: views/dashboard.php:648 views/dashboard.php:1096
 msgid ""
 "Configuration the scheduler Daily, Weekly, Biweekly, Monthly, Quarterly, "
 "Half-Yearly, Annually from the DropDown."
-msgstr ""
+msgstr "配置調度每日，每週，每兩週，每月，每季度，半年度，每年從下拉列表中。"
 
-#: views/dashboard.php:639 views/dashboard.php:1004
+#: views/dashboard.php:652 views/dashboard.php:1100
 msgid "Daily"
-msgstr ""
+msgstr "日報"
 
-#: views/dashboard.php:640 views/dashboard.php:769 views/dashboard.php:1005
-#: views/dashboard.php:1231
+#: views/dashboard.php:653 views/dashboard.php:782 views/dashboard.php:1101
+#: views/dashboard.php:1408
 msgid "Weekly"
-msgstr ""
+msgstr "週報"
 
-#: views/dashboard.php:641 views/dashboard.php:773 views/dashboard.php:1006
-#: views/dashboard.php:1235
+#: views/dashboard.php:654 views/dashboard.php:786 views/dashboard.php:1102
+#: views/dashboard.php:1412
 msgid "Biweekly"
-msgstr ""
+msgstr "雙週"
 
-#: views/dashboard.php:642 views/dashboard.php:777 views/dashboard.php:1007
-#: views/dashboard.php:1239
+#: views/dashboard.php:655 views/dashboard.php:790 views/dashboard.php:1103
+#: views/dashboard.php:1416
 msgid "Monthly"
-msgstr ""
+msgstr "每月一次"
 
-#: views/dashboard.php:643 views/dashboard.php:781 views/dashboard.php:1008
-#: views/dashboard.php:1243
+#: views/dashboard.php:656 views/dashboard.php:794 views/dashboard.php:1104
+#: views/dashboard.php:1420
 msgid "Quarterly"
-msgstr ""
+msgstr "季刊"
 
-#: views/dashboard.php:644 views/dashboard.php:785 views/dashboard.php:1009
-#: views/dashboard.php:1247
+#: views/dashboard.php:657 views/dashboard.php:798 views/dashboard.php:1105
+#: views/dashboard.php:1424
 msgid "Half-Yearly"
-msgstr ""
+msgstr "半年度"
 
-#: views/dashboard.php:645 views/dashboard.php:789 views/dashboard.php:1010
-#: views/dashboard.php:1251
+#: views/dashboard.php:658 views/dashboard.php:802 views/dashboard.php:1106
+#: views/dashboard.php:1428
 msgid "Annually"
-msgstr ""
+msgstr "每年"
 
-#: views/dashboard.php:647 views/dashboard.php:1012
+#: views/dashboard.php:660 views/dashboard.php:1108
 msgid "Save Scheduler"
-msgstr ""
+msgstr "保存調度"
 
-#: views/dashboard.php:660
+#: views/dashboard.php:673
 msgid "Manage Wp Data Optimizer Schedules"
-msgstr ""
+msgstr "管理Wp的數據優化調度"
 
-#: views/dashboard.php:668 views/dashboard.php:1155
+#: views/dashboard.php:681 views/dashboard.php:1332
 msgid "Overview"
-msgstr ""
+msgstr "概觀"
 
-#: views/dashboard.php:688
+#: views/dashboard.php:701
 msgid "Auto Draft<br>"
-msgstr ""
+msgstr "英汽車草案"
 
-#: views/dashboard.php:691
+#: views/dashboard.php:704
 msgid "Dashboard Transient Feed<br>"
-msgstr ""
+msgstr "儀表板瞬態飼料英"
 
-#: views/dashboard.php:694
+#: views/dashboard.php:707
 msgid "Draft<br>"
-msgstr ""
+msgstr "英選秀"
 
-#: views/dashboard.php:697
+#: views/dashboard.php:710
 msgid "Moderated Comments<br>"
-msgstr ""
+msgstr "主持人評論英"
 
-#: views/dashboard.php:700
+#: views/dashboard.php:713
 msgid "Orphan Comments Meta<br>"
-msgstr ""
+msgstr "孤兒評論元英"
 
-#: views/dashboard.php:703
+#: views/dashboard.php:716
 msgid "Orphan Posts Meta<br>"
-msgstr ""
+msgstr "孤兒的帖子元英"
 
-#: views/dashboard.php:706
+#: views/dashboard.php:719
 msgid "Orphan Relationships<br>"
-msgstr ""
+msgstr "孤兒關係<BR>"
 
-#: views/dashboard.php:709
+#: views/dashboard.php:722
 msgid "Revision<br>"
-msgstr ""
+msgstr "修訂英"
 
-#: views/dashboard.php:712
+#: views/dashboard.php:725
 msgid "Remove Pingbacks<br>"
-msgstr ""
+msgstr "刪除禁用Pingbacks英"
 
-#: views/dashboard.php:715
+#: views/dashboard.php:728
 msgid "Remove Transient Options<br>"
-msgstr ""
+msgstr "刪除瞬態選項<br>"
 
-#: views/dashboard.php:718
+#: views/dashboard.php:731
 msgid "Remove Trackbacks<br>"
-msgstr ""
+msgstr "刪除引用英"
 
-#: views/dashboard.php:721
+#: views/dashboard.php:734
 msgid "Spam Comments<br>"
-msgstr ""
+msgstr "垃圾評論英"
 
-#: views/dashboard.php:724
+#: views/dashboard.php:737
 msgid "Trash Comments<br>"
-msgstr ""
+msgstr "垃圾評論英"
 
-#: views/dashboard.php:734 views/dashboard.php:1182
+#: views/dashboard.php:747 views/dashboard.php:1359
 msgid "Action Type"
-msgstr ""
+msgstr "操作類型"
 
-#: views/dashboard.php:742 views/dashboard.php:1204
+#: views/dashboard.php:755 views/dashboard.php:1381
 msgid "Start Date"
-msgstr ""
+msgstr "開始日期"
 
-#: views/dashboard.php:759
+#: views/dashboard.php:772
 msgid "Scheduler Type"
-msgstr ""
+msgstr "調度類型"
 
-#: views/dashboard.php:817 views/dashboard.php:972
+#: views/dashboard.php:830 views/dashboard.php:1068
 msgid ""
 "Note : Table Names highlighted with red color and an asterisk (*) are "
 "wordpress inbuilt Tables. <br/> They are disabled by us  so not to perform "
 "delete and clean action because they can destroy your Wordpress "
 "unintentionally."
 msgstr ""
+"注：表名突出了紅色和星號（*）是wordpress的內置表。 <BR/>他們被我們禁止，因此"
+"不進行刪除和清理行動，因為他們可以無意破壞你的WordPress。"
 
-#: views/dashboard.php:828 views/dashboard.php:992 views/dashboard.php:1193
+#: views/dashboard.php:841 views/dashboard.php:1088 views/dashboard.php:1370
 msgid "Optimize"
-msgstr ""
+msgstr "優化"
 
-#: views/dashboard.php:829 views/dashboard.php:993 views/dashboard.php:1196
+#: views/dashboard.php:842 views/dashboard.php:1089 views/dashboard.php:1373
 msgid "Repair"
-msgstr ""
+msgstr "修復"
 
-#: views/dashboard.php:837 views/dashboard.php:1025
+#: views/dashboard.php:850 views/dashboard.php:1121
 msgid "Table"
-msgstr ""
+msgstr "表"
 
-#: views/dashboard.php:838 views/dashboard.php:1028
+#: views/dashboard.php:851 views/dashboard.php:1124
 msgid "Rows"
-msgstr ""
+msgstr "行"
 
-#: views/dashboard.php:839 views/dashboard.php:1026
+#: views/dashboard.php:852 views/dashboard.php:1122
 msgid "Type"
-msgstr ""
+msgstr "類型"
 
-#: views/dashboard.php:840 views/dashboard.php:1029
+#: views/dashboard.php:853 views/dashboard.php:1125
 msgid "Size"
-msgstr ""
+msgstr "尺寸"
 
-#: views/dashboard.php:944 views/dashboard.php:1130
+#: views/dashboard.php:1040 views/dashboard.php:1307
 msgid "Total"
-msgstr ""
+msgstr "總"
 
-#: views/dashboard.php:1019
+#: views/dashboard.php:1115
 msgid "Choose Tables"
-msgstr ""
+msgstr "選擇表"
 
-#: views/dashboard.php:1027
+#: views/dashboard.php:1123
 msgid "Overhead"
-msgstr ""
+msgstr "高架"
 
-#: views/dashboard.php:1147
+#: views/dashboard.php:1324
 msgid "Manage Database Optimizer Schedules"
-msgstr ""
+msgstr "管理數據庫優化調度"
 
-#: views/dashboard.php:1154
+#: views/dashboard.php:1331
 msgid "Tables"
-msgstr ""
+msgstr "表"
 
-#: views/dashboard.php:1221
+#: views/dashboard.php:1398
 msgid "Schedule Type"
-msgstr ""
+msgstr "計劃類型"
 
-#: views/dashboard.php:1308 views/dashboard.php:1341
+#: views/dashboard.php:1485 views/dashboard.php:1518
 msgid "Are you sure, you want to Clean?"
-msgstr ""
+msgstr "你確定，你要乾淨嗎？"
 
-#: views/dashboard.php:1325 views/dashboard.php:1358
+#: views/dashboard.php:1502 views/dashboard.php:1535
 msgid "Successfully Cleaned!"
-msgstr ""
+msgstr "成功清除！"
 
-#: views/dashboard.php:1333
+#: views/dashboard.php:1510
 msgid "Please choose Action and Type of Data to Proceed!"
-msgstr ""
+msgstr "請選擇操作和數據類型進行！"
 
-#: views/dashboard.php:1431 views/dashboard.php:1466
+#: views/dashboard.php:1608 views/dashboard.php:1643
 msgid "Cleaned Successfully!"
-msgstr ""
+msgstr "清理成功！"
 
-#: views/dashboard.php:1435 views/dashboard.php:1477
+#: views/dashboard.php:1612 views/dashboard.php:1654
 msgid "Are you sure, you want to Perform this Action?"
-msgstr ""
+msgstr "你確定，你要執行此操作？"
 
-#: views/dashboard.php:1502
+#: views/dashboard.php:1679
 msgid "Please choose Action or Table to proceed!."
-msgstr ""
+msgstr "請選擇操作或表進行！"
 
 #: views/general-settings.php:34
 msgid "General Settings has been updated  "
-msgstr ""
+msgstr "常規設置已更新"
 
 #: views/general-settings.php:45
 msgid "Save Changes"
-msgstr ""
+msgstr "保存更改"
 
 #: views/general-settings.php:51 views/general-settings.php:59
 msgid "Message Settings"
-msgstr ""
+msgstr "消息設置"
 
 #: views/general-settings.php:52 views/general-settings.php:95
 msgid "Security Settings"
-msgstr ""
+msgstr "安全設置"
 
 #: views/general-settings.php:53 views/general-settings.php:193
 msgid "Plugin Settings"
-msgstr ""
+msgstr "插件設置"
 
 #: views/general-settings.php:64
 msgid "IP Block Message"
-msgstr ""
+msgstr "IP塊消息"
 
 #: views/general-settings.php:65
 msgid ""
 "It shows the Error Message for the users whose IP is blocked from the "
 "Security Settings or Login Logs if the users seems to be unauthorized."
 msgstr ""
+"它顯示錯誤消息的IP是從安全設置或登錄日誌堵塞，如果用戶似乎是未經授權的用戶。"
 
 #: views/general-settings.php:68
 msgid "Enter the error message here when the IP is Blocked."
-msgstr ""
+msgstr "在此輸入錯誤信息時，IP被封鎖。"
 
 #: views/general-settings.php:73 views/general-settings.php:111
-#: views/premium-edition.php:599 views/premium-edition.php:605
-#: views/premium-edition.php:1096 views/premium-edition.php:1580
-#: views/premium-edition.php:2064 views/premium-edition.php:2548
-#: views/premium-edition.php:3028
 msgid "Max Login Attempts"
-msgstr ""
+msgstr "最大登錄嘗試"
 
 #: views/general-settings.php:74
 msgid ""
@@ -734,886 +727,747 @@ msgid ""
 "of login attempts left incase username or password is left empty or filled "
 "invalid."
 msgstr ""
+"它允許你設置動態錯誤消息為用戶展現櫃面留下用戶名或密碼為空或填充無效登錄嘗試"
+"的次數。"
 
 #: views/general-settings.php:77
 msgid "Enter the error message here for Maxium login Attempts."
-msgstr ""
+msgstr "在這裡輸入的最大信號的登錄嘗試的錯誤消息。"
 
 #: views/general-settings.php:82
 msgid "Max Login Exceeded Error"
-msgstr ""
+msgstr "馬克斯登錄超出錯誤"
 
 #: views/general-settings.php:83
 msgid ""
 "User can set dynamic Error Message for the users whose IP gets blocked after "
 "the Maximum Login Attempts Exceeds."
-msgstr ""
+msgstr "用戶可以設置動態的錯誤消息對他的IP被封鎖了最大登錄嘗試超越後的用戶。"
 
 #: views/general-settings.php:86
 msgid "Enter the error message here for Maxium login Exceeded."
-msgstr ""
+msgstr "在此輸入錯誤消息最大信號登錄超標。"
 
-#: views/general-settings.php:100 views/premium-edition.php:616
-#: views/premium-edition.php:622 views/premium-edition.php:1108
-#: views/premium-edition.php:1592 views/premium-edition.php:2076
-#: views/premium-edition.php:2560 views/premium-edition.php:3040
+#: views/general-settings.php:100
 msgid "Auto IP Block"
-msgstr ""
+msgstr "自動IP阻止"
 
 #: views/general-settings.php:101
 msgid ""
 "Auto IP Block allows to block the IP Address when the user exceeds the "
 "Maximum Login Attempts."
-msgstr ""
+msgstr "自動IP模塊允許當用戶超過最大登錄嘗試阻止IP地址。"
 
 #: views/general-settings.php:112
 msgid "User can set Maximum Login Attempts for their Website."
-msgstr ""
+msgstr "用戶可以設置最大登錄嘗試為他們的網站。"
 
 #: views/general-settings.php:121 views/login-logs.php:158
 msgid "Block IP Address"
-msgstr ""
+msgstr "阻止IP地址"
 
 #: views/general-settings.php:122
 msgid ""
 "It allows you to block IP Address that are considered undesirable or hostile."
-msgstr ""
+msgstr "它可以讓你以阻止被視為不良或惡劣的IP地址。"
 
 #: views/general-settings.php:126
 msgid "Add Block IP Address"
-msgstr ""
+msgstr "添加阻止IP地址"
 
 #: views/general-settings.php:131
 msgid "Blocked IP Addresses"
-msgstr ""
+msgstr "封鎖IP地址"
 
 #: views/general-settings.php:132
 msgid "It show the list of all IP Addresses that are blocked by the User."
-msgstr ""
+msgstr "它表明，被阻斷由用戶所有IP地址的列表。"
 
 #: views/general-settings.php:145
 msgid "Delete Block IP Addresses"
-msgstr ""
+msgstr "刪除阻止IP地址"
 
 #: views/general-settings.php:150
 msgid "Block Start IP Range"
-msgstr ""
+msgstr "塊起始IP範圍"
 
 #: views/general-settings.php:151
 msgid "It is the Starting range of the IP Address to be blocked."
-msgstr ""
+msgstr "它是被阻止的IP地址的啟動範圍。"
 
 #: views/general-settings.php:159
 msgid "Block End IP Range"
-msgstr ""
+msgstr "塊結束IP範圍"
 
 #: views/general-settings.php:160
 msgid "It is the Ending range of the IP Address to be blocked."
-msgstr ""
+msgstr "它是被阻止的IP地址的結束範圍。"
 
 #: views/general-settings.php:164
 msgid "Add Block IP Range"
-msgstr ""
+msgstr "添加阻止IP範圍"
 
 #: views/general-settings.php:169
 msgid "Blocked IP Range"
-msgstr ""
+msgstr "封鎖IP範圍"
 
 #: views/general-settings.php:170
 msgid ""
 "Blocked IP Range show the list of all the IP Addresses range that are "
 "blocked by the user."
-msgstr ""
+msgstr "封鎖IP範圍顯示所有被阻止用戶的IP地址範圍的列表。"
 
 #: views/general-settings.php:184
 msgid "Delete Block IP Range"
-msgstr ""
+msgstr "刪除塊IP範圍"
 
 #: views/general-settings.php:200
 msgid "Show Clean Up Plugin Menu"
-msgstr ""
+msgstr "展會清理插件菜單"
 
 #: views/general-settings.php:201
 msgid ""
 "It allows you to control the capabilities of WP Clean Up Optimizer among "
 "different roles of WordPress users."
-msgstr ""
+msgstr "它允許您控制WordPress用戶的不同角色之間的WP清理優化的能力。"
 
 #: views/general-settings.php:206
 msgid "Administrator"
-msgstr ""
+msgstr "管理員"
 
 #: views/general-settings.php:210
 msgid "Editor"
-msgstr ""
+msgstr "編輯"
 
 #: views/general-settings.php:214
 msgid "Author"
-msgstr ""
+msgstr "筆者"
 
 #: views/general-settings.php:218
 msgid "Contributor"
-msgstr ""
+msgstr "貢獻者"
 
 #: views/general-settings.php:222
 msgid "Subscriber"
-msgstr ""
+msgstr "訂戶"
 
 #: views/general-settings.php:228
 msgid "Clean Up Menu Top Bar"
-msgstr ""
+msgstr "清理菜單頂酒吧"
 
 #: views/general-settings.php:229
 msgid ""
 "It allows you to enable or disable WP Clean Up Optimizer for top menu bar "
 "among different roles of WordPress users."
 msgstr ""
+"它使您可以啟用或禁用WP清理優化為WordPress用戶的不同角色之間頂部的菜單欄。"
 
 #: views/login-logs.php:31
 msgid "Action has been updated"
-msgstr ""
+msgstr "行動已更新"
 
 #: views/login-logs.php:46
 msgid "Recent Login Details on World Map"
-msgstr ""
+msgstr "在世界地圖最近登錄詳細信息"
 
 #: views/login-logs.php:98
 msgid "Recent Login Details"
-msgstr ""
+msgstr "最近登錄詳細信息"
 
 #: views/login-logs.php:105
 msgid "Username"
-msgstr ""
+msgstr "用戶名"
 
 #: views/login-logs.php:106
 msgid "Allows you to view the username of recent logged in users."
-msgstr ""
+msgstr "您可以查看最近的用戶名登錄的用戶。"
 
 #: views/login-logs.php:109
 msgid "IP Address"
-msgstr ""
+msgstr "IP地址"
 
 #: views/login-logs.php:110
 msgid "Allows you to view the IP Address of the logged in users."
-msgstr ""
+msgstr "允許您查看的記錄用戶的IP地址。"
 
 #: views/login-logs.php:113
 msgid "Location"
-msgstr ""
+msgstr "地點"
 
 #: views/login-logs.php:114
 msgid "Allows you to view the current location of the logged in users."
-msgstr ""
+msgstr "允許您查看的記錄用戶的當前位置。"
 
 #: views/login-logs.php:117
 msgid "Login Date & Time"
-msgstr ""
+msgstr "登錄日期和時間"
 
 #: views/login-logs.php:118
 msgid "Allows you to view the logged in date and time of the users."
-msgstr ""
+msgstr "允許您查看登錄的日期和時間的用戶。"
 
 #: views/login-logs.php:121
 msgid "Status"
-msgstr ""
+msgstr "狀態"
 
 #: views/login-logs.php:122
 msgid ""
 "Lets, you know the status of the users, whether they have successfully "
 "logged in or not."
-msgstr ""
+msgstr "讓你知道用戶的身份，他們是否已經成功登錄與否。"
 
 #: views/login-logs.php:126
+#, fuzzy
 msgid ""
 "Allows you to block or whitelist IP Addresses for the logged in users as per "
 "your requirement."
-msgstr ""
+msgstr "允許你阻止或登錄的用戶按您的要求白名單IP地址。"
 
 #: views/login-logs.php:146
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #: views/login-logs.php:152
 msgid "Failed"
-msgstr ""
-
-#: views/premium-edition.php:33
-msgid "WP Clean Up Optimizer is an one time Investment. Its Worth it!"
-msgstr ""
-
-#: views/premium-edition.php:49
-msgid "choose"
-msgstr ""
-
-#: views/premium-edition.php:49
-msgid "your"
-msgstr ""
-
-#: views/premium-edition.php:49
-msgid "plan"
-msgstr ""
-
-#: views/premium-edition.php:59 views/premium-edition.php:65
-#: views/premium-edition.php:712 views/premium-edition.php:1196
-#: views/premium-edition.php:1680 views/premium-edition.php:2164
-#: views/premium-edition.php:2648
-msgid "Domains per License"
-msgstr ""
-
-#: views/premium-edition.php:63
-msgid "Number of websites that can use the plugin on purchase of a License."
-msgstr ""
-
-#: views/premium-edition.php:76 views/premium-edition.php:82
-#: views/premium-edition.php:724 views/premium-edition.php:1208
-#: views/premium-edition.php:1692 views/premium-edition.php:2176
-#: views/premium-edition.php:2660
-msgid "Technical Support"
-msgstr ""
-
-#: views/premium-edition.php:80
-msgid ""
-"Technical Support by the Development Team for Installation, Bug Fixing, "
-"Plugin Compatibility Issues."
-msgstr ""
-
-#: views/premium-edition.php:93 views/premium-edition.php:99
-#: views/premium-edition.php:736 views/premium-edition.php:1220
-#: views/premium-edition.php:1704 views/premium-edition.php:2188
-#: views/premium-edition.php:2672
-msgid "Plugin Updates"
-msgstr ""
-
-#: views/premium-edition.php:97
-msgid ""
-"Automatic Plugin Update Notification with New Features, Bug Fixing and much "
-"more."
-msgstr ""
-
-#: views/premium-edition.php:110 views/premium-edition.php:116
-#: views/premium-edition.php:748 views/premium-edition.php:1232
-#: views/premium-edition.php:1716 views/premium-edition.php:2200
-#: views/premium-edition.php:2684
-msgid "Multi-Lingual"
-msgstr ""
-
-#: views/premium-edition.php:114
-msgid "Multi-Lingual Facility allows the plugin to be used in 36 languages."
-msgstr ""
-
-#: views/premium-edition.php:127 views/premium-edition.php:133
-#: views/premium-edition.php:760 views/premium-edition.php:1244
-#: views/premium-edition.php:1728 views/premium-edition.php:2212
-#: views/premium-edition.php:2696
-msgid "Clean Auto Draft"
-msgstr ""
-
-#: views/premium-edition.php:131
-msgid "Clean up the WordPress database by removing auto draft."
-msgstr ""
-
-#: views/premium-edition.php:144 views/premium-edition.php:150
-#: views/premium-edition.php:772 views/premium-edition.php:1256
-#: views/premium-edition.php:1740 views/premium-edition.php:2224
-#: views/premium-edition.php:2708
-msgid "Clean Transient Feed"
-msgstr ""
-
-#: views/premium-edition.php:148
-msgid "Clean up the WordPress database by removing Transient Feed."
-msgstr ""
-
-#: views/premium-edition.php:161 views/premium-edition.php:167
-#: views/premium-edition.php:784 views/premium-edition.php:1268
-#: views/premium-edition.php:1752 views/premium-edition.php:2236
-#: views/premium-edition.php:2720
-msgid "Clean Draft"
-msgstr ""
-
-#: views/premium-edition.php:165
-msgid "Clean up the WordPress database by removing Draft."
-msgstr ""
-
-#: views/premium-edition.php:178 views/premium-edition.php:184
-#: views/premium-edition.php:796 views/premium-edition.php:1280
-#: views/premium-edition.php:1764 views/premium-edition.php:2248
-#: views/premium-edition.php:2732
-msgid "Clean Moderated Comments"
-msgstr ""
-
-#: views/premium-edition.php:182
-msgid "Clean up the WordPress database by removing Moderated Comments."
-msgstr ""
-
-#: views/premium-edition.php:195 views/premium-edition.php:201
-#: views/premium-edition.php:808 views/premium-edition.php:1292
-#: views/premium-edition.php:1776 views/premium-edition.php:2260
-#: views/premium-edition.php:2744
-msgid "Clean Orphan Comments Meta"
-msgstr ""
-
-#: views/premium-edition.php:199
-msgid "Clean up the WordPress database by removing Orphan Comments Meta."
-msgstr ""
-
-#: views/premium-edition.php:212 views/premium-edition.php:218
-#: views/premium-edition.php:820 views/premium-edition.php:1304
-#: views/premium-edition.php:1788 views/premium-edition.php:2272
-#: views/premium-edition.php:2756
-msgid "Clean Orphan Posts Meta"
-msgstr ""
-
-#: views/premium-edition.php:216
-msgid "Clean up the WordPress database by removing Orphan Posts Meta."
-msgstr ""
-
-#: views/premium-edition.php:229 views/premium-edition.php:235
-#: views/premium-edition.php:832 views/premium-edition.php:1316
-#: views/premium-edition.php:1800 views/premium-edition.php:2284
-#: views/premium-edition.php:2768
-msgid "Clean Orphan Relationships"
-msgstr ""
-
-#: views/premium-edition.php:233
-msgid "Clean up the WordPress database by removing Orphan Relationships."
-msgstr ""
-
-#: views/premium-edition.php:246 views/premium-edition.php:252
-#: views/premium-edition.php:844 views/premium-edition.php:1328
-#: views/premium-edition.php:1812 views/premium-edition.php:2296
-#: views/premium-edition.php:2780
-msgid "Clean Revision"
-msgstr ""
-
-#: views/premium-edition.php:250
-msgid "Clean up the WordPress database by removing Revision."
-msgstr ""
-
-#: views/premium-edition.php:263 views/premium-edition.php:269
-#: views/premium-edition.php:856 views/premium-edition.php:1340
-#: views/premium-edition.php:1824 views/premium-edition.php:2308
-#: views/premium-edition.php:2792
-msgid "Clean Spam Comments"
-msgstr ""
-
-#: views/premium-edition.php:267
-msgid "Clean up the WordPress database by removing Spam Comments."
-msgstr ""
-
-#: views/premium-edition.php:280 views/premium-edition.php:286
-#: views/premium-edition.php:868 views/premium-edition.php:1352
-#: views/premium-edition.php:1836 views/premium-edition.php:2320
-#: views/premium-edition.php:2804
-msgid "Clean Trash Comments"
-msgstr ""
-
-#: views/premium-edition.php:284
-msgid "Clean up the WordPress database by removing Trash Comments."
-msgstr ""
-
-#: views/premium-edition.php:301
-msgid "Clean up the WordPress database by removing Pingbacks."
-msgstr ""
-
-#: views/premium-edition.php:318
-msgid "Clean up the WordPress database by removing Transient Options."
-msgstr ""
-
-#: views/premium-edition.php:335
-msgid "Clean up the WordPress database by removing Trackbacks."
-msgstr ""
-
-#: views/premium-edition.php:347 views/premium-edition.php:353
-#: views/premium-edition.php:916 views/premium-edition.php:1400
-#: views/premium-edition.php:1884 views/premium-edition.php:2368
-#: views/premium-edition.php:2852
-msgid "Clean Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:351
-msgid " Remove the data from the tables making it clean and empty."
-msgstr ""
-
-#: views/premium-edition.php:368
-msgid ""
-"Allows you to track the current users who are logged in into you website and "
-"show there Geo Location on the map. It shows various details such as "
-"Username, IP Address, Location, Login Date &amp;Time, Login Status, Action "
-"to Block or White list IP Address."
-msgstr ""
-
-#: views/premium-edition.php:381 views/premium-edition.php:386
-#: views/premium-edition.php:940 views/premium-edition.php:1424
-#: views/premium-edition.php:1908 views/premium-edition.php:2392
-#: views/premium-edition.php:2876
-msgid "Database Overview"
-msgstr ""
-
-#: views/premium-edition.php:385
-msgid ""
-"Allows you to view Database Information such as Database Host, Database "
-"Name, Database User, Database Type and Database Version."
-msgstr ""
-
-#: views/premium-edition.php:397 views/premium-edition.php:403
-#: views/premium-edition.php:952 views/premium-edition.php:1436
-#: views/premium-edition.php:1920 views/premium-edition.php:2404
-#: views/premium-edition.php:2888
-msgid "Data Clean Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:401
-msgid ""
-"Remove the data from the WordPress making it clean and empty automatically "
-"(Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually)."
-msgstr ""
-
-#: views/premium-edition.php:414 views/premium-edition.php:419
-#: views/premium-edition.php:964 views/premium-edition.php:1448
-#: views/premium-edition.php:1932 views/premium-edition.php:2416
-#: views/premium-edition.php:2900
-msgid "Database Clean Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:418
-msgid ""
-"Clean data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually"
-msgstr ""
-
-#: views/premium-edition.php:430 views/premium-edition.php:436
-#: views/premium-edition.php:976 views/premium-edition.php:1460
-#: views/premium-edition.php:1944 views/premium-edition.php:2428
-#: views/premium-edition.php:2908
-msgid "Manage Comments"
-msgstr ""
-
-#: views/premium-edition.php:434
-msgid ""
-"Enable/Disable Comments on your WordPress website. Manage comments on any "
-"Post or Page. It can be used to disable comments on the entire network."
-msgstr ""
-
-#: views/premium-edition.php:447 views/premium-edition.php:453
-#: views/premium-edition.php:988 views/premium-edition.php:1472
-#: views/premium-edition.php:1956 views/premium-edition.php:2440
-#: views/premium-edition.php:2920
-msgid "Manage Trackbacks"
-msgstr ""
-
-#: views/premium-edition.php:451
-msgid ""
-"Trackbacks are a way to notify legacy blog systems that you've linked to "
-"them.Allows you to Enable/Disable Trackbacks on your WordPress website."
-msgstr ""
-
-#: views/premium-edition.php:464 views/premium-edition.php:470
-#: views/premium-edition.php:1000 views/premium-edition.php:1484
-#: views/premium-edition.php:1968 views/premium-edition.php:2452
-#: views/premium-edition.php:2932
-msgid "Database Delete Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:468
-msgid ""
-"Delete data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
-msgstr ""
-
-#: views/premium-edition.php:481 views/premium-edition.php:487
-#: views/premium-edition.php:1012 views/premium-edition.php:1496
-#: views/premium-edition.php:1980 views/premium-edition.php:2464
-#: views/premium-edition.php:2944
-msgid "Database Repair Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:485
-msgid ""
-" Repair data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
-msgstr ""
-
-#: views/premium-edition.php:498 views/premium-edition.php:504
-#: views/premium-edition.php:1508 views/premium-edition.php:1992
-#: views/premium-edition.php:2476 views/premium-edition.php:2956
-msgid "Database Optimizer Scheduler"
-msgstr ""
-
-#: views/premium-edition.php:502
-msgid ""
-"Optimize data form the tables automatically on different basis i.e. Daily, "
-"Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
-msgstr ""
-
-#: views/premium-edition.php:515 views/premium-edition.php:520
-#: views/premium-edition.php:1036 views/premium-edition.php:1520
-#: views/premium-edition.php:2004 views/premium-edition.php:2488
-#: views/premium-edition.php:2968
-msgid "Preview Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:519
-msgid ""
-" Preview the data of your table which is stored in your database on click of "
-"table name."
-msgstr ""
-
-#: views/premium-edition.php:531 views/premium-edition.php:1048
-#: views/premium-edition.php:1532 views/premium-edition.php:2016
-#: views/premium-edition.php:2500 views/premium-edition.php:2980
-msgid "Repair Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:535
-msgid ""
-" WP Clean Optimizer repairs the possibly corrupted tables in your database."
-msgstr ""
-
-#: views/premium-edition.php:537
-msgid "Repair Database Tables."
-msgstr ""
-
-#: views/premium-edition.php:548 views/premium-edition.php:554
-#: views/premium-edition.php:1060 views/premium-edition.php:1544
-#: views/premium-edition.php:2028 views/premium-edition.php:2512
-#: views/premium-edition.php:2992
-msgid "Delete Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:552
-msgid " Delete or Drop the complete tables of your database."
-msgstr ""
-
-#: views/premium-edition.php:565 views/premium-edition.php:571
-#: views/premium-edition.php:1072 views/premium-edition.php:1556
-#: views/premium-edition.php:2040 views/premium-edition.php:2524
-#: views/premium-edition.php:3004
-msgid "Optimizer Database Tables"
-msgstr ""
-
-#: views/premium-edition.php:569
-msgid "Improves Input/output efficiency when accessing the tables."
-msgstr ""
-
-#: views/premium-edition.php:582 views/premium-edition.php:588
-#: views/premium-edition.php:1084 views/premium-edition.php:1568
-#: views/premium-edition.php:2052 views/premium-edition.php:2536
-#: views/premium-edition.php:3016
-msgid "Block Login IP Address"
-msgstr ""
-
-#: views/premium-edition.php:586
-msgid ""
-"Allows you to block the IP Addresses of the login users from the Login Logs "
-"if he is considered as unauthorized."
-msgstr ""
-
-#: views/premium-edition.php:603
-msgid ""
-"Allows you to set number of login attempts left for the user incase wrong "
-"login attempts."
-msgstr ""
-
-#: views/premium-edition.php:620
-msgid ""
-"Allows you to Blocks IP addresses for next 24 hours when the limit of login "
-"attempts is reached."
-msgstr ""
-
-#: views/premium-edition.php:633 views/premium-edition.php:639
-#: views/premium-edition.php:1120 views/premium-edition.php:1604
-#: views/premium-edition.php:2088 views/premium-edition.php:2572
-#: views/premium-edition.php:3052
-msgid "Block IP Ranges"
-msgstr ""
-
-#: views/premium-edition.php:637
-msgid ""
-" Allows you to block range of IP Addresses that are considered undesirable "
-"or hostile."
-msgstr ""
-
-#: views/premium-edition.php:650 views/premium-edition.php:656
-#: views/premium-edition.php:1132 views/premium-edition.php:1616
-#: views/premium-edition.php:2100 views/premium-edition.php:2584
-#: views/premium-edition.php:3064
-msgid "Block Single IP Address"
-msgstr ""
-
-#: views/premium-edition.php:654
-msgid ""
-"Allows you to add single IP Address for blocking it as per your requirement."
-msgstr ""
-
-#: views/premium-edition.php:667 views/premium-edition.php:673
-#: views/premium-edition.php:1144 views/premium-edition.php:1628
-#: views/premium-edition.php:2112 views/premium-edition.php:2596
-#: views/premium-edition.php:3076
-msgid "Roles and Capabilities"
-msgstr ""
-
-#: views/premium-edition.php:671
-msgid ""
-"Allows you to controls the capabilities of WP Clean Up Optimizer among "
-"different roles of WordPress users."
-msgstr ""
-
-#: views/premium-edition.php:693
-msgid "Lite"
-msgstr ""
-
-#: views/premium-edition.php:702
-msgid "FREE"
-msgstr ""
-
-#: views/premium-edition.php:714 views/premium-edition.php:1198
-#: views/premium-edition.php:1682
-msgid "1"
-msgstr ""
-
-#: views/premium-edition.php:726
-msgid "None"
-msgstr ""
-
-#: views/premium-edition.php:1024
-msgid "Database Optimizer Schedule"
-msgstr ""
-
-#: views/premium-edition.php:1155
-msgid "Download!"
-msgstr ""
-
-#: views/premium-edition.php:1169
-msgid "Eco"
-msgstr ""
-
-#: views/premium-edition.php:1179 views/premium-edition.php:1663
-#: views/premium-edition.php:2147 views/premium-edition.php:2631
-msgid "You just need to pay for once for life time."
-msgstr ""
-
-#: views/premium-edition.php:1182
-msgid "8"
-msgstr ""
-
-#: views/premium-edition.php:1185 views/premium-edition.php:1669
-#: views/premium-edition.php:2153 views/premium-edition.php:2637
-msgid "one time"
-msgstr ""
-
-#: views/premium-edition.php:1210
-msgid "1 Week"
-msgstr ""
-
-#: views/premium-edition.php:1639 views/premium-edition.php:2123
-#: views/premium-edition.php:2607 views/premium-edition.php:3087
-msgid "Order Now!"
-msgstr ""
-
-#: views/premium-edition.php:1653
-msgid "Pro"
-msgstr ""
-
-#: views/premium-edition.php:1666
-msgid "12"
-msgstr ""
-
-#: views/premium-edition.php:1694
-msgid "1 Month"
-msgstr ""
-
-#: views/premium-edition.php:2137
-msgid "Developer"
-msgstr ""
-
-#: views/premium-edition.php:2150
-msgid "49"
-msgstr ""
-
-#: views/premium-edition.php:2166
-msgid "5"
-msgstr ""
-
-#: views/premium-edition.php:2178 views/premium-edition.php:2662
-msgid "1 Year"
-msgstr ""
-
-#: views/premium-edition.php:2621
-msgid "Extended"
-msgstr ""
-
-#: views/premium-edition.php:2634
-msgid "389"
-msgstr ""
-
-#: views/premium-edition.php:2650
-msgid "50"
-msgstr ""
+msgstr "失敗"
 
 #: views/system-status.php:28
 msgid "Wp Clean Up Optimizer System Status"
-msgstr ""
+msgstr "WP清理優化系統狀態"
 
 #: views/system-status.php:32
 msgid "Get System Report"
-msgstr ""
+msgstr "獲取系統報告"
 
 #: views/system-status.php:36
 msgid "Close System Report"
-msgstr ""
+msgstr "關閉系統報告"
 
 #: views/system-status.php:42
 msgid "Environment"
-msgstr ""
+msgstr "環境"
 
 #: views/system-status.php:48
 msgid "Home URL"
-msgstr ""
+msgstr "主頁URL"
 
 #: views/system-status.php:56
 msgid "Site URL"
-msgstr ""
+msgstr "網站網址"
 
 #: views/system-status.php:62
 msgid "WP Version"
-msgstr ""
+msgstr "WP版本"
 
 #: views/system-status.php:68
 msgid "WP Multisite Enabled"
-msgstr ""
+msgstr "WP多站點啟用"
 
 #: views/system-status.php:74
 msgid "Web Server Info"
-msgstr ""
+msgstr "Web服務器信息"
 
 #: views/system-status.php:80
 msgid "PHP Version"
-msgstr ""
+msgstr "PHP版本"
 
 #: views/system-status.php:86
 msgid "MySQL Version"
-msgstr ""
+msgstr "MySQL的版本"
 
 #: views/system-status.php:96
 msgid "WP Debug Mode"
-msgstr ""
+msgstr "WP調試模式"
 
 #: views/system-status.php:102
 msgid "WP Language"
-msgstr ""
+msgstr "WP語言"
 
 #: views/system-status.php:104
 msgid "Default"
-msgstr ""
+msgstr "默認"
 
 #: views/system-status.php:108
 msgid "PHP Post Max Size"
-msgstr ""
+msgstr "PHP後最大尺寸"
 
 #: views/system-status.php:118
 msgid "WP Max Upload Size"
-msgstr ""
+msgstr "WP最大上傳大小"
 
 #: views/system-status.php:134
 msgid "WP Remote Post"
-msgstr ""
+msgstr "WP遠端門柱"
 
 #: views/system-status.php:151
 msgid "PHP Max Script Execute Time"
-msgstr ""
+msgstr "PHP腳本最大執行時間"
 
 #: views/system-status.php:157
 msgid "PHP Max Input Vars"
-msgstr ""
+msgstr "PHP最大輸入瓦爾"
 
 #: views/system-status.php:163
 msgid "SUHOSIN Installed"
-msgstr ""
+msgstr "安裝了Suhosin"
 
 #: views/system-status.php:170
 msgid "Default Timezone"
-msgstr ""
+msgstr "默認的時區"
 
 #: views/system-status.php:223
 msgid "Operating System"
-msgstr ""
+msgstr "操作系統"
 
 #: views/system-status.php:231
 msgid "Memory usage"
-msgstr ""
+msgstr "內存使用情況"
 
 #: views/system-status.php:239
 msgid "SQL Mode"
-msgstr ""
+msgstr "SQL模式"
 
 #: views/system-status.php:247
 msgid "PHP Safe Mode"
-msgstr ""
+msgstr "PHP安全模式"
 
 #: views/system-status.php:255
 msgid "PHP Allow URL fopen"
-msgstr ""
+msgstr "PHP允許URL的fopen"
 
 #: views/system-status.php:263
 msgid "PHP Memory Limit"
-msgstr ""
+msgstr "PHP內存限制"
 
 #: views/system-status.php:271
 msgid "PHP Max Post Size"
-msgstr ""
+msgstr "PHP最大尺寸後"
 
 #: views/system-status.php:279
 msgid "PCRE Backtracking Limit"
-msgstr ""
+msgstr "PCRE的回溯限制"
 
 #: views/system-status.php:287
 msgid "PHP Exif support"
-msgstr ""
+msgstr "PHP的Exif支持"
 
 #: views/system-status.php:295
 msgid "PHP IPTC support"
-msgstr ""
+msgstr "PHP IPTC支持"
 
 #: views/system-status.php:303
 msgid "PHP XML support"
-msgstr ""
+msgstr "PHP的XML支持"
 
 #: views/system-status.php:316
 msgid "Plugins"
-msgstr ""
+msgstr "插件"
 
 #: views/system-status.php:320
 msgid "Installed Plugins"
-msgstr ""
+msgstr "安裝插件"
 
 #: views/system-status.php:381
 msgid "Themes"
-msgstr ""
+msgstr "主題"
 
 #: views/system-status.php:385
 msgid "Theme Name"
-msgstr ""
+msgstr "主題名稱"
 
 #: views/system-status.php:391
 msgid "Theme Version"
-msgstr ""
+msgstr "主題版本"
 
 #: views/system-status.php:401
 msgid "Author URL"
-msgstr ""
+msgstr "作者URL"
 
-#: wp-cleanup-optimizer.php:239
+#: wp-cleanup-optimizer.php:298
 msgid "View WP Clean Up Optimzier Documentation"
-msgstr ""
+msgstr "查看WP清理Optimzier文檔"
 
-#: wp-cleanup-optimizer.php:239
+#: wp-cleanup-optimizer.php:298
 msgid "Docs"
-msgstr ""
+msgstr "文檔"
 
-#: wp-cleanup-optimizer.php:240
+#: wp-cleanup-optimizer.php:299
+#, fuzzy
 msgid "View WP Clean Up Optimzier Premium Editions"
-msgstr ""
+msgstr "查看WP清理Optimzier文檔"
 
-#: wp-cleanup-optimizer.php:240
+#: wp-cleanup-optimizer.php:299
 msgid "Go for Premium!"
-msgstr ""
+msgstr "去保費！"
+
+#, fuzzy
+#~ msgid "WordPress Plugin Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "WordPress SEO Optimization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "WordPress Theme Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "WordPress Theme Development"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "Photo Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "Order Now"
+#~ msgstr "為了ID"
+
+#, fuzzy
+#~ msgid "Banner Design & Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "Website Design & Development"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "Website Re-design & Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "Desktop Application Development & Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "Logo Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "WooCommerce Theme Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "WooCommerce Plugin Development"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "WooCommerce Plugin Customization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "WooCommerce Plugin Installation & Optimization"
+#~ msgstr "自訂Plugin"
+
+#, fuzzy
+#~ msgid "Plugin Updates"
+#~ msgstr "插件"
+
+#, fuzzy
+#~ msgid "Clean Auto Draft"
+#~ msgstr "自動草稿"
+
+#, fuzzy
+#~ msgid "Clean Transient Feed"
+#~ msgstr "儀表板瞬態供稿"
+
+#, fuzzy
+#~ msgid "Clean Draft"
+#~ msgstr "草案"
+
+#, fuzzy
+#~ msgid "Clean Moderated Comments"
+#~ msgstr "主持人評論"
+
+#, fuzzy
+#~ msgid "Clean Orphan Comments Meta"
+#~ msgstr "孤兒評論元"
+
+#, fuzzy
+#~ msgid "Clean Orphan Posts Meta"
+#~ msgstr "孤兒的帖子元"
+
+#, fuzzy
+#~ msgid "Clean Orphan Relationships"
+#~ msgstr "孤兒關係"
+
+#, fuzzy
+#~ msgid "Clean Revision"
+#~ msgstr "調整"
+
+#, fuzzy
+#~ msgid "Clean Spam Comments"
+#~ msgstr "垃圾評論"
+
+#, fuzzy
+#~ msgid "Clean Trash Comments"
+#~ msgstr "垃圾評論"
+
+#, fuzzy
+#~ msgid "Clean Database Tables"
+#~ msgstr "數據庫類型"
+
+#, fuzzy
+#~ msgid "Database Overview"
+#~ msgstr "數據庫版本"
+
+#, fuzzy
+#~ msgid "Data Clean Scheduler"
+#~ msgstr "數據優化調度"
+
+#, fuzzy
+#~ msgid ""
+#~ "Remove the data from the WordPress making it clean and empty "
+#~ "automatically (Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, "
+#~ "Annually)."
+#~ msgstr ""
+#~ "配置調度每日，每週，每兩週，每月，每季度，半年度，每年從下拉列表中。"
+
+#, fuzzy
+#~ msgid "Database Clean Scheduler"
+#~ msgstr "數據優化調度"
+
+#, fuzzy
+#~ msgid ""
+#~ "Clean data form the tables automatically on different basis i.e. Daily, "
+#~ "Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually"
+#~ msgstr ""
+#~ "配置調度每日，每週，每兩週，每月，每季度，半年度，每年從下拉列表中。"
+
+#, fuzzy
+#~ msgid "Manage Comments"
+#~ msgstr "主持人評論"
+
+#, fuzzy
+#~ msgid ""
+#~ "Enable/Disable Comments on your WordPress website. Manage comments on any "
+#~ "Post or Page. It can be used to disable comments on the entire network."
+#~ msgstr "管理上的任何帖子或頁面意見。它可以用來禁止對整個博客評論。"
+
+#, fuzzy
+#~ msgid "Manage Trackbacks"
+#~ msgstr "管理搬場/評論"
+
+#, fuzzy
+#~ msgid ""
+#~ "Trackbacks are a way to notify legacy blog systems that you've linked to "
+#~ "them.Allows you to Enable/Disable Trackbacks on your WordPress website."
+#~ msgstr ""
+#~ "引用的方式來通知你已經鏈接到他們傳統的博客系統。如果您鏈接到WordPress的博"
+#~ "客，他們會自動使用，沒有其他必​​要的行動禁用Pingbacks通知。"
+
+#, fuzzy
+#~ msgid "Database Delete Scheduler"
+#~ msgstr "數據優化調度"
+
+#, fuzzy
+#~ msgid ""
+#~ "Delete data form the tables automatically on different basis i.e. Daily, "
+#~ "Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+#~ msgstr ""
+#~ "配置調度每日，每週，每兩週，每月，每季度，半年度，每年從下拉列表中。"
+
+#, fuzzy
+#~ msgid "Database Repair Scheduler"
+#~ msgstr "數據優化調度"
+
+#, fuzzy
+#~ msgid ""
+#~ " Repair data form the tables automatically on different basis i.e. Daily, "
+#~ "Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+#~ msgstr ""
+#~ "配置調度每日，每週，每兩週，每月，每季度，半年度，每年從下拉列表中。"
+
+#, fuzzy
+#~ msgid "Database Optimizer Scheduler"
+#~ msgstr "數據優化調度"
+
+#, fuzzy
+#~ msgid ""
+#~ "Optimize data form the tables automatically on different basis i.e. "
+#~ "Daily, Weekly, Biweekly, Monthly, Quarterly, Half-Yearly, Annually."
+#~ msgstr ""
+#~ "配置調度每日，每週，每兩週，每月，每季度，半年度，每年從下拉列表中。"
+
+#, fuzzy
+#~ msgid "Preview Database Tables"
+#~ msgstr "數據庫類型"
+
+#, fuzzy
+#~ msgid "Repair Database Tables"
+#~ msgstr "數據庫類型"
+
+#, fuzzy
+#~ msgid "Repair Database Tables."
+#~ msgstr "數據庫類型"
+
+#, fuzzy
+#~ msgid "Delete Database Tables"
+#~ msgstr "數據庫類型"
+
+#, fuzzy
+#~ msgid "Optimizer Database Tables"
+#~ msgstr "數據庫類型"
+
+#, fuzzy
+#~ msgid "Block Login IP Address"
+#~ msgstr "阻止IP地址"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to block the IP Addresses of the login users from the Login "
+#~ "Logs if he is considered as unauthorized."
+#~ msgstr "允許你阻止或登錄的用戶按您的要求白名單IP地址。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to Blocks IP addresses for next 24 hours when the limit of "
+#~ "login attempts is reached."
+#~ msgstr "允許你阻止或登錄的用戶按您的要求白名單IP地址。"
+
+#, fuzzy
+#~ msgid "Block IP Ranges"
+#~ msgstr "封鎖IP範圍"
+
+#, fuzzy
+#~ msgid ""
+#~ " Allows you to block range of IP Addresses that are considered "
+#~ "undesirable or hostile."
+#~ msgstr "它可以讓你以阻止被視為不良或惡劣的IP地址。"
+
+#, fuzzy
+#~ msgid "Block Single IP Address"
+#~ msgstr "阻止IP地址"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to add single IP Address for blocking it as per your "
+#~ "requirement."
+#~ msgstr "允許你阻止或登錄的用戶按您的要求白名單IP地址。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allows you to controls the capabilities of WP Clean Up Optimizer among "
+#~ "different roles of WordPress users."
+#~ msgstr "它允許您控制WordPress用戶的不同角色之間的WP清理優化的能力。"
+
+#, fuzzy
+#~ msgid "Database Optimizer Schedule"
+#~ msgstr "數據優化調度"
+
+#, fuzzy
+#~ msgid "1 Week"
+#~ msgstr "週報"
+
+#, fuzzy
+#~ msgid "Order Now!"
+#~ msgstr "為了ID"
+
+#, fuzzy
+#~ msgid "1 Month"
+#~ msgstr "每月一次"
+
+#, fuzzy
+#~ msgid "More Details"
+#~ msgstr "更多操作"
+
+#, fuzzy
+#~ msgid "Update Now"
+#~ msgstr "更新"
+
+#, fuzzy
+#~ msgid "Last Updated:"
+#~ msgstr "更新"
+
+#~ msgid "Our Featured Products"
+#~ msgstr "我們的特色產品"
+
+#~ msgid "Renew Premium Support"
+#~ msgstr "續購Premium支援"
+
+#~ msgid "Licensing"
+#~ msgstr "許可中"
+
+#~ msgid "Scheduler has been Deleted!"
+#~ msgstr "調度已被刪除！"
+
+#~ msgid "Are you sure, you want to Perform this action?"
+#~ msgstr "你確定，你要執行此操作？"
+
+#~ msgid "Schedulers has been Deleted!"
+#~ msgstr "調度已被刪除！"
+
+#~ msgid "Please choose Action and Scheduler to Proceed!"
+#~ msgstr "請選擇與行動計劃進行！"
+
+#~ msgid "Are you sure, you want to save the Scheduler?"
+#~ msgstr "你確定，你要保存的計劃？"
+
+#~ msgid "Scheduler has been Saved!"
+#~ msgstr "調度已保存！"
+
+#~ msgid "Please choose type of Data and Action to Configure Scheduler!"
+#~ msgstr "請選擇數據和行動類型配置計劃！"
+
+#~ msgid "Are you sure, you want to Delete this Scheduler?"
+#~ msgstr "你確定你要刪除這個計劃？"
+
+#~ msgid "Deleted Successfully!"
+#~ msgstr "刪除成功！"
+
+#~ msgid "Optimized Successfully!"
+#~ msgstr "優化的成功！"
+
+#~ msgid "Repaired Successfully!"
+#~ msgstr "修復成功！"
+
+#~ msgid "Please choose Tables and Action to configure Scheduler!"
+#~ msgstr "請選擇表和行動來配置調度！"
+
+#~ msgid "WP Clean Up Optimizer Licensing Module"
+#~ msgstr "WP清理優化許可模塊"
+
+#~ msgid "Version"
+#~ msgstr "版本"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "API Key"
+#~ msgstr "API密鑰"
+
+#~ msgid "Success! License has been validated."
+#~ msgstr "成功！許可證已被驗證。"
+
+#~ msgid "Please enter valid IP Range."
+#~ msgstr "請輸入有效的IP範圍。"
+
+#~ msgid ""
+#~ "IP Address cannnot be duplicate. Please enter Start IP Address and End IP "
+#~ "Address different!"
+#~ msgstr "IP地址cannnot是重複的。請輸入起始IP地址和結束IP地址不同！"
+
+#~ msgid "Start Range cannot be greater than End Range."
+#~ msgstr "啟動範圍不能大於結束範圍。"
+
+#~ msgid ""
+#~ "IP Address Range cannnot be duplicate. Please enter different IP "
+#~ "addresses."
+#~ msgstr "IP地址範圍cannnot是重複的。請輸入不同的IP地址。"
+
+#~ msgid "Please enter valid IP Address"
+#~ msgstr "請輸入有效的IP地址"
+
+#~ msgid "IP Address cannnot be duplicate. Please enter different IP address"
+#~ msgstr "IP地址cannnot是重複的。請輸入不同的IP地址"
+
+#~ msgid ""
+#~ "You have Exceeded Maximum Login Attempts.<br>So, your IP has been blocked "
+#~ "for today.<br>Kindly, try again after 24 Hours."
+#~ msgstr ""
+#~ "您已超過最大登錄嘗試。英所以，你的IP已經被封鎖了今天後24小時<BR>請，再試一"
+#~ "次。"
+
+#~ msgid "Whitelist IP Address"
+#~ msgstr "白名單IP地址"

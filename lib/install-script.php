@@ -194,8 +194,8 @@
 				(
 					"SELECT * FROM " . db_scheduler_tbl()
 				);
-				$sql = "DROP TABLE " . db_scheduler_tbl();
-				$wpdb->query($sql);
+				$drop_table = "DROP TABLE " . db_scheduler_tbl();
+				$wpdb->query($drop_table);
 				
 				create_table_db_optimizer();
 				
@@ -215,5 +215,5 @@
 			}
 		break;
 	}
-	update_option("wp-cleanup-optimizer-version-number","2.0");
+	update_option("wp-cleanup-optimizer-version-number","2.1");
 ?>

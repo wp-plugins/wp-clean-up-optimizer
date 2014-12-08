@@ -47,12 +47,6 @@ else
 				$where["post_status"] ="draft";
 				$delete->delete_revision($where);
 			break;
-			case 4:
-				$delete = new delete_data();
-				$where = array();
-				$where["comment_approved"] ="0";
-				$delete->delete_comments($where);
-			break;
 			case 5:
 				$wpdb->query
 				(

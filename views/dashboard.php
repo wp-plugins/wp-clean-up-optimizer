@@ -78,16 +78,6 @@ else
 						)
 					);
 					break;
-				case "moderated":
-					$count=$wpdb->get_var
-					(
-						$wpdb->prepare
-						(
-							"SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = %d",
-							"0"
-						)
-					);
-					break;
 				case "spam":
 					$count=$wpdb->get_var
 					(
@@ -350,20 +340,6 @@ else
 																	</tr>
 																	<tr>
 																		<td>
-																			<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_cleanup[]" style="margin:0px"  value="4" />
-																		</td>
-																		<td class="column-name">
-																			<span class="hovertip underline" data-original-title ='<?php _e("Moderated Comments is a feature in WordPress that allows you to prevent comments from appearing on your site without your express approval.",cleanup_optimizer) ;?>'><?php _e("Moderated Comments", cleanup_optimizer); ?></span>
-																		</td>
-																		<td class="column-name">
-																			<?php echo wp_clean_up_optimizer_count("moderated"); ?>
-																		</td>
-																		<td class="column-name">
-																			<input type="button" onclick="cleanup_function(4);" class="<?php echo wp_clean_up_optimizer_count("moderated") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("moderated") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
-																		</td>
-																	</tr>
-																	<tr class="alternate">
-																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_cleanup[]" style="margin:0px"  value="5" />
 																		</td>
 																		<td class="column-name">
@@ -376,7 +352,7 @@ else
 																			<input type="button" onclick="cleanup_function(5);" class="<?php echo wp_clean_up_optimizer_count("commentmeta") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("commentmeta") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr>
+																	<tr class="alternate">
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_cleanup[]" style="margin:0px" value="6" />
 																		</td>
@@ -390,7 +366,7 @@ else
 																			<input type="button" onclick="cleanup_function(6);" class="<?php echo wp_clean_up_optimizer_count("postmeta") > 0 ? "button-primary" : "button"; ?>"  <?php echo wp_clean_up_optimizer_count("postmeta") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr class="alternate">
+																	<tr>
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_cleanup[]" style="margin:0px"  value="7" />
 																		</td>
@@ -404,7 +380,7 @@ else
 																			<input type="button" onclick="cleanup_function(7);" class="<?php echo wp_clean_up_optimizer_count("relationships") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("relationships") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr>
+																	<tr class="alternate">
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_cleanup[]" style="margin:0px"  value="8" />
 																		</td>
@@ -418,7 +394,7 @@ else
 																			<input type="button" onclick="cleanup_function(8);" class="<?php echo wp_clean_up_optimizer_count("revision") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("revision") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr class="alternate">
+																	<tr>
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_cleanup[]" style="margin:0px"  value="9" />
 																		</td>
@@ -432,7 +408,7 @@ else
 																			<input type="button" onclick="cleanup_function(9);" class="<?php echo wp_clean_up_optimizer_count("remove_pingbacks") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("remove_pingbacks") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr>
+																	<tr class="alternate">
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_cleanup[]" style="margin:0px"  value="10" />
 																		</td>
@@ -446,7 +422,7 @@ else
 																			<input type="button" onclick="cleanup_function(10);" class="<?php echo wp_clean_up_optimizer_count("remove_transient_options") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("remove_transient_options") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr class="alternate">
+																	<tr>
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_11" name="ux_chk_cleanup[]" style="margin:0px"  value="11" />
 																		</td>
@@ -460,7 +436,7 @@ else
 																			<input type="button" onclick="cleanup_function(11);" class="<?php echo wp_clean_up_optimizer_count("remove_trackbacks") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("remove_trackbacks") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr>
+																	<tr class="alternate">
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_12" name="ux_chk_cleanup[]" style="margin:0px"  value="12" />
 																		</td>
@@ -474,7 +450,7 @@ else
 																			<input type="button" onclick="cleanup_function(12);" class="<?php echo wp_clean_up_optimizer_count("spam") > 0 ? "button-primary" : "button"; ?>" <?php echo wp_clean_up_optimizer_count("spam") == 0 ? "disabled" : "" ?> value="<?php _e("Empty",cleanup_optimizer); ?>" />
 																		</td>
 																	</tr>
-																	<tr class="alternate">
+																	<tr>
 																		<td>
 																			<input type="checkbox" id="ux_chk_cleanup_13" name="ux_chk_cleanup[]" style="margin:0px"  value="13" />
 																		</td>
@@ -542,21 +518,13 @@ else
 																			</tr>
 																			<tr>
 																				<td>
-																					<input type="checkbox" id="ux_chk_cleanup_4" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="4"  disabled="disabled"/>
-																				</td>
-																				<td class="column-name">
-																						<span class="hovertip underline" data-original-title ='<?php _e("Moderated Comments is a feature in WordPress that allows you to prevent comments from appearing on your site without your express approval.",cleanup_optimizer) ;?>'><?php _e("Moderated Comments", cleanup_optimizer); ?></span>
-																				</td>
-																			</tr>
-																			<tr class="alternate">
-																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_5" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="5"  disabled="disabled"/>
 																				</td>
 																				<td class="column-name">
 																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Comments Meta holds the miscellaneous bits of extra information of comment.",cleanup_optimizer) ;?>'><?php _e("Orphan Comments Meta", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr>
+																			<tr class="alternate">
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_6" name="ux_chk_clean_wp_scheduler[]" style="margin:0px" value="6"  disabled="disabled"/>
 																				</td>
@@ -564,7 +532,7 @@ else
 																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Posts Meta holds the junk or obsolete data.",cleanup_optimizer) ;?>'><?php _e("Orphan Posts Meta", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr class="alternate">
+																			<tr>
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_7" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="7"  disabled="disabled"/>
 																				</td>
@@ -572,7 +540,7 @@ else
 																					<span class="hovertip underline" data-original-title ='<?php _e("Orphan Relationships holds the junk or obsolete Category and Tag.",cleanup_optimizer) ;?>'><?php _e("Orphan Relationships", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr>
+																			<tr class="alternate">
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_8" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="8"  disabled="disabled"/>
 																				</td>
@@ -580,7 +548,7 @@ else
 																					<span class="hovertip underline" data-original-title ='<?php _e("The WordPress revisions system stores a record of each saved draft or published update.Revisions are stored in the posts table.",cleanup_optimizer) ;?>'><?php _e("Revision", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr class="alternate">
+																			<tr>
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_9" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="9"  disabled="disabled"/>
 																				</td>
@@ -588,7 +556,7 @@ else
 																					<span class="hovertip underline" data-original-title ='<?php _e("A Pingback is a type of comment that's created when you link to another blog post where pingbacks are enabled.",cleanup_optimizer) ;?>'><?php _e("Remove Pingbacks", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr>
+																			<tr class="alternate">
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_10" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="10"  disabled="disabled"/>
 																				</td>
@@ -596,7 +564,7 @@ else
 																					<span class="hovertip underline" data-original-title ='<?php _e("Transient Options are like a basic cache system used by wordpress. Clearing these options before a backup will help to save space in your backup files.",cleanup_optimizer) ;?>'><?php _e("Remove Transient Options", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr class="alternate">
+																			<tr>
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_11" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="11"  disabled="disabled"/>
 																				</td>
@@ -604,7 +572,7 @@ else
 																					<span class="hovertip underline" data-original-title ='<?php _e("Trackbacks are a way to notify legacy blog systems that you've linked to them. If you link to a WordPress blog they'll be notified automatically using pingbacks, no other action necessary.",cleanup_optimizer) ;?>'><?php _e("Remove Trackbacks", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr>
+																			<tr class="alternate">
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_12" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="12"  disabled="disabled"/>
 																				</td>
@@ -612,7 +580,7 @@ else
 																					<span class="hovertip underline" data-original-title ='<?php _e("Spam Comments are the unwanted comments in the WordPress database.",cleanup_optimizer) ;?>'><?php _e("Spam Comments", cleanup_optimizer); ?></span>
 																				</td>
 																			</tr>
-																			<tr class="alternate">
+																			<tr>
 																				<td>
 																					<input type="checkbox" id="ux_chk_cleanup_13" name="ux_chk_clean_wp_scheduler[]" style="margin:0px"  value="13"  disabled="disabled"/>
 																				</td>
@@ -664,158 +632,6 @@ else
 																</div>
 															</div>
 														</div>
-													</div>
-												</div>
-											</div>
-											<div id="ux_wp_optimize_scheduler" style="display:none;" class="scheduler_layout" >
-												<div class="widget-layout">
-													<div class="widget-layout-title">
-														<h4><?php _e("Manage Wp Data Optimizer Schedules",cleanup_optimizer); ?></h4>
-													</div>
-													<div class="widget-layout-body" style="padding-bottom:20px;">
-														<table class="widefat" id="data-table-wp-optimizer" style="margin-top:5px;background-color:#fff !important">
-															<thead>
-																<tr>
-																	<th style="display:none;"></th>
-																	<th scope="col" style="width:500px;"><?php _e("Type of Data",cleanup_optimizer); ?></th>
-																	<th scope="col" style="width:400px;"><?php _e("Overview",cleanup_optimizer); ?></th>
-																	<th scope="col" style="width:100px;"></th>
-																</tr>
-															</thead>
-															<body>
-																<?php 
-																for($flag1=0; $flag1 < count($wp_scheduler_data); $flag1++)
-																{	
-																	$data_show="";
-																?>
-																<tr <?php echo $alternate ?>>
-																	<td style="display:none;"><?php echo $wp_scheduler_data[$flag1]->scheduler_id;?></td>
-																	<td>
-																		<?php 
-																			$separation=explode(",",$wp_scheduler_data[$flag1]->wp_schedule);
-																			for($flag2 = 0; $flag2 < count ($separation); $flag2++)
-																			{
-																				switch($separation[$flag2])
-																				{
-																					case 1:
-																						$data_show.= _e("Auto Draft"."<br>",cleanup_optimizer);
-																					break;
-																					case 2:
-																						$data_show.= _e("Dashboard Transient Feed"."<br>",cleanup_optimizer);
-																					break;
-																					case 3:
-																						$data_show.= _e("Draft"."<br>",cleanup_optimizer);
-																					break;
-																					case 4:
-																						$data_show.= _e("Moderated Comments"."<br>",cleanup_optimizer);
-																					break;
-																					case 5:
-																						$data_show.= _e("Orphan Comments Meta"."<br>",cleanup_optimizer);
-																					break;
-																					case 6:
-																						$data_show.= _e("Orphan Posts Meta"."<br>",cleanup_optimizer);
-																					break;
-																					case 7:
-																						$data_show.= _e("Orphan Relationships"."<br>",cleanup_optimizer);
-																					break;
-																					case 8:
-																						$data_show.= _e("Revision"."<br>",cleanup_optimizer);
-																					break;
-																					case 9:
-																						$data_show.= _e("Remove Pingbacks"."<br>",cleanup_optimizer);
-																						break;
-																					case 10:
-																						$data_show.= _e("Remove Transient Options"."<br>",cleanup_optimizer);
-																						break;
-																					case 11:
-																						$data_show.= _e("Remove Trackbacks"."<br>",cleanup_optimizer);
-																						break;
-																					case 12:
-																						$data_show.= _e("Spam Comments"."<br>",cleanup_optimizer);
-																					break;
-																					case 13:
-																						$data_show.= _e("Trash Comments"."<br>",cleanup_optimizer);
-																					break;
-																				}
-																			}
-																			echo $data_show;
-																		?>
-																	</td>
-																	<td>
-																		<div class="layout-control-group">
-																			<label>
-																				<b><?php _e("Action Type", cleanup_optimizer) ?></b> :
-																					<?php 
-																						echo "<b>Empty</b>";
-																					?>
-																			</label>
-																		</div>
-																		<div class="layout-control-group">
-																			<label>
-																				<b><?php _e("Start Date", cleanup_optimizer) ?></b> :
-																					<?php 
-																						echo date('d M, Y', strtotime($wp_scheduler_data[$flag1]->start_date));
-																					?>
-																			</label>
-																		</div>
-																		<div class="layout-control-group">
-																			<label>
-																				<b><?php _e("Next Execution", cleanup_optimizer) ?></b> :
-																					<?php 
-																						$unix_time=wp_next_scheduled($wp_scheduler_data[$flag1]->cron_name);
-																						echo human_time_diff($unix_time)."<br>";
-																					?>
-																			</label>
-																		</div>
-																		<div class="layout-control-group">
-																			<label>
-																				<b><?php _e("Scheduler Type", cleanup_optimizer) ?></b> :
-																					<?php 
-																						$type=$wp_scheduler_data[$flag1]->schedule_type;
-																						switch($type)
-																						{
-																							case "1day":
-																								echo "Daily";
-																								break;
-																									
-																							case "weekly":
-																								echo ""._e("Weekly",cleanup_optimizer)."";
-																								break;
-																						
-																							case "14days":
-																								echo ""._e("Biweekly",cleanup_optimizer)."";
-																								break;
-																									
-																							case "30days":
-																								echo ""._e("Monthly",cleanup_optimizer)."";
-																								break;
-																									
-																							case "90days":
-																								echo ""._e("Quarterly",cleanup_optimizer)."";
-																								break;
-																						
-																							case "183days":
-																								echo ""._e("Half-Yearly",cleanup_optimizer)."";
-																								break;
-																						
-																							case "365days":
-																								echo ""._e("Annually",cleanup_optimizer)."";
-																								break;
-																						}
-																					?>
-																			</label>
-																		</div>
-																	</td>
-																	<td>
-																		<input type="button" id="ux_delete_cron" name="ux_delete_cron" value="<?php _e("Delete",cleanup_optimizer);?>" onclick="clear_wp_scheduler('<?php echo $wp_scheduler_data[$flag1]->cron_name ?>');" class="button-primary custom-btn-align"/>
-																	</td>
-																</tr>
-																<?php
-																$alternate = (empty($alternate)) ? " class='alternate'" : "";
-																}
-																?>
-															</body>
-														</table>
 													</div>
 												</div>
 											</div>

@@ -516,7 +516,7 @@ Once you click on the link, this page would open and there you could see Cthe st
 
 = 2.0.13 =
 
-* Translated in German Language.
+* Translated in Italian Language.
 
 = 2.0.12 =
 

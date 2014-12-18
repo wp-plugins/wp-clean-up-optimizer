@@ -63,8 +63,10 @@ else
 					(
 						$wpdb->prepare
 						(
-							"SELECT COUNT(*) FROM $wpdb->posts WHERE post_status = %s",
-							"draft"
+							"SELECT COUNT(*) FROM $wpdb->posts WHERE post_status = %s AND (post_type = %s OR post_type = %s)",
+							"draft",
+							"page",
+							"post"
 						)
 					);
 					break;
@@ -151,7 +153,6 @@ else
 			return $count;
 		}
 	}
-
 	if(!function_exists("cpo_format_size"))
 	{
 		function cpo_format_size($rawSize) {

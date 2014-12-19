@@ -161,7 +161,7 @@ else
 														</label>
 														<div class="layout-controls custom-layout-controls-cleanup ">
 															<input type="text" class="layout-span11" id="ux_txt_end_ip" name="ux_txt_end_ip" maxlength="15" placeholder="Enter the End IP Range to be blocked." disabled="disabled"/>
-															<input type="button" value="<?php _e("Add Block IP Range", cleanup_optimizer); ?>" class="button-primary" style=" margin-top: 12px;" />
+															<input type="button" value="<?php _e("Add Block IP Range", cleanup_optimizer); ?>" class="button-primary" style=" margin-top: 12px;" onclick="add_block_ip_range();" />
 														</div>
 													</div>
 													<div class="layout-control-group">

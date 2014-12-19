@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.14
+Version: 2.0.15
 Author URI: http://tech-banker.com
 */
 
@@ -184,10 +184,16 @@ if (isset($_REQUEST["action"]))
 				function cleanup_library()
 				{	
 					global $wpdb,$current_user,$user_role_permission;
-					$cpo_role = $wpdb->prefix . "capabilities";
-					$current_user->role = array_keys($current_user->$cpo_role);
-					$cpo_role = $current_user->role[0];
-					
+					if(is_super_admin())
+					{
+						$cpo_role = "administrator";
+					}
+					else
+					{
+						$cpo_role = $wpdb->prefix . "capabilities";
+						$current_user->role = array_keys($current_user->$cpo_role);
+						$cpo_role = $current_user->role[0];
+					}
 					if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/db-helper.php"))
 					{
 						include CLEANUP_BK_PLUGIN_DIR . "/lib/db-helper.php";

@@ -81,7 +81,7 @@ else
 													position: position,
 													map: map,
 													draggable:false,
-													animation: google.maps.Animation.BOUNCE,
+													animation: google.maps.Animation.DROP,
 												});
 											<?php
 											}

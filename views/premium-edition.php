@@ -1208,7 +1208,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&pound;<span><?php _e("8",cleanup_optimizer)?></span>
+															&euro;<span><?php _e("11",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -1704,7 +1704,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&pound;<span><?php _e("12",cleanup_optimizer)?></span>
+															&euro;<span><?php _e("17",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -2200,7 +2200,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&pound;<span><?php _e("49",cleanup_optimizer)?></span>
+															&euro;<span><?php _e("69",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -2696,7 +2696,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&pound;<span><?php _e("389",cleanup_optimizer)?></span>
+															&euro;<span><?php _e("545",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tech Banker Services\n"
-"POT-Creation-Date: 2014-11-14 04:39-0800\n"
-"PO-Revision-Date: 2014-11-14 04:45-0800\n"
+"POT-Creation-Date: 2015-01-07 11:25+0530\n"
+"PO-Revision-Date: 2015-01-07 11:25+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
-"\\wp-clean-up-optimizer\\languages-services\\\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp_backup_bank\\wp-content\\plugins"
+"\\wp-clean-up-optimizer\\tech-banker-services\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Poedit-KeywordsList: _e;__\n"
@@ -86,7 +86,7 @@ msgid "Read More"
 msgstr ""
 
 #: other-services.php:79 other-services.php:110 other-services.php:140
-msgid "Cost of this Service is 50 Pounds."
+msgid "Cost of this Service is 70 Euros."
 msgstr ""
 
 #: other-services.php:80
@@ -141,7 +141,7 @@ msgstr ""
 #: other-services.php:743 other-services.php:869 other-services.php:900
 #: other-services.php:931 other-services.php:959 other-services.php:1064
 #: other-services.php:1128
-msgid "Cost of this Service is 500 Pounds."
+msgid "Cost of this Service is 700 Euros."
 msgstr ""
 
 #: other-services.php:173 other-services.php:203 other-services.php:231
@@ -167,7 +167,7 @@ msgstr ""
 #: other-services.php:202 other-services.php:286 other-services.php:347
 #: other-services.php:615 other-services.php:679 other-services.php:711
 #: other-services.php:1030 other-services.php:1096 other-services.php:1226
-msgid "Cost of this Service is 800 Pounds."
+msgid "Cost of this Service is 1120 Euros."
 msgstr ""
 
 #: other-services.php:211
@@ -183,7 +183,7 @@ msgid ""
 msgstr ""
 
 #: other-services.php:230 other-services.php:998
-msgid "Cost of this Service is 100 Pounds."
+msgid "Cost of this Service is 140 Euros."
 msgstr ""
 
 #: other-services.php:239
@@ -250,7 +250,7 @@ msgstr ""
 
 #: other-services.php:381 other-services.php:409 other-services.php:437
 #: other-services.php:1194
-msgid "Cost of this Service is 400 Pounds."
+msgid "Cost of this Service is 560 Euros."
 msgstr ""
 
 #: other-services.php:382 other-services.php:1227
@@ -436,7 +436,7 @@ msgid ""
 msgstr ""
 
 #: other-services.php:775 other-services.php:1160
-msgid "Cost of this Service is 300 Pounds."
+msgid "Cost of this Service is 420 Euros."
 msgstr ""
 
 #: other-services.php:785
@@ -452,7 +452,7 @@ msgid ""
 msgstr ""
 
 #: other-services.php:805 other-services.php:835
-msgid "Cost of this Service is 2000 Pounds."
+msgid "Cost of this Service is 2800 Euros."
 msgstr ""
 
 #: other-services.php:806 other-services.php:836
@@ -659,6 +659,10 @@ msgstr ""
 #. translators: 1: Plugin name and version
 #: recommended-plugins.php:146
 msgid "Update Now"
+msgstr ""
+
+#: recommended-plugins.php:173
+msgid "By "
 msgstr ""
 
 #: recommended-plugins.php:192 recommended-plugins.php:202

@@ -1208,7 +1208,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&euro;<span><?php _e("11",cleanup_optimizer)?></span>
+															&euro;<span><?php _e("13",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -1704,7 +1704,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&euro;<span><?php _e("17",cleanup_optimizer)?></span>
+															&euro;<span><?php _e("20",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>

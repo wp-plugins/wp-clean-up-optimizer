@@ -177,7 +177,7 @@
 			}
 		break;
 		case "2.0":
-			if (count($wpdb->get_var("SHOW TABLES LIKE '" . db_scheduler_tbl() . "'")) != 0)
+			if (count($wpdb->get_results("SELECT * FROM " . db_scheduler_tbl())) != 0)
 			{
 				if(!class_exists("manage_data"))
 				{
@@ -214,6 +214,44 @@
 				}
 			}
 		break;
+		case "2.1":
+			if (count($wpdb->get_results("SELECT * FROM " . db_scheduler_tbl())) != 0)
+			{
+				if(!class_exists("manage_data"))
+				{
+					class manage_data
+					{
+						function insert_data($tbl, $data)
+						{
+							global $wpdb;
+							$wpdb->insert($tbl,$data);
+						}
+					}
+				}
+				$db_scheduler_data = $wpdb->get_results
+				(
+						"SELECT * FROM " . db_scheduler_tbl()
+				);
+				$drop_table = "DROP TABLE " . db_scheduler_tbl();
+				$wpdb->query($drop_table);
+		
+				create_table_db_optimizer();
+		
+				$db_schedulers = array();
+				$insert_db_schedulers = new manage_data();
+				for($flag = 0; $flag < count($db_scheduler_data); $flag++)
+				{
+					$db_schedulers["scheduler_id"] = $db_scheduler_data[$flag]->scheduler_id;
+					$db_schedulers["db_optimizer"] = $db_scheduler_data[$flag]->db_optimizer;
+					$db_schedulers["start_date"] = $db_scheduler_data[$flag]->start_date;
+					$db_schedulers["schedule_type"] = $db_scheduler_data[$flag]->schedule_type;
+					$db_schedulers["cron_name"] =  $db_scheduler_data[$flag]->cron_name;
+					$db_schedulers["scheduler_action"] = $db_scheduler_data[$flag]->scheduler_action;
+					
+					$insert_db_schedulers->insert_data(db_scheduler_tbl(),$db_schedulers);
+				}
+			}
+		break;
 	}
-	update_option("wp-cleanup-optimizer-version-number","2.1");
+	update_option("wp-cleanup-optimizer-version-number","2.2");
 ?>

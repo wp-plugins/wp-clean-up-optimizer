@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.21
+Version: 2.0.22
 Author URI: http://tech-banker.com
 */
 
@@ -340,6 +340,45 @@ function cleanup_optimizer_plugin_update_message($args)
 		}
 	}
 }
+
+///////////////////////////////////////Plugin Updates///////////////////////////////////////
+
+$is_option_auto_update = get_option("wp-cleanup-automatic-update");
+
+if($is_option_auto_update == "" || $is_option_auto_update == "1")
+{
+	if (!wp_next_scheduled("wp_cleanup_auto_update"))
+	{
+		wp_schedule_event(time(), "daily", "wp_cleanup_auto_update");
+	}
+	add_action("wp_cleanup_auto_update", "cleanup_plugin_autoUpdate");
+}
+else
+{
+	wp_clear_scheduled_hook("wp_cleanup_auto_update");
+}
+
+function cleanup_plugin_autoUpdate()
+{
+	try
+	{
+		require_once(ABSPATH . "wp-admin/includes/class-wp-upgrader.php");
+		require_once(ABSPATH . "wp-admin/includes/misc.php");
+		define("FS_METHOD", "direct");
+		require_once(ABSPATH . "wp-includes/update.php");
+		require_once(ABSPATH . "wp-admin/includes/file.php");
+		wp_update_plugins();
+		ob_start();
+		$plugin_upgrader = new Plugin_Upgrader();
+		$plugin_upgrader->upgrade("wp-clean-up-optimizer/wp-cleanup-optimizer.php");
+		$output = @ob_get_contents();
+		@ob_end_clean();
+	}
+	catch(Exception $e)
+	{
+	}
+}
+
 ///////////////////////////////////  Calling Hooks   /////////////////////////////////////////////////////
 
 //------------------------------------------------------------------------------------------------------------//

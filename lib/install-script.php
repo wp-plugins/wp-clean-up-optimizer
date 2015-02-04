@@ -254,4 +254,9 @@
 		break;
 	}
 	update_option("wp-cleanup-optimizer-version-number","2.2");
+	$plugin_updation = get_option("wp-cleanup-automatic-update");
+	if($plugin_updation == "")
+	{
+		update_option("wp-cleanup-automatic-update",1);
+	}
 ?>

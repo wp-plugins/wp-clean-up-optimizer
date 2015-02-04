@@ -10,6 +10,7 @@ else
 {
 	add_menu_page("WP Clean Up Optimizer", "WP Clean Up Optimizer", "read", "cpo_dashboard", "",plugins_url("/assets/images/icons/icon.png" , dirname(__FILE__)));
 	add_submenu_page("cpo_dashboard", "Dashboard",__("Dashboard",cleanup_optimizer), "read", "cpo_dashboard", "cpo_dashboard");
+	add_submenu_page("cpo_dashboard", "Plugin Updates", __("Plugin Updates",cleanup_optimizer), "read", "cpo_plugin_updates", "cpo_plugin_updates");
 	add_submenu_page("cpo_dashboard", "Login Logs", __("Login Logs", cleanup_optimizer), "read", "cpo_login_logs", "cpo_login_logs");
 	add_submenu_page("cpo_dashboard", "Cron Jobs", __("Cron Jobs", cleanup_optimizer), "read", "cpo_cron_jobs","cpo_cron_jobs");
 	add_submenu_page("cpo_dashboard", "General Settings", __("General Settings",cleanup_optimizer), "read", "cpo_general_settings","cpo_general_settings");
@@ -221,6 +222,31 @@ else
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/views/other-services.php"))
 			{
 				include_once CLEANUP_BK_PLUGIN_DIR . "/views/other-services.php";
+			}
+		}
+	}
+	if(!function_exists("cpo_plugin_updates"))
+	{
+		function cpo_plugin_updates()
+		{
+			global $wpdb,$current_user,$user_role_permission;
+			if(is_super_admin())
+			{
+				$cpo_role = "administrator";
+			}
+			else
+			{
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
+			}
+			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
+			{
+				include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
+			}
+			if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/views/automatic-plugin-update.php"))
+			{
+				include_once CLEANUP_BK_PLUGIN_DIR . "/views/automatic-plugin-update.php";
 			}
 		}
 	}

@@ -216,6 +216,13 @@ else
 					die();
 				}
 			break;
+			case "cleanup_plugin_updates":
+				if(wp_verify_nonce( $_REQUEST["_wpnonce"], "update_plugin_nonce"))
+				{
+					$plugin_update = esc_attr($_REQUEST["cleanup_updates"]);
+					update_option("wp-cleanup-automatic-update",$plugin_update);
+				}
+			break;
 		}
 		die();
 	}

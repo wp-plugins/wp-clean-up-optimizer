@@ -24,7 +24,7 @@ else
  	"de_DE", "fi", "he_IL", "ru_RU", "be_BY", "tr", "th", "ar", "hu_HU", "cs_CZ", "pl_PL", "da_DK", "sk_SK", "zh_CN", "id_ID", "el_GR",
  	"hr", "nb", "ro_RO");
 	
-	array_push($cpo_translated_lang, "en_GB", "en_US");
+	array_push($cpo_translated_lang, "en_GB", "en_US", "de_DE", "fr_FR", "it_IT", "nl_NL", "zh_CN");
 	$language = get_locale();
 	?>
 	

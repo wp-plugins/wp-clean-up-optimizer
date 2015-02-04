@@ -21,6 +21,12 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "wp_cleanup_optimizer_links",
+		"id"     => "cpo_plugin_updates",
+		"href"  => site_url() ."/wp-admin/admin.php?page=cpo_plugin_updates",
+		"title" => __( "Plugin Updates", cleanup_optimizer))         /* set the sub-menu name */
+	);
+	$wp_admin_bar->add_menu( array(
+		"parent" => "wp_cleanup_optimizer_links",
 		"id"     => "login_logs",
 		"href"  => site_url() ."/wp-admin/admin.php?page=cpo_login_logs",
 		"title" => __( "Login Logs", cleanup_optimizer))         /* set the sub-menu name */

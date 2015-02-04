@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.22
+Version: 2.0.23
 Author URI: http://tech-banker.com
 */
 
@@ -317,26 +317,28 @@ if($version != "")
 }
 
 ///////////////////////////////////////Additional Links to Plugin///////////////////////////////////////
-
-function cleanup_optimizer_plugin_update_message($args)
+if(!function_exists("cleanup_optimizer_plugin_update_message"))
 {
-	$response = wp_remote_get('http://plugins.svn.wordpress.org/wp-clean-up-optimizer/trunk/readme.txt');
-	if (!is_wp_error( $response ) && ! empty( $response['body']))
+	function cleanup_optimizer_plugin_update_message($args)
 	{
-		// Output Upgrade Notice
-		$matches = null;
-		$regexp = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote($args['Version']) . '\s*=|$)~Uis';
-		$upgrade_notice = '';
-		if (preg_match($regexp,$response['body'],$matches))
+		$response = wp_remote_get('http://plugins.svn.wordpress.org/wp-clean-up-optimizer/trunk/readme.txt');
+		if (!is_wp_error( $response ) && ! empty( $response['body']))
 		{
-			$changelog = (array)preg_split('~[\r\n]+~', trim($matches[1]));
-			$upgrade_notice .='<div class="framework_plugin_message">';
-			foreach($changelog as $index => $line)
+			// Output Upgrade Notice
+			$matches = null;
+			$regexp = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote($args['Version']) . '\s*=|$)~Uis';
+			$upgrade_notice = '';
+			if (preg_match($regexp,$response['body'],$matches))
 			{
-				$upgrade_notice .= "<p>".$line."</p>";
+				$changelog = (array)preg_split('~[\r\n]+~', trim($matches[1]));
+				$upgrade_notice .='<div class="framework_plugin_message">';
+				foreach($changelog as $index => $line)
+				{
+					$upgrade_notice .= "<p>".$line."</p>";
+				}
+				$upgrade_notice .= '</div> ';
+				echo $upgrade_notice;
 			}
-			$upgrade_notice .= '</div> ';
-			echo $upgrade_notice;
 		}
 	}
 }
@@ -358,27 +360,37 @@ else
 	wp_clear_scheduled_hook("wp_cleanup_auto_update");
 }
 
-function cleanup_plugin_autoUpdate()
+if(!function_exists("cleanup_plugin_autoUpdate"))
 {
-	try
+	function cleanup_plugin_autoUpdate()
 	{
-		require_once(ABSPATH . "wp-admin/includes/class-wp-upgrader.php");
-		require_once(ABSPATH . "wp-admin/includes/misc.php");
-		define("FS_METHOD", "direct");
-		require_once(ABSPATH . "wp-includes/update.php");
-		require_once(ABSPATH . "wp-admin/includes/file.php");
-		wp_update_plugins();
-		ob_start();
-		$plugin_upgrader = new Plugin_Upgrader();
-		$plugin_upgrader->upgrade("wp-clean-up-optimizer/wp-cleanup-optimizer.php");
-		$output = @ob_get_contents();
-		@ob_end_clean();
-	}
-	catch(Exception $e)
-	{
+		try
+		{
+			require_once(ABSPATH . "wp-admin/includes/class-wp-upgrader.php");
+			require_once(ABSPATH . "wp-admin/includes/misc.php");
+			define("FS_METHOD", "direct");
+			require_once(ABSPATH . "wp-includes/update.php");
+			require_once(ABSPATH . "wp-admin/includes/file.php");
+			wp_update_plugins();
+			ob_start();
+			$plugin_upgrader = new Plugin_Upgrader();
+			$plugin_upgrader->upgrade("wp-clean-up-optimizer/wp-cleanup-optimizer.php");
+			$output = @ob_get_contents();
+			@ob_end_clean();
+		}
+		catch(Exception $e)
+		{
+		}
 	}
 }
-
+if(!function_exists("plugin_uninstall_script_for_wp_cleanup_optimizer"))
+{
+	function plugin_uninstall_script_for_wp_cleanup_optimizer()
+	{
+		delete_option("wp-cleanup-automatic-update");
+		wp_clear_scheduled_hook("wp_cleanup_auto_update");
+	}
+}
 ///////////////////////////////////  Calling Hooks   /////////////////////////////////////////////////////
 
 //------------------------------------------------------------------------------------------------------------//
@@ -417,4 +429,8 @@ add_action( "network_admin_menu", "create_global_menus_for_cleanup_optimizer" );
 // in_plugin_update_message Hook called for function to check updates
 //------------------------------------------------------------------------------------------------------------//
 add_action("in_plugin_update_message-".CLEANUP_OPTIMIZER_FILE,"cleanup_optimizer_plugin_update_message" );
+//------------------------------------------------------------------------------------------------------------//
+// register_uninstall_hook Hook called for function to delete option and scheduler for plugin updates
+//------------------------------------------------------------------------------------------------------------//
+register_uninstall_hook(__FILE__, "plugin_uninstall_script_for_wp_cleanup_optimizer");
 ?>

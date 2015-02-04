@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Clean Up Optimizer\n"
-"POT-Creation-Date: 2014-12-30 09:30+0530\n"
-"PO-Revision-Date: 2014-12-30 09:30+0530\n"
+"POT-Creation-Date: 2015-02-04 17:57+0530\n"
+"PO-Revision-Date: 2015-02-04 17:57+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: cs\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress_bank\\wp-content\\plugins"
-"\\wp-clean-up-optimizer\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\WPTesting\\wp-content\\plugins\\wp-"
+"clean-up-optimizer\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Poedit-KeywordsList: .;__;_e;gettext\n"
@@ -69,13 +69,13 @@ msgstr ""
 msgid "Plugin Customization"
 msgstr ""
 
-#: lib/header.php:100 lib/header.php:158 lib/menus.php:18
-#: lib/top-bar-menu.php:56
+#: lib/header.php:100 lib/header.php:158 lib/menus.php:19
+#: lib/top-bar-menu.php:62
 msgid "Recommendations"
 msgstr ""
 
-#: lib/header.php:105 lib/header.php:161 lib/menus.php:19
-#: lib/top-bar-menu.php:62
+#: lib/header.php:105 lib/header.php:161 lib/menus.php:20
+#: lib/top-bar-menu.php:68
 msgid "Our Other Services"
 msgstr ""
 
@@ -83,22 +83,22 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: lib/header.php:146 lib/menus.php:13 lib/top-bar-menu.php:26
+#: lib/header.php:146 lib/menus.php:14 lib/top-bar-menu.php:32
 #: views/login-logs.php:38
 msgid "Login Logs"
 msgstr ""
 
-#: lib/header.php:149 lib/menus.php:14 lib/top-bar-menu.php:32
+#: lib/header.php:149 lib/menus.php:15 lib/top-bar-menu.php:38
 #: views/cron-job.php:67
 msgid "Cron Jobs"
 msgstr ""
 
-#: lib/header.php:152 lib/menus.php:15 lib/top-bar-menu.php:38
+#: lib/header.php:152 lib/menus.php:16 lib/top-bar-menu.php:44
 #: views/general-settings.php:42
 msgid "General Settings"
 msgstr ""
 
-#: lib/header.php:155 lib/menus.php:17 lib/top-bar-menu.php:50
+#: lib/header.php:155 lib/menus.php:18 lib/top-bar-menu.php:56
 msgid "Premium Editions"
 msgstr ""
 
@@ -117,8 +117,25 @@ msgid ""
 " Kindly, try again after 24 Hours."
 msgstr ""
 
-#: lib/menus.php:16 lib/top-bar-menu.php:44
+#: lib/menus.php:13 lib/top-bar-menu.php:26
+#: views/automatic-plugin-update.php:35 views/automatic-plugin-update.php:40
+msgid "Plugin Updates"
+msgstr ""
+
+#: lib/menus.php:17 lib/top-bar-menu.php:50
 msgid "System Status"
+msgstr ""
+
+#: views/automatic-plugin-update.php:44 views/dashboard.php:248
+#: views/dashboard.php:258 views/general-settings.php:104
+#: views/general-settings.php:232
+msgid "Enable"
+msgstr ""
+
+#: views/automatic-plugin-update.php:48 views/dashboard.php:249
+#: views/dashboard.php:259 views/general-settings.php:105
+#: views/general-settings.php:233
+msgid "Disable"
 msgstr ""
 
 #: views/cron-job.php:74
@@ -262,16 +279,6 @@ msgid ""
 "Trackbacks are a way to notify legacy blog systems that you have linked to "
 "them. If you link to a WordPress blog they will be notified automatically "
 "using pingbacks, no other action necessary."
-msgstr ""
-
-#: views/dashboard.php:248 views/dashboard.php:258
-#: views/general-settings.php:104 views/general-settings.php:232
-msgid "Enable"
-msgstr ""
-
-#: views/dashboard.php:249 views/dashboard.php:259
-#: views/general-settings.php:105 views/general-settings.php:233
-msgid "Disable"
 msgstr ""
 
 #: views/dashboard.php:254

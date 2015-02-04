@@ -20,11 +20,11 @@ else
 	$cpo_lang = array();
 	$cpo_translated_lang = array();
 	
-	array_push($cpo_lang, "bg_BG", "ja", "ko_KR", "ms_MY", "sl_SI", "sq_AL", "sr_RS", "es_ES", "nl_NL", "uk", "sv_SE", "fr_FR", "pt_PT", "pt_BR", "et", "it_IT",
- 	"de_DE", "fi", "he_IL", "ru_RU", "be_BY", "tr", "th", "ar", "hu_HU", "cs_CZ", "pl_PL", "da_DK", "sk_SK", "zh_CN", "id_ID", "el_GR",
+	array_push($cpo_lang, "bg_BG", "ja", "ko_KR", "ms_MY", "sq_AL", "sr_RS", "es_ES", "uk", "sv_SE", "pt_PT", "pt_BR", "et",
+ 	"fi", "he_IL", "ru_RU", "be_BY", "tr", "th", "ar", "hu_HU", "cs_CZ", "pl_PL", "da_DK", "sk_SK", "id_ID", "el_GR",
  	"hr", "nb", "ro_RO");
 	
-	array_push($cpo_translated_lang, "en_GB", "en_US", "de_DE", "fr_FR", "it_IT", "nl_NL", "zh_CN");
+	array_push($cpo_translated_lang, "en_GB", "en_US", "de_DE", "fr_FR", "it_IT", "nl_NL", "zh_CN", "sl_SL");
 	$language = get_locale();
 	?>
 	

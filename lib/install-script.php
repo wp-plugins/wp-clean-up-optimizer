@@ -112,6 +112,7 @@
 	global $wpdb;
 	require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 	$version=get_option("wp-cleanup-optimizer-version-number");
+	update_option("tech-banker-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
 	switch($version)
 	{
 		case "":

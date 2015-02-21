@@ -45,6 +45,12 @@ else
 	);
 	$wp_admin_bar->add_menu( array(
 		"parent" => "wp_cleanup_optimizer_links",
+		"id"     => "cpo_feedback_request_link",
+		"href"  => site_url() ."/wp-admin/admin.php?page=cpo_feedback",
+		"title" => __( "Feature Requests", cleanup_optimizer))         /* set the sub-menu name */
+	);
+	$wp_admin_bar->add_menu( array(
+		"parent" => "wp_cleanup_optimizer_links",
 		"id"     => "system_status_licensing_link",
 		"href"  => site_url() ."/wp-admin/admin.php?page=cpo_system_status",
 		"title" => __( "System Status", cleanup_optimizer))         /* set the sub-menu name */

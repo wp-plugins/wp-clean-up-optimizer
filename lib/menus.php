@@ -14,6 +14,7 @@ else
 	add_submenu_page("cpo_dashboard", "Login Logs", __("Login Logs", cleanup_optimizer), "read", "cpo_login_logs", "cpo_login_logs");
 	add_submenu_page("cpo_dashboard", "Cron Jobs", __("Cron Jobs", cleanup_optimizer), "read", "cpo_cron_jobs","cpo_cron_jobs");
 	add_submenu_page("cpo_dashboard", "General Settings", __("General Settings",cleanup_optimizer), "read", "cpo_general_settings","cpo_general_settings");
+	add_submenu_page("cpo_dashboard", "Feature Requests", __("Feature Requests",cleanup_optimizer), "read", "cpo_feedback", "cpo_feedback");
 	add_submenu_page("cpo_dashboard", "System Status", __("System Status",cleanup_optimizer), "read", "cpo_system_status", "cpo_system_status");
 	add_submenu_page("cpo_dashboard", "Premium Editions", __("Premium Editions",cleanup_optimizer), "read", "cpo_premium_edition","cpo_premium_edition");
 	add_submenu_page("cpo_dashboard", "Recommendations", __("Recommendations", cleanup_optimizer), "read", "cpo_recommendations","cpo_recommendations");
@@ -247,6 +248,32 @@ else
 			if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/views/automatic-plugin-update.php"))
 			{
 				include_once CLEANUP_BK_PLUGIN_DIR . "/views/automatic-plugin-update.php";
+			}
+		}
+	}
+	
+	if(!function_exists("cpo_feedback"))
+	{
+		function cpo_feedback()
+		{
+			global $wpdb,$current_user,$user_role_permission;
+			if(is_super_admin())
+			{
+				$cpo_role = "administrator";
+			}
+			else
+			{
+				$cpo_role = $wpdb->prefix . "capabilities";
+				$current_user->role = array_keys($current_user->$cpo_role);
+				$cpo_role = $current_user->role[0];
+			}
+			if(file_exists(CLEANUP_BK_PLUGIN_DIR."lib/header.php"))
+			{
+				include_once CLEANUP_BK_PLUGIN_DIR."lib/header.php";
+			}
+			if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/views/cleanup-feedback.php"))
+			{
+				include_once CLEANUP_BK_PLUGIN_DIR . "/views/cleanup-feedback.php";
 			}
 		}
 	}

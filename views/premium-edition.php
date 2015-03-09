@@ -1208,7 +1208,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&euro;<span><?php _e("13",cleanup_optimizer)?></span>
+															&pound;<span><?php _e("10",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -1704,7 +1704,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&euro;<span><?php _e("20",cleanup_optimizer)?></span>
+															&pound;<span><?php _e("15",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -2200,7 +2200,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&euro;<span><?php _e("69",cleanup_optimizer)?></span>
+															&pound;<span><?php _e("52",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -2363,7 +2363,7 @@ else
 														<img src="<?php echo plugins_url("/assets/images/tick_10.png" , dirname(__FILE__)); ?>" alt="yes">
 													</span>
 												</span>
-											</span
+											</span>
 										</li>
 										<li class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive align_center">
 											<span class="css3_grid_vertical_align_table">
@@ -2696,7 +2696,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&euro;<span><?php _e("545",cleanup_optimizer)?></span>
+															&pound;<span><?php _e("409",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>

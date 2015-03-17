@@ -56,13 +56,13 @@ else
 												<span class="css3_grid_vertical_align">
 													<span>
 														<span class="css3_hidden_caption">
-															<?php _e("Domains per License",cleanup_optimizer)?>
+															<?php _e("Installation per License",cleanup_optimizer)?>
 														</span>
 														<span class="css3_grid_tooltip">
 															<span>
 																<?php _e("Number of websites that can use the plugin on purchase of a License.",cleanup_optimizer) ?>
 															</span>
-																<?php _e("Domains per License",cleanup_optimizer)?>
+																<?php _e("Installation per License",cleanup_optimizer)?>
 														</span>
 													</span>
 												</span>
@@ -3167,6 +3167,14 @@ else
 											</span>
 										</li>
 									</ul>
+								</div>
+							</div>
+							<div class="gap" style="line-height: 20px; height: 20px;"></div>
+							<div class="wpb_text_column wpb_content_element ">
+								<div class="wpb_wrapper">
+									<strong><u>NOTE FOR MULTISITE* :</u></strong> Allows you to use this
+									Plugin with network of sites / Multisites WordPress. But you
+									need to have separate license for each Installation.
 								</div>
 							</div>
 						</div>

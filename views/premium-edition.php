@@ -1208,7 +1208,7 @@ else
 															<?php _e("You just need to pay for once for life time.",cleanup_optimizer)?>
 														</span>
 														<h1 class="col1">
-															&pound;<span><?php _e("10",cleanup_optimizer)?></span>
+															&pound;<span><?php _e("12",cleanup_optimizer)?></span>
 														</h1>
 														<h3 class="col1">
 															<?php _e("one time",cleanup_optimizer)?>
@@ -3172,9 +3172,9 @@ else
 							<div class="gap" style="line-height: 20px; height: 20px;"></div>
 							<div class="wpb_text_column wpb_content_element ">
 								<div class="wpb_wrapper">
-									<strong><u>NOTE FOR MULTISITE* :</u></strong> Allows you to use this
-									Plugin with network of sites / Multisites WordPress. But you
-									need to have separate license for each Installation.
+										<strong><u>NOTE FOR MULTISITE* :</u></strong> Allows you to use this
+										Plugin with network of sites / Multisites WordPress. But you
+										need to purchase separate license for each Installation / Instance.
 								</div>
 							</div>
 						</div>

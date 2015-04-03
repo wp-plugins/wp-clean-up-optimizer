@@ -51,6 +51,7 @@ else
 									<input type="hidden" id="lat" class="layout-span12" onblur="codeLatLng();" name="lat" value=""/>
 									<input type="hidden" id="lng" class="layout-span12" onblur="codeLatLng();" name="lng" value=""/>
 									<script type="text/javascript">
+									
 										var bentley = [{"featureType":"landscape","stylers":[{"hue":"#F1FF00"},{"saturation":-27.4},{"lightness":9.4},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#0099FF"},{"saturation":-20},{"lightness":36.4},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#00FF4F"},{"saturation":0},{"lightness":0},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FFB300"},{"saturation":-38},{"lightness":11.2},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#00B6FF"},{"saturation":4.2},{"lightness":-63.4},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#9FFF00"},{"saturation":0},{"lightness":0},{"gamma":1}]}];
 										var map;
 										var map_theme = bentley;
@@ -171,34 +172,37 @@ else
 		</div>
 	</div>
 	<script type="text/javascript">
-	jQuery(".hovertip").tooltip({placement: "right"});
-	jQuery(document).ready(function()
-	{
-		var oTable = jQuery("#data-table-logs").dataTable
-		({
-			"bJQueryUI": false,
-			"bAutoWidth": true,
-			"sPaginationType": "full_numbers",
-			"sDom": '<"datatable-header"fl>t<"datatable-footer"ip>',
-			"oLanguage": 
-			{
-				"sLengthMenu": "<span>Show entries:</span> _MENU_"
-			},
-			"aaSorting": [[ 5, "desc" ]]
+		jQuery(".hovertip").tooltip({placement: "right"});
+		jQuery(document).ready(function()
+		{
+			var oTable = jQuery("#data-table-logs").dataTable
+			({
+				"bJQueryUI": false,
+				"bAutoWidth": true,
+				"sPaginationType": "full_numbers",
+				"sDom": '<"datatable-header"fl>t<"datatable-footer"ip>',
+				"oLanguage": 
+				{
+					"sLengthMenu": "<span>Show entries:</span> _MENU_"
+				},
+				"aaSorting": [[ 5, "desc" ]]
+			});
+			initialize_cleanup_optimizer()
 		});
-		initialize_cleanup_optimizer()
-	});
-	function block_ip()
-	{
-		jQuery("#top-error").remove();
-		var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
-		jQuery("body").append(error_message);
-	}
-	function error_message_close()
-	{
-		jQuery("#top-error").remove();
-	}
-</script>
+		
+		function block_ip()
+		{
+			jQuery("#top-error").remove();
+			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
+			jQuery("body").append(error_message);
+		}
+		
+		function error_message_close()
+		{
+			jQuery("#top-error").remove();
+		}
+	
+	</script>
 <?php 
 }
 ?>

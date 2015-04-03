@@ -58,6 +58,7 @@ else
 			</div>
 		</form>
 		<script type="text/javascript">
+		
 			function cleanup_optimizer_autoupdate(control)
 			{
 				var cleanup_updates = jQuery(control).val();
@@ -65,6 +66,7 @@ else
 				{
 				});
 			}
+			
 		</script>
 	<?php
 	}

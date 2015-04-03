@@ -28,6 +28,7 @@ else
 				$where["post_status"] ="auto-draft";
 				$delete->delete_revision($where);
 			break;
+			
 			case 2:
 				$wpdb->query
 				(
@@ -41,24 +42,28 @@ else
 					)
 				);
 			break;
+			
 			case 3:
 				$delete = new delete_data();
 				$where = array();
 				$where["post_status"] ="draft";
 				$delete->delete_revision($where);
 			break;
+			
 			case 5:
 				$wpdb->query
 				(
 					"DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN (SELECT comment_id FROM $wpdb->comments)"
 				);
 			break;
+			
 			case 6:
 				$wpdb->query
 				(
 					"DELETE pm FROM $wpdb->postmeta pm LEFT JOIN $wpdb->posts wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL"
 				);
 			break;
+			
 			case 7:
 				$wpdb->query
 				(
@@ -69,18 +74,21 @@ else
 					)
 				);
 			break;
+			
 			case 8:
 				$delete = new delete_data();
 				$where = array();
 				$where["post_type"] ="revision";
 				$delete->delete_revision($where);
 			break;
+			
 			case 9:
 				$delete = new delete_data();
 				$where = array();
 				$where["comment_type"] ="pingback";
 				$delete->delete_comments($where);
-			break;	
+			break;
+			
 			case 10:
 				$wpdb->query
 				(
@@ -92,24 +100,28 @@ else
 					)
 				);
 			break;
+			
 			case 11:
 				$delete = new delete_data();
 				$where = array();
 				$where["comment_type"] ="trackback";
 				$delete->delete_comments($where);
 			break;
+			
 			case 12:
 				$delete = new delete_data();
 				$where = array();
 				$where["comment_approved"] ="spam";
 				$delete->delete_comments($where);
 			break;
+			
 			case 13:
 				$delete = new delete_data();
 				$where = array();
 				$where["comment_approved"] ="trash";
 				$delete->delete_comments($where);
 			break;
+			
 		}
 	}
 	if(isset($_REQUEST["param"]))

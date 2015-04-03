@@ -384,7 +384,7 @@ else
 			jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
 			e.preventDefault();
 		});
-
+		
 		oTable = jQuery("#data-table-custom-cron").dataTable
 		({
 			"bJQueryUI": false,
@@ -401,7 +401,7 @@ else
 				{ "bSortable": false, "aTargets": [1] }
 			]
 		});
-
+		
 		oTable = jQuery("#data-table-core-cron").dataTable
 		({
 			"bJQueryUI": false,
@@ -418,21 +418,21 @@ else
 				{ "bSortable": false, "aTargets": [2] }
 			]
 		});
-
+		
 		function delete_cron_job(scheduler)
 		{
 			jQuery("#top-error").remove();
 			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
-
+		
 		function bulk_delete()
 		{
 			jQuery("#top-error").remove();
 			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
-
+		
 		function error_message_close()
 		{
 			jQuery("#top-error").remove();

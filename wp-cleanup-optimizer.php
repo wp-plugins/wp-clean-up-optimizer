@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.28
+Version: 2.0.29
 Author URI: http://tech-banker.com
 */
 
@@ -46,6 +46,7 @@ if(!function_exists("plugin_install_script_for_cleanup_optimizer"))
 		}
 	}
 }
+
 /////////////////////////////////////  Functions for Returing Table Names  /////////////////////////////////
 
 if(!function_exists("wp_scheduler_tbl"))
@@ -56,6 +57,7 @@ if(!function_exists("wp_scheduler_tbl"))
 		return $wpdb->prefix . "cleanup_optimizer_wp_scheduler";
 	}
 }
+
 if(!function_exists("db_scheduler_tbl"))
 {
 	function db_scheduler_tbl()
@@ -64,6 +66,7 @@ if(!function_exists("db_scheduler_tbl"))
 		return $wpdb->prefix . "cleanup_optimizer_db_scheduler";
 	}
 }
+
 if(!function_exists("cleanup_optimizer_log"))
 {
 	function cleanup_optimizer_log()
@@ -72,6 +75,7 @@ if(!function_exists("cleanup_optimizer_log"))
 		return $wpdb->prefix . "cleanup_optimizer_login_log";
 	}
 }
+
 if(!function_exists("cleanup_optimizer_plugin_settings"))
 {
 	function cleanup_optimizer_plugin_settings()
@@ -80,6 +84,7 @@ if(!function_exists("cleanup_optimizer_plugin_settings"))
 		return $wpdb->prefix . "cleanup_optimizer_plugin_settings";
 	}
 }
+
 if(!function_exists("wp_cleanup_optimizer_licensing"))
 {
 	function wp_cleanup_optimizer_licensing()
@@ -88,6 +93,7 @@ if(!function_exists("wp_cleanup_optimizer_licensing"))
 		return $wpdb->prefix . "cleanup_optimizer_licensing";
 	}
 }
+
 if(!function_exists("wp_cleanup_optimizer_block_single_ip"))
 {
 	function wp_cleanup_optimizer_block_single_ip()
@@ -96,6 +102,7 @@ if(!function_exists("wp_cleanup_optimizer_block_single_ip"))
 		return $wpdb->prefix . "cleanup_optimizer_block_single_ip";
 	}
 }
+
 if(!function_exists("wp_cleanup_optimizer_block_range_ip"))
 {
 	function wp_cleanup_optimizer_block_range_ip()
@@ -104,7 +111,9 @@ if(!function_exists("wp_cleanup_optimizer_block_range_ip"))
 		return $wpdb->prefix . "cleanup_optimizer_block_range_ip";
 	}
 }
+
 /////////////////////////////////////  Call CSS & JS Scripts - Back End ///////////////////////////////////
+
 if(!function_exists("admin_panel_js_calls_for_cleanup_optimizer"))
 {
 	function admin_panel_js_calls_for_cleanup_optimizer()
@@ -129,6 +138,7 @@ if(!function_exists("admin_panel_css_calls_for_cleanup_optimizer"))
 }
 
 /////////////////////////////////////  Include Menus on Dashboard //////////////////////////////////////////
+
 if(!function_exists("create_global_menus_for_cleanup_optimizer"))
 {
 	function create_global_menus_for_cleanup_optimizer()
@@ -171,6 +181,7 @@ if(!function_exists("create_global_menus_for_cleanup_optimizer"))
 		}
 	}
 }
+
 /////////////////////////////////////// Register Ajax Based Functions ////////////////////////////////////////
 
 if (isset($_REQUEST["action"])) 
@@ -220,6 +231,7 @@ if(!function_exists("wp_cleanup_optimizer_settings_link"))
 		return $links;
 	}
 }
+
 /////////////////////////////////////Language Convertions for Services///////////////////////////////////
 
 if(!function_exists("plugin_load_textdomain_wp_cleanup_optimizer"))
@@ -235,6 +247,7 @@ if(!function_exists("plugin_load_textdomain_wp_cleanup_optimizer"))
 add_action("plugins_loaded", "plugin_load_textdomain_wp_cleanup_optimizer");
 
 /////////////////////////////////////Language Convertions for Plugin///////////////////////////////////
+
 if(!function_exists("plugin_load_textdomain_services"))
 {
 	function plugin_load_textdomain_services()
@@ -253,6 +266,7 @@ if(file_exists(CLEANUP_BK_PLUGIN_DIR . "/lib/login-logs-class.php"))
 {
 	include CLEANUP_BK_PLUGIN_DIR . "/lib/login-logs-class.php";
 }
+
 ////////////////////////////////////////Adding Top-bar Menus///////////////////////////////////////////
 
 if(!function_exists("add_wp_cleanup_optimizer_admin_bar"))
@@ -298,6 +312,7 @@ if(!function_exists("add_wp_cleanup_optimizer_admin_bar"))
 		}
 	}
 }
+
 ////////////////////////////////////Additional Links to Plugin/////////////////////////////////////////
 
 function custom_plugin_row($links,$file)
@@ -312,6 +327,7 @@ function custom_plugin_row($links,$file)
 	}
 	return (array)$links;
 }
+
 ////////////////////////////////////////Update version/////////////////////////////////////////////
 
 $version = get_option("wp-cleanup-optimizer-version-number");
@@ -321,6 +337,7 @@ if($version != "")
 }
 
 ///////////////////////////////////////Additional Links to Plugin///////////////////////////////////////
+
 if(!function_exists("cleanup_optimizer_plugin_update_message"))
 {
 	function cleanup_optimizer_plugin_update_message($args)
@@ -395,6 +412,7 @@ if(!function_exists("plugin_uninstall_script_for_wp_cleanup_optimizer"))
 		wp_clear_scheduled_hook("wp_cleanup_auto_update");
 	}
 }
+
 ///////////////////////////////////  Calling Hooks   /////////////////////////////////////////////////////
 
 //------------------------------------------------------------------------------------------------------------//

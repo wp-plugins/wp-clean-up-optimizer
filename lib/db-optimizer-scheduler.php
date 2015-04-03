@@ -2,6 +2,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////                      Scheduler for Optimising Database                            //////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	$scheulers=_get_cron_array();
 	$count=0;
 	$current_scheduler="";
@@ -13,6 +14,7 @@
 		}
 		$count++;
 	}
+	
 	$data_scheduler=$wpdb->get_var
 	(
 		$wpdb->prepare
@@ -21,6 +23,7 @@
 			$current_scheduler[0]
 		)
 	);
+	
 	$data_action=$wpdb->get_var
 	(
 		"SELECT scheduler_action FROM ".db_scheduler_tbl()." WHERE cron_name='$current_scheduler[0]'"

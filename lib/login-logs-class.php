@@ -15,6 +15,7 @@ function cpo_get_ip_location($ip_Address)
 	$jsonData = curl_exec($ch);
 	return json_decode($jsonData);
 }
+
 if(!function_exists("getIpAddress"))
 {
 	function getIpAddress()
@@ -31,6 +32,7 @@ if(!function_exists("getIpAddress"))
 		}
 	}
 }
+
 if(!class_exists("log_data"))
 {
 	class log_data
@@ -42,6 +44,7 @@ if(!class_exists("log_data"))
 		}
 	}
 }
+
 if(isset($_REQUEST["wp-submit"]) || isset($_REQUEST["login"]))
 {
 	add_action ("wp_authenticate","check_custom_authentication",10,2);

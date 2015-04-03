@@ -14,6 +14,7 @@
 			dbDelta($sql);
 		}
 	}
+	
 	if(!function_exists("create_table_db_optimizer"))
 	{
 		function create_table_db_optimizer()
@@ -30,6 +31,7 @@
 			dbDelta($sql);
 		}
 	}
+	
 	if(!function_exists("create_table_cleanup_optimizer_log"))
 	{
 		function create_table_cleanup_optimizer_log()
@@ -50,6 +52,7 @@
 			dbDelta($sql);
 		}
 	}
+	
 	if(!function_exists("create_table_block_single_ip"))
 	{
 		function create_table_block_single_ip()
@@ -63,6 +66,7 @@
 			dbDelta($sql);
 		}
 	}
+	
 	if(!function_exists("create_table_block_range_ip"))
 	{
 		function create_table_block_range_ip()
@@ -77,6 +81,7 @@
 			dbDelta($sql);
 		}
 	}
+	
 	if(!function_exists("create_wp_cleanup_optimizer_licensing"))
 	{
 		function create_wp_cleanup_optimizer_licensing()
@@ -94,6 +99,7 @@
 			dbDelta($sql);
 		}
 	}
+	
 	if(!function_exists("create_table_cleanup_optimizer_plugin_settings"))
 	{
 		function create_table_cleanup_optimizer_plugin_settings()

@@ -128,7 +128,7 @@ else
 													</div>
 													<div class="layout-control-group">
 														<label class="layout-control-label">
-															<?php _e("Blocked IP Addresses", cleanup_optimizer); ?> : 
+															<?php _e("Blocked IP Addresses", cleanup_optimizer); ?> :
 															<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("It show the list of all IP Addresses that are blocked by the User.",cleanup_optimizer) ;?>'/>
 														</label>
 														<div class="layout-controls custom-layout-controls-cleanup ">
@@ -170,7 +170,7 @@ else
 															<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Blocked IP Range show the list of all the IP Addresses range that are blocked by the user.",cleanup_optimizer) ;?>'/>
 														</label>
 														<div class="layout-controls custom-layout-controls-cleanup ">
-														 	<select multiple="multiple" name="ux_ddl_blocked_ip_range" id="ux_ddl_blocked_ip_range" class="layout-span11" disabled="disabled">
+															<select multiple="multiple" name="ux_ddl_blocked_ip_range" id="ux_ddl_blocked_ip_range" class="layout-span11" disabled="disabled">
 																<?php 
 																for($flag=0; $flag < count($blocked_ip_range); $flag++)
 																{
@@ -255,6 +255,7 @@ else
 			jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
 			e.preventDefault();
 		});
+		
 		//////////////////////////////////////////////////////////////////////////////////////////
 		///////////                             Plugin Settings                              ///////
 		////////////////////////////////////////////////////////////////////////////////////////
@@ -265,34 +266,40 @@ else
 			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
+		
 		function add_block_ip()
 		{
 			jQuery("#top-error").remove();
 			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
+		
 		function delete_block_ip()
 		{
 			jQuery("#top-error").remove();
 			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
+		
 		function delete_block_ip_range()
 		{
 			jQuery("#top-error").remove();
 			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
+		
 		function submit_form()
 		{
 			jQuery("#top-error").remove();
 			var error_message = jQuery("<div id=\"top-error\" class=\"top-right top-error\" style=\"display: block;\"><div class=\"top-error-notification\"></div><div class=\"top-error-notification ui-corner-all growl-top-error\" ><div onclick=\"error_message_close();\" id=\"close-top-error\" class=\"top-error-close\">x</div><div class=\"top-error-header\"><?php _e("Error!",  cleanup_optimizer); ?></div><div class=\"top-error-top-error\"><?php _e( "This Feature is Available in Premium Editions!", cleanup_optimizer ); ?></div></div></div>");
 			jQuery("body").append(error_message);
 		}
+		
 		function error_message_close()
 		{
 			jQuery("#top-error").remove();
 		}
+		
 	</script>
 <?php 
 }

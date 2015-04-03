@@ -57,7 +57,7 @@ else
 							"revision"
 						)
 					);
-					break;
+				break;
 				case "draft":
 					$count=$wpdb->get_var
 					(
@@ -69,7 +69,7 @@ else
 							"post"
 						)
 					);
-					break;
+				break;
 				case "autodraft":
 					$count=$wpdb->get_var
 					(
@@ -79,7 +79,7 @@ else
 							"auto-draft"
 						)
 					);
-					break;
+				break;
 				case "spam":
 					$count=$wpdb->get_var
 					(
@@ -89,7 +89,7 @@ else
 							"spam"
 						)
 					);
-					break;
+				break;
 				case "trash":
 					$count=$wpdb->get_var
 					(
@@ -99,56 +99,56 @@ else
 							"trash"
 						)
 					);
-					break;
+				break;
 					
 				case "postmeta":
 					$count=$wpdb->get_var
 					(
 						"SELECT COUNT(*) FROM $wpdb->postmeta pm LEFT JOIN $wpdb->posts wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL"
 					);
-					break;
+				break;
 					
 				case "commentmeta":
 					$count=$wpdb->get_var
 					(
 						"SELECT COUNT(*) FROM $wpdb->commentmeta WHERE comment_id NOT IN (SELECT comment_id FROM $wpdb->comments)"
 					);
-					break;
+				break;
 					
 				case "relationships":
 					$count=$wpdb->get_var
 					(
 						"SELECT COUNT(*) FROM $wpdb->term_relationships WHERE term_taxonomy_id=1 AND object_id NOT IN (SELECT id FROM $wpdb->posts)"
 					);
-					break;
+				break;
 					
 				case "feed":
 					$count=$wpdb->get_var
 					(
 						"SELECT COUNT(*) FROM $wpdb->options WHERE option_name LIKE '_site_transient_browser_%' OR option_name LIKE '_site_transient_timeout_browser_%' OR option_name LIKE '_transient_feed_%' OR option_name LIKE '_transient_timeout_feed_%'"
 					);
-					break;
+				break;
 					
 				case "remove_pingbacks":
 					$count=$wpdb->get_var
 					(
 						"SELECT COUNT(*) FROM $wpdb->comments WHERE comment_type = 'pingback'"
 					);
-					break;
+				break;
 					
 				case "remove_transient_options":
 					$count=$wpdb->get_var
 					(
 						"SELECT COUNT(*) FROM $wpdb->options WHERE option_name LIKE '_transient_%' OR option_name LIKE '_site_transient_%'"
 					);
-					break;
+				break;
 					
 				case "remove_trackbacks":
 					$count=$wpdb->get_var
 					(
 						"SELECT COUNT(*) FROM $wpdb->comments WHERE comment_type = 'trackback'"
 					);
-					break;
+				break;
 			}
 			return $count;
 		}

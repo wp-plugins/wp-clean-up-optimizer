@@ -55,10 +55,6 @@ else
 				(
 					"DELETE FROM $wpdb->commentmeta WHERE comment_id NOT IN (SELECT comment_id FROM $wpdb->comments)"
 				);
-				$wpdb->query
-				(
-					"DELETE FROM $wpdb->comments WHERE comment_approved = 0"
-				);
 			break;
 			
 			case 6:

@@ -235,6 +235,111 @@ else
 					update_option("wp-cleanup-automatic-update",$plugin_update);
 				}
 			break;
+			case "filter_data":
+				$start_date = $_REQUEST["start_date"];
+				$end_date = $_REQUEST["end_date"];
+				$logs = $wpdb->get_results
+				(
+						"SELECT * FROM " . cleanup_optimizer_log() ." WHERE date_time between '$start_date' and '$end_date' order by date_time desc"
+				);
+				?>
+				<table class="widefat" style="background-color:#ffffff; margin-top:10px;" id="data-table-fetch">
+					<thead>
+						<tr>
+							<th style="width:14%">
+								<?php _e( "Username", cleanup_optimizer ); ?>
+								<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the username of recent logged in users.",cleanup_optimizer) ;?>'/>
+							</th>
+							<th style="width:16%">
+								<?php _e( "IP Address", cleanup_optimizer ); ?>
+								<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the IP Address of the logged in users.",cleanup_optimizer) ;?>'/>
+							</th>
+							<th style="width:16%">
+								<?php _e( "Location", cleanup_optimizer ); ?>
+								<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the current location of the logged in users.",cleanup_optimizer) ;?>'/>
+							</th>
+							<th style="width:22%">
+								<?php _e( "Login Date & Time", cleanup_optimizer ); ?>
+								<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to view the logged in date and time of the users.",cleanup_optimizer) ;?>'/>
+							</th>
+							<th style="width:14%; text-align: center;">
+								<?php _e( "Status", cleanup_optimizer ); ?>
+								<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Lets, you know the status of the users, whether they have successfully logged in or not.",cleanup_optimizer) ;?>'/>
+							</th>
+							<th style="width:18%;">
+								<?php _e( "Action", cleanup_optimizer ); ?>
+								<img src="<?php echo plugins_url("/assets/images/questionmark_icon.png" , dirname(__FILE__))?>" class="tooltip_img hovertip" data-original-title='<?php _e("Allows you to block or whitelist IP Address for the logged in users as per your requirement.",cleanup_optimizer) ;?>'/>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="ux_login_logs">
+					<?php
+					for($flag=0; $flag<count($logs); $flag++)
+					{
+					$alternate= (empty($alternate)) ? "class='alternate'" : "";
+						?>
+						<tr <?php echo $alternate; ?>>
+							<td><?php echo $logs[$flag]->username; ?></td>
+							<td><?php echo $logs[$flag]->ip_address; ?></td>
+							<td><?php echo $logs[$flag]->geo_location; ?></td>
+							<td><?php echo date_format(date_create($logs[$flag]->date_time),"d M, Y g:i A e "); ?></td>
+							<td style="text-align: center !important">
+								<?php 
+								if($logs[$flag]->login_status == "1")
+								{
+									?>
+									<span class="log_success"><?php _e( "Success", cleanup_optimizer ); ?></span>
+									<?php 
+								} 
+								else
+								{
+									?>
+									<span class="log_Failed"><?php _e( "Failed", cleanup_optimizer ); ?></span>
+									<?php
+								}
+								?>
+							</td>
+							<td>
+							<?php 
+							if($logs[$flag]->block_ip == "1")
+							{
+								?>
+								<a href="#" style="color:#0d1ff6;"  onclick="block_ip(<?php echo $logs[$flag]->id; ?>,0);"><?php _e("Whitelist IP Address", cleanup_optimizer); ?></a>
+								<?php 
+							}
+							else 
+							{
+								?>
+								<a href="#" style="color:#0d1ff6;" onclick="block_ip(<?php echo $logs[$flag]->id; ?>,1);"><?php _e("Block IP Address", cleanup_optimizer); ?></a>
+								<?php 
+							}
+							?>
+							</td>
+							
+						</tr>
+						<?php 
+						}
+					?>
+					</tbody>
+				</table>
+				<script type="text/javascript">
+					var oTable = jQuery("#data-table-fetch").dataTable
+					({
+						"bJQueryUI": false,
+						"bAutoWidth": true,
+						"sPaginationType": "full_numbers",
+						"sDom": '<"datatable-header"fl>t<"datatable-footer"ip>',
+						"oLanguage": 
+						{
+							"sLengthMenu": "<span>Show entries:</span> _MENU_"
+						},
+						"aaSorting": [[ 5, "desc" ]],
+						"bFilter": false
+					});
+				</script>
+				<?php 
+				die();
+			break;
 		}
 		die();
 	}

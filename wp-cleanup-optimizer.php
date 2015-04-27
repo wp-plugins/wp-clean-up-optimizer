@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.33
+Version: 2.0.34
 Author URI: http://tech-banker.com
 License: GPLv3
 */
@@ -120,6 +120,7 @@ if(!function_exists("admin_panel_js_calls_for_cleanup_optimizer"))
 	function admin_panel_js_calls_for_cleanup_optimizer()
 	{
 		wp_enqueue_script("jquery");
+		wp_enqueue_script('jquery-ui-datepicker');
 		wp_enqueue_script("jquery.dataTables.min.js", plugins_url("/assets/js/jquery.dataTables.min.js",__FILE__));
 		wp_enqueue_script("jquery.validate.min.js", plugins_url("/assets/js/jquery.validate.min.js",__FILE__));
 		wp_enqueue_script("jquery_google_map.js", plugins_url("/assets/js/jquery_google_map.js",__FILE__));

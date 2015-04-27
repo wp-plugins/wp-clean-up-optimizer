@@ -20,7 +20,7 @@ else
 	$alternate="";
 	$logs = $wpdb->get_results
 	(
-		"SELECT * FROM " . cleanup_optimizer_log() ." order by date_time desc"
+		"SELECT * FROM " . cleanup_optimizer_log() ." order by date_time desc LIMIT 1000"
 	);
 	?>
 	<div id="message" class="top-right message" style="display: none;">
@@ -99,6 +99,21 @@ else
 							<h4><?php _e( "Recent Login Details", cleanup_optimizer ); ?></h4>
 						</div>
 						<div class="widget-layout-body">
+							<form id="ux_frm_date" name="ux_frm_date" class="layout-form" >
+									<div class="layout-control-group">
+										<label class="layout-control-label"><?php _e("Start Date", cleanup_optimizer); ?> :</label>
+										<div class="layout-controls custom-layout-controls-cleanup">
+											<input type="text" class="layout-span3"  name="ux_txt_start_date" id="ux_txt_start_date" value="<?php echo date('Y-m-d', strtotime("1 month ago"));?>"/>
+										</div>
+									</div>
+									<div class="layout-control-group">
+										<label class="layout-control-label"><?php _e("End Date", cleanup_optimizer); ?> :</label>
+										<div class="layout-controls custom-layout-controls-cleanup">
+											<input type="text" class="layout-span3"  name="ux_txt_end_date" id="ux_txt_end_date" value="<?php echo date('Y-m-d');?>"/>
+										</div>
+									</div>
+									<input type="submit" id="ux_btn_action" name="ux_btn_action" class="btn button-primary " value="<?php _e("Get Result", cleanup_optimizer);?>"/>
+								</form>
 							<table class="widefat" style="background-color:#ffffff; margin-top:10px;" id="data-table-logs">
 								<thead>
 									<tr>
@@ -175,6 +190,12 @@ else
 		jQuery(".hovertip").tooltip({placement: "right"});
 		jQuery(document).ready(function()
 		{
+			jQuery('#ux_txt_start_date').datepicker({
+				dateFormat : 'yy-mm-dd'
+			});
+			jQuery('#ux_txt_end_date').datepicker({
+				dateFormat : 'yy-mm-dd'
+			});
 			var oTable = jQuery("#data-table-logs").dataTable
 			({
 				"bJQueryUI": false,
@@ -189,7 +210,32 @@ else
 			});
 			initialize_cleanup_optimizer()
 		});
-		
+		jQuery("#ux_frm_date").validate
+		({	
+			rules:
+			{	
+				ux_txt_start_date:
+				{ 
+					required: true,
+					date: true
+				},
+				ux_txt_end_date:
+				{
+					required: true,
+					date: true
+				}
+			},
+			submitHandler: function(form)
+			{
+				var start_date=jQuery("#ux_txt_start_date").val();
+				var end_date=jQuery("#ux_txt_end_date").val();
+				jQuery.post(ajaxurl,"&start_date="+start_date+"&end_date="+end_date+"&param=filter_data&action=cleanup_library", function(data)
+				{
+					jQuery('#data-table-logs').dataTable().fnDestroy();
+					jQuery("#data-table-logs").html(data);
+				});
+			}
+		});
 		function block_ip()
 		{
 			jQuery("#top-error").remove();

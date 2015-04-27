@@ -518,7 +518,8 @@ Once you click on the link, this page would open and there you could see Cthe st
 
 * Compatible with WordPress 4.2
 * Improve Login Logs.
-* Date Picker Interduces in Login Logs.
+* Date Picker Introduced in Login Logs.
+* Polish Language Updated.
 
 = 2.0.33 =
 

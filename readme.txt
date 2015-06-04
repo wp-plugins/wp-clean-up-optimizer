@@ -1,4 +1,4 @@
-=== Clean Up Optimizer - Optimize & Clean WordPress ===
+=== Clean Up Optimizer - Optimize & Clean Database ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, AJAX, automatic, clean, clean up, clean up optimizer, cleaner, cleanup, comments, cron, cron jobs, database, database optimize, database size, delete, delete revision, meta, multisite, mysql, optimize, optimize database, optimizer, page, pages, phpMyAdmin, plugin, Post, post revisions, postmeta, posts, responsive, Revision, revisions, schedule, scheduler, spam, spammed, track user, tracking, transients, trash, trashed, unused tags, wordpress, wp clean up, wp cleaner, wp cleanup, wp cleanup optimizer
 Requires at least: 2.7

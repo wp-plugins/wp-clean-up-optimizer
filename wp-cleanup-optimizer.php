@@ -4,7 +4,7 @@ Plugin Name: Wp Cleanup Optimizer Lite Edition
 Plugin URI: http://tech-banker.com
 Description: It allows you to optimize your WordPress database without phpMyAdmin.
 Author: Tech Banker
-Version: 2.0.57
+Version: 2.0.59
 Author URI: http://tech-banker.com
 License: GPLv3
 */
@@ -179,23 +179,23 @@ if(!function_exists("create_global_menus_for_cleanup_optimizer"))
 					}
 				break;
 			}
-			
+
 		}
 	}
 }
 
 /////////////////////////////////////// Register Ajax Based Functions ////////////////////////////////////////
 
-if (isset($_REQUEST["action"])) 
+if (isset($_REQUEST["action"]))
 {
-	switch ($_REQUEST["action"]) 
+	switch ($_REQUEST["action"])
 	{
 		case "cleanup_library":
 			add_action("admin_init", "cleanup_library");
 			if(!function_exists("cleanup_library"))
 			{
 				function cleanup_library()
-				{	
+				{
 					global $wpdb,$current_user,$user_role_permission;
 					if(is_super_admin())
 					{
@@ -310,7 +310,7 @@ if(!function_exists("add_wp_cleanup_optimizer_admin_bar"))
 					include CLEANUP_BK_PLUGIN_DIR . "/lib/top-bar-menu.php";
 				}
 			break;
-			
+
 		}
 	}
 }
@@ -445,7 +445,7 @@ add_filter("plugin_row_meta","custom_plugin_row", 10, 2 );
 //------------------------------------------------------------------------------------------------------------//
 add_action("admin_menu", "create_global_menus_for_cleanup_optimizer");
 //------------------------------------------------------------------------------------------------------------//
-// network_admin_menu Hook called for function 
+// network_admin_menu Hook called for function
 //------------------------------------------------------------------------------------------------------------//
 add_action( "network_admin_menu", "create_global_menus_for_cleanup_optimizer" );
 //------------------------------------------------------------------------------------------------------------//
